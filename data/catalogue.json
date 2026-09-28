@@ -1,0 +1,2487 @@
+{
+  "schemaVersion": 1,
+  "title": "MASSIVE Visual catalogue",
+  "assets": [
+    {
+      "id": "MS-022",
+      "title": "MASSIVE / attract orb",
+      "stage": "ATTRACT",
+      "collection": "Loops",
+      "description": "The attract-screen surface folds through its full motion cycle.",
+      "shotLogic": "A fixed view of the live attract orb; one complete 20-second shader cycle closes the loop.",
+      "duration": 20.0,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "loop",
+        "attract",
+        "native recording",
+        "native recording",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Native attract surface · 20s loop",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-0_ATTRACT.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 1080×1920 / 30 fps",
+        "edit": "Native source frames 0–599, forward at 30fps. Whole object framed with a fixed crop. ",
+        "loop": "Native 20-second shader cycle. Forward playback; no dissolve or reversal.",
+        "audio": "Silent capture.",
+        "isolation": "Only the live AttractFerrofluidStudy surface is visible; the recording camera uses the authored lettering basis.",
+        "compatibility": "Temporary capture copy only: uniform 4× tessellation avoids a Metal hull-stage texture-binding failure; explicit lettering-size uniforms and the provided arrival recording clock restore the authored title. Native surface, lettering and motion parameters retained."
+      },
+      "poster": "media/MS-022/poster-1888ac075f1517e8.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-022-portrait-clean-17dd0959fdb4e2b8.mp4",
+              "bytes": 5105617,
+              "sha256": "17dd0959fdb4e2b8a4d0af54e5865c4cefb8bd6d0c8d452fe54ba94719df6211",
+              "preview": "media/MS-022/portrait-clean-17dd0959fdb4e2b8-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-022-portrait-text-1573c1de99c3640d.mp4",
+              "bytes": 4204927,
+              "sha256": "1573c1de99c3640dbacdae0afd942eed590c5d3c31cf1fea0835e22ebec9cf29",
+              "preview": "media/MS-022/portrait-text-1573c1de99c3640d-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-022-square-clean-1023887ef8391080.mp4",
+              "bytes": 5075780,
+              "sha256": "1023887ef8391080a4a8dcfa45ac47f1f62376da38224a1d2bd722f375d1dedb",
+              "preview": "media/MS-022/square-clean-1023887ef8391080-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-022-square-text-54536a0bbffbf845.mp4",
+              "bytes": 4180339,
+              "sha256": "54536a0bbffbf845d369c60b762769cbcd0f8c86155875f34e9fb73a4853a24c",
+              "preview": "media/MS-022/square-text-54536a0bbffbf845-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-022-landscape-clean-4bf30dfccf335a97.mp4",
+              "bytes": 5117742,
+              "sha256": "4bf30dfccf335a97acf35a80984feedb949c5f10f8e7db31e0c75679a370b21f",
+              "preview": "media/MS-022/landscape-clean-4bf30dfccf335a97-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-022-landscape-text-289b2883cbe6f38a.mp4",
+              "bytes": 4276686,
+              "sha256": "289b2883cbe6f38a7231efa9c156d7fc1247c7601ac708cf66e28b0e30c4ef29",
+              "preview": "media/MS-022/landscape-text-289b2883cbe6f38a-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-022/portrait-clean-17dd0959fdb4e2b8-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-orb-48ebbd0083f05d25.mp4",
+        "bytes": 4386762,
+        "sha256": "48ebbd0083f05d2593e903a278849a42a28bf7874433ca249eddb5494da8a5b4",
+        "label": "Full engine recording · beauty"
+      },
+      "isLoop": true
+    },
+    {
+      "id": "MS-023",
+      "title": "Resonance / whole field",
+      "stage": "DYNAMO",
+      "collection": "Loops",
+      "description": "The whole field bends around a living pattern.",
+      "shotLogic": "Keep every edge in frame; follow the native grid and particle motion through a soft loop join.",
+      "duration": 6.2,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "resonance",
+        "grid",
+        "loop",
+        "vertical",
+        "full framing",
+        "native recording",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Native Resonance + grid · full-field vertical recording · loop",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-8_DYNAMO-PROTOTYPE.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 2160×3840 / 30 fps",
+        "edit": "Native source frames 390–599, forward at 30fps. ",
+        "loop": "0.80s wrap dissolve using source footage; no reversal.",
+        "audio": "Silent capture.",
+        "isolation": "Grid and live Resonance hierarchy only. Portrait recording camera looks down the arena length. HUD and unrelated actors are hidden; scripted movement still deforms the field."
+      },
+      "poster": "media/MS-023/poster-7b744d7246655262.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-023-portrait-clean-ad63e8255407466f.mp4",
+              "bytes": 2678591,
+              "sha256": "ad63e8255407466f33498036bce1f1b35771a104c7f9a722067eb0cf38d599f4",
+              "preview": "media/MS-023/portrait-clean-ad63e8255407466f-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-023-portrait-text-699ec463f4543d46.mp4",
+              "bytes": 2396768,
+              "sha256": "699ec463f4543d46ab972d130678e98f70671ed18942d41fd31803f5f903ad74",
+              "preview": "media/MS-023/portrait-text-699ec463f4543d46-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-023-square-clean-a9209630462eeab2.mp4",
+              "bytes": 979708,
+              "sha256": "a9209630462eeab20b7d9c5cd534a5e89c3a573318a2f0a84d1f2c3bd9856f42",
+              "preview": "media/MS-023/square-clean-a9209630462eeab2-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-023-square-text-af2295dd24a61ee0.mp4",
+              "bytes": 888025,
+              "sha256": "af2295dd24a61ee034c793e88fe181e3dd180b8ecec82ca4479b443ac8273eb1",
+              "preview": "media/MS-023/square-text-af2295dd24a61ee0-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-023-landscape-clean-d6b02c824512e65d.mp4",
+              "bytes": 2681006,
+              "sha256": "d6b02c824512e65d0e4b24f0685ed6fce7f5ad2c787c359d4e777349da586b21",
+              "preview": "media/MS-023/landscape-clean-d6b02c824512e65d-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-023-landscape-text-73a7ad93af1fde68.mp4",
+              "bytes": 2435040,
+              "sha256": "73a7ad93af1fde68da0d485254908085d3242fceea9a3eac685552d827d17afc",
+              "preview": "media/MS-023/landscape-text-73a7ad93af1fde68-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-023/portrait-clean-ad63e8255407466f-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-resonance-4123bfa27145a94e.mp4",
+        "bytes": 18125559,
+        "sha256": "4123bfa27145a94e7be525dd7c6dfcbd8edc023fe2b5fd4a02554c80faf21b00",
+        "label": "Full source take · 2160 × 3840"
+      },
+      "isLoop": true
+    },
+    {
+      "id": "MS-024",
+      "title": "Maximum amplification",
+      "stage": "DYNAMO",
+      "collection": "Gameplay",
+      "description": "The third accepted goal takes Dark to ×8. The boundary carries the charge.",
+      "shotLogic": "Native goals advance ×1 → ×2 → ×4 → ×8. This is the final score and its full response.",
+      "duration": 7.0,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "goal",
+        "amplifier",
+        "maximum",
+        "native gameplay",
+        "native recording",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Real gameplay · native ×4 → ×8 goal · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-8_DYNAMO-PROTOTYPE.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840×2160 / 30 fps",
+        "edit": "Native source frames 1521–1730, forward at 30fps. ",
+        "loop": "Forward edit; repeats with a cut.",
+        "audio": "Silent capture.",
+        "isolation": "None; native game camera.",
+        "control": "Input-driven scoring drill. Dark pursues and strikes each core; Light circles the arena. No forced captures, transforms or multiplier changes.",
+        "acceptedEvent": "Accepted goals at 12.800s (×2), 34.067s (×4) and 53.700s (×8); native maximum verified at 59.733s.",
+        "goalEffect": "Saved shared Amplifier treatment; native score level, no effect preview or parameter boost."
+      },
+      "poster": "media/MS-024/poster-b8135ac8adea1678.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-024-portrait-clean-5772498d0368a636.mp4",
+              "bytes": 2594353,
+              "sha256": "5772498d0368a6366ee3a3b54e0e10ad6b992edaa9f8ac595829141a13c2e4e9",
+              "preview": "media/MS-024/portrait-clean-5772498d0368a636-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-024-portrait-text-5804f5cfdf105d9e.mp4",
+              "bytes": 2326556,
+              "sha256": "5804f5cfdf105d9ee9077c176331d2869b193c8e37469c7afd56d26c0d514fab",
+              "preview": "media/MS-024/portrait-text-5804f5cfdf105d9e-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-024-square-clean-36efb0480858f550.mp4",
+              "bytes": 2133570,
+              "sha256": "36efb0480858f550ca5d31e46f74825d90448f41fe67a1cf5de9d62ef280e8d4",
+              "preview": "media/MS-024/square-clean-36efb0480858f550-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-024-square-text-606cd290c25b9500.mp4",
+              "bytes": 1941055,
+              "sha256": "606cd290c25b95001ea6998e023a16b904024638d49161148da319ce7e35f79a",
+              "preview": "media/MS-024/square-text-606cd290c25b9500-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-024-landscape-clean-e9f09385b4c60386.mp4",
+              "bytes": 5224647,
+              "sha256": "e9f09385b4c603867df6c3abe364bdb30a229a44c2b33787110a9cf04838e4dd",
+              "preview": "media/MS-024/landscape-clean-e9f09385b4c60386-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-024-landscape-text-213e6a8468ecfe9c.mp4",
+              "bytes": 4789532,
+              "sha256": "213e6a8468ecfe9c2757288e84ffa22a88317242a418bf1d1a3ca5718fbea71f",
+              "preview": "media/MS-024/landscape-text-213e6a8468ecfe9c-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-024/portrait-clean-5772498d0368a636-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-max-goal-2034ad51fc6a3dde.mp4",
+        "bytes": 95290531,
+        "sha256": "2034ad51fc6a3dde7e4625a4bbf7b3459f77681847c74b65ccb395c5e1d342d4",
+        "label": "Full source take · 3840 × 2160"
+      },
+      "isLoop": false
+    },
+    {
+      "id": "MS-030",
+      "title": "Strike. Amplify.",
+      "stage": "DYNAMO",
+      "collection": "Trailers",
+      "description": "Follow Dark from the first strike to three goals and the maximum charge.",
+      "shotLogic": "Establish the arena, find the player, follow the core, then build through three accepted goals.",
+      "duration": 21.5,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "trailer",
+        "gameplay",
+        "native recording"
+      ],
+      "sourceSummary": "Trailer cut · real gameplay · 1× speed · silent",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "capture": "Unity Play Mode / Metal / native game render / 30 fps",
+        "control": "Scripted movement and attack inputs through the game’s normal player controller. No forced scoring events.",
+        "edit": "Hard cuts at native speed. No added VFX, invented frames or reversal.",
+        "loop": "Trailer ends with a cut; seamless looping is not required.",
+        "audio": "Silent edit; sound has not been captured.",
+        "sources": [
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-max-goal-2034ad51fc6a3dde.mp4",
+            "bytes": 95290531,
+            "sha256": "2034ad51fc6a3dde7e4625a4bbf7b3459f77681847c74b65ccb395c5e1d342d4",
+            "startFrame": 0,
+            "frames": 45,
+            "note": "The arena"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-max-goal-2034ad51fc6a3dde.mp4",
+            "bytes": 95290531,
+            "sha256": "2034ad51fc6a3dde7e4625a4bbf7b3459f77681847c74b65ccb395c5e1d342d4",
+            "startFrame": 45,
+            "frames": 84,
+            "note": "Dark closes on the core"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-max-goal-2034ad51fc6a3dde.mp4",
+            "bytes": 95290531,
+            "sha256": "2034ad51fc6a3dde7e4625a4bbf7b3459f77681847c74b65ccb395c5e1d342d4",
+            "startFrame": 129,
+            "frames": 72,
+            "note": "The core travels toward the goal"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-max-goal-2034ad51fc6a3dde.mp4",
+            "bytes": 95290531,
+            "sha256": "2034ad51fc6a3dde7e4625a4bbf7b3459f77681847c74b65ccb395c5e1d342d4",
+            "startFrame": 324,
+            "frames": 144,
+            "note": "First accepted goal: ×2"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-max-goal-2034ad51fc6a3dde.mp4",
+            "bytes": 95290531,
+            "sha256": "2034ad51fc6a3dde7e4625a4bbf7b3459f77681847c74b65ccb395c5e1d342d4",
+            "startFrame": 972,
+            "frames": 120,
+            "note": "Second accepted goal: ×4"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-max-goal-2034ad51fc6a3dde.mp4",
+            "bytes": 95290531,
+            "sha256": "2034ad51fc6a3dde7e4625a4bbf7b3459f77681847c74b65ccb395c5e1d342d4",
+            "startFrame": 1554,
+            "frames": 180,
+            "note": "Third accepted goal: ×8"
+          }
+        ]
+      },
+      "poster": "media/MS-030/poster-3d1a978eaffa3b16.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Shot-by-shot framing; cuts documented in provenance.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-030-portrait-clean-5692100f01282624.mp4",
+              "bytes": 10176000,
+              "sha256": "5692100f0128262407f6f81aa85dfcf2274d92373003a9609230afe2c2cbfd58",
+              "preview": "media/MS-030/portrait-clean-5692100f01282624-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-030-portrait-text-c2686f1da631a11d.mp4",
+              "bytes": 9941704,
+              "sha256": "c2686f1da631a11dc4f74781cb7d098dc6aa31dce02b1813e4b033c7ce96c85a",
+              "preview": "media/MS-030/portrait-text-c2686f1da631a11d-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Shot-by-shot framing; cuts documented in provenance.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-030-square-clean-bdb05c5d1fc0f178.mp4",
+              "bytes": 7271547,
+              "sha256": "bdb05c5d1fc0f17862338ecc15228f82450d101e7188a78cb1e5e3501a637a01",
+              "preview": "media/MS-030/square-clean-bdb05c5d1fc0f178-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-030-square-text-60f5e4ee03e84ada.mp4",
+              "bytes": 7135607,
+              "sha256": "60f5e4ee03e84ada18f36ecb87e2d2573bde6268a44a775592e8f88f1d401b59",
+              "preview": "media/MS-030/square-text-60f5e4ee03e84ada-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Shot-by-shot framing; cuts documented in provenance.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-030-landscape-clean-68a0bd3989bc9871.mp4",
+              "bytes": 11255940,
+              "sha256": "68a0bd3989bc98710999a43b9759c37bea292a41bee11057ce2d27c96ee17290",
+              "preview": "media/MS-030/landscape-clean-68a0bd3989bc9871-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-030-landscape-text-ac9e420320b31e0b.mp4",
+              "bytes": 11144273,
+              "sha256": "ac9e420320b31e0b603bcc24d3ea74641415ce5cd532979bc9260fac4b154254",
+              "preview": "media/MS-030/landscape-text-ac9e420320b31e0b-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-030/portrait-clean-5692100f01282624-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-030-landscape-clean-68a0bd3989bc9871.mp4",
+        "bytes": 11255940,
+        "sha256": "68a0bd3989bc98710999a43b9759c37bea292a41bee11057ce2d27c96ee17290",
+        "label": "Landscape edit master"
+      },
+      "isLoop": false
+    },
+    {
+      "id": "MS-031",
+      "title": "Into NOVA",
+      "stage": "NOVA",
+      "collection": "Trailers",
+      "description": "Choose a world, meet the player, and get into the moving field.",
+      "shotLogic": "A native menu establishes NOVA; a short instruction isolate introduces attacking; gameplay widens into the field before a goal payoff.",
+      "duration": 20.3,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "trailer",
+        "gameplay",
+        "native recording"
+      ],
+      "sourceSummary": "Trailer cut · real gameplay · 1× speed · silent",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "capture": "Unity Play Mode / Metal / native game render / 30 fps",
+        "control": "Scripted movement and attack inputs through the game’s normal player controller. No forced scoring events.",
+        "edit": "Hard cuts at native speed. No added VFX, invented frames or reversal.",
+        "loop": "Trailer ends with a cut; seamless looping is not required.",
+        "audio": "Silent edit; sound has not been captured.",
+        "sources": [
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-menu-fc777f6f1cf7014c.mp4",
+            "bytes": 48022695,
+            "sha256": "fc777f6f1cf7014c3090fdec0a8b80f2229985c1a2f2169267b53399f82e6013",
+            "startFrame": 12,
+            "frames": 48,
+            "note": "NOVA selected"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-how-to-6387feb73b7f28e8.mp4",
+            "bytes": 6183852,
+            "sha256": "6387feb73b7f28e87e9c068790bd3eaacef40d9c56b4f6ab641b9d28a71daa05",
+            "startFrame": 30,
+            "frames": 48,
+            "note": "Attack controls"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-max-goal-2034ad51fc6a3dde.mp4",
+            "bytes": 95290531,
+            "sha256": "2034ad51fc6a3dde7e4625a4bbf7b3459f77681847c74b65ccb395c5e1d342d4",
+            "startFrame": 45,
+            "frames": 78,
+            "note": "Player and core"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-nova-4k-f2b314a86072de9e.mp4",
+            "bytes": 36125815,
+            "sha256": "f2b314a86072de9e24f1c93a6488c3567ef84f62343dbf313c73474d527cf26c",
+            "startFrame": 240,
+            "frames": 90,
+            "note": "NOVA arena"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-nova-4k-f2b314a86072de9e.mp4",
+            "bytes": 36125815,
+            "sha256": "f2b314a86072de9e24f1c93a6488c3567ef84f62343dbf313c73474d527cf26c",
+            "startFrame": 330,
+            "frames": 90,
+            "note": "Player crosses the field"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-nova-4k-f2b314a86072de9e.mp4",
+            "bytes": 36125815,
+            "sha256": "f2b314a86072de9e24f1c93a6488c3567ef84f62343dbf313c73474d527cf26c",
+            "startFrame": 480,
+            "frames": 105,
+            "note": "NOVA brightens"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-full-gameplay-4k-506425925b30b3f0.mp4",
+            "bytes": 46689987,
+            "sha256": "506425925b30b3f0c40cd18116a010a4bc365e39cd74358f31af3e47c2c6b314",
+            "startFrame": 600,
+            "frames": 150,
+            "note": "Amplifier goal"
+          }
+        ]
+      },
+      "poster": "media/MS-031/poster-c5ee54367a3c1ccd.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Shot-by-shot framing; cuts documented in provenance.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-031-portrait-clean-78be66546de5ae03.mp4",
+              "bytes": 15532711,
+              "sha256": "78be66546de5ae03a94528083fec26e705d0f4bd8f7b20ae3f95ac953d43c774",
+              "preview": "media/MS-031/portrait-clean-78be66546de5ae03-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-031-portrait-text-d2dde4bec6b301c5.mp4",
+              "bytes": 15366932,
+              "sha256": "d2dde4bec6b301c5db1191a9f3440e9b5292ff4a7f3750392bd7461167459949",
+              "preview": "media/MS-031/portrait-text-d2dde4bec6b301c5-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Shot-by-shot framing; cuts documented in provenance.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-031-square-clean-9e652602cf26ae91.mp4",
+              "bytes": 9350732,
+              "sha256": "9e652602cf26ae91802e2bd4836476da9c8d188877bcec30cd766bf97e28bbd4",
+              "preview": "media/MS-031/square-clean-9e652602cf26ae91-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-031-square-text-6c60236d2dc009b8.mp4",
+              "bytes": 9279026,
+              "sha256": "6c60236d2dc009b8031fee160c849315c9daeebcb0abce382205de4c2040e2af",
+              "preview": "media/MS-031/square-text-6c60236d2dc009b8-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Shot-by-shot framing; cuts documented in provenance.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-031-landscape-clean-29ec2e321e47083e.mp4",
+              "bytes": 12485765,
+              "sha256": "29ec2e321e47083eadb900a5a5e97cac56594dfe7fb1bc7d67b1323ef7ae0987",
+              "preview": "media/MS-031/landscape-clean-29ec2e321e47083e-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-031-landscape-text-23f3c03eea9774ad.mp4",
+              "bytes": 12384344,
+              "sha256": "23f3c03eea9774ad5374bf7e5a9f62b1ed1894bfc41b4489ad872a71e7ccbf3a",
+              "preview": "media/MS-031/landscape-text-23f3c03eea9774ad-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-031/portrait-clean-78be66546de5ae03-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-031-landscape-clean-29ec2e321e47083e.mp4",
+        "bytes": 12485765,
+        "sha256": "29ec2e321e47083eadb900a5a5e97cac56594dfe7fb1bc7d67b1323ef7ae0987",
+        "label": "Landscape edit master"
+      },
+      "isLoop": false
+    },
+    {
+      "id": "MS-016",
+      "title": "NOVA in play",
+      "stage": "NOVA",
+      "collection": "Gameplay",
+      "description": "Players and particles move through the changing arena.",
+      "shotLogic": "An uninterrupted passage of live play; framing follows the central action.",
+      "duration": 8.0,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "gameplay",
+        "particles",
+        "responsive grid",
+        "real recording",
+        "4k source",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Real gameplay · computer-controlled players · native motion · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-3_NOVA.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840×2160 / 30 fps",
+        "control": "Scripted movement and attack button input; native collisions, mechanics and effects. No transform animation or forced gameplay result.",
+        "edit": "Frames 300–539, forward at 30 fps. Fixed crop per format; native colour. Repeats with a cut.",
+        "audio": "Silent recording."
+      },
+      "poster": "media/MS-016/poster-24aa72f34d4a63b3.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Source crop 810×1440 at 1516,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-016-portrait-clean-462be4c98217fe33.mp4",
+              "bytes": 14003512,
+              "sha256": "462be4c98217fe33a73d65b494f5094a0302eba7db0ed465fa0c3fcc7863828e",
+              "preview": "media/MS-016/portrait-clean-462be4c98217fe33-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-016-portrait-text-fa0b613bbe0710c7.mp4",
+              "bytes": 12592220,
+              "sha256": "fa0b613bbe0710c73a9cf98eb8bcb2f0b8475889714a72a46af9b247cd150ced",
+              "preview": "media/MS-016/portrait-text-fa0b613bbe0710c7-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Source crop 1440×1440 at 1200,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-016-square-clean-f71246827c62f6a7.mp4",
+              "bytes": 7583907,
+              "sha256": "f71246827c62f6a7ae7094a2dbc67b0304b2cb79f7e00e8f303abb2fe0cdbff9",
+              "preview": "media/MS-016/square-clean-f71246827c62f6a7-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-016-square-text-079043aca95fd602.mp4",
+              "bytes": 7013179,
+              "sha256": "079043aca95fd6028ac2eef98d1a62dac9fe882ab15b9bb4db9859153e49b3ec",
+              "preview": "media/MS-016/square-text-079043aca95fd602-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Source crop 2560×1440 at 640,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-016-landscape-clean-19fa1d91aa8bbc41.mp4",
+              "bytes": 9366700,
+              "sha256": "19fa1d91aa8bbc4163beb6fa56c9aae8c4b6788305e109ee618116f23d1a5ab7",
+              "preview": "media/MS-016/landscape-clean-19fa1d91aa8bbc41-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-016-landscape-text-680c57d384784a91.mp4",
+              "bytes": 8814505,
+              "sha256": "680c57d384784a914f5a5ceea7cc2ee241da9f5d832b168c39f6e9aa734cd445",
+              "preview": "media/MS-016/landscape-text-680c57d384784a91-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-016/portrait-clean-462be4c98217fe33-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-nova-4k-f2b314a86072de9e.mp4",
+        "bytes": 36125815,
+        "sha256": "f2b314a86072de9e24f1c93a6488c3567ef84f62343dbf313c73474d527cf26c",
+        "label": "Full source take · 4K"
+      },
+      "isLoop": false
+    },
+    {
+      "id": "MS-029",
+      "title": "Charged boundary / ×8",
+      "stage": "DYNAMO",
+      "collection": "Loops",
+      "description": "The held charge after the maximum amplified goal.",
+      "shotLogic": "Loop the aftermath of the real ×8 score, while retaining the accepted scoring event as a separate clip.",
+      "duration": 4.4,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "loop",
+        "goal",
+        "maximum",
+        "amplifier",
+        "native recording",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Native maximum-charge goal effect · loop",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-8_DYNAMO-PROTOTYPE.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840×2160 / 30 fps",
+        "edit": "Native source frames 1632–1787, forward at 30fps. ",
+        "loop": "0.80s wrap dissolve using source footage; no reversal.",
+        "audio": "Silent capture.",
+        "isolation": "None; native game camera.",
+        "acceptedEvent": "Dark reaches ×8 through its third accepted goal at source time 53.700s. This loop begins at 54.400s.",
+        "goalEffect": "Authored Amplifier goal treatment, no added glow, blast or parameter boost.",
+        "control": "Input-only scoring drill through the normal game rules."
+      },
+      "poster": "media/MS-029/poster-03c79ef94c9ae78e.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-029-portrait-clean-2f5c48d832451690.mp4",
+              "bytes": 1388841,
+              "sha256": "2f5c48d832451690efdf28297d21eb6322584ef4ecdf1ed8a13421b3212c3162",
+              "preview": "media/MS-029/portrait-clean-2f5c48d832451690-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-029-portrait-text-f81bb37d36e09edd.mp4",
+              "bytes": 1224598,
+              "sha256": "f81bb37d36e09edde5d28a436858d999080e130849a6ca1030c1bbb16d25ed54",
+              "preview": "media/MS-029/portrait-text-f81bb37d36e09edd-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-029-square-clean-01bab0c183222570.mp4",
+              "bytes": 889629,
+              "sha256": "01bab0c183222570d9b8f5b7057228dd3d4641f403c0b1c580c76cf42e01e1ed",
+              "preview": "media/MS-029/square-clean-01bab0c183222570-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-029-square-text-9ead5eef958d8409.mp4",
+              "bytes": 808745,
+              "sha256": "9ead5eef958d840930f7d4a8908ff3130262f5d9cfbd8c82cf12e75c6deca2fb",
+              "preview": "media/MS-029/square-text-9ead5eef958d8409-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-029-landscape-clean-dd6ad017033cb9ab.mp4",
+              "bytes": 1652666,
+              "sha256": "dd6ad017033cb9ab95658d98e504c6969fcb1b1568ca0cea3879406798d001d4",
+              "preview": "media/MS-029/landscape-clean-dd6ad017033cb9ab-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-029-landscape-text-f593914046dfb66a.mp4",
+              "bytes": 1536962,
+              "sha256": "f593914046dfb66aab0c8533cba55e0e2a60bca70ec6359941a07cc034a79057",
+              "preview": "media/MS-029/landscape-text-f593914046dfb66a-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-029/portrait-clean-2f5c48d832451690-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-max-goal-2034ad51fc6a3dde.mp4",
+        "bytes": 95290531,
+        "sha256": "2034ad51fc6a3dde7e4625a4bbf7b3459f77681847c74b65ccb395c5e1d342d4",
+        "label": "Full source take · 3840 × 2160"
+      },
+      "isLoop": true
+    },
+    {
+      "id": "MS-012",
+      "title": "NOVA map",
+      "stage": "NOVA",
+      "collection": "Maps",
+      "description": "White particle trails curl through the live level-select map.",
+      "shotLogic": "Live level-select motion, isolated with a fixed crop.",
+      "duration": 5.2,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "map",
+        "level select",
+        "real recording",
+        "4k source",
+        "portrait",
+        "square",
+        "landscape",
+        "loop"
+      ],
+      "sourceSummary": "Live level-select recording · native motion · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-0_LEVEL-SELECT NEW.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840×2160 / 30 fps",
+        "control": "Native menu navigation through LevelCarouselController.StepNextStage",
+        "edit": "Frames 60–239, forward at 30 fps. Fixed crop per format; native colour.  Short wrap dissolve added to close the visual loop.",
+        "audio": "Silent recording.",
+        "loop": "0.80s wrap dissolve between actual source frames; native forward motion, no reversal."
+      },
+      "poster": "media/MS-012/poster-7f3f94c685b9a81b.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Source crop 1240×1240 at 1300,500; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-012-portrait-clean-695aa6b7f23f73f4.mp4",
+              "bytes": 12503213,
+              "sha256": "695aa6b7f23f73f4364c633d5a8db0b3c80d8005039dedef7da46828a629793c",
+              "preview": "media/MS-012/portrait-clean-695aa6b7f23f73f4-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-012-portrait-text-5d5c5cdba99c266e.mp4",
+              "bytes": 11797344,
+              "sha256": "5d5c5cdba99c266e67918fef90e3655c738d4d7b0c605e77dd405a55eb92ac37",
+              "preview": "media/MS-012/portrait-text-5d5c5cdba99c266e-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Source crop 1240×1240 at 1300,500; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-012-square-clean-6b8e7809bf1bd490.mp4",
+              "bytes": 12584093,
+              "sha256": "6b8e7809bf1bd4905ae47a65b24181433c9b28384194c04625b3452b9b1701b3",
+              "preview": "media/MS-012/square-clean-6b8e7809bf1bd490-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-012-square-text-94d39434d06a388a.mp4",
+              "bytes": 11924512,
+              "sha256": "94d39434d06a388aa92f5ff0cbe413f2c0496d15fde9ac1fb8916405b83debba",
+              "preview": "media/MS-012/square-text-94d39434d06a388a-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Source crop 1240×1240 at 1300,500; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-012-landscape-clean-efa72bef6a865fc0.mp4",
+              "bytes": 12500099,
+              "sha256": "efa72bef6a865fc0f22a1ab143915b40a18f954bfd802d21f6a5fd98b1f5eab9",
+              "preview": "media/MS-012/landscape-clean-efa72bef6a865fc0-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-012-landscape-text-fd421cc8ec9340b7.mp4",
+              "bytes": 11805443,
+              "sha256": "fd421cc8ec9340b7e65c4e30923cdd8c403ee4c5c3c90548e29e056d23fbd228",
+              "preview": "media/MS-012/landscape-text-fd421cc8ec9340b7-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-012/portrait-clean-695aa6b7f23f73f4-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-maps-4k-9bd8c4c02a56e153.mp4",
+        "bytes": 202710852,
+        "sha256": "9bd8c4c02a56e1535e45f4209138db869da1064fa846a9d0208f16a91e5c4314",
+        "label": "Full source take · 4K"
+      },
+      "isLoop": true
+    },
+    {
+      "id": "MS-013",
+      "title": "HIGGS map",
+      "stage": "HIGGS",
+      "collection": "Maps",
+      "description": "The complete moving contours, isolated from the neighbouring maps.",
+      "shotLogic": "One live map, framed as a whole; the last movement dissolves into the first.",
+      "duration": 9.2,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "map",
+        "loop",
+        "isolated",
+        "full framing",
+        "native recording",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Native game visual · isolated in Play Mode · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-0_LEVEL-SELECT NEW.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 2160×3840 / 30 fps",
+        "edit": "Native source frames 0–299, forward at 30fps. Whole object framed with a fixed crop. ",
+        "loop": "0.80s wrap dissolve using source footage; no reversal.",
+        "audio": "Silent capture.",
+        "isolation": "Only this runtime menu icon is visible to the capture camera. No changes to its native geometry, materials or simulation."
+      },
+      "poster": "media/MS-013/poster-66ec9c92ed422177.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-013-portrait-clean-41d00edb6a9e1dd1.mp4",
+              "bytes": 3331701,
+              "sha256": "41d00edb6a9e1dd11582d4a989c1fc229ea8449b8d19e79a620a89dc5d60f0f6",
+              "preview": "media/MS-013/portrait-clean-41d00edb6a9e1dd1-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-013-portrait-text-2c337366420932e6.mp4",
+              "bytes": 3013101,
+              "sha256": "2c337366420932e63622cb1332b243c699b93d38d2a2392edc3ba4e031b42d15",
+              "preview": "media/MS-013/portrait-text-2c337366420932e6-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-013-square-clean-568ba55420eff5dc.mp4",
+              "bytes": 3309163,
+              "sha256": "568ba55420eff5dc99813c1c4d4d12957717bbdd4b242f4ae6b45070fedf4092",
+              "preview": "media/MS-013/square-clean-568ba55420eff5dc-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-013-square-text-cd4aec3833af10ab.mp4",
+              "bytes": 2994959,
+              "sha256": "cd4aec3833af10ab74ef18cac0a1bdd2914185bd01f34098ffdd89dd2426ba5e",
+              "preview": "media/MS-013/square-text-cd4aec3833af10ab-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-013-landscape-clean-2be69c65fe7ae10c.mp4",
+              "bytes": 3322961,
+              "sha256": "2be69c65fe7ae10c48b2c3871d4dd0b7415db13e100c0a9294afb9921c0922a6",
+              "preview": "media/MS-013/landscape-clean-2be69c65fe7ae10c-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-013-landscape-text-57574918b7f01790.mp4",
+              "bytes": 3073179,
+              "sha256": "57574918b7f01790aee0159d5d4c018936f031d8b17c08aaf66b16d3e72c6bdb",
+              "preview": "media/MS-013/landscape-text-57574918b7f01790-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-013/portrait-clean-41d00edb6a9e1dd1-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-map-higgs-3584214d286ea3e3.mp4",
+        "bytes": 7799512,
+        "sha256": "3584214d286ea3e3135e2da3ba2fe9f49d4ef556028ff626aa6edc1f36adbc9e",
+        "label": "Full source take · 2160 × 3840"
+      },
+      "isLoop": true
+    },
+    {
+      "id": "MS-015",
+      "title": "SINGULARITY map",
+      "stage": "SINGULARITY",
+      "collection": "Maps",
+      "description": "The folded surface and glowing ring, with the neighbouring icons removed.",
+      "shotLogic": "One live map, framed as a whole; the last movement dissolves into the first.",
+      "duration": 9.2,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "map",
+        "loop",
+        "isolated",
+        "full framing",
+        "native recording",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Native game visual · isolated in Play Mode · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-0_LEVEL-SELECT NEW.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 2160×3840 / 30 fps",
+        "edit": "Native source frames 0–299, forward at 30fps. Whole object framed with a fixed crop. ",
+        "loop": "0.80s wrap dissolve using source footage; no reversal.",
+        "audio": "Silent capture.",
+        "isolation": "Only this runtime menu icon is visible to the capture camera. No changes to its native geometry, materials or simulation."
+      },
+      "poster": "media/MS-015/poster-c4e888235db5352a.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-015-portrait-clean-4422297e59051ac4.mp4",
+              "bytes": 9782044,
+              "sha256": "4422297e59051ac4ac8f8997e38923236ca05ed439ac21728cfbc57549391102",
+              "preview": "media/MS-015/portrait-clean-4422297e59051ac4-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-015-portrait-text-35a027eb9977d2bf.mp4",
+              "bytes": 9056651,
+              "sha256": "35a027eb9977d2bf8dc39a78e2af609093915d6aa89e8a683830a92a1d3e5655",
+              "preview": "media/MS-015/portrait-text-35a027eb9977d2bf-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-015-square-clean-7cd27866cbfdd215.mp4",
+              "bytes": 9785032,
+              "sha256": "7cd27866cbfdd2153ead43f299835f1f054f1f378d97186ea159410af92c3541",
+              "preview": "media/MS-015/square-clean-7cd27866cbfdd215-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-015-square-text-f9fdda3598533292.mp4",
+              "bytes": 9051651,
+              "sha256": "f9fdda359853329201252bc548dd788d8e05ba3c1a9286a2ab29dffbcf3dec21",
+              "preview": "media/MS-015/square-text-f9fdda3598533292-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-015-landscape-clean-1f7dee4992ef984e.mp4",
+              "bytes": 9795036,
+              "sha256": "1f7dee4992ef984e92adb3021420e52811cee33adb6422728df809f850a79f58",
+              "preview": "media/MS-015/landscape-clean-1f7dee4992ef984e-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-015-landscape-text-80b907825708a800.mp4",
+              "bytes": 9016159,
+              "sha256": "80b907825708a800d9893d23a67cc37cceb0c8b2be48c24442a6842e9b72d141",
+              "preview": "media/MS-015/landscape-text-80b907825708a800-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-015/portrait-clean-4422297e59051ac4-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-map-singularity-e98b087ff5503bb1.mp4",
+        "bytes": 32795379,
+        "sha256": "e98b087ff5503bb1a9c653f0d05d3098e9a9d8d81eb69a1629f5b336e48c134d",
+        "label": "Full source take · 2160 × 3840"
+      },
+      "isLoop": true
+    },
+    {
+      "id": "MS-017",
+      "title": "ORBITAL cloud",
+      "stage": "ORBITAL",
+      "collection": "Details",
+      "description": "The live probability cloud, isolated from the grid and other gameplay layers.",
+      "shotLogic": "Native particle motion, a fixed camera and a soft wrap join.",
+      "duration": 6.4,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "orbital",
+        "loop",
+        "particles",
+        "isolate",
+        "native recording",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Native game visual · isolated in Play Mode · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-6_ORBITAL.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 2160×3840 / 30 fps",
+        "edit": "Native source frames 15–224, forward at 30fps. ",
+        "loop": "0.60s wrap dissolve using source footage; no reversal.",
+        "audio": "Silent capture.",
+        "isolation": "ORBITAL Cloud hierarchy only; unrelated grid, Resonance and immediate-mode gameplay drawings excluded from the recording camera."
+      },
+      "poster": "media/MS-017/poster-930068813097f3e5.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-017-portrait-clean-1f91c1c4c0a4fce9.mp4",
+              "bytes": 14291309,
+              "sha256": "1f91c1c4c0a4fce929c882bf2225d78e48724a87fc73fb48bf39264778e6da53",
+              "preview": "media/MS-017/portrait-clean-1f91c1c4c0a4fce9-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-017-portrait-text-69a2316d37e7221e.mp4",
+              "bytes": 13014560,
+              "sha256": "69a2316d37e7221ef642ec628c7341cfa5f139403a529db3ee74b306c529c256",
+              "preview": "media/MS-017/portrait-text-69a2316d37e7221e-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-017-square-clean-4dad1a26c7ba1e96.mp4",
+              "bytes": 6214779,
+              "sha256": "4dad1a26c7ba1e9620c4e0b3cd8109123c2c8a3a8fda144145c45c10bfaf1083",
+              "preview": "media/MS-017/square-clean-4dad1a26c7ba1e96-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-017-square-text-60ec08907993094c.mp4",
+              "bytes": 5595106,
+              "sha256": "60ec08907993094c2a0e70ba689be17c430b72dc6117e34241cb0d773e5c0e6b",
+              "preview": "media/MS-017/square-text-60ec08907993094c-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-017-landscape-clean-91d147e045f3d0a8.mp4",
+              "bytes": 6228544,
+              "sha256": "91d147e045f3d0a8d27fa0b5214e536c5f0bc96443b65e6d02253001ac94bb2d",
+              "preview": "media/MS-017/landscape-clean-91d147e045f3d0a8-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-017-landscape-text-fc3ca3b3dab9ec09.mp4",
+              "bytes": 5675856,
+              "sha256": "fc3ca3b3dab9ec097b3e545443e562ab0dd92743b34a95868e5e78e59fdd762c",
+              "preview": "media/MS-017/landscape-text-fc3ca3b3dab9ec09-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-017/portrait-clean-1f91c1c4c0a4fce9-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-orbital-2ecc85ff8b97e17f.mp4",
+        "bytes": 75480773,
+        "sha256": "2ecc85ff8b97e17fb5ed44d6132d86429fc930aa6ade7a5b4c5d7fd14a93f983",
+        "label": "Full source take · 2160 × 3840"
+      },
+      "isLoop": true
+    },
+    {
+      "id": "MS-014",
+      "title": "DYNAMO field",
+      "stage": "DYNAMO",
+      "collection": "Maps",
+      "description": "A close view of the live map’s moving field lines.",
+      "shotLogic": "Live level-select motion, isolated with a fixed crop.",
+      "duration": 5.2,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "map",
+        "level select",
+        "real recording",
+        "4k source",
+        "portrait",
+        "square",
+        "landscape",
+        "loop"
+      ],
+      "sourceSummary": "Live level-select recording · native motion · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-0_LEVEL-SELECT NEW.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840×2160 / 30 fps",
+        "control": "Native menu navigation through LevelCarouselController.StepNextStage",
+        "edit": "Frames 540–719, forward at 30 fps. Fixed crop per format; native colour.  Short wrap dissolve added to close the visual loop.",
+        "audio": "Silent recording.",
+        "loop": "0.80s wrap dissolve between actual source frames; native forward motion, no reversal."
+      },
+      "poster": "media/MS-014/poster-d99b0450a4b7f057.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Source crop 810×1440 at 1516,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-014-portrait-clean-9e5c515b6333737e.mp4",
+              "bytes": 9806465,
+              "sha256": "9e5c515b6333737e1664e2870ca6e5ab52764ef1db11d636a81ee316991d23c9",
+              "preview": "media/MS-014/portrait-clean-9e5c515b6333737e-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-014-portrait-text-794ed7de32ed728c.mp4",
+              "bytes": 8953152,
+              "sha256": "794ed7de32ed728c18a5ba1729e43a9b1df0869367bd3d24ca3e30de41f3e7f6",
+              "preview": "media/MS-014/portrait-text-794ed7de32ed728c-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Source crop 1200×1200 at 1320,550; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-014-square-clean-27bc51075b089a00.mp4",
+              "bytes": 7242113,
+              "sha256": "27bc51075b089a009b1db4584c10090cd4056ec25cb4aa77c2300e40f1cb250d",
+              "preview": "media/MS-014/square-clean-27bc51075b089a00-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-014-square-text-031370047873708f.mp4",
+              "bytes": 6645111,
+              "sha256": "031370047873708f83d68ea1d960d547b2ebc98e19c3d4b8e7d3a31ca4aec958",
+              "preview": "media/MS-014/square-text-031370047873708f-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Source crop 1280×720 at 1280,720; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-014-landscape-clean-fa13c87c43cd0a72.mp4",
+              "bytes": 15069913,
+              "sha256": "fa13c87c43cd0a7250d6e7c5d62663275d7db7ca6e714c677abce595a233b31f",
+              "preview": "media/MS-014/landscape-clean-fa13c87c43cd0a72-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-014-landscape-text-87e8d6ae43b14371.mp4",
+              "bytes": 13974675,
+              "sha256": "87e8d6ae43b14371676cf70e229fd379c2eac2a88d35bcddb41f539aac1a0029",
+              "preview": "media/MS-014/landscape-text-87e8d6ae43b14371-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-014/portrait-clean-9e5c515b6333737e-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-maps-4k-9bd8c4c02a56e153.mp4",
+        "bytes": 202710852,
+        "sha256": "9bd8c4c02a56e1535e45f4209138db869da1064fa846a9d0208f16a91e5c4314",
+        "label": "Full source take · 4K"
+      },
+      "isLoop": true
+    },
+    {
+      "id": "MS-032",
+      "title": "Worlds in play",
+      "stage": "MASSIVE",
+      "collection": "Trailers",
+      "description": "Three arenas, live player exchanges, and a goal to close.",
+      "shotLogic": "Native stage selection leads into progressively tighter cuts across HIGGS, SINGULARITY and NOVA; finish on an accepted goal.",
+      "duration": 17.5,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "trailer",
+        "gameplay",
+        "native recording"
+      ],
+      "sourceSummary": "Trailer cut · real gameplay · 1× speed · silent",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "capture": "Unity Play Mode / Metal / native game render / 30 fps",
+        "control": "Scripted movement and attack inputs through the game’s normal player controller. No forced scoring events.",
+        "edit": "Hard cuts at native speed. No added VFX, invented frames or reversal.",
+        "loop": "Trailer ends with a cut; seamless looping is not required.",
+        "audio": "Silent edit; sound has not been captured.",
+        "sources": [
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-menu-fc777f6f1cf7014c.mp4",
+            "bytes": 48022695,
+            "sha256": "fc777f6f1cf7014c3090fdec0a8b80f2229985c1a2f2169267b53399f82e6013",
+            "startFrame": 93,
+            "frames": 45,
+            "note": "Choose a stage"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-higgs-4k-d3893afe8dbd090e.mp4",
+            "bytes": 76312051,
+            "sha256": "d3893afe8dbd090e88de2ca149b4c21516b1dfc2a9d4de8c458315f731e32ed2",
+            "startFrame": 360,
+            "frames": 90,
+            "note": "HIGGS arena"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-higgs-4k-d3893afe8dbd090e.mp4",
+            "bytes": 76312051,
+            "sha256": "d3893afe8dbd090e88de2ca149b4c21516b1dfc2a9d4de8c458315f731e32ed2",
+            "startFrame": 450,
+            "frames": 75,
+            "note": "HIGGS player exchange"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-singularity-4k-0c4a9458d5887ad8.mp4",
+            "bytes": 34037132,
+            "sha256": "0c4a9458d5887ad8c90376bfe6e81eb07accd870136c7e3ca5adb0e6fcbc0288",
+            "startFrame": 210,
+            "frames": 90,
+            "note": "SINGULARITY in play"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-nova-4k-f2b314a86072de9e.mp4",
+            "bytes": 36125815,
+            "sha256": "f2b314a86072de9e24f1c93a6488c3567ef84f62343dbf313c73474d527cf26c",
+            "startFrame": 480,
+            "frames": 90,
+            "note": "NOVA in play"
+          },
+          {
+            "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-dark-goal-4k-30bca5d529ea9533.mp4",
+            "bytes": 19946433,
+            "sha256": "30bca5d529ea95336933e36e338493591ab0642abab7340d036747ba26a540ce",
+            "startFrame": 210,
+            "frames": 135,
+            "note": "Dark scores"
+          }
+        ]
+      },
+      "poster": "media/MS-032/poster-59c621d7aeed1eaf.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Shot-by-shot framing; cuts documented in provenance.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-032-portrait-clean-74b2ffdfaf985644.mp4",
+              "bytes": 16887913,
+              "sha256": "74b2ffdfaf98564424fdb1e0438e14ba534479a43197b4009332a309cc244dc2",
+              "preview": "media/MS-032/portrait-clean-74b2ffdfaf985644-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-032-portrait-text-aef52c826a119c7f.mp4",
+              "bytes": 16412770,
+              "sha256": "aef52c826a119c7f4007e899f82c1816d65a84ecc8cd4b553e7c34acc7b7eb4a",
+              "preview": "media/MS-032/portrait-text-aef52c826a119c7f-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Shot-by-shot framing; cuts documented in provenance.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-032-square-clean-4cd0aacc7bb61b2d.mp4",
+              "bytes": 11518924,
+              "sha256": "4cd0aacc7bb61b2db056760155b6d8dc4d4d614aa6a3bdad656b1671ea9f5502",
+              "preview": "media/MS-032/square-clean-4cd0aacc7bb61b2d-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-032-square-text-0388a79302775e63.mp4",
+              "bytes": 11237480,
+              "sha256": "0388a79302775e638ad0782bc481a5766c41670cda2597d3ba9d5e7ad450dd68",
+              "preview": "media/MS-032/square-text-0388a79302775e63-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Shot-by-shot framing; cuts documented in provenance.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-032-landscape-clean-581b0731194e3d2b.mp4",
+              "bytes": 17627053,
+              "sha256": "581b0731194e3d2baf55765ace362ef252dbeb2dc31f8424d4bbd12b8f573458",
+              "preview": "media/MS-032/landscape-clean-581b0731194e3d2b-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-032-landscape-text-f25e7fc069d6e4ec.mp4",
+              "bytes": 17196364,
+              "sha256": "f25e7fc069d6e4ec779c62c675eb8ba110038576efb74eebe506e03ab22740a4",
+              "preview": "media/MS-032/landscape-text-f25e7fc069d6e4ec-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-032/portrait-clean-74b2ffdfaf985644-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-032-landscape-clean-581b0731194e3d2b.mp4",
+        "bytes": 17627053,
+        "sha256": "581b0731194e3d2baf55765ace362ef252dbeb2dc31f8424d4bbd12b8f573458",
+        "label": "Landscape edit master"
+      },
+      "isLoop": false
+    },
+    {
+      "id": "MS-025",
+      "title": "BTS / geometry detail",
+      "stage": "ATTRACT",
+      "collection": "BTS",
+      "description": "A close view of the moving surface’s triangle structure.",
+      "shotLogic": "An engine diagnostic pass exposes the base-triangle boundaries while preserving the native displaced geometry and motion. Macro framing isolates the unlettered upper surface.",
+      "duration": 20.0,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "loop",
+        "attract",
+        "native recording",
+        "BTS",
+        "native recording",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "BTS · live engine diagnostic pass · 20s loop",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-0_ATTRACT.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 1080×1920 / 30 fps / diagnostic fragment pass",
+        "edit": "Native source frames 0–599, forward at 30fps. Whole object framed with a fixed crop. ",
+        "loop": "Native 20-second shader cycle. Forward playback; no dissolve or reversal.",
+        "audio": "Silent capture.",
+        "isolation": "Only the live AttractFerrofluidStudy surface is visible; the recording camera uses the authored lettering basis.",
+        "compatibility": "Temporary capture copy only: uniform 4× tessellation avoids a Metal hull-stage texture-binding failure; explicit lettering-size uniforms and the provided arrival recording clock restore the authored title. Native surface, lettering and motion parameters retained."
+      },
+      "poster": "media/MS-025/poster-f111d22ef641ce1f.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-025-portrait-clean-184dff5d4296a99a.mp4",
+              "bytes": 36669301,
+              "sha256": "184dff5d4296a99a2d4e3c7654483ed30a9778080bb730540569430b78154352",
+              "preview": "media/MS-025/portrait-clean-184dff5d4296a99a-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-025-portrait-text-c956eb9190f65940.mp4",
+              "bytes": 35987277,
+              "sha256": "c956eb9190f659405dbe24e75ce12e9872bbc363a58602242bc44fefd5f15db4",
+              "preview": "media/MS-025/portrait-text-c956eb9190f65940-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-025-square-clean-bcaa1f780e236146.mp4",
+              "bytes": 36858258,
+              "sha256": "bcaa1f780e2361468fb8ca8c0699a285634bbc3f719e8f633a5727073f28af44",
+              "preview": "media/MS-025/square-clean-bcaa1f780e236146-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-025-square-text-a2d10b5869335311.mp4",
+              "bytes": 36105911,
+              "sha256": "a2d10b5869335311b474882c1db0cc183d51e11570665a902ef1ec7f3e6cb792",
+              "preview": "media/MS-025/square-text-a2d10b5869335311-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-025-landscape-clean-03761553ff6f93de.mp4",
+              "bytes": 67003814,
+              "sha256": "03761553ff6f93de5651ce04f5fc87d7415ff725d6505c97e39bf9c2cf3c0756",
+              "preview": "media/MS-025/landscape-clean-03761553ff6f93de-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-025-landscape-text-1d8dd7fe33a11af0.mp4",
+              "bytes": 66910076,
+              "sha256": "1d8dd7fe33a11af0d99f59f5affab949271af100d2de197d06c2de810557fc4b",
+              "preview": "media/MS-025/landscape-text-1d8dd7fe33a11af0-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-025/portrait-clean-184dff5d4296a99a-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-orb-wireframe-348f975a1463c4e6.mp4",
+        "bytes": 48910311,
+        "sha256": "348f975a1463c4e630bfa29fde5bf91cf32141e20bd929a3e36459832ae0b949",
+        "label": "Full engine recording · geometry"
+      },
+      "isLoop": true
+    },
+    {
+      "id": "MS-026",
+      "title": "BTS / normal field",
+      "stage": "ATTRACT",
+      "collection": "BTS",
+      "description": "The surface’s changing directions, recorded as colour.",
+      "shotLogic": "An engine normal pass maps the actual view-space surface normals into RGB. The shape and motion match the beauty pass. Macro framing isolates the unlettered upper surface.",
+      "duration": 20.0,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "loop",
+        "attract",
+        "native recording",
+        "BTS",
+        "native recording",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "BTS · live engine diagnostic pass · 20s loop",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-0_ATTRACT.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 1080×1920 / 30 fps / diagnostic fragment pass",
+        "edit": "Native source frames 0–599, forward at 30fps. Whole object framed with a fixed crop. ",
+        "loop": "Native 20-second shader cycle. Forward playback; no dissolve or reversal.",
+        "audio": "Silent capture.",
+        "isolation": "Only the live AttractFerrofluidStudy surface is visible; the recording camera uses the authored lettering basis.",
+        "compatibility": "Temporary capture copy only: uniform 4× tessellation avoids a Metal hull-stage texture-binding failure; explicit lettering-size uniforms and the provided arrival recording clock restore the authored title. Native surface, lettering and motion parameters retained."
+      },
+      "poster": "media/MS-026/poster-cbd1e6d1d5f2d28f.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-026-portrait-clean-3d458f97c51c9269.mp4",
+              "bytes": 3257813,
+              "sha256": "3d458f97c51c92691f6d38e153786c57883dc4466bf3b7298dd8af57e7bab5b1",
+              "preview": "media/MS-026/portrait-clean-3d458f97c51c9269-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-026-portrait-text-a91b45c444d022b5.mp4",
+              "bytes": 3917785,
+              "sha256": "a91b45c444d022b53301e1dc211441747183d71632a2b1cff1415076da29e4ca",
+              "preview": "media/MS-026/portrait-text-a91b45c444d022b5-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-026-square-clean-bb3ba48da523e1af.mp4",
+              "bytes": 3241623,
+              "sha256": "bb3ba48da523e1afcea2f49ab175276590f84c4b2f80dc15e64f65959e7cb1b1",
+              "preview": "media/MS-026/square-clean-bb3ba48da523e1af-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-026-square-text-0876125917d0569e.mp4",
+              "bytes": 3933904,
+              "sha256": "0876125917d0569e85d8ff9ec95de3661be0eef399ce6a26b921ef4339d71dfe",
+              "preview": "media/MS-026/square-text-0876125917d0569e-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-026-landscape-clean-e02c8015d02269cf.mp4",
+              "bytes": 8469093,
+              "sha256": "e02c8015d02269cf7e1d6f706efffb118a8fad9c8f6fffc964ca3a65545b5980",
+              "preview": "media/MS-026/landscape-clean-e02c8015d02269cf-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-026-landscape-text-2676b5a02203ffca.mp4",
+              "bytes": 11935670,
+              "sha256": "2676b5a02203ffca469e90d2ce577f6eadbf7a7e2a0f9b934e6532fea0f88d3c",
+              "preview": "media/MS-026/landscape-text-2676b5a02203ffca-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-026/portrait-clean-3d458f97c51c9269-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-orb-normals-d360681c79d41028.mp4",
+        "bytes": 2116065,
+        "sha256": "d360681c79d410287dc9627415b1c8671634c0cbabc65e716e0ffdd09415bf52",
+        "label": "Full engine recording · surface normals"
+      },
+      "isLoop": true
+    },
+    {
+      "id": "MS-027",
+      "title": "Choose a world",
+      "stage": "MENU",
+      "collection": "Menus",
+      "description": "The live selector moves through NOVA, HIGGS and DYNAMO.",
+      "shotLogic": "Three native menu states, including the authored transitions.",
+      "duration": 8.6,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "menu",
+        "level select",
+        "native recording",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Native level-select screen · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-0_LEVEL-SELECT NEW.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840×2160 / 30 fps",
+        "edit": "Native source frames 0–257, forward at 30fps. ",
+        "loop": "Forward edit; repeats with a cut.",
+        "audio": "Silent capture.",
+        "isolation": "None; native game camera."
+      },
+      "poster": "media/MS-027/poster-3c411da44c8e6ccd.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-027-portrait-clean-10401fa5a60f0120.mp4",
+              "bytes": 8268729,
+              "sha256": "10401fa5a60f012076a35fba24678a64ec9a7b697e1a960685f5e4bcd51f0cb5",
+              "preview": "media/MS-027/portrait-clean-10401fa5a60f0120-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-027-portrait-text-8e2bab6d2edf49bc.mp4",
+              "bytes": 7765015,
+              "sha256": "8e2bab6d2edf49bcb15dfaa3b63a2d9212750c601566cbb830d9d63200cdbb63",
+              "preview": "media/MS-027/portrait-text-8e2bab6d2edf49bc-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-027-square-clean-be988a9a9d9e2983.mp4",
+              "bytes": 8260023,
+              "sha256": "be988a9a9d9e2983e9a4673f1628947ad393a8926e77b778824201e355220864",
+              "preview": "media/MS-027/square-clean-be988a9a9d9e2983-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-027-square-text-767a6bcb33ddb931.mp4",
+              "bytes": 7779837,
+              "sha256": "767a6bcb33ddb931fccdbb6561dcdc89149fc7c7964b2d1f3e28d773d535ae84",
+              "preview": "media/MS-027/square-text-767a6bcb33ddb931-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-027-landscape-clean-a308d2a4354476f6.mp4",
+              "bytes": 12444932,
+              "sha256": "a308d2a4354476f6e7cd6b12eb7e5b20d77ec60f59cfba232b1b6a03ecc8904a",
+              "preview": "media/MS-027/landscape-clean-a308d2a4354476f6-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-027-landscape-text-f1c1e176cec81cff.mp4",
+              "bytes": 11641323,
+              "sha256": "f1c1e176cec81cff2dc082d812bcf05ec5be32afb89d07bf8ced0a59a94f794c",
+              "preview": "media/MS-027/landscape-text-f1c1e176cec81cff-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-027/portrait-clean-10401fa5a60f0120-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-menu-fc777f6f1cf7014c.mp4",
+        "bytes": 48022695,
+        "sha256": "fc777f6f1cf7014c3090fdec0a8b80f2229985c1a2f2169267b53399f82e6013",
+        "label": "Full source take · 3840 × 2160"
+      },
+      "isLoop": false
+    },
+    {
+      "id": "MS-028",
+      "title": "How to play",
+      "stage": "HOW TO PLAY",
+      "collection": "Menus",
+      "description": "The game’s own attack, defend and power-up demonstrations.",
+      "shotLogic": "Preserve the original instruction panels and animated controls; hide the unrelated gameplay scoreboard overlap.",
+      "duration": 9.0,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "menu",
+        "instructions",
+        "controls",
+        "native recording",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Native animated explainer · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-0_HOW-TO-PLAY.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840×2160 / 30 fps",
+        "edit": "Native source frames 0–269, forward at 30fps. ",
+        "loop": "Forward edit; repeats with a cut.",
+        "audio": "Silent capture.",
+        "isolation": "The gameplay HUD root is hidden in the isolated capture session. Native instruction text and demonstrations are retained."
+      },
+      "poster": "media/MS-028/poster-91e6ef430078b90f.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-028-portrait-clean-d9a19cebe3ad0a38.mp4",
+              "bytes": 1440343,
+              "sha256": "d9a19cebe3ad0a38343f3266903f220b05e8b5677f6d00e5b8185a33b56fc0b3",
+              "preview": "media/MS-028/portrait-clean-d9a19cebe3ad0a38-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-028-portrait-text-0bf5dc4145b3abaf.mp4",
+              "bytes": 1367085,
+              "sha256": "0bf5dc4145b3abaf4b920c53cec4a46ec5a471b639e32840280284b39bf92bd1",
+              "preview": "media/MS-028/portrait-text-0bf5dc4145b3abaf-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-028-square-clean-177537c7575bfcb2.mp4",
+              "bytes": 1113856,
+              "sha256": "177537c7575bfcb2128e7215e65b956f318f4c668ba3e7b03d44432c1a3e800a",
+              "preview": "media/MS-028/square-clean-177537c7575bfcb2-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-028-square-text-6f90c91ff5c3dff9.mp4",
+              "bytes": 1075994,
+              "sha256": "6f90c91ff5c3dff9d83255daf4d18c7098d12c5fbf256f914d42f192cf34dc15",
+              "preview": "media/MS-028/square-text-6f90c91ff5c3dff9-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Whole native subject retained; aspect-fit framing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-028-landscape-clean-9d3e8566e1ec8a13.mp4",
+              "bytes": 2100812,
+              "sha256": "9d3e8566e1ec8a136680701e2ea517472f9d04789082ed6e4447f857a8e195cf",
+              "preview": "media/MS-028/landscape-clean-9d3e8566e1ec8a13-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-028-landscape-text-d396051320d25b55.mp4",
+              "bytes": 2008532,
+              "sha256": "d396051320d25b556a8ba59552347dc34cbcf0d38cafea3d1cdd7c6934cea0dd",
+              "preview": "media/MS-028/landscape-text-d396051320d25b55-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-028/portrait-clean-d9a19cebe3ad0a38-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-02-how-to-6387feb73b7f28e8.mp4",
+        "bytes": 6183852,
+        "sha256": "6387feb73b7f28e87e9c068790bd3eaacef40d9c56b4f6ab641b9d28a71daa05",
+        "label": "Full source take · 3840 × 2160"
+      },
+      "isLoop": false
+    },
+    {
+      "id": "MS-018",
+      "title": "SINGULARITY in motion",
+      "stage": "SINGULARITY",
+      "collection": "Gameplay",
+      "description": "The live ring turns as the arena bends around it.",
+      "shotLogic": "A continuous gameplay passage, framed around the native arena response.",
+      "duration": 7.2,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "gameplay",
+        "field",
+        "responsive grid",
+        "real recording",
+        "4k source",
+        "portrait",
+        "square",
+        "landscape",
+        "loop"
+      ],
+      "sourceSummary": "Real gameplay · computer-controlled players · native motion · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-7_SINGULARITY.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840×2160 / 30 fps",
+        "control": "Scripted movement and attack button input; native collisions, mechanics and effects. No transform animation or forced gameplay result.",
+        "edit": "Frames 180–419, forward at 30 fps. Fixed crop per format; native colour.  Short wrap dissolve added to close the visual loop.",
+        "audio": "Silent recording.",
+        "loop": "0.80s wrap dissolve between actual source frames; native forward motion, no reversal."
+      },
+      "poster": "media/MS-018/poster-045455fcc674ce11.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Source crop 810×1440 at 1516,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-018-portrait-clean-fc8b8eda7ded77c3.mp4",
+              "bytes": 10936448,
+              "sha256": "fc8b8eda7ded77c384ecb567eafcb3f4fee170b0e5162f48f7e5bdb01c4b8057",
+              "preview": "media/MS-018/portrait-clean-fc8b8eda7ded77c3-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-018-portrait-text-e190c327658e8cfb.mp4",
+              "bytes": 9821647,
+              "sha256": "e190c327658e8cfbe5ddeeecdbd0582baf9127b55d05bc170f71aa20f1309976",
+              "preview": "media/MS-018/portrait-text-e190c327658e8cfb-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Source crop 1440×1440 at 1200,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-018-square-clean-5cd101f0fa1c3005.mp4",
+              "bytes": 5952898,
+              "sha256": "5cd101f0fa1c3005d27a8518e10f0ab5fc21c7681e92164a5b4339d16a977e87",
+              "preview": "media/MS-018/square-clean-5cd101f0fa1c3005-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-018-square-text-086d10a5fe4becf7.mp4",
+              "bytes": 5454328,
+              "sha256": "086d10a5fe4becf7644134af654e6c538858df5bd7a257ab4bcebfb55c02be46",
+              "preview": "media/MS-018/square-text-086d10a5fe4becf7-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Source crop 2560×1440 at 640,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-018-landscape-clean-683062cab283da0f.mp4",
+              "bytes": 7242813,
+              "sha256": "683062cab283da0f89319a46fd0771832cc3c5cd79c752e537e6a57bf4a4ccab",
+              "preview": "media/MS-018/landscape-clean-683062cab283da0f-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-018-landscape-text-923f2098a10cdd2c.mp4",
+              "bytes": 6773186,
+              "sha256": "923f2098a10cdd2c0defd59f9f7713e30e7387decf452d857c70fe58d56c245a",
+              "preview": "media/MS-018/landscape-text-923f2098a10cdd2c-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-018/portrait-clean-fc8b8eda7ded77c3-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-singularity-4k-0c4a9458d5887ad8.mp4",
+        "bytes": 34037132,
+        "sha256": "0c4a9458d5887ad8c90376bfe6e81eb07accd870136c7e3ca5adb0e6fcbc0288",
+        "label": "Full source take · 4K"
+      },
+      "isLoop": true
+    },
+    {
+      "id": "MS-019",
+      "title": "Across HIGGS",
+      "stage": "HIGGS",
+      "collection": "Gameplay",
+      "description": "Players cut through the moving contours.",
+      "shotLogic": "A continuous gameplay passage, framed around the native arena response.",
+      "duration": 8.0,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "gameplay",
+        "field",
+        "responsive grid",
+        "real recording",
+        "4k source",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Real gameplay · computer-controlled players · native motion · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-9_HIGGS.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840×2160 / 30 fps",
+        "control": "Scripted movement and attack button input; native collisions, mechanics and effects. No transform animation or forced gameplay result.",
+        "edit": "Frames 360–599, forward at 30 fps. Fixed crop per format; native colour. Repeats with a cut.",
+        "audio": "Silent recording."
+      },
+      "poster": "media/MS-019/poster-fd50b9e5168a4399.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Source crop 810×1440 at 1000,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-019-portrait-clean-03510a98352131e2.mp4",
+              "bytes": 16451660,
+              "sha256": "03510a98352131e294e4aa73f5cb0c2fe0cb1970d449d118f22db9b9a4982732",
+              "preview": "media/MS-019/portrait-clean-03510a98352131e2-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-019-portrait-text-ab235e14077c27f2.mp4",
+              "bytes": 14198171,
+              "sha256": "ab235e14077c27f286686c49edc4b20feb6f7de53f6d045f34fb00566a396726",
+              "preview": "media/MS-019/portrait-text-ab235e14077c27f2-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Source crop 1440×1440 at 880,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-019-square-clean-053d979e193b72da.mp4",
+              "bytes": 14488125,
+              "sha256": "053d979e193b72da43fd3d7a4e95788fef32f93af1913006e9f0e81f792d9ad2",
+              "preview": "media/MS-019/square-clean-053d979e193b72da-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-019-square-text-67b92187473ed37f.mp4",
+              "bytes": 13194260,
+              "sha256": "67b92187473ed37fdc9b8194e67d3d540f00587d1c6643f2fcd1f15dc22c076e",
+              "preview": "media/MS-019/square-text-67b92187473ed37f-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Source crop 2560×1440 at 640,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-019-landscape-clean-c83c280f7f83d63f.mp4",
+              "bytes": 20860802,
+              "sha256": "c83c280f7f83d63fd389b0955aadc56c9e52f6ca9db530556424a8d6722446cd",
+              "preview": "media/MS-019/landscape-clean-c83c280f7f83d63f-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-019-landscape-text-ee51d9df5e732674.mp4",
+              "bytes": 18976773,
+              "sha256": "ee51d9df5e732674dac46b5392fce78dded4f3b38bee4aee0d2e52e1abb1a244",
+              "preview": "media/MS-019/landscape-text-ee51d9df5e732674-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-019/portrait-clean-03510a98352131e2-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-higgs-4k-d3893afe8dbd090e.mp4",
+        "bytes": 76312051,
+        "sha256": "d3893afe8dbd090e88de2ca149b4c21516b1dfc2a9d4de8c458315f731e32ed2",
+        "label": "Full source take · 4K"
+      },
+      "isLoop": false
+    },
+    {
+      "id": "MS-011",
+      "title": "Amplifier goal",
+      "stage": "DYNAMO",
+      "collection": "Gameplay",
+      "description": "The core reaches the goal. The multiplier advances to ×2.",
+      "shotLogic": "Player strikes → goal attraction → accepted capture → boundary response.",
+      "duration": 7,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "gameplay",
+        "amplifier",
+        "goal",
+        "4k source",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Real gameplay · computer-controlled players · saved goal settings · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-8_DYNAMO-PROTOTYPE.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / native game camera / 3840×2160 at 30 fps",
+        "players": "Scripted movement and button inputs; native gameplay, collision and scoring code. Authored starting positions and core spawn retained.",
+        "goalEffect": "Saved shared Amplifier profile, unchanged. UseSharedSettings=True, Preview=False.",
+        "acceptedEvent": "22.200s — team 1, native CORE_CAPTURE_ACCEPTED and multiplier ×1 → ×2",
+        "edit": "Source frames 576–785; fixed crop per aspect ratio; native colour and 1× motion. No added VFX, interpolation, reversal, zoom or rotating frame.",
+        "audio": "Silent video recording; no replacement audio added."
+      },
+      "poster": "media/MS-011/poster-42307496a7f1778d.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Fixed crop of the 4K gameplay recording: 810×1440 at 0,360. Native timing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-011-portrait-clean-a438adce9d85c076.mp4",
+              "bytes": 3925648,
+              "sha256": "a438adce9d85c0762bd03338593cf117a29ebc5973653ff8788a50f517fd29fe",
+              "preview": "media/MS-011/portrait-clean-a438adce9d85c076-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-011-portrait-text-a9954be45eba5bc3.mp4",
+              "bytes": 3517811,
+              "sha256": "a9954be45eba5bc32526c310ac2cff6d462afd0692dabab0db3fdfb79c83b8b4",
+              "preview": "media/MS-011/portrait-text-a9954be45eba5bc3-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Fixed crop of the 4K gameplay recording: 1440×1440 at 0,360. Native timing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-011-square-clean-d1f72bf16d833739.mp4",
+              "bytes": 3068181,
+              "sha256": "d1f72bf16d833739a3c8b0902ff048154364675ad5e7b270eb40711f3c48f284",
+              "preview": "media/MS-011/square-clean-d1f72bf16d833739-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-011-square-text-78333e14279a9711.mp4",
+              "bytes": 2828995,
+              "sha256": "78333e14279a9711d676ea111937c2144d656d9856289da7d034b6686847b2f5",
+              "preview": "media/MS-011/square-text-78333e14279a9711-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Fixed crop of the 4K gameplay recording: 2560×1440 at 0,360. Native timing.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-011-landscape-clean-a7069defd1c62bed.mp4",
+              "bytes": 5544049,
+              "sha256": "a7069defd1c62bed15202de4f4224912fdaa2592f0eb48edcc3d6ffdb7292c40",
+              "preview": "media/MS-011/landscape-clean-a7069defd1c62bed-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-011-landscape-text-46afeb6bdb0e8749.mp4",
+              "bytes": 5168662,
+              "sha256": "46afeb6bdb0e8749ab99f19b3522d1e2ed85a88a123b7b01993f5d26a39afd00",
+              "preview": "media/MS-011/landscape-text-46afeb6bdb0e8749-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-011/portrait-clean-a438adce9d85c076-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-full-gameplay-4k-506425925b30b3f0.mp4",
+        "bytes": 46689987,
+        "sha256": "506425925b30b3f0c40cd18116a010a4bc365e39cd74358f31af3e47c2c6b314",
+        "label": "Full source take"
+      },
+      "isLoop": false
+    },
+    {
+      "id": "MS-020",
+      "title": "Dark goal",
+      "stage": "DYNAMO",
+      "collection": "Gameplay",
+      "description": "The core enters the right goal and the multiplier advances to ×2.",
+      "shotLogic": "Attack input → moving core → accepted goal → native feedback.",
+      "duration": 7.0,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "gameplay",
+        "amplifier",
+        "goal",
+        "real recording",
+        "4k source",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Real gameplay · computer-controlled players · native motion · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-8_DYNAMO-PROTOTYPE.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840×2160 / 30 fps",
+        "control": "Input-driven scoring drill: Dark pursues and strikes the core; Light circles the left side. Native physics, score acceptance and saved effects.",
+        "edit": "Frames 157–366, forward at 30 fps. Fixed crop per format; native colour. Repeats with a cut.",
+        "audio": "Silent recording.",
+        "acceptedEvent": "Native CORE_CAPTURE_ACCEPTED and multiplier ×1 → ×2 at 8.233s."
+      },
+      "poster": "media/MS-020/poster-ae2b7497ca01c4cc.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Source crop 810×1440 at 3030,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-020-portrait-clean-892a8e0c9c798350.mp4",
+              "bytes": 2830239,
+              "sha256": "892a8e0c9c79835044226d77856a09854c175481bc16eb47d3eed0352070485e",
+              "preview": "media/MS-020/portrait-clean-892a8e0c9c798350-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-020-portrait-text-4961996bfa2794fa.mp4",
+              "bytes": 2495815,
+              "sha256": "4961996bfa2794fac182fd7092515df90d1ad5c2b5671b5732c965fb5cfb82f6",
+              "preview": "media/MS-020/portrait-text-4961996bfa2794fa-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Source crop 1440×1440 at 2400,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-020-square-clean-3d3bd272d695d647.mp4",
+              "bytes": 2121853,
+              "sha256": "3d3bd272d695d647b40cb9fae0d5542e9f2e19b4a73344adce5a809c99309520",
+              "preview": "media/MS-020/square-clean-3d3bd272d695d647-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-020-square-text-65b3611fb99f7820.mp4",
+              "bytes": 1909503,
+              "sha256": "65b3611fb99f78209cb63c466b298a0ea001a73f1d3d381482e15cd2abf682be",
+              "preview": "media/MS-020/square-text-65b3611fb99f7820-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Source crop 2560×1440 at 1280,360; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-020-landscape-clean-43d3fb3b897b62f0.mp4",
+              "bytes": 4918566,
+              "sha256": "43d3fb3b897b62f05444292980a65d4009efd3d64cb20eb3f7f101c9a41f2ae0",
+              "preview": "media/MS-020/landscape-clean-43d3fb3b897b62f0-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-020-landscape-text-df0d238d0f223e94.mp4",
+              "bytes": 4574285,
+              "sha256": "df0d238d0f223e940252d370700da32ef99c7a1462568d6a01eba05d433dee1c",
+              "preview": "media/MS-020/landscape-text-df0d238d0f223e94-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-020/portrait-clean-892a8e0c9c798350-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-dark-goal-4k-30bca5d529ea9533.mp4",
+        "bytes": 19946433,
+        "sha256": "30bca5d529ea95336933e36e338493591ab0642abab7340d036747ba26a540ce",
+        "label": "Full source take · 4K"
+      },
+      "isLoop": false
+    },
+    {
+      "id": "MS-021",
+      "title": "Goal wave · detail",
+      "stage": "DYNAMO",
+      "collection": "Details",
+      "description": "A close view of the wave after the Dark goal.",
+      "shotLogic": "Detail from MS-020: the same accepted goal, framed around the boundary response.",
+      "duration": 4.0,
+      "fps": 30,
+      "silent": true,
+      "tags": [
+        "goal",
+        "wave detail",
+        "real recording",
+        "4k source",
+        "portrait",
+        "square",
+        "landscape"
+      ],
+      "sourceSummary": "Real gameplay · computer-controlled players · native motion · 1× speed",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-8_DYNAMO-PROTOTYPE.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840×2160 / 30 fps",
+        "control": "Input-driven scoring drill: Dark pursues and strikes the core; Light circles the left side. Native physics, score acceptance and saved effects.",
+        "edit": "Frames 247–366, forward at 30 fps. Fixed crop per format; native colour. Repeats with a cut.",
+        "audio": "Silent recording.",
+        "acceptedEvent": "Native CORE_CAPTURE_ACCEPTED and multiplier ×1 → ×2 at 8.233s."
+      },
+      "poster": "media/MS-021/poster-9b184e2a842ccfcb.jpg",
+      "formats": {
+        "portrait": {
+          "label": "Portrait",
+          "ratio": "9:16",
+          "width": 1080,
+          "height": 1920,
+          "composition": "Source crop 540×960 at 3200,600; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-021-portrait-clean-5dd46ae4f1dfdf0f.mp4",
+              "bytes": 1734883,
+              "sha256": "5dd46ae4f1dfdf0f503e6c7337df95f6a53f21ac8a2da8994cd404f897a67834",
+              "preview": "media/MS-021/portrait-clean-5dd46ae4f1dfdf0f-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-021-portrait-text-e0278ea96bc5bba2.mp4",
+              "bytes": 1509172,
+              "sha256": "e0278ea96bc5bba2c72f40baa8bc541dae1305f43059dba5af86794d47ab6f06",
+              "preview": "media/MS-021/portrait-text-e0278ea96bc5bba2-preview.mp4"
+            }
+          }
+        },
+        "square": {
+          "label": "Square",
+          "ratio": "1:1",
+          "width": 1080,
+          "height": 1080,
+          "composition": "Source crop 1080×1080 at 2760,540; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-021-square-clean-34514e59a1ae0d47.mp4",
+              "bytes": 1400252,
+              "sha256": "34514e59a1ae0d47f7bfd69208f3255b206f878289e1238d694f0bf3366b06f0",
+              "preview": "media/MS-021/square-clean-34514e59a1ae0d47-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-021-square-text-635fed532c39a7cb.mp4",
+              "bytes": 1284249,
+              "sha256": "635fed532c39a7cb2378eae56e39997d43110d208600032322399086d39f7c92",
+              "preview": "media/MS-021/square-text-635fed532c39a7cb-preview.mp4"
+            }
+          }
+        },
+        "landscape": {
+          "label": "Landscape",
+          "ratio": "16:9",
+          "width": 1920,
+          "height": 1080,
+          "composition": "Source crop 1440×810 at 2400,675; fixed framing and native 30 fps.",
+          "variants": {
+            "clean": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-021-landscape-clean-61762bc19cdc8f12.mp4",
+              "bytes": 1689776,
+              "sha256": "61762bc19cdc8f12378a940d1d3ffb9af7febcb2787219b9b9a71a708a5f8c61",
+              "preview": "media/MS-021/landscape-clean-61762bc19cdc8f12-preview.mp4"
+            },
+            "text": {
+              "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MS-021-landscape-text-4f21ca15264fd70b.mp4",
+              "bytes": 1564956,
+              "sha256": "4f21ca15264fd70bbe8f8f1f67e2bdff474a138363a085d8bf3629bf0f43b742",
+              "preview": "media/MS-021/landscape-text-4f21ca15264fd70b-preview.mp4"
+            }
+          }
+        }
+      },
+      "preview": "media/MS-021/portrait-clean-5dd46ae4f1dfdf0f-preview.mp4",
+      "originalFootage": {
+        "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/source-bank-01-dark-goal-4k-30bca5d529ea9533.mp4",
+        "bytes": 19946433,
+        "sha256": "30bca5d529ea95336933e36e338493591ab0642abab7340d036747ba26a540ce",
+        "label": "Full source take · 4K"
+      },
+      "isLoop": false
+    }
+  ],
+  "batch": {
+    "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MASSIVE-portrait-batch-54ff3db3ad394a84.zip",
+    "bytes": 394594697,
+    "sha256": "54ff3db3ad394a8487cf19a9e2b6c4d89ad3f1a155159f8c546f742ed8dc2ab8"
+  }
+}
