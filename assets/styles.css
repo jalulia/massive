@@ -24,3 +24,22 @@ body[data-view=clips] .gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap
 @media(max-width:720px){.clip-library .card-title-row h2{font-size:23px}.masthead{flex-wrap:wrap}.masthead .text-button{font-size:9px}.edition{display:inline-block}.filterbar .select-label select{max-width:180px}}
 
 .source-cuts{padding-left:1.2em;font:12px/1.7 var(--mono)}.source-cuts li{margin:1em 0}.source-cuts code{overflow-wrap:anywhere}
+
+/* Source-backed additions sit alongside the original capture catalogue. */
+.latest{padding:48px 0 0;border-bottom:1px solid var(--line);scroll-margin-top:24px}
+.latest-heading{display:flex;align-items:end;justify-content:space-between;gap:24px}
+.latest-heading .eyebrow{margin-bottom:10px;color:var(--signal)}
+.latest h2{font:clamp(38px,4.5vw,64px)/1 var(--display);letter-spacing:-.035em;margin:0}
+.latest-intro{color:var(--muted);margin:18px 0 28px;max-width:720px}
+.latest-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 48px}
+.latest-grid article{border-top:1px solid var(--line);padding:23px 0 4px;min-width:0}
+.latest-grid .eyebrow{margin-bottom:9px}
+.latest h3{font:30px/1.12 var(--display);letter-spacing:-.025em;margin:0 0 16px}
+.latest-grid p:not(.eyebrow){color:#b2b8ab;font-size:14px;line-height:1.6;max-width:66ch;margin:0 0 12px}
+.latest-grid a{font:10px/1.6 var(--mono);color:var(--signal);text-decoration:underline;text-underline-offset:4px}
+.latest-evidence{margin:28px 0 0;border-top:1px solid var(--line);padding:18px 0;color:var(--muted)}
+.latest-evidence summary{font:10px/1.6 var(--mono);cursor:pointer;width:fit-content}
+.latest-evidence p{font-size:12px;max-width:95ch;line-height:1.6}
+.latest-evidence a{text-decoration:underline}.latest-evidence code{font:11px var(--mono)}
+@media(min-width:1450px){.latest-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:28px}}
+@media(max-width:720px){.latest{padding-top:32px}.latest-grid{grid-template-columns:1fr;gap:22px}.latest-heading{align-items:start;flex-direction:column;gap:12px}.latest-intro{margin-top:14px}.latest h3{font-size:28px}}
