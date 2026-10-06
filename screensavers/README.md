@@ -1,6 +1,10 @@
-# MASSIVE 95
+# MASSIVE — Attract Cabinet
 
-Windows 95-inspired browser desktop and Windows 10/11 x64 screen saver, sharing the same offline HTML/Canvas/video collection.
+Arcade cabinet browser interface and Windows 10/11 x64 screen saver, sharing the same offline HTML/Canvas/video collection.
+
+## Cabinet interface
+
+Version 3 presents the game in an arcade cabinet: illuminated marquee, recessed video display, tactile previous/pause/next controls, START for full screen, and an AUTO ADVANCE switch. Real frame cards select levels; archive and interpretation banks expand below. Service contains speed, cycle timing, captions, installation and saved settings. Actual game footage remains the default.
 
 ## Default presentation
 
@@ -14,7 +18,7 @@ Game recordings retain their own provenance in `sources.json`. The September arc
 
 ## Use
 
-Serve this folder over HTTP, open `index.html`, choose a saver and use Preview. Apply persists the selection in this browser only. Names, cycle duration, playback mode and generative speed are saved. Native footage retains normal speed. Escape exits browser preview; input exits the Windows screen saver. The Windows package includes all media for offline playback.
+Serve this folder over HTTP, open `index.html`, choose a saver and press START. Service → Save settings persists the selection in this browser only. Names, cycle duration, playback mode and generative speed are saved. Native footage retains normal speed. Escape exits browser preview; input exits the Windows screen saver. The Windows package includes all media for offline playback.
 
 ## Windows
 
