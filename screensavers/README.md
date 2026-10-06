@@ -4,7 +4,7 @@ Arcade cabinet browser interface and Windows 10/11 x64 screen saver, sharing the
 
 ## Cabinet interface
 
-Version 3 presents the game in an arcade cabinet: illuminated marquee, recessed video display, tactile previous/pause/next controls, START for full screen, and an AUTO ADVANCE switch. Real frame cards select levels; archive and interpretation banks expand below. Service contains speed, cycle timing, captions, installation and saved settings. Actual game footage remains the default.
+Version 4 uses flat black-and-white cabinet panels, an oversized MASSIVE wordmark, an uninterrupted game display, and simple previous/pause/next controls, START for full screen, and an AUTO ADVANCE switch. Real frame cards select levels; archive and interpretation banks expand below. Service contains speed, cycle timing, captions, installation and saved settings. Actual game footage remains the default.
 
 ## Default presentation
 
