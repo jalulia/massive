@@ -24,8 +24,12 @@ jobs:
       - name: WebView2 startup smoke test
         shell: pwsh
         run: |
-          $p = Start-Process -FilePath "$pwd/package/MASSIVE95.scr" -ArgumentList '--smoke-test' -PassThru
-          if (!$p.WaitForExit(60000)) { $p.Kill(); throw 'Screen saver startup timed out' }
+          $psi = [System.Diagnostics.ProcessStartInfo]::new()
+          $psi.FileName = "$pwd/package/MASSIVE95.scr"
+          $psi.Arguments = '--smoke-test'
+          $psi.UseShellExecute = $false
+          $p = [System.Diagnostics.Process]::Start($psi)
+          if (!$p.WaitForExit(60000)) { $p.Kill(); Get-Content "$env:LOCALAPPDATA/MASSIVE95/last-error.txt" -ErrorAction SilentlyContinue; throw 'Screen saver startup timed out' }
           if ($p.ExitCode -ne 0) { Get-Content "$env:LOCALAPPDATA/MASSIVE95/last-error.txt" -ErrorAction SilentlyContinue; throw 'Screen saver startup failed' }
           $encoded = Get-Content package/smoke-result.json -Raw | ConvertFrom-Json
           $result = $encoded | ConvertFrom-Json

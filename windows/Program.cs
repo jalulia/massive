@@ -26,7 +26,7 @@ internal static class Program
             Application.Run(context);
         } catch(Exception ex) {
             File.WriteAllText(Path.Combine(UserRoot,"last-error.txt"),ex.ToString());
-            if (!run && !preview) MessageBox.Show("MASSIVE 95 needs Microsoft Edge WebView2 Runtime. Install the Evergreen Runtime from Microsoft's WebView2 website, then try again.\n\n" + ex.Message,"MASSIVE 95",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            if (!run && !preview && !Smoke) MessageBox.Show("MASSIVE 95 needs Microsoft Edge WebView2 Runtime. Install the Evergreen Runtime from Microsoft's WebView2 website, then try again.\n\n" + ex.Message,"MASSIVE 95",MessageBoxButtons.OK,MessageBoxIcon.Information);
             Environment.ExitCode = 1;
         }
     }
@@ -75,7 +75,7 @@ internal sealed class SaverForm : Form
             };
             core.Navigate("https://massive95.example/index.html"+(run?"?run=1":preview?"?nativepreview=1":""));
             if(run){startMouse=Cursor.Position;initialInput=Native.LastInput();Cursor.Hide();inputTimer.Start();}
-        }catch(Exception ex){File.WriteAllText(Path.Combine(Program.UserRoot,"last-error.txt"),ex.ToString());Environment.ExitCode=1;if(!run&&!preview)MessageBox.Show(ex.Message,"MASSIVE 95");exit();}
+        }catch(Exception ex){File.WriteAllText(Path.Combine(Program.UserRoot,"last-error.txt"),ex.ToString());Environment.ExitCode=1;if(!run&&!preview&&!Program.Smoke)MessageBox.Show(ex.Message,"MASSIVE 95");exit();}
     }
     void CheckInput(){if(lifetime.ElapsedMilliseconds<1800){startMouse=Cursor.Position;initialInput=Native.LastInput();return;}var p=Cursor.Position;if(Math.Abs(p.X-startMouse.X)>8||Math.Abs(p.Y-startMouse.Y)>8||Native.LastInput()!=initialInput)exit();}
     protected override void Dispose(bool disposing){if(disposing){inputTimer.Dispose();web.Dispose();if(run)Cursor.Show();}base.Dispose(disposing);}
