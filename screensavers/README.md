@@ -2,6 +2,10 @@
 
 Windows 95-inspired browser desktop and Windows 10/11 x64 screen saver, sharing the same offline HTML/Canvas/video collection.
 
+## Default presentation
+
+Actual Unity recordings open by default, with real frame thumbnails, unmodified video colour and collection cycling enabled. Version 2 migrates older saved defaults to actual footage once. Interpretations remain an explicitly optional second tab. Eight fresh level recordings and ten archive clips do not individually cover every level event.
+
 ## Coverage
 
 Eight worlds from the current Unity LevelCatalog: LATTICE, HIGGS, ORBITAL, PULSAR, DYNAMO, NOVA, SINGULARITY, COSMOS. The generative collection includes one ambient study per world, eight level-event studies (renormalization, Symmetry Knot, electron strike, Astral Rhythms, magnetic storm, Core Collapse, horizon transit, supernovae), and four shared-event studies (Resonance, Amplifier goal, Repulsor, enemy formations). These animations reinterpret the source; they are not Unity ports or scientific simulations.

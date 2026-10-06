@@ -2,7 +2,7 @@ MASSIVE 95 — Windows 10/11 x64
 
 1. Extract the complete ZIP into a folder.
 2. Run Install.cmd. It copies the application to your LocalAppData folder and opens Windows Screen Saver Settings. No administrator access is required.
-3. Choose Settings to select a world, event or real game recording. Click Apply inside MASSIVE 95 to save the selection. Use Windows' own timeout and sign-in settings.
+3. Actual game footage is the default. Choose Settings to select a level or archive recording. Optional Interpretations are available in the second tab. Click Apply inside MASSIVE 95 to save the selection. Use Windows' own timeout and sign-in settings.
 4. Choose Preview. Move the mouse or press a key to exit.
 
 Requires Microsoft Edge WebView2 Evergreen Runtime (included on many current Windows systems): https://developer.microsoft.com/en-us/microsoft-edge/webview2/

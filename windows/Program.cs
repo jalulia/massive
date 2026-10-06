@@ -71,7 +71,7 @@ internal sealed class SaverForm : Form
             core.NewWindowRequested+=(_,e)=>{e.Handled=true;if(!run&&!preview&&e.IsUserInitiated&&Uri.TryCreate(e.Uri,UriKind.Absolute,out var u)&&u.Scheme=="https")Process.Start(new ProcessStartInfo(e.Uri){UseShellExecute=true});};
             core.NavigationCompleted+=async (_,e)=>{
                 if(!e.IsSuccess){File.WriteAllText(Path.Combine(Program.UserRoot,"last-error.txt"),e.WebErrorStatus.ToString());Environment.ExitCode=1;exit();return;}
-                if(Program.Smoke){await core.ExecuteScriptAsync("saverApp.engine.paused=false");await Task.Delay(2500);string result=await core.ExecuteScriptAsync("JSON.stringify({presets:SAVERS.length,recordings:RECORDINGS.length,frames:saverApp.engine.frames,state:saverApp.getState()})");File.WriteAllText(Path.Combine(AppContext.BaseDirectory,"smoke-result.json"),result);exit();}
+                if(Program.Smoke){await core.ExecuteScriptAsync("saverApp.engine.paused=false;document.querySelector('#footage').play()");await Task.Delay(5000);string result=await core.ExecuteScriptAsync("JSON.stringify({presets:SAVERS.length,recordings:RECORDINGS.length,frames:saverApp.engine.frames,video:{time:document.querySelector('#footage').currentTime,width:document.querySelector('#footage').videoWidth,paused:document.querySelector('#footage').paused},state:saverApp.getState()})");File.WriteAllText(Path.Combine(AppContext.BaseDirectory,"smoke-result.json"),result);exit();}
             };
             core.Navigate("https://massive95.example/index.html"+(run?"?run=1":preview?"?nativepreview=1":""));
             if(run){startMouse=Cursor.Position;initialInput=Native.LastInput();Cursor.Hide();inputTimer.Start();}

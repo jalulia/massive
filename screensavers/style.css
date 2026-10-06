@@ -3,3 +3,6 @@
 @media(min-width:821px){body{padding-top:22px}.window{max-width:1000px}.monitor{max-width:520px;margin:auto}.workspace{gap:20px;padding:14px}.description{min-height:58px}.preset-list{height:410px}}
 
 @media(min-width:821px){.monitor{max-width:500px}.workspace{padding:12px}.bottom-row{padding-top:9px;padding-bottom:9px}}
+
+/* Actual game frames retain their own colour and image; the CRT treatment is for studies. */
+.game-source::after{display:none}.game-thumb{width:64px;height:36px;object-fit:contain;background:#000;flex-shrink:0;border:1px solid #777}.preset:has(.game-thumb){min-height:48px;padding:5px 6px;gap:8px}.preset:has(.game-thumb).selected{outline:1px dotted #fff;outline-offset:-4px}

@@ -33,7 +33,7 @@ jobs:
           if ($p.ExitCode -ne 0) { Get-Content "$env:LOCALAPPDATA/MASSIVE95/last-error.txt" -ErrorAction SilentlyContinue; throw 'Screen saver startup failed' }
           $encoded = Get-Content package/smoke-result.json -Raw | ConvertFrom-Json
           $result = $encoded | ConvertFrom-Json
-          if ($result.presets -ne 20 -or $result.recordings -lt 8 -or $result.frames -lt 2) { throw "Invalid startup result: $encoded" }
+          if ($result.presets -ne 20 -or $result.recordings -ne 18 -or $result.state.mode -ne 'recordings' -or $result.video.time -lt 0.1 -or $result.video.width -lt 1 -or $result.video.paused) { throw "Invalid startup result: $encoded" }
           Write-Host $encoded
       - name: Zip package
         shell: pwsh
