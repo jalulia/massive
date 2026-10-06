@@ -1,0 +1,208 @@
+{
+  "sourceCommit": "3d9127b1ef95c90ff1f4999497b7789eda50040b",
+  "interpretations": "Eight worlds and twelve event studies, artistically reinterpreted from the Unity source.",
+  "recordings": [
+    {
+      "id": "archive-MS-022",
+      "name": "MASSIVE / attract orb",
+      "group": "Archive recordings",
+      "src": "media/archive-MS-022.mp4",
+      "glyph": "\u25a4",
+      "color": "#000080",
+      "captureDate": "SEPTEMBER 2026",
+      "note": "The attract-screen surface folds through its full motion cycle. Original ATTRACT capture; edited loop.",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-0_ATTRACT.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 1080\u00d71920 / 30 fps",
+        "edit": "Native source frames 0\u2013599, forward at 30fps. Whole object framed with a fixed crop. ",
+        "loop": "Native 20-second shader cycle. Forward playback; no dissolve or reversal.",
+        "audio": "Silent capture.",
+        "isolation": "Only the live AttractFerrofluidStudy surface is visible; the recording camera uses the authored lettering basis.",
+        "compatibility": "Temporary capture copy only: uniform 4\u00d7 tessellation avoids a Metal hull-stage texture-binding failure; explicit lettering-size uniforms and the provided arrival recording clock restore the authored title. Native surface, lettering and motion parameters retained."
+      }
+    },
+    {
+      "id": "archive-MS-023",
+      "name": "Resonance / whole field",
+      "group": "Archive recordings",
+      "src": "media/archive-MS-023.mp4",
+      "glyph": "\u25a4",
+      "color": "#000080",
+      "captureDate": "SEPTEMBER 2026",
+      "note": "The whole field bends around a living pattern. Original DYNAMO capture; edited loop.",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-8_DYNAMO-PROTOTYPE.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 2160\u00d73840 / 30 fps",
+        "edit": "Native source frames 390\u2013599, forward at 30fps. ",
+        "loop": "0.80s wrap dissolve using source footage; no reversal.",
+        "audio": "Silent capture.",
+        "isolation": "Grid and live Resonance hierarchy only. Portrait recording camera looks down the arena length. HUD and unrelated actors are hidden; scripted movement still deforms the field."
+      }
+    },
+    {
+      "id": "archive-MS-024",
+      "name": "Maximum amplification",
+      "group": "Archive recordings",
+      "src": "media/archive-MS-024.mp4",
+      "glyph": "\u25a4",
+      "color": "#000080",
+      "captureDate": "SEPTEMBER 2026",
+      "note": "The third accepted goal takes Dark to \u00d78. The boundary carries the charge. Original DYNAMO capture; repeats with a cut.",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-8_DYNAMO-PROTOTYPE.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840\u00d72160 / 30 fps",
+        "edit": "Native source frames 1521\u20131730, forward at 30fps. ",
+        "loop": "Forward edit; repeats with a cut.",
+        "audio": "Silent capture.",
+        "isolation": "None; native game camera.",
+        "control": "Input-driven scoring drill. Dark pursues and strikes each core; Light circles the arena. No forced captures, transforms or multiplier changes.",
+        "acceptedEvent": "Accepted goals at 12.800s (\u00d72), 34.067s (\u00d74) and 53.700s (\u00d78); native maximum verified at 59.733s.",
+        "goalEffect": "Saved shared Amplifier treatment; native score level, no effect preview or parameter boost."
+      }
+    },
+    {
+      "id": "archive-MS-016",
+      "name": "NOVA in play",
+      "group": "Archive recordings",
+      "src": "media/archive-MS-016.mp4",
+      "glyph": "\u25a4",
+      "color": "#000080",
+      "captureDate": "SEPTEMBER 2026",
+      "note": "Players and particles move through the changing arena. Original NOVA capture; repeats with a cut.",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-3_NOVA.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840\u00d72160 / 30 fps",
+        "control": "Scripted movement and attack button input; native collisions, mechanics and effects. No transform animation or forced gameplay result.",
+        "edit": "Frames 300\u2013539, forward at 30 fps. Fixed crop per format; native colour. Repeats with a cut.",
+        "audio": "Silent recording."
+      }
+    },
+    {
+      "id": "archive-MS-017",
+      "name": "ORBITAL cloud",
+      "group": "Archive recordings",
+      "src": "media/archive-MS-017.mp4",
+      "glyph": "\u25a4",
+      "color": "#000080",
+      "captureDate": "SEPTEMBER 2026",
+      "note": "The live probability cloud, isolated from the grid and other gameplay layers. Original ORBITAL capture; edited loop.",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-6_ORBITAL.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 2160\u00d73840 / 30 fps",
+        "edit": "Native source frames 15\u2013224, forward at 30fps. ",
+        "loop": "0.60s wrap dissolve using source footage; no reversal.",
+        "audio": "Silent capture.",
+        "isolation": "ORBITAL Cloud hierarchy only; unrelated grid, Resonance and immediate-mode gameplay drawings excluded from the recording camera."
+      }
+    },
+    {
+      "id": "archive-MS-014",
+      "name": "DYNAMO field",
+      "group": "Archive recordings",
+      "src": "media/archive-MS-014.mp4",
+      "glyph": "\u25a4",
+      "color": "#000080",
+      "captureDate": "SEPTEMBER 2026",
+      "note": "A close view of the live map\u2019s moving field lines. Original DYNAMO capture; edited loop.",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-0_LEVEL-SELECT NEW.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840\u00d72160 / 30 fps",
+        "control": "Native menu navigation through LevelCarouselController.StepNextStage",
+        "edit": "Frames 540\u2013719, forward at 30 fps. Fixed crop per format; native colour.  Short wrap dissolve added to close the visual loop.",
+        "audio": "Silent recording.",
+        "loop": "0.80s wrap dissolve between actual source frames; native forward motion, no reversal."
+      }
+    },
+    {
+      "id": "archive-MS-028",
+      "name": "How to play",
+      "group": "Archive recordings",
+      "src": "media/archive-MS-028.mp4",
+      "glyph": "\u25a4",
+      "color": "#000080",
+      "captureDate": "SEPTEMBER 2026",
+      "note": "The game\u2019s own attack, defend and power-up demonstrations. Original HOW TO PLAY capture; repeats with a cut.",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-0_HOW-TO-PLAY.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840\u00d72160 / 30 fps",
+        "edit": "Native source frames 0\u2013269, forward at 30fps. ",
+        "loop": "Forward edit; repeats with a cut.",
+        "audio": "Silent capture.",
+        "isolation": "The gameplay HUD root is hidden in the isolated capture session. Native instruction text and demonstrations are retained."
+      }
+    },
+    {
+      "id": "archive-MS-018",
+      "name": "SINGULARITY in motion",
+      "group": "Archive recordings",
+      "src": "media/archive-MS-018.mp4",
+      "glyph": "\u25a4",
+      "color": "#000080",
+      "captureDate": "SEPTEMBER 2026",
+      "note": "The live ring turns as the arena bends around it. Original SINGULARITY capture; edited loop.",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-7_SINGULARITY.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840\u00d72160 / 30 fps",
+        "control": "Scripted movement and attack button input; native collisions, mechanics and effects. No transform animation or forced gameplay result.",
+        "edit": "Frames 180\u2013419, forward at 30 fps. Fixed crop per format; native colour.  Short wrap dissolve added to close the visual loop.",
+        "audio": "Silent recording.",
+        "loop": "0.80s wrap dissolve between actual source frames; native forward motion, no reversal."
+      }
+    },
+    {
+      "id": "archive-MS-019",
+      "name": "Across HIGGS",
+      "group": "Archive recordings",
+      "src": "media/archive-MS-019.mp4",
+      "glyph": "\u25a4",
+      "color": "#000080",
+      "captureDate": "SEPTEMBER 2026",
+      "note": "Players cut through the moving contours. Original HIGGS capture; repeats with a cut.",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-9_HIGGS.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840\u00d72160 / 30 fps",
+        "control": "Scripted movement and attack button input; native collisions, mechanics and effects. No transform animation or forced gameplay result.",
+        "edit": "Frames 360\u2013599, forward at 30 fps. Fixed crop per format; native colour. Repeats with a cut.",
+        "audio": "Silent recording."
+      }
+    },
+    {
+      "id": "archive-MS-020",
+      "name": "Dark goal",
+      "group": "Archive recordings",
+      "src": "media/archive-MS-020.mp4",
+      "glyph": "\u25a4",
+      "color": "#000080",
+      "captureDate": "SEPTEMBER 2026",
+      "note": "The core enters the right goal and the multiplier advances to \u00d72. Original DYNAMO capture; repeats with a cut.",
+      "provenance": {
+        "repository": "mattfryed/massive",
+        "commit": "e4a30b118f7d987265503090ec75c901b6c1963a",
+        "scene": "Assets/Scenes/S-8_DYNAMO-PROTOTYPE.unity",
+        "capture": "Unity 6000.0.28f1 / Metal / Play Mode / 3840\u00d72160 / 30 fps",
+        "control": "Input-driven scoring drill: Dark pursues and strikes the core; Light circles the left side. Native physics, score acceptance and saved effects.",
+        "edit": "Frames 157\u2013366, forward at 30 fps. Fixed crop per format; native colour. Repeats with a cut.",
+        "audio": "Silent recording.",
+        "acceptedEvent": "Native CORE_CAPTURE_ACCEPTED and multiplier \u00d71 \u2192 \u00d72 at 8.233s."
+      }
+    }
+  ]
+}

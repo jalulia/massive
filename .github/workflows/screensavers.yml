@@ -1,0 +1,41 @@
+name: Build MASSIVE 95 for Windows
+on:
+  push:
+    paths: ['windows/**', 'screensavers/**', '.github/workflows/screensavers.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Build self-contained screen saver
+        run: dotnet publish windows/Massive95.csproj -c Release -r win-x64 --self-contained true -o package
+      - name: Assemble offline package
+        shell: pwsh
+        run: |
+          Rename-Item package/MASSIVE95.exe MASSIVE95.scr
+          Copy-Item screensavers package/wwwroot -Recurse
+          Copy-Item windows/Install.ps1,windows/Install.cmd,windows/README.txt package/
+      - name: WebView2 startup smoke test
+        shell: pwsh
+        run: |
+          $p = Start-Process -FilePath "$pwd/package/MASSIVE95.scr" -ArgumentList '--smoke-test' -PassThru
+          if (!$p.WaitForExit(60000)) { $p.Kill(); throw 'Screen saver startup timed out' }
+          if ($p.ExitCode -ne 0) { Get-Content "$env:LOCALAPPDATA/MASSIVE95/last-error.txt" -ErrorAction SilentlyContinue; throw 'Screen saver startup failed' }
+          $encoded = Get-Content package/smoke-result.json -Raw | ConvertFrom-Json
+          $result = $encoded | ConvertFrom-Json
+          if ($result.presets -ne 20 -or $result.recordings -lt 8 -or $result.frames -lt 2) { throw "Invalid startup result: $encoded" }
+          Write-Host $encoded
+      - name: Zip package
+        shell: pwsh
+        run: Compress-Archive -Path package/* -DestinationPath MASSIVE-95-Windows-x64.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MASSIVE-95-Windows-x64
+          path: MASSIVE-95-Windows-x64.zip
+          retention-days: 30
