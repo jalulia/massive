@@ -27,7 +27,8 @@ class Links(HTMLParser):
   for k,v in attrs:
    if k in ['src','href'] and v and not v.startswith(('#','https:')):
     assert not v.startswith('/'),v
-    assert (ROOT/v).is_file(),v
+    target=ROOT/v
+    assert target.is_file() or (target/'index.html').is_file(),v
 Links().feed((ROOT/'index.html').read_text())
 assert '/api/' not in (ROOT/'assets/app.js').read_text()
 assert max(x['bytes'] for x in plan['assets'])<2*1024**3

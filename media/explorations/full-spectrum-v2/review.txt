@@ -1,0 +1,85 @@
+MASSIVE / FULL SPECTRUM — PUBLIC REVIEW
+Study 02 · 7 October 2026 · 80 seconds · silent
+
+An attract-mode exploration for Julia and Matt. Native MASSIVE visual systems,
+seen from inside and across scale. This is an isolated Unity render study with
+authored connections between separate worlds, not a recording of playable gameplay.
+
+TIMELINE
+00–12 COSMOS (+26): a luminous filament web and selected condensation.
+12–23 SINGULARITY (+14): folded grid, orange accretion and a dark aperture.
+23–30 NOVA (+12): white stellar surface tracers.
+30–39 DYNAMO (+8): pink magnetic rings become crossing paths.
+39–46 PULSAR (+4): opposed cyan jets carry a lateral focal point.
+46–57 ORBITAL (−10): sparse probability samples become a colored cloud.
+57–67 HIGGS (−18): cloud density gives way to layered field contours.
+67–80 LATTICE (−35): connections and interrupted nodes open back into COSMOS.
+
+WHAT IS NATIVE
+COSMOS uses the game’s seeded topology and flow with its additive gameplay light
+profile, adapted from the thin oval slab into expanded depth. The other seven
+worlds instantiate native level-select visual prefabs. DYNAMO uses the catalogue’s
+ring asset, not the scientific MHD renderer. Game source revision:
+https://github.com/mattfryed/massive/tree/b1b04770f4010339feed72f755d21212cb8b98aa
+
+WHAT IS AUTHORED
+The forward camera, normalization of world sizes, next-world focal placements,
+two-layer compositing, short depth dissolves, offline clocks, editorial timing and
+quiet title annotations are study work. The worlds are not physically nested in
+the source. Their scale exponents are game labels; this is not calibrated scientific
+magnification or a claim to observable Planck-scale imagery. The eight native
+10-second source intervals are retimed with frame blending into the timeline above.
+Camera orientation is fixed. Native particle circulation remains part of each world.
+
+CREATIVE REVIEW
+Held point / changing world is the recommendation. The singularity aperture is the
+strongest bridge; the shift from sampled density to contours to individual
+connections gives the small-scale half a different spatial meaning. The quieter
+wordmark leaves the central passage open. The earlier Quadrant / Turn experiment
+was a preliminary single-world study, superseded by this full-spectrum direction.
+Field Sweep remains another possible treatment: selective depth emphasis, not an
+overlaid scanline filter. It has not been added without an attention problem to solve.
+
+The focal points still need stronger binding to native landmarks. NOVA’s opaque
+tracers grow large near the camera; a more selective path could improve that
+handoff. HIGGS currently reads more as a layered surface than an inhabited volume.
+The flat wordmark needs a decision against the production ferrofluid title sphere.
+
+CHECKS AND LIMITS
+1,920 native source frames at 1920×1080 / 24fps; final film is 80 seconds.
+The complete 720p MP4 decodes as 1,920 frames. Higher-detail parts split at 39 seconds
+and decode as 936 + 984 frames. The smaller whole-film copy is more compressed.
+Camera yaw, pitch and roll are zero. Forward travel is at least 98.8% of path length
+within each world. Raw final-to-first frame difference averages 0.22 / 255.
+Offline 1080p render plus readback: median 14.32ms, P95 23.54ms on Apple M1 Max.
+These are not realtime frame timings or a 4K performance qualification.
+The standalone input contract passes 13 assertions and a browser interruption
+check. Actual production scene, physical controller and release behavior remain
+untested. The renderer reported two persistent allocations at editor shutdown;
+cleanup needs investigation before integration. The moving Windows Starfield
+alternate and rarity scheduling remain unfinished.
+
+INTEGRATION ROUTE
+Retain AttractModeSelector as input owner. Cancel visual motion on beginRequested,
+consume the opening press, and wait for all held buttons to release before fresh
+navigation. Prewarm neighboring visual systems; keep gameplay clocks asleep.
+Nothing in this study has been integrated into the game.
+
+REFERENCE
+Things Silently Explode / Johnny Woods / Ambient Swim:
+https://www.youtube.com/watch?v=aAjyrdiFIWc
+https://johnnywoods.bandcamp.com/album/things-silently-explode
+Sampled playback at 00:02, 01:14 and 03:42 informed the relationship between marks,
+empty space and depth. Powers of Ten supplies continuity of attention across scale.
+This is not a claim to have watched the entire reference film or to reproduce
+its camera-feedback process.
+
+PUBLIC SOURCE SCOPE
+This bundle contains the review, timeline, authored camera/compositing driver,
+encoder and standalone input-contract test only. It is not a standalone Unity
+project. Game scripts, shaders, prefabs, textures, fonts and third-party assets
+are deliberately not redistributed. FullSpectrumStudy.cs expects the upstream
+native classes and the isolated COSMOS adapter; it documents the orchestration,
+not a complete build. Consult the upstream repository and its permissions for
+the game assets. No local capture logs, absolute workstation paths or credentials
+are included.

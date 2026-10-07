@@ -1,0 +1,39 @@
+{
+  "study": "full-spectrum-v2",
+  "date": "2026-10-07",
+  "upstream_commit": "b1b04770f4010339feed72f755d21212cb8b98aa",
+  "assets": {
+    "film": {
+      "path": "media/explorations/full-spectrum-v2/full-spectrum-5c58f3537dc8.mp4",
+      "bytes": 13990279,
+      "sha256": "5c58f3537dc8de365cf35aaa1529464fbeb342c05ef56a6ef8de5b890cd17960"
+    },
+    "board": {
+      "path": "media/explorations/full-spectrum-v2/visual-board-5251186ea02f.jpg",
+      "bytes": 669175,
+      "sha256": "5251186ea02fa794110229c9fe961802926d39791f365c1af518012bcdc539b5"
+    },
+    "poster": {
+      "path": "media/explorations/full-spectrum-v2/poster-21226a146853.jpg",
+      "bytes": 227704,
+      "sha256": "21226a146853e427e9f67a31487c65e0f03c4fa1631481a5067bb09757ec002e"
+    },
+    "review": {
+      "path": "media/explorations/full-spectrum-v2/public-review-and-study-source-7535f8ab0bfa.zip",
+      "bytes": 11089,
+      "sha256": "7535f8ab0bfa3b5f308a8383b4ff5a35b0d9354fe8c48b061787bf38861c39c8"
+    },
+    "part1": {
+      "name": "MASSIVE-spectrum-part-1-8941135f1516.mp4",
+      "bytes": 12041285,
+      "sha256": "8941135f151677e0ebd598873d54210cb29c333ee56ec30d9331f954004bca5a",
+      "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MASSIVE-spectrum-part-1-8941135f1516.mp4"
+    },
+    "part2": {
+      "name": "MASSIVE-spectrum-part-2-45434bfa8f45.mp4",
+      "bytes": 12741940,
+      "sha256": "45434bfa8f45e02e3eb1256130f6d8573dba814ae28b6651a408273263735956",
+      "url": "https://github.com/jalulia/massive/releases/download/catalogue-media/MASSIVE-spectrum-part-2-45434bfa8f45.mp4"
+    }
+  }
+}
