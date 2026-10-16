@@ -156,16 +156,16 @@
     "edition": "Unity live revision"
   },
   {
-    "file": "presentation-assets/C17_COSMOS_GAMEPLAY.mp4",
-    "bytes": 60641432,
-    "sha256": "284c78ab7a2282440c04b73db9920d369d2393c8b9d196a5dfd8c60e391c5f8c",
-    "edition": "Unity live revision"
+    "file": "presentation-assets/C18_COSMOS_GAMEPLAY_HUD.mp4",
+    "bytes": 61138486,
+    "sha256": "c9ecc1482aa4d1abea61b89dd1286137750851d99a6dc6b537abcbf0646c3523",
+    "edition": "Native Unity Game view with HUD"
   },
   {
-    "file": "presentation-assets/C17_COSMOS_GAMEPLAY.png",
-    "bytes": 695011,
-    "sha256": "84e2054c3d557a6c6ade7c291d3745e4b9f0b0d9414796a97ee73e16cf1f5460",
-    "edition": "Unity live revision"
+    "file": "presentation-assets/C18_COSMOS_GAMEPLAY_HUD.png",
+    "bytes": 1341751,
+    "sha256": "f0c07e06d94a7ec71a78e4bfd035b3d083450e2d02c2e217d3bf69065912d9d0",
+    "edition": "Native Unity Game view with HUD"
   },
   {
     "file": "presentation-assets/GDD_RESONANCE.mp4",

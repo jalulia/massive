@@ -201,7 +201,7 @@ Direct Unity capture of the saved COSMOS background. Preview Age moves from 0 to
 
 ## 24 · COSMOS — gameplay
 
-Native COSMOS match capture with arena, players, enemy encounters and supernova scheduler active. Players use scripted controls to pursue emitted mass and engage enemies. Capture begins at match age 0.58 and runs at native speed. No forced explosions. Supernovae release pickups while the background clusters continue evolving. UI hidden. R replays. Galaxy mergers begin across the native age range 0.54–0.80; this take reaches age 0.80. The supernova scheduler is reset at the capture start to prevent a time-jump burst.
+Native COSMOS Game view captured directly in Unity at 1920×1080, with the saved gameplay camera, full game HUD and original goal anchors. No additional slide margins or crop. Players use scripted controls to pursue emitted mass and engage enemies. Capture begins at match age 0.58 and advances at native speed. Original encounter and supernova schedulers remain active; the supernova timeline is reset at the start to prevent a time-jump burst. Galaxy clusters continue their native evolution. Silent, plays once and holds; R replays.
 
 ## 25 · Play, again
 
