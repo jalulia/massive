@@ -1,0 +1,367 @@
+[
+  {
+    "file": "index.html",
+    "bytes": 8519,
+    "sha256": "ec96a293811c3e0b3880f30399604c17cede322508dcfd847bf13065ba795a59"
+  },
+  {
+    "file": "manifest.json",
+    "bytes": 3603,
+    "sha256": "9e7610c7fdf86bd9c5f7666d6882836d8ac54cbd38351b57b94f3ef28acadb32"
+  },
+  {
+    "file": "Source-notes.md",
+    "bytes": 4293,
+    "sha256": "fbd3b79a77a992bb02c7696abba30b0917d83692e23e89a1de3cf166a43d6dca"
+  },
+  {
+    "file": "stills/P06_CELL.jpg",
+    "bytes": 36452,
+    "sha256": "d53670917949892dcc4e188d51daf381bca85e8cfd98645feefc795c7a82713c"
+  },
+  {
+    "file": "stills/P03_SOLAR_SYSTEM.jpg",
+    "bytes": 46128,
+    "sha256": "f777f7ea6db1670f9e363104dccb1ef172dd51d292ed25d973859a0bcbc9dac4"
+  },
+  {
+    "file": "stills/P05_GALAXY_GROUPS.jpg",
+    "bytes": 21355,
+    "sha256": "8e3a28fc7a4f84fab09238ec1d2773d6b9773b969f5f5db470c52f4fbb875034"
+  },
+  {
+    "file": "stills/P02_EARTH.jpg",
+    "bytes": 43141,
+    "sha256": "b7187733a7daba908b4aa186da06b794a044277999cfaddeadb81e3bd288cecd"
+  },
+  {
+    "file": "stills/P01_HUMAN.jpg",
+    "bytes": 50927,
+    "sha256": "d5fb39832d1694d92cc7d952b17d212f21c80c5d9c10d45a880f2a5c3bbd5187"
+  },
+  {
+    "file": "stills/P04_GALAXY.jpg",
+    "bytes": 35343,
+    "sha256": "dce75c618c250e260ea1b22c182a95031be95f7c83fa2f22ef36e66aae6f725f"
+  },
+  {
+    "file": "stills/P07_DNA.jpg",
+    "bytes": 55994,
+    "sha256": "6ff39beb9bd42855ab26724cb5f1012e2c6147b25749664043eb4644ca8f346e"
+  },
+  {
+    "file": "stills/P08_ATOM.jpg",
+    "bytes": 53647,
+    "sha256": "4a3f3bcc23e6f30f301238be9fd84415c6c22ffae701c399d96435550f684432"
+  },
+  {
+    "file": "gifs/P04_GALAXY.gif",
+    "bytes": 15459715,
+    "sha256": "ee41899ffed4ffc12620e28ec4426031f17b8652839408fb906ac024fe3ec299"
+  },
+  {
+    "file": "gifs/P02_EARTH_clean.gif",
+    "bytes": 13475823,
+    "sha256": "839fcfb185473e33346a72e6c9391627d5d9521f01334801513574d20c8b849d"
+  },
+  {
+    "file": "gifs/P06_CELL_clean.gif",
+    "bytes": 12313062,
+    "sha256": "b84a8a9aa6cd56b35ca7c3247b16b3c40d4f62ff425029f361648b5f9f510206"
+  },
+  {
+    "file": "gifs/P07_DNA.gif",
+    "bytes": 24558878,
+    "sha256": "433c26eb2f39e035bfefce37d1cc96f8f0943914fda8645273b3adb5b30888b8"
+  },
+  {
+    "file": "gifs/P04_GALAXY_clean.gif",
+    "bytes": 14752758,
+    "sha256": "4f68aac13cfd5a40ee26478a27f9ad0c349d6028196a72983ba2815eec8ab59a"
+  },
+  {
+    "file": "gifs/P01_HUMAN_clean.gif",
+    "bytes": 9785349,
+    "sha256": "8c7b758db8a15cdbbdd6aa4bfda880ff980ed12124ecd2ad0ffeee5db00e0a2b"
+  },
+  {
+    "file": "gifs/P07_DNA_clean.gif",
+    "bytes": 25245609,
+    "sha256": "98cd1539fa177b8710fe36b7adffcc1384d6bd07b0e9c195425cb896fd7ac1a9"
+  },
+  {
+    "file": "gifs/P08_ATOM.gif",
+    "bytes": 16024951,
+    "sha256": "43fb0f39a2aca4ba07c8c58d406a819c507042729f26db7e0941ce9550c2c7d7"
+  },
+  {
+    "file": "gifs/P03_SOLAR_SYSTEM_clean.gif",
+    "bytes": 16762613,
+    "sha256": "fb50ae42adb3435a5b9911d784f97f160ed1cd8d68f69c32c9591b7124ce945e"
+  },
+  {
+    "file": "gifs/P06_CELL.gif",
+    "bytes": 11822153,
+    "sha256": "3e640bb4f1f2708ab7ed592c6352c689e60a76d794141d8c01cb7c8089347c28"
+  },
+  {
+    "file": "gifs/P08_ATOM_clean.gif",
+    "bytes": 16046941,
+    "sha256": "2fe342cec8249eeef2716eb0217f49c48df9c230bbf8fd55dd66be408a9a603b"
+  },
+  {
+    "file": "gifs/P03_SOLAR_SYSTEM.gif",
+    "bytes": 16583163,
+    "sha256": "72656bcbe198ef1a6e6d8baf0c07211252c6a966d0269ecdc78f263ec981077f"
+  },
+  {
+    "file": "gifs/P05_GALAXY_GROUPS.gif",
+    "bytes": 14176912,
+    "sha256": "bc40bad9c6a9a61c3246e96b982d7dbeaf8fa3eb87ee229a132df0eb8ad9d5a7"
+  },
+  {
+    "file": "gifs/P02_EARTH.gif",
+    "bytes": 13640317,
+    "sha256": "64ba45cfa7078b2be5ac3b6b2bc1c4cc4b8bec2661a90d9131e6d369f75999f1"
+  },
+  {
+    "file": "gifs/P05_GALAXY_GROUPS_clean.gif",
+    "bytes": 13170065,
+    "sha256": "bee8cb3823be6c0427f6c4e0342a07db61408b3f25f0802fa84ed97a5bb41ba4"
+  },
+  {
+    "file": "gifs/P01_HUMAN.gif",
+    "bytes": 11159962,
+    "sha256": "cc39f24c18d1f3ff4bcf73e2542fa8e5c6c1493a8e5ef61d6655b1c0eb73f12d"
+  },
+  {
+    "file": "review-assets/InputMono-Regular.ttf",
+    "bytes": 109088,
+    "sha256": "7e8eb8e2de9bb3d944e3e4786278b042c4f547356d2e790753559360d0c220e4"
+  },
+  {
+    "file": "review-assets/NeuzeitSHeavy-Book.ttf",
+    "bytes": 41636,
+    "sha256": "a2ab5a7ebbb614c8c38095847fdc7b8932ebe263900343d1865c3270ecf539c1"
+  },
+  {
+    "file": "review-assets/NeuzeitSHeavy-Book.woff2",
+    "bytes": 14368,
+    "sha256": "1c40cb6ebb38e0ec85a849749e1dbe07d8e0714f38ccadcbc9bb9494a5667bdf"
+  },
+  {
+    "file": "sagan/Edit-notes.md",
+    "bytes": 2137,
+    "sha256": "6b81522784e097bf248814eae30c0b3364c404a3eac9c5199d35876a97a3f779"
+  },
+  {
+    "file": "sagan/index.html",
+    "bytes": 8179,
+    "sha256": "3feda0b442508ddea6c423301a029e6675c9844bcfc1b3518b41e6f70d27abf1"
+  },
+  {
+    "file": "sagan/manifest.json",
+    "bytes": 3506,
+    "sha256": "725bfd64326e1ac76004e66a36b80438455afee79248cf78d85b10e8fc067dd2"
+  },
+  {
+    "file": "sagan/Gesture-cuts.zip",
+    "bytes": 33978308,
+    "sha256": "3c29aa05e5e5be2a1cf9858121d5820ea234d2ce75b82deb5a18a2e83f438929"
+  },
+  {
+    "file": "mp4/P08_ATOM.mp4",
+    "bytes": 12088526,
+    "sha256": "585ba0417837d37e862d60776243a0e45f1903771560dbab81b9578af8e539e7"
+  },
+  {
+    "file": "mp4/P07_DNA_clean.mp4",
+    "bytes": 8501095,
+    "sha256": "deab23ef630586364aa6d28b488e06a24837ef674358fea51974442fab59017d"
+  },
+  {
+    "file": "mp4/P04_GALAXY_clean.mp4",
+    "bytes": 4575122,
+    "sha256": "0f69f91700e5f3cefdcf1c58dfaef4133222bd43e927ac26c00a5b0ec4ea6927"
+  },
+  {
+    "file": "mp4/P01_HUMAN_clean.mp4",
+    "bytes": 3950035,
+    "sha256": "a6e2e33c049ffc81b9e23bc2211b30a8e6996ad12da8c70b77d7d9e3ecad5507"
+  },
+  {
+    "file": "mp4/P03_SOLAR_SYSTEM_clean.mp4",
+    "bytes": 5130371,
+    "sha256": "3579246928dd7565d92ca361ad0058b660d0afc1f04a2b3d8841107605445592"
+  },
+  {
+    "file": "mp4/P06_CELL_clean.mp4",
+    "bytes": 5025584,
+    "sha256": "4100eec8ea65bae1b7c9688e0bcdfd1470e4fd7953aa68915b9584bef2f4e3d6"
+  },
+  {
+    "file": "mp4/P02_EARTH_clean.mp4",
+    "bytes": 3904993,
+    "sha256": "cb17879de7f4e8cebd15a597c5d8b87c742f5ff34c820c59f9a85a6ba58129d4"
+  },
+  {
+    "file": "mp4/P04_GALAXY.mp4",
+    "bytes": 6374821,
+    "sha256": "bd9221fb484140840a835cc77cddbad1a4055af903e1292e1d39f8e07307d2ea"
+  },
+  {
+    "file": "mp4/P07_DNA.mp4",
+    "bytes": 11398467,
+    "sha256": "bb23344ab7a221a333839f7d9384b2bdc31006dffaf5d6af5e1191e9f9429f08"
+  },
+  {
+    "file": "mp4/P05_GALAXY_GROUPS.mp4",
+    "bytes": 5111679,
+    "sha256": "9934120ff083d30011a4f872fd7ed219b413f214b889dbde8ef1d5d163cef138"
+  },
+  {
+    "file": "mp4/P02_EARTH.mp4",
+    "bytes": 5772549,
+    "sha256": "6b6db608e297e391d4a34139de91fe94f917ab4da12bff40ddc5b8b506efa571"
+  },
+  {
+    "file": "mp4/P01_HUMAN.mp4",
+    "bytes": 5584534,
+    "sha256": "e80dd6f933c2345e1f0df5200aff1286577c8084dd6ab69f576922a678500769"
+  },
+  {
+    "file": "mp4/P05_GALAXY_GROUPS_clean.mp4",
+    "bytes": 3815718,
+    "sha256": "4d08e36aeccd54fd94fd51502f80736d5cf52633caff2e3f4cfb05f3c7ce5019"
+  },
+  {
+    "file": "mp4/P08_ATOM_clean.mp4",
+    "bytes": 10625327,
+    "sha256": "bb4f68938cca15ef079e008d8fb8939fc6942cec8c8b92545e59dab25deadbbf"
+  },
+  {
+    "file": "mp4/P06_CELL.mp4",
+    "bytes": 7071096,
+    "sha256": "01efce4bf9a224a573673d3194b05de93dc5ba4552e7fa87bbc3b61223af909c"
+  },
+  {
+    "file": "mp4/P03_SOLAR_SYSTEM.mp4",
+    "bytes": 7518248,
+    "sha256": "cd2dee1a8c3f7a76f2d4f81ee41136729145776402e7078b03b510f4b89892fe"
+  },
+  {
+    "file": "sagan/stills/03_UPWARD_FLOURISH.jpg",
+    "bytes": 42816,
+    "sha256": "aeb1c5041a4e37b102c65848ec3eb67b498efa738d161396c2ffb885b69b1194"
+  },
+  {
+    "file": "sagan/stills/05_FULL_REACTION.jpg",
+    "bytes": 42645,
+    "sha256": "8f05a5579c9ac9913d34a97b3b440194ad26ff90e4397000c101f693d6f8babc"
+  },
+  {
+    "file": "sagan/stills/02_FOUR_DIRECTIONS.jpg",
+    "bytes": 34928,
+    "sha256": "1db9da50aab0a93ab0ebb14be9331baa1ff4d6e254452ac2c9ed42d1b38a31c4"
+  },
+  {
+    "file": "sagan/stills/01_ABSOLUTELY_FLAT.jpg",
+    "bytes": 38468,
+    "sha256": "91614caecf2048865a92ecda364bbe6d6a9d2f1084e5e105ca30fbf609754e83"
+  },
+  {
+    "file": "sagan/stills/04_DESCENT.jpg",
+    "bytes": 40571,
+    "sha256": "15a162ad2e1ce4eebfb0e9a9a5b55cccd4471a1f1f85e1992207ce6053af975b"
+  },
+  {
+    "file": "sagan/gifs/02_FOUR_DIRECTIONS.gif",
+    "bytes": 2814373,
+    "sha256": "a364292cc42a0e1144c75e78813d054ab6aee19f70197a0061adbe2353037d90"
+  },
+  {
+    "file": "sagan/gifs/01_ABSOLUTELY_FLAT.gif",
+    "bytes": 3472285,
+    "sha256": "20d4b1b7294e4e5ea6099514010fc399fe9142c89b0d289d8aef27c047c2fbf3"
+  },
+  {
+    "file": "sagan/gifs/04_DESCENT.gif",
+    "bytes": 2778489,
+    "sha256": "b097bd9df6e0806dc14362d9da053252f3c7164928b1eb615de88aff2e2b91aa"
+  },
+  {
+    "file": "sagan/gifs/03_UPWARD_FLOURISH.gif",
+    "bytes": 4269876,
+    "sha256": "e0aefdbc32d6ca849642a4acff02adcc55ee695fd466b1b73ce40bbcb491f4a2"
+  },
+  {
+    "file": "sagan/gifs/05_FULL_REACTION.gif",
+    "bytes": 9744888,
+    "sha256": "f12445259f144fed58bd5fb39f318646c7ccc63291c3bd3311d3c831a341ead1"
+  },
+  {
+    "file": "sagan/review-assets/InputMono-Regular.ttf",
+    "bytes": 109088,
+    "sha256": "7e8eb8e2de9bb3d944e3e4786278b042c4f547356d2e790753559360d0c220e4"
+  },
+  {
+    "file": "sagan/review-assets/NeuzeitSHeavy-Book.ttf",
+    "bytes": 41636,
+    "sha256": "a2ab5a7ebbb614c8c38095847fdc7b8932ebe263900343d1865c3270ecf539c1"
+  },
+  {
+    "file": "sagan/review-assets/NeuzeitSHeavy-Book.woff2",
+    "bytes": 14368,
+    "sha256": "1c40cb6ebb38e0ec85a849749e1dbe07d8e0714f38ccadcbc9bb9494a5667bdf"
+  },
+  {
+    "file": "sagan/mp4/03_UPWARD_FLOURISH_sound.mp4",
+    "bytes": 1106740,
+    "sha256": "a9839c931fc6ada90764e91a6d816d61aa1347662ea6ca9b51b9e3ad583adff7"
+  },
+  {
+    "file": "sagan/mp4/05_FULL_REACTION_silent.mp4",
+    "bytes": 2268051,
+    "sha256": "c047e4b26ad3254d4dfc7a4192051fc6255a6d51b1870db40f84ab64f8fe4a06"
+  },
+  {
+    "file": "sagan/mp4/04_DESCENT_silent.mp4",
+    "bytes": 578205,
+    "sha256": "7be6cbd7a4778173580c908e6eba2c0303bae9a2122a4aee6c048687223d140e"
+  },
+  {
+    "file": "sagan/mp4/05_FULL_REACTION_sound.mp4",
+    "bytes": 2413851,
+    "sha256": "b83ede85d4189a384fb4bae03db9e18c22c3c735de94102acb6e404f43ebacea"
+  },
+  {
+    "file": "sagan/mp4/04_DESCENT_sound.mp4",
+    "bytes": 623024,
+    "sha256": "5d34337549951c3232008008f36fccf44b7bd61cf887608ca8187473679dcab3"
+  },
+  {
+    "file": "sagan/mp4/03_UPWARD_FLOURISH_silent.mp4",
+    "bytes": 1051982,
+    "sha256": "c717e9924d2848f4b16f29f6952922583b4301b9fb46ca910e00bc3827dd8571"
+  },
+  {
+    "file": "sagan/mp4/02_FOUR_DIRECTIONS_sound.mp4",
+    "bytes": 557238,
+    "sha256": "60889941445e44cec9d02b3b00e8f930603360e1f0656b048589522669be98bd"
+  },
+  {
+    "file": "sagan/mp4/01_ABSOLUTELY_FLAT_sound.mp4",
+    "bytes": 811183,
+    "sha256": "ae1e6d41bf420ccfb4979324436c37777dec3fda568805ed7475a32f302a4e9b"
+  },
+  {
+    "file": "sagan/mp4/01_ABSOLUTELY_FLAT_silent.mp4",
+    "bytes": 757833,
+    "sha256": "420d2c1bfbfb9edc52629a90322908a7f974b427dd0cfaad177e524eb619a01d"
+  },
+  {
+    "file": "sagan/mp4/02_FOUR_DIRECTIONS_silent.mp4",
+    "bytes": 507337,
+    "sha256": "54f7277a8179b4277198e3f33eea06162aac076159c4dd9493e0ea89779d3bdc"
+  }
+]

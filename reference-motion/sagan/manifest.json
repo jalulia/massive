@@ -1,0 +1,78 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=UnURElCzGc0",
+  "source": "1440x1080 stream labeled AI-upscaled by YouTube; no additional enhancement.",
+  "edit_basis": "Visible movement onset, completion and recovery, inspected in sequential frames and at original 30fps around each cut. Frame indices are zero-based; end_frame is exclusive.",
+  "loop_result": "No approved seamless loops in these selected passages. All are direct, one-shot gesture cuts.",
+  "clips": [
+    {
+      "id": "01_ABSOLUTELY_FLAT",
+      "title": "Absolutely flat",
+      "start_frame": 674,
+      "end_frame": 749,
+      "poster": 0.9,
+      "reason": "Begins as his clasped hands release; keeps the extension, flat-hand emphasis and recovery. Ends as the hands draw together, before the next outward spread.",
+      "join": "His gaze and torso do not return to the opening pose.",
+      "start": 22.466666666666665,
+      "end": 24.966666666666665,
+      "duration": 2.5,
+      "loop": false,
+      "treatment": "Direct source cut; normal speed; no transition or inserted frames."
+    },
+    {
+      "id": "02_FOUR_DIRECTIONS",
+      "title": "Left / right / forward / back",
+      "start_frame": 2156,
+      "end_frame": 2226,
+      "poster": 1.6,
+      "reason": "Begins at the first directional move; keeps both axes and ends on the return, without the stationary tail.",
+      "join": "The square returns, but the camera framing and arm position drift. A direct repeat remains visible.",
+      "start": 71.86666666666666,
+      "end": 74.2,
+      "duration": 2.3333333333333335,
+      "loop": false,
+      "treatment": "Direct source cut; normal speed; no transition or inserted frames."
+    },
+    {
+      "id": "03_UPWARD_FLOURISH",
+      "title": "The upward flourish",
+      "start_frame": 8028,
+      "end_frame": 8104,
+      "poster": 0.6,
+      "reason": "Begins with the upward look that initiates the lift. Keeps the toss, open palms and lowering; stops as the hands land, before the table business continues.",
+      "join": "The opening gaze and palm orientation differ from the landing.",
+      "start": 267.6,
+      "end": 270.1333333333333,
+      "duration": 2.533333333333333,
+      "loop": false,
+      "treatment": "Direct source cut; normal speed; no transition or inserted frames."
+    },
+    {
+      "id": "04_DESCENT",
+      "title": "The square descends",
+      "start_frame": 7659,
+      "end_frame": 7722,
+      "poster": 0.6,
+      "reason": "Begins at the poised square before its downward movement; keeps the descent and bounce, ending at contact before the separate arm sweep.",
+      "join": "The square starts raised and ends on the surface.",
+      "start": 255.3,
+      "end": 257.4,
+      "duration": 2.1,
+      "loop": false,
+      "treatment": "Direct source cut; normal speed; no transition or inserted frames."
+    },
+    {
+      "id": "05_FULL_REACTION",
+      "title": "The full reaction",
+      "start_frame": 7901,
+      "end_frame": 8104,
+      "poster": 4.7,
+      "reason": "The longer alternative earns its length: the hands open in explanation, turn inward, then rise into the full flourish and settle. No lead-in or post-gesture hold.",
+      "join": "Several connected gestures form a complete phrase, but the starting and ending poses differ.",
+      "start": 263.3666666666667,
+      "end": 270.1333333333333,
+      "duration": 6.766666666666667,
+      "loop": false,
+      "treatment": "Direct source cut; normal speed; no transition or inserted frames."
+    }
+  ]
+}

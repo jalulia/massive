@@ -25,3 +25,7 @@ The web edition uses the approved 1080p H.264 delivery encodes, with fast-start 
 The previous visual catalogue is deprecated as the homepage and preserved at [archive/](https://jalulia.github.io/massive/archive/). Its recordings, source notes, download links and styles remain in their existing locations so older media URLs keep working. The [screensavers](https://jalulia.github.io/massive/screensavers/) and Windows packaging sources remain available as legacy material.
 
 This repository hosts presentation and media material. It is separate from the MASSIVE Unity game repository.
+
+## Reference motion
+
+[Open the standalone reference gallery](https://jalulia.github.io/massive/reference-motion/): eight Powers of Ten excerpts with full-frame and square MP4/GIF downloads, plus five revised Sagan gesture cuts. Source and edit notes accompany the assets. The Sagan cuts play once; the Powers of Ten previews have visible editorial resets.

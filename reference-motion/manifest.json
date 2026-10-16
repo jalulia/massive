@@ -1,0 +1,103 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=NNak-Gvs2VI",
+  "source_resolution": [
+    2880,
+    2160
+  ],
+  "source_status": "Highest pixel dimensions found among checked full-length online copies. Third-party upload; no documented scan/restoration provenance. Extra resolution does not establish additional original detail.",
+  "clips": [
+    {
+      "id": "P01_HUMAN",
+      "title": "Human scale",
+      "segment": "Scale introduction",
+      "start": 45,
+      "end": 53,
+      "duration": 8,
+      "note": "The picnic gives the audience a human point of departure.",
+      "loop": "Forward excerpt; visible editorial reset on repeat. No reversal or synthetic zoom."
+    },
+    {
+      "id": "P02_EARTH",
+      "title": "Earth",
+      "segment": "DYNAMO / planetary scale",
+      "start": 111,
+      "end": 121,
+      "duration": 10,
+      "note": "Planetary scale context. This excerpt does not show a magnetosphere; follow with the specified NASA animation.",
+      "loop": "Forward excerpt; visible editorial reset on repeat. No reversal or synthetic zoom."
+    },
+    {
+      "id": "P03_SOLAR_SYSTEM",
+      "title": "Solar system",
+      "segment": "NOVA / stellar scale",
+      "start": 153,
+      "end": 165,
+      "duration": 12,
+      "note": "The Sun and planetary orbits establish stellar scale. This is not a supernova or core-collapse demonstration.",
+      "loop": "Forward excerpt; visible editorial reset on repeat. No reversal or synthetic zoom."
+    },
+    {
+      "id": "P04_GALAXY",
+      "title": "The Milky Way",
+      "segment": "COSMOS / galactic scale",
+      "start": 249,
+      "end": 261,
+      "duration": 12,
+      "note": "A galaxy becomes a whole object, then one among others.",
+      "loop": "Forward excerpt; visible editorial reset on repeat. No reversal or synthetic zoom."
+    },
+    {
+      "id": "P05_GALAXY_GROUPS",
+      "title": "Beyond the galaxy",
+      "segment": "COSMOS / large-scale context",
+      "start": 263,
+      "end": 275,
+      "duration": 12,
+      "note": "Galaxies recede into the larger field. Follow with Illustris for structure formation; this is not a cosmic-web simulation.",
+      "loop": "Forward excerpt; visible editorial reset on repeat. No reversal or synthetic zoom."
+    },
+    {
+      "id": "P06_CELL",
+      "title": "Cellular scale",
+      "segment": "EMERGENCE / optional",
+      "start": 402,
+      "end": 414,
+      "duration": 12,
+      "note": "Biological scale context for the optional section; not a depiction of abiogenesis.",
+      "loop": "Forward excerpt; visible editorial reset on repeat. No reversal or synthetic zoom."
+    },
+    {
+      "id": "P07_DNA",
+      "title": "DNA to molecules",
+      "segment": "EMERGENCE \u2192 ORBITAL / optional",
+      "start": 427,
+      "end": 443,
+      "duration": 16,
+      "note": "The molecular descent bridges biological and atomic scales.",
+      "loop": "Forward excerpt; visible editorial reset on repeat. No reversal or synthetic zoom."
+    },
+    {
+      "id": "P08_ATOM",
+      "title": "Atomic probability",
+      "segment": "ORBITAL",
+      "start": 452,
+      "end": 464,
+      "duration": 12,
+      "note": "Use the diffuse atomic image as scale context, then the MIT-backed orbital illustration. Film depicts a carbon atom, not hydrogen.",
+      "loop": "Forward excerpt; visible editorial reset on repeat. No reversal or synthetic zoom."
+    }
+  ],
+  "sagan_manifest": "sagan/manifest.json",
+  "web_gif_delivery": {
+    "full_frame": [
+      640,
+      480
+    ],
+    "square": [
+      480,
+      480
+    ],
+    "fps": 10,
+    "colors": 128
+  }
+}
