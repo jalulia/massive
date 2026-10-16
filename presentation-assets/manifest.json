@@ -1,0 +1,296 @@
+[
+  {
+    "file": "presentation-assets/01_ABSOLUTELY_FLAT.jpg",
+    "bytes": 38468,
+    "sha256": "91614caecf2048865a92ecda364bbe6d6a9d2f1084e5e105ca30fbf609754e83",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/01_ABSOLUTELY_FLAT_silent.mp4",
+    "bytes": 757833,
+    "sha256": "420d2c1bfbfb9edc52629a90322908a7f974b427dd0cfaad177e524eb619a01d",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/04_DESCENT.jpg",
+    "bytes": 40571,
+    "sha256": "15a162ad2e1ce4eebfb0e9a9a5b55cccd4471a1f1f85e1992207ce6053af975b",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/04_DESCENT_silent.mp4",
+    "bytes": 578205,
+    "sha256": "7be6cbd7a4778173580c908e6eba2c0303bae9a2122a4aee6c048687223d140e",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/C01_PLAY.mp4",
+    "bytes": 1603598,
+    "sha256": "e8bafc73b403f44a5b3d63a79e5c65a91d4117259135d8526b13627564140c2d",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/C01_PLAY.png",
+    "bytes": 128587,
+    "sha256": "f9bade751755ac24b854c8877b288fa2ec50bc7816e30f268c26f2031d361d6d",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/C04b_RESONANCE_CONTACT.mp4",
+    "bytes": 2603024,
+    "sha256": "292a1307c91db7f2114ed0b4806ed2e277c28e71a717d88fd65c731623d78361",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/C04b_RESONANCE_CONTACT.png",
+    "bytes": 226442,
+    "sha256": "7d14907fc8afa8c296feb262651e4cba031adea43758e6607a79d84f940d0956",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/C05_ORBITAL.mp4",
+    "bytes": 30951997,
+    "sha256": "0a4949a583d17222697d8c40db564a56d214ff4979638d1d9b15d08ddb1d4b11",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/C05_ORBITAL.png",
+    "bytes": 627488,
+    "sha256": "1839f14e5404ce70e863540b7df4f2ca071dc0f9cf1b909cc68ebfadd60beeaf",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/C05_ORBITAL_MODEL.mp4",
+    "bytes": 21935345,
+    "sha256": "a13c45b269c0fb371cf345e680e57a372bb6afccac86271358fa3b0384fb269f",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/C05_ORBITAL_MODEL.png",
+    "bytes": 616736,
+    "sha256": "ac1f53f4543e4015089cbaa8faa650353294bcee0a4c6457f9a2073d5e446639",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/C06_DYNAMO.mp4",
+    "bytes": 30920804,
+    "sha256": "916e5062dc7b3df1ced8f3880be13ca673df64b20e177832fb51e8086601c415",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/C06_DYNAMO.png",
+    "bytes": 3780608,
+    "sha256": "e08cdc01f860fe30689a32e4b1403339e4c22beec7cff3de9916f76771a3d4a6",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/C06_DYNAMO_MODEL.mp4",
+    "bytes": 21940346,
+    "sha256": "c96bb23444c30cb99511b806ddf347c6e1dcd054c1c14e82f3fffe71e01df381",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/C06_DYNAMO_MODEL.png",
+    "bytes": 3930116,
+    "sha256": "7174479416da244044781fd6d2f138a29da658e1e57685e5c6bb796b9e32a4a5",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/C07_SINGULARITY_MODEL.mp4",
+    "bytes": 5741051,
+    "sha256": "1e76b082b615b2ffe356a96ef82e2eb75c11e4bf6868fe3a47f18df8de82d526",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/C07_SINGULARITY_MODEL.png",
+    "bytes": 360726,
+    "sha256": "a0a892cead7e43368acd7598584f75d142fe7512ea0acc0bd5c21c9d06221a5e",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/C08_COSMOS_MODEL.mp4",
+    "bytes": 21723865,
+    "sha256": "ea217b54b5738ce2895def4dbcd6a24a313e087e2565eea900e09673203ec343",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/C08_COSMOS_MODEL.png",
+    "bytes": 1028370,
+    "sha256": "b6cf487fa5a2bb5cf9eba2799402d82bf4af61f5d77fb8f82f5f7ce360ab8224",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/C11_FOLDED_UNFOLDED.mp4",
+    "bytes": 520796,
+    "sha256": "7e2193867bb50559214a87960aba1b55b93273f506071159f9688a03a900be99",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/C11_FOLDED_UNFOLDED.png",
+    "bytes": 165833,
+    "sha256": "e03a292e6882da5dcb52c7f3d79750d629bbe2f7b8b8a30cba8742e0e9c6ec01",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/C12_PLANE_DIAGRAM.mp4",
+    "bytes": 1873912,
+    "sha256": "aa8d67c08ffa82f8a925dc559da6c3d55a91f032eeed9e0c329e06a335039671",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/C12_PLANE_DIAGRAM.png",
+    "bytes": 149005,
+    "sha256": "b7bcca342f9f09f7b47b5d69089f33b6f8dcb031f8e203a2d6cd05e3daca9d9a",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/C13_NOVA_DIAGRAM.mp4",
+    "bytes": 9101672,
+    "sha256": "3cf4914da27c92c412d1d081b924d97fab7c79ca911ba61cf51a8f32d142cead",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/C13_NOVA_DIAGRAM.png",
+    "bytes": 242028,
+    "sha256": "925123571dbe3fd73d1c728e305e7e9a80a479eced27b0e9d6250222d81e63b8",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/GDD_RESONANCE.mp4",
+    "bytes": 6517524,
+    "sha256": "a66e889fb1fb90d4cf7be030cab76f96e944145d0ad8d07e954c8f5321e32e9b",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/GDD_RESONANCE.png",
+    "bytes": 635377,
+    "sha256": "2e2eae30057e6dd609f69bed91e16016d736f6245a5beb493c1c9a62c92de0e5",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/GDD_SINGULARITY.mp4",
+    "bytes": 5176706,
+    "sha256": "5d79f7e9e21f64f94bdaf89b33bca87c43fc52ceb30d0243c10cd936768bcfb2",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/GDD_SINGULARITY.png",
+    "bytes": 627238,
+    "sha256": "251d2bbdd2f9a9db8ee86c62cd40b4e45efe17f4f3b49acfa33ba1399a17e1a3",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/HARVARD_CHLADNI.mp4",
+    "bytes": 22765062,
+    "sha256": "45a48d02dc6eb42b16fae8508b124df121f0c1b0eecf4cc64bb73dc84cfd732d",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/HARVARD_CHLADNI.png",
+    "bytes": 2873805,
+    "sha256": "53bb1b27bf31a3fcfd169c74501f89cb9cf2d99d8411bf637db088cc03d3057f",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/ILLUSTRIS_STRUCTURE.mp4",
+    "bytes": 11726932,
+    "sha256": "cc07ecc1ef0cb902f44bab9f91b4029777df931524ba93b67a4e4838e96d38aa",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/ILLUSTRIS_STRUCTURE.png",
+    "bytes": 677786,
+    "sha256": "e00d825aaf8e084b42a424347ea77bcd24c313397d13df02bd557c40498af8a2",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/InputMono-Regular.ttf",
+    "bytes": 109088,
+    "sha256": "7e8eb8e2de9bb3d944e3e4786278b042c4f547356d2e790753559360d0c220e4",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/NASA_MAGNETOSPHERE.mp4",
+    "bytes": 10553454,
+    "sha256": "58417a388225fe747502b16be7f70af1a181ed9d88b3d5e01a13f4a230078d43",
+    "edition": "1080p web delivery"
+  },
+  {
+    "file": "presentation-assets/NASA_MAGNETOSPHERE.png",
+    "bytes": 2054040,
+    "sha256": "b1dd74b5277443711dba87feaf621a231ee599fb1465976e3d0666191f9fc657",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/NeuzeitSHeavy-Book.woff2",
+    "bytes": 14368,
+    "sha256": "1c40cb6ebb38e0ec85a849749e1dbe07d8e0714f38ccadcbc9bb9494a5667bdf",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/cosmos-cover-user.png",
+    "bytes": 2130114,
+    "sha256": "3aa6043edd5a8bea399631087a7acd17d1fc548db3f44bb683d732fc9f185b8c",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/hydrogen-4d-reference.png",
+    "bytes": 446104,
+    "sha256": "89cba5963a420fa2686fdcca4e3591943c135ae277bfb9b4b8737094397153be",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/sagan-signature-user.jpg",
+    "bytes": 127821,
+    "sha256": "0db38d77c03da19b46f359991cc70410701693362a4ed280554736fd3dc532d3",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/scale-01.png",
+    "bytes": 1455959,
+    "sha256": "93f43640d2baa5b1c0ee67713bd23215739d6e9a3d084610e9325a91c4a8a68f",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/scale-02.png",
+    "bytes": 1010202,
+    "sha256": "0a09ade6041ec4abdd26f5e0ed6429c64f6e2828608ad2a8fec9a2a221960d9e",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/scale-03.png",
+    "bytes": 888122,
+    "sha256": "37a6a58bf3634ab17e3da7d169537fb85d59751afe8bef1ece7028fbc35bab62",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/scale-04.png",
+    "bytes": 1123550,
+    "sha256": "f2095729156fa6d895e20a547a7115c168e67dd980208709e42406885eb7ef3e",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/scale-05.png",
+    "bytes": 118897,
+    "sha256": "5cfa94bdc70b482cb3184bee22749b005f664c04c52e0f855b1c1c6a3320a37f",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/scale-06.png",
+    "bytes": 579048,
+    "sha256": "5cfb83a899e408ea0f5ee7d5ab06c227d104fbea715b40cfe7ed860021a6207e",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/scale-07.png",
+    "bytes": 1202241,
+    "sha256": "5af1d72e0c9dc3bc105a2c9d81ff9e8b1d2dfe13e73bd49763340fd819a2f3df",
+    "edition": "unchanged presentation asset"
+  },
+  {
+    "file": "presentation-assets/scale-08.png",
+    "bytes": 657517,
+    "sha256": "c2d18835906e3f736847e3dc6ab9f3003f3be4b4f1e3caf94ea0f0e09256c0bc",
+    "edition": "unchanged presentation asset"
+  }
+]

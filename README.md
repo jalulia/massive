@@ -1,29 +1,27 @@
-# MASSIVE — Visual catalogue
+# MASSIVE — MOMI
 
-A growing library of real MASSIVE recordings. Browse clips, choose portrait / square / landscape, switch optional text, and download MP4s or the portrait batch. Each clip keeps capture provenance and source recordings. Trailer entries also include their frame-by-frame cut lists. The Loops filter finds visual studies with edited wrap joins or full native cycles; gameplay and trailers may finish with a cut. Saved clips are personal to the current browser. Clips are silent, 30 fps, with clean and optional text editions in three sizes. BTS entries are labelled engine diagnostic passes. The game build, input method, loop join and any capture compatibility adjustments are recorded per clip. This catalogue does not modify or deploy the game repository.
+[Open the presentation](https://jalulia.github.io/massive/)
 
+MASSIVE: Making the invisible playable. A 25-board HTML presentation by Matt Fry for the Museum of the Moving Image, 17 October 2026. Suggested speaking time: 17 minutes 45 seconds, plus transitions.
 
-## Latest additions
+The root `index.html` is the standalone presentation. It includes the 1920 × 1080 layout, keyboard controls and speaker notes. `presentation-assets/` contains the game fonts, supplied book photographs, original reference material and approved Unity captures. There are no runtime libraries or third-party services.
 
-The homepage includes a dated source review of LATTICE, COSMOS, ORBITAL encounters and Repulsor, checked against `mattfryed/massive` branch `v5` at `3d9127b1ef95c90ff1f4999497b7789eda50040b` on 2026-10-05. Feature links are pinned to that revision. Existing video provenance is unchanged; this update adds notes, not fresh captures. COSMOS runtime/balance/performance qualifications remain as stated in its feature documentation.
+## Presenting
 
-The update lives in `index.html`, with styling in `assets/styles.css`. Future media preparation through `tools/prepare.py` updates the clip JSON and previews without replacing these notes.
+- Arrow keys / Page Up / Page Down / Space: move between boards.
+- Home / End: first / last board.
+- F: fullscreen.
+- P: pause or resume the current video.
+- R: replay the current clip.
+- B: black the screen.
+- N: show notes on this same screen; intended for rehearsal, not a separate presenter display.
 
-## Full-spectrum exploration — 7 October 2026
+Videos are silent and start on arrival. Click once if the browser requires initial interaction. The game and scientific-reference sequences repeat with their existing brief black editorial reset. The two Sagan gestures play once and hold; R replays them. The archival footage is intentionally shown modestly. Source credits and distinctions are in `Speaker-notes.md` and the N view, not on the projected boards.
 
-`#latest` now leads with Study 02: an 80-second native Unity render study covering
-COSMOS, SINGULARITY, NOVA, DYNAMO, PULSAR, ORBITAL, HIGGS and LATTICE. It uses authored
-scale connections and is separate from the gameplay capture catalogue. The earlier
-5 October source review and all recordings remain unchanged below it.
+The web edition uses the approved 1080p H.264 delivery encodes, with fast-start metadata for browser playback. The supplied cover and signature photographs and the fonts are unchanged. `presentation-assets/manifest.json` records exact published hashes. Download this repository and open `index.html` to present offline; keep its folders intact.
 
-The compact film, poster, board and curated public review/source bundle are under
-`media/explorations/full-spectrum-v2/`; their hashes are recorded in `manifest.json`.
-Higher-detail parts use the established `catalogue-media` release. The public ZIP
-contains only authored orchestration/compositing/encoding/input-test files, not
-copied game or vendor assets, workstation paths or private capture logs. It is not
-a standalone Unity project. Production integration, physical input checks, target
-hardware qualification and a moving Starfield alternate remain unfinished.
+## Previous material
 
-Run `python3 tools/verify-spectrum.py` to check this feature's files, hashes, source
-bundle privacy boundaries and links. `node --check assets/spectrum.js` checks its
-small chapter-control script. No screen saver or game code is changed by this update.
+The previous visual catalogue is deprecated as the homepage and preserved at [archive/](https://jalulia.github.io/massive/archive/). Its recordings, source notes, download links and styles remain in their existing locations so older media URLs keep working. The [screensavers](https://jalulia.github.io/massive/screensavers/) and Windows packaging sources remain available as legacy material.
+
+This repository hosts presentation and media material. It is separate from the MASSIVE Unity game repository.
