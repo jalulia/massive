@@ -15,6 +15,7 @@ main{width:min(1680px,87.5%);margin:auto;padding:clamp(40px,5vw,96px) 0 96px}
 header{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin:0 0 48px}
 h1{font:800 clamp(56px,5vw,96px)/.92 Neuzeit,sans-serif;letter-spacing:-.025em;margin:0}
 header p{font:400 clamp(15px,1.25vw,24px)/1.3 Input,monospace;margin:0}
+.index-caption{display:flex;align-items:baseline;gap:40px}.notes-link{font:400 clamp(14px,.95vw,18px)/1.4 Input,monospace;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px}.notes-link:hover{color:#ccc}.notes-link span{margin-left:8px}
 .collection{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px}
 a{color:inherit;text-decoration:none;display:block;min-width:0}
 a:focus-visible{outline:2px solid #fff;outline-offset:10px}
@@ -24,14 +25,14 @@ h2{display:flex;justify-content:space-between;align-items:baseline;gap:20px;font
 h2 svg{width:16px;height:16px;flex:none;stroke:currentColor;stroke-width:1.25;fill:none}
 a:hover .frame{outline-color:#aaa}a:hover h2{color:#ccc}
 @media(min-width:1921px){main{padding-top:96px}}
-@media(max-width:1000px){main{width:88%;padding-top:48px}.collection{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 28px}header{margin-bottom:40px}h2{font-size:17px}}
-@media(max-width:560px){main{width:auto;margin:0 24px;padding:40px 0 56px}header{display:block;margin-bottom:36px}h1{font-size:56px}header p{margin-top:18px;font-size:16px}.collection{grid-template-columns:1fr;gap:36px}h2{margin-top:16px;font-size:18px}}
+@media(max-width:1000px){main{width:88%;padding-top:48px}.collection{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 28px}header{margin-bottom:40px}h2{font-size:17px}.index-caption{flex-direction:column;gap:14px;align-items:flex-end}}
+@media(max-width:560px){main{width:auto;margin:0 24px;padding:40px 0 56px}header{display:block;margin-bottom:36px}h1{font-size:56px}.index-caption{align-items:flex-start;gap:16px;margin-top:18px}header p{font-size:16px}.notes-link{font-size:15px}.collection{grid-template-columns:1fr;gap:36px}h2{margin-top:16px;font-size:18px}}
 @media(prefers-reduced-motion:reduce){.frame{transition:none}}
 </style>
 </head>
 <body>
 <main>
-<header><h1>MASSIVE</h1><p>Explorations</p></header>
+<header><h1>MASSIVE</h1><div class="index-caption"><p>Explorations</p><a class="notes-link" href="momi-notes.html">MOMI deck notes<span aria-hidden="true">↗</span></a></div></header>
 <div class="collection">
 <a href="../#1"><div class="frame"><img src="../presentation-assets/C18_COSMOS_GAMEPLAY_HUD.png" alt="" width="1920" height="1080" fetchpriority="high"></div><h2>MOMI presentation<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 14 14 2M3 2h11v11"/></svg></h2></a>
 <a href="../presentation-directions/"><div class="frame"><img src="../presentation-directions/Directions-overview.jpg" alt="" width="1440" height="810"></div><h2>Visual directions<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 14 14 2M3 2h11v11"/></svg></h2></a>
