@@ -2,7 +2,7 @@
 
 [Open the presentation](https://jalulia.github.io/massive/)
 
-MASSIVE: Making the invisible playable. A 25-board HTML presentation by Matt Fry for the Museum of the Moving Image, 17 October 2026. Suggested speaking time: 17 minutes 45 seconds, plus transitions.
+MASSIVE: Making the invisible playable. A 26-board HTML presentation by Matt Fry for the Museum of the Moving Image, 17 October 2026. Suggested speaking time: 17 minutes 45 seconds, plus transitions.
 
 The root `index.html` is the standalone presentation. It includes the 1920 × 1080 layout, keyboard controls and speaker notes. `presentation-assets/` contains the game fonts, supplied book photographs, original reference material and approved Unity captures. There are no runtime libraries or third-party services.
 
@@ -33,3 +33,7 @@ This repository hosts presentation and media material. It is separate from the M
 ## Presentation directions
 
 [Open the standalone visual-direction review](https://jalulia.github.io/massive/presentation-directions/): Field Study, Cosmic Atlas and Big / Small. Each direction demonstrates nine screen types using MASSIVE imagery and scientific references. The page includes a visual audit, silent motion samples, source credits, PDF previews and editable PowerPoint downloads. These are design studies; the finished talk remains at the site root.
+
+## COSMOS and ORBITAL capture revision
+
+COSMOS now presents a CMB / present-day cosmic-web comparison, a six-second background-only Unity Preview Age scrub, and a separate 40-second native gameplay capture. ORBITAL has a closer UI-free Unity capture with changing configurations. These three captures play once and hold their last frame; R replays. Slide links update correctly within an already open presentation.

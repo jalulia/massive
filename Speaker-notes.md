@@ -1,6 +1,6 @@
 # MASSIVE — MOMI speaker notes
 
-Suggested pace: 17 minutes 45 seconds plus transitions.
+Suggested pace: 18 minutes 30 seconds plus transitions.
 
 ## 01 · Play
 
@@ -116,12 +116,7 @@ Hydrogen illustration: n=4, l=2, m=0. Reference: https://ocw.mit.edu/courses/18-
 
 ## 13 · ORBITAL
 
-Suggested dwell: 35 seconds.
-
-The same kind of distribution, adapted for play.
-
-“A pattern can tell you where an interaction is. A probability field tells you how likely it is.”
-Silent, staged game or reference footage. Repeats preserve native forward action; any black reset is an editorial boundary. Source and staging details: capture report in the project folder.
+Native Unity orbital cloud, closer framing, no UI, arena border or labels. Existing game formations cycle every two seconds for this presentation. Colors and particle geometry retained. Plays once; R replays.
 
 ## 14 · ORBITAL encounter
 
@@ -196,36 +191,30 @@ The exact 21-second SINGULARITY traversal and passage clip from the GDD. Scripte
 
 An authored passage between faces, not a claim that astrophysical black holes are traversable. Source: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203, section 4.3.
 
-## 22 · Structure formation
+## 22 · CMB / Cosmic web
 
-Suggested dwell: 30 seconds.
+The first image is the CMB observed by Planck: light from about 380,000 years after the Big Bang. The second is the present-day dark-matter distribution in the Illustris simulation, z=0. They are different views and scales, not a matched before/after photograph. The next board shows how MASSIVE interprets this evolution. Credits: ESA and the Planck Collaboration; Illustris Collaboration. Sources: https://www.esa.int/ESA_Multimedia/Images/2013/04/Planck_CMB_black_background and https://www.illustris-project.org/media/
 
-Credit: Illustris Collaboration / Illustris Simulation. Original structure-formation movie, 00:06–00:30, native speed. This portion shows the dark matter density field in a 10 Mpc comoving region as cosmic structure develops. A numerical simulation visualization. The source’s lower annotation band is cropped; no synthetic material or color remapping.
+## 23 · COSMOS — six-second evolution
 
-“These filaments and dense knots come from a scientific simulation. In the game, that structure becomes another way to organize a world.”
+Direct Unity capture of the saved COSMOS background. Preview Age moves from 0 to 1 over exactly six seconds. No UI, arena grid, players, goals or supernova effects. This is the game’s artistic evolution model. Plays once and holds the final state; R replays.
 
-https://www.illustris-project.org/media/
-https://www.illustris-project.org/movies/illustris_movie_rot_sub_frame.mp4
-Say “from the Illustris Collaboration” aloud; written credit is retained here.
+## 24 · COSMOS — gameplay
 
-## 23 · COSMOS
+Native COSMOS match capture with arena, players, enemy encounters and supernova scheduler active. Players use scripted controls to pursue emitted mass and engage enemies. Capture begins at match age 0.58 and runs at native speed. No forced explosions. Supernovae release pickups while the background clusters continue evolving. UI hidden. R replays. Galaxy mergers begin across the native age range 0.54–0.80; this take reaches age 0.80. The supernova scheduler is reset at the capture start to prevent a time-jump burst.
 
-Suggested dwell: 45 seconds.
-
-“At the other end of the scale, the world becomes a web of filaments, knots, and empty regions.” Authored geometric rules, not a cosmological solver.
-Silent, staged game or reference footage. Repeats preserve native forward action; any black reset is an editorial boundary. Source and staging details: capture report in the project folder.
-
-## 24 · Play, again
+## 25 · Play, again
 
 Suggested dwell: 25 seconds.
 
 Replay without a cue. Let the audience read it now.
 Silent, staged game or reference footage. Repeats preserve native forward action; any black reset is an editorial boundary. Source and staging details: capture report in the project folder.
 
-## 25 · MASSIVE
+## 26 · MASSIVE
 
 Suggested dwell: 25 seconds.
 
 “You can’t take in all of it, but you can notice a pattern, try something, and feel a response. That’s where the science becomes part of playing.”
 
 Alternative end: return to the book.
+
