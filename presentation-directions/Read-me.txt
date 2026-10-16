@@ -1,0 +1,7 @@
+MASSIVE / MOMI / Three visual directions
+
+Open index.html to review all 27 screens, compare the same screen across three directions, and play silent game samples. Arrow keys change screens; 1, 2 and 3 change direction; F enters presentation view; Escape returns.
+
+Each direction has a nine-page PDF preview and an editable PowerPoint study. The PDF preserves the reviewed typography. For the editable PowerPoint, use the included Input Mono and NeuzeitSHeavy-Book fonts from assets/. The deck contains still images; motion specimens are in the HTML review and assets/.
+
+These are visual system studies, not the complete 18-minute talk or final event footage. The review includes the visual audit, sources, capture dates and the next production assets. Fresh captures of ORBITAL, DYNAMO, COSMOS and EMERGENCE use repo commit 27a3e7ce and scripted real-controller input. Other historical captures are labelled. No gameplay source was changed.

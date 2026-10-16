@@ -29,3 +29,7 @@ This repository hosts presentation and media material. It is separate from the M
 ## Reference motion
 
 [Open the standalone reference gallery](https://jalulia.github.io/massive/reference-motion/): eight Powers of Ten excerpts with full-frame and square MP4/GIF downloads, plus five revised Sagan gesture cuts. Source and edit notes accompany the assets. The Sagan cuts play once; the Powers of Ten previews have visible editorial resets.
+
+## Presentation directions
+
+[Open the standalone visual-direction review](https://jalulia.github.io/massive/presentation-directions/): Field Study, Cosmic Atlas and Big / Small. Each direction demonstrates nine screen types using MASSIVE imagery and scientific references. The page includes a visual audit, silent motion samples, source credits, PDF previews and editable PowerPoint downloads. These are design studies; the finished talk remains at the site root.

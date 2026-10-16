@@ -1,0 +1,2188 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MASSIVE — Three presentation directions</title><meta name="description" content="Three visual directions for Matt Fry’s MASSIVE talk at Museum of the Moving Image: Field Study, Cosmic Atlas, and Big / Small. Explore 27 screen studies, game recordings, and editable decks."><link rel="icon" href="../assets/favicon.svg"><style>
+@font-face{font-family:Input;src:url(assets/InputMono-Regular.ttf)}@font-face{font-family:Input;src:url(assets/InputMono-Bold.ttf);font-weight:700}@font-face{font-family:Neuzeit;src:url(assets/Neuzeit-Web.ttf)}
+:root{color-scheme:dark}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#171717;color:#eeeee7;font-family:Input,monospace}button,a{font:inherit}button{cursor:pointer;border:0;border-radius:0}button:focus-visible,a:focus-visible{outline:3px solid #e5c77b;outline-offset:4px}button{background:transparent;color:inherit;padding:12px 15px}a{color:inherit;text-underline-offset:4px}header{max-width:1392px;margin:auto;padding:30px 40px 23px;display:flex;justify-content:space-between;align-items:center;gap:24px}header .brand{font:28px Neuzeit;letter-spacing:-.02em}header .sub{font-size:11px;color:#a5a59d;text-transform:uppercase;letter-spacing:.12em}.routes{display:flex;border-bottom:1px solid #3a3a37;max-width:1312px;margin:0 auto 20px;gap:12px;padding-bottom:5px}.routes button{font-size:15px;white-space:nowrap}.routes .active{background:#eeeee7;color:#111}.view-wrap{max-width:1312px;margin:auto}#stage{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden}.scene{position:absolute;width:1280px;height:720px;transform-origin:0 0;overflow:hidden}.scene .txt{position:absolute;white-space:pre;overflow:visible}.scene img{position:absolute;display:block}.scene .rect{position:absolute}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 0 14px;font-size:12px;border-bottom:1px solid #3a3a37}.toolbar .label{color:#acaca4;font-size:11px;flex:1;padding-left:15px}.toolbar button:hover{background:#33332e}.toolbar #counter{font-size:12px;color:#d0d0c8}.thumbs{display:grid;grid-template-columns:repeat(9,1fr);gap:10px;margin:20px 0 32px}.thumb{padding:0;background:transparent;text-align:left;min-width:0;opacity:.56}.thumb:hover,.thumb[aria-current=true]{opacity:1}.thumb[aria-current=true] .mini{outline:2px solid #e5c77b;outline-offset:3px}.mini{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden}.thumb span{display:block;font-size:9px;color:#ccc;margin-top:9px;line-height:1.5}.details{max-width:1312px;margin:auto;padding:16px 0 52px}.details-top{display:grid;grid-template-columns:1fr 2fr;gap:60px;border-top:1px solid #4a4a43;padding:35px 0}.details h1{font:54px/.99 Neuzeit;margin:0 0 20px}.details p{font-size:14px;line-height:1.75;color:#c3c3b8;max-width:780px;margin:0 0 16px}.kicker{font-size:11px;color:#dfc783;text-transform:uppercase;letter-spacing:.08em;margin-bottom:18px}.system{display:grid;grid-template-columns:repeat(3,1fr);gap:38px;margin:20px 0 45px}.system h2{font:29px Neuzeit;margin:0 0 20px}.system p{font-size:12px;line-height:1.8}.system a{font-size:12px}.worlds{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin:22px 0 50px}.worlds img{width:100%;display:block;background:#000}.worlds h3{font:23px Neuzeit;margin:14px 0 8px}.worlds p{font-size:11px;line-height:1.7}.worlds-title{font:38px Neuzeit;margin:0 0 16px}.audit{border-top:1px solid #4a4a43;padding-top:32px;display:grid;grid-template-columns:1fr 2fr;gap:60px}.audit h2{font:36px Neuzeit;margin:0}.audit h3{font:24px Neuzeit;margin:0 0 12px}.audit p{font-size:13px}.audit section{margin-bottom:30px}footer{border-top:1px solid #41413b;padding:28px 0;color:#909086;font-size:11px}.playback{position:absolute;inset:0;background:#000;z-index:100;display:flex;align-items:center;justify-content:center}.playback video{width:100%;height:100%;object-fit:contain}.playback button{position:absolute;right:18px;top:18px;background:#eeeee7;color:#111;font-size:12px;z-index:2}body:has(.fullscreen){overflow:hidden}.fullscreen{margin:0!important;position:fixed!important;inset:0!important;z-index:99999;max-width:none!important;background:#000!important;display:flex;align-items:center;justify-content:center}.fullscreen #stage{width:min(100%,177.77778vh);height:auto;aspect-ratio:16/9}.fullscreen .toolbar,.fullscreen .thumbs{display:none}dialog{width:min(1350px,94vw);max-height:94vh;background:#20201e;color:#eee;border:1px solid #555;padding:28px}dialog::backdrop{background:#000c}.compare{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.compare .mini{width:100%}.compare p{font-size:12px}.compare h2{font:28px Neuzeit}.compare-controls{display:flex;justify-content:space-between;align-items:center;font-size:12px;margin-bottom:20px}.mono{font-family:Input}.credits a{margin-right:15px;display:inline-block;margin-top:10px}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:1400px){.view-wrap,.details,.routes{margin-left:32px;margin-right:32px}}@media(max-width:700px){header{padding:22px 18px;align-items:start}header .sub{font-size:9px;max-width:170px;line-height:1.6}.view-wrap,.details,.routes{margin-left:14px;margin-right:14px}.routes{gap:0;overflow-x:auto}.routes button{font-size:10px;padding:12px 10px}.toolbar{font-size:10px;flex-wrap:wrap}.toolbar .label{order:3;flex-basis:100%;padding:5px 15px}.toolbar button{padding:11px 9px;font-size:10px}.thumbs{grid-template-columns:repeat(3,1fr);gap:15px}.thumb span{font-size:8px}.details-top,.audit{grid-template-columns:1fr;gap:12px;padding-top:25px}.details h1{font-size:42px}.system{grid-template-columns:1fr;gap:25px}.worlds{grid-template-columns:1fr}.compare{grid-template-columns:1fr}.details p{font-size:12px}.audit h2{font-size:30px}dialog{padding:15px}.compare h2{font-size:22px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<body><header><div><a class="brand" href="../" style="display:block;text-decoration:none" aria-label="MASSIVE presentation home">MASSIVE</a><div class="sub">Presentation directions / 01</div></div><div class="sub">Matt Fry · Museum of the Moving Image<br>17 October 2026</div></header><nav class="routes" aria-label="Visual direction"></nav><main><div class="view-wrap" id="viewer"><div id="stage" role="img" aria-label="Presentation slide"></div><div class="toolbar"><button id="prev" aria-label="Previous slide">←</button><span id="counter"></span><button id="next" aria-label="Next slide">→</button><span id="slideTitle" class="label"></span><button id="motion">Play sample</button><button id="compare">Compare this screen</button><button id="present">Full screen ↗</button></div><div class="thumbs" aria-label="Choose slide"></div></div><div class="details"><div class="details-top"><div><div class="kicker">Three systems · Nine screen types each</div><h1>Same world.<br>Three ways in.</h1></div><div><p>These are visual direction studies for the talk, using the game’s own materials: actual fields, particles, grids, silhouettes and typography. Each route handles the same range of content so the comparison is about the system.</p><p><strong>My recommendation: Field Study.</strong> It has the closest continuity with MASSIVE and leaves room for scientific references without adding another visual language. Use Big / Small’s dramatic title-to-footage cuts for the opening and closing. Cosmic Atlas is the stronger alternative if the personal story and archival imagery lead the talk.</p><p>Use the arrows or thumbnails to explore. Switch direction to keep the same screen. “Play sample” opens a silent game recording; Escape returns to the study. PowerPoint files contain editable type and placed stills; use the included game fonts to preserve typography. Motion is demonstrated here, not embedded in the PowerPoint studies.</p></div></div>
+<div class="system"><section><div class="kicker">01 / Precision</div><h2>Field Study</h2><p>Black, white, Input Mono. A steady 64-pixel margin. One observation at a time. Images behave as evidence: clearly framed, named and then released into full-screen play.</p><p>Best for explaining what changes and why it matters to the player. Keep small catalogue labels for held frames; remove them when the event needs the whole screen.</p><a href="MASSIVE-01-Field-Study.pptx" download>Editable PowerPoint ↗</a> · <a href="MASSIVE-01-Field-Study.pdf">PDF preview ↗</a></section><section><div class="kicker">02 / Context</div><h2>Cosmic Atlas</h2><p>Warm white, black image fields, Neuzeit headings and restrained mono annotation. It extends the game’s type system into the language of a museum catalogue.</p><p>Best for the signed book, Flatland drawings, Eames stills and comparisons. Dark footage becomes a deliberate change of register. Keep the scientific image’s original colours.</p><a href="MASSIVE-02-Cosmic-Atlas.pptx" download>Editable PowerPoint ↗</a> · <a href="MASSIVE-02-Cosmic-Atlas.pdf">PDF preview ↗</a></section><section><div class="kicker">03 / Scale</div><h2>Big / Small</h2><p>Very large words against small players and detailed fields. Hard changes between black and white. Images extend to the frame; copy drops to a few words.</p><p>Best for a spoken, image-led talk. Sequence reference → game → player consequence before putting images together. It depends most on precise editing and well-chosen holds.</p><a href="MASSIVE-03-Big-Small.pptx" download>Editable PowerPoint ↗</a> · <a href="MASSIVE-03-Big-Small.pdf">PDF preview ↗</a></section></div>
+<h2 class="worlds-title">Nine worlds, one shared grammar</h2><p>The arena, player and score remain familiar while the stage changes its structure. Four captures below are from the current checkout; five earlier captures are labelled as context, not certified current artwork.</p><div class="worlds"><section><img src="assets/lattice.png" alt="Actual MASSIVE LATTICE game view"><h3>LATTICE</h3><p>White elastic grid; sparse structural marks.<br><span style="color:#8d8d82">6 October capture</span></p></section><section><img src="assets/orbital.png" alt="Actual MASSIVE ORBITAL game view"><h3>ORBITAL</h3><p>Violet and amber density; blinked particle distribution.<br><span style="color:#8d8d82">Current checkout capture</span></p></section><section><img src="assets/higgs-context.png" alt="Actual MASSIVE HIGGS game view"><h3>HIGGS</h3><p>Orange and magenta contours; a continuous topographic field.<br><span style="color:#8d8d82">6 October capture</span></p></section><section><img src="assets/dynamo.png" alt="Actual MASSIVE DYNAMO game view"><h3>DYNAMO</h3><p>Layered magenta field curves; a strong central dipole.<br><span style="color:#8d8d82">Current checkout capture</span></p></section><section><img src="assets/pulsar-context.png" alt="Actual MASSIVE PULSAR game view"><h3>PULSAR</h3><p>Cyan core and opposing beams; axial structure.<br><span style="color:#8d8d82">6 October capture</span></p></section><section><img src="assets/nova-context.png" alt="Actual MASSIVE NOVA game view"><h3>NOVA</h3><p>A particle body within the shared arena; change of stellar state.<br><span style="color:#8d8d82">6 October capture</span></p></section><section><img src="assets/singularity-context.png" alt="Actual MASSIVE SINGULARITY game view"><h3>SINGULARITY</h3><p>Folded grid and a central ring; surface continuity.<br><span style="color:#8d8d82">6 October capture</span></p></section><section><img src="assets/cosmos.png" alt="Actual MASSIVE COSMOS game view"><h3>COSMOS</h3><p>A full oval web; solid particles, clusters and voids.<br><span style="color:#8d8d82">Current checkout capture</span></p></section><section><img src="assets/emergence.png" alt="Actual MASSIVE EMERGENCE game view"><h3>EMERGENCE</h3><p>Small flat species discs; local groups within the field.<br><span style="color:#8d8d82">Current checkout capture</span></p></section></div><div class="audit"><h2>What the game<br>already gives us</h2><div><section><h3>A field you can read through contact</h3><p>The steady orthographic view, shared plane and sparse black-and-white actors establish a readable world. The grid is a continuous spatial reference. Its deformation makes relationships visible while the player supplies a stable point of orientation. Wireframe enemies, opaque bodies and coloured interiors carry different jobs; they should not be averaged into one luminous treatment.</p></section><section><h3>Colour with a consequence</h3><p>ORBITAL’s violet-to-amber density, DYNAMO’s layered magnetic curves, HIGGS’s topographic contours and COSMOS’s crisp particle structure belong to distinct systems. EMERGENCE uses solid, unlit species colours. The deck preserves those differences. No added glow, artificial grain, scanlines or global colour grade is needed.</p></section><section><h3>One cause, several visible effects</h3><p>In ORBITAL, the density function informs both distribution and encounter probability. Resonance’s authored curves organize rendering, contact and grid influence. DYNAMO’s changing shelter boundary coordinates the field presentation and exposure rules. SINGULARITY keeps a continuous surface through a change of view and connection. The presentation should reveal that coupling through one complete event, then a held detail.</p></section><section><h3>Motion needs a beginning and a rest</h3><p>Show the reference first. Tell the audience where to look. Play the game event once. Hold the final state while Matt explains the consequence. A quiet image is part of the timing. The review uses prerecorded media so the accepted game appearance remains intact and presentation playback does not depend on a live simulation.</p></section><section><h3>Coverage and final capture needs</h3><p>ORBITAL, DYNAMO, COSMOS and EMERGENCE were recorded from the current checkout, commit <span class="mono">27a3e7ce</span>, on 15 October. Scripted inputs operate the real controllers. Earlier isolated clips are retained as visual specimens, with their provenance in the PowerPoint notes. The current screenshots establish appearance; they are not a substitute for the final complete storm, strike, feeding or passage sequences.</p><p>The next production pass needs Matt’s signed COSMOS book photograph and signature detail, an oblique view of the flat player among dimensional objects, a matched calm-to-storm DYNAMO sequence, and final traversal and feeding clips. The nine screens here are system tests, not the entire 18-minute running order. The local editorial outline is used as a working brief; its personal story inputs remain provisional.</p></section><section><h3>Keep the kinds of science visible</h3><p>The Chladni photograph is an experiment. NASA’s magnetosphere image is a conceptual animation. ORBITAL is an orbital-inspired game distribution, rather than a calibrated atomic model. DYNAMO’s active storm field is authored; recorded SWMF/BATS-R-US output is a separate reference prototype. SINGULARITY’s passage is an authored geometric interpretation. COSMOS and EMERGENCE preserve selected relationships while adding explicit game rules.</p></section><section class="credits"><h3>Sources</h3><p><a href="https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203">MASSIVE GDD</a><a href="https://github.com/mattfryed/massive">Unity repository</a><a href="https://www.eamesoffice.com/the-work/powers-of-ten/">Eames Office</a><a href="https://sciencedemonstrations.fas.harvard.edu/presentations/big-chladni-plate">Harvard Chladni plate</a><a href="https://svs.gsfc.nasa.gov/14892">NASA Solar Wind Animations</a><a href="https://ocw.mit.edu/courses/18-755-lie-groups-and-lie-algebras-ii-spring-2024/mit18_755_s24_lec12.pdf">MIT hydrogen-atom notes</a></p><p>Powers of Ten still © Eames Office. Chladni photograph: Harvard Natural Sciences Lecture Demonstrations. NASA conceptual animation: NASA Goddard/CIL/Wes Buchanan and Krystofer Kim. All game imagery: MASSIVE. Repository fonts are used directly; no typeface approximation.</p></section></div></div><footer>27 screen studies · 3 editable decks · silent motion specimens · 16:9 working canvas</footer></div></main><dialog id="comparison"><div class="compare-controls"><span id="compareLabel"></span><button id="closeCompare">Close ×</button></div><div class="compare"></div></dialog>
+<script>const DATA={
+  "routes": [
+    {
+      "id": "01",
+      "name": "Field Study",
+      "desc": "The game’s own field-lab language: monospaced type, exact framing and sparse observation labels.",
+      "tone": "#000000",
+      "font": "Input Mono",
+      "accent": "#E6C36A",
+      "slides": [
+        {
+          "title": "MASSIVE",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "image",
+              "file": "surface.jpg",
+              "x": 720,
+              "y": 160,
+              "w": 560,
+              "h": 560,
+              "fit": "cover"
+            },
+            {
+              "kind": "rect",
+              "x": 0,
+              "y": 0,
+              "w": 1280,
+              "h": 174,
+              "fill": "#000000"
+            },
+            {
+              "kind": "text",
+              "text": "MASSIVE",
+              "x": 60,
+              "y": 58,
+              "w": 1160,
+              "h": 200,
+              "size": 170,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Science as a\nmaterial for play",
+              "x": 64,
+              "y": 305,
+              "w": 600,
+              "h": 130,
+              "size": 44,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "MATT FRY",
+              "x": 64,
+              "y": 565,
+              "w": 550,
+              "h": 40,
+              "size": 24,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Museum of the Moving Image\n17 October 2026",
+              "x": 64,
+              "y": 616,
+              "w": 600,
+              "h": 60,
+              "size": 20,
+              "font": "Input Mono",
+              "color": "#B1B1B1",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. ",
+          "video": "surface.mp4"
+        },
+        {
+          "title": "Ways of seeing",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "text",
+              "text": "WAYS OF SEEING",
+              "x": 64,
+              "y": 62,
+              "w": 1152,
+              "h": 85,
+              "size": 62,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "eames-scale.jpg",
+              "x": 650,
+              "y": 180,
+              "w": 560,
+              "h": 420,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "COSMOS",
+              "x": 64,
+              "y": 190,
+              "w": 530,
+              "h": 55,
+              "size": 44,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Carl Sagan",
+              "x": 64,
+              "y": 246,
+              "w": 530,
+              "h": 34,
+              "size": 25,
+              "font": "Input Mono",
+              "color": "#B8B8B8",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "FLATLAND",
+              "x": 64,
+              "y": 342,
+              "w": 530,
+              "h": 55,
+              "size": 44,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Edwin A. Abbott",
+              "x": 64,
+              "y": 400,
+              "w": 530,
+              "h": 34,
+              "size": 25,
+              "font": "Input Mono",
+              "color": "#B8B8B8",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "POWERS OF TEN",
+              "x": 64,
+              "y": 494,
+              "w": 580,
+              "h": 55,
+              "size": 44,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Charles & Ray Eames",
+              "x": 64,
+              "y": 550,
+              "w": 570,
+              "h": 34,
+              "size": 25,
+              "font": "Input Mono",
+              "color": "#B8B8B8",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "02 / WONDER / VIEWPOINT / SCALE",
+              "x": 64,
+              "y": 670,
+              "w": 1120,
+              "h": 25,
+              "size": 18,
+              "font": "Input Mono",
+              "color": "#989B9E",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Powers of Ten still © Eames Office, https://www.eamesoffice.com/the-work/powers-of-ten/. COSMOS and Flatland are influences named by Matt; personal story and signed-book photograph remain editorial inputs, not depicted here.",
+          "video": null
+        },
+        {
+          "title": "One plane of experience",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "text",
+              "text": "ONE PLANE OF EXPERIENCE",
+              "x": 64,
+              "y": 54,
+              "w": 1150,
+              "h": 85,
+              "size": 56,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "lattice.png",
+              "x": 210,
+              "y": 148,
+              "w": 1006,
+              "h": 475,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "MOVE\nATTACK\nDEFEND",
+              "x": 64,
+              "y": 240,
+              "w": 240,
+              "h": 150,
+              "size": 30,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "A shared surface\nfor local play",
+              "x": 64,
+              "y": 480,
+              "w": 270,
+              "h": 82,
+              "size": 24,
+              "font": "Input Mono",
+              "color": "#BEBEBE",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "03 / PLAYER / FIELD / CONTACT",
+              "x": 64,
+              "y": 670,
+              "w": 1120,
+              "h": 25,
+              "size": 18,
+              "font": "Input Mono",
+              "color": "#989B9E",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Ordinary gameplay uses a shared XZ plane. The flat-player premise is artistic and functional; colliders and effects have volume. Prior LATTICE capture, 6 October 2026.",
+          "video": null
+        },
+        {
+          "title": "A pattern becomes a place",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "text",
+              "text": "A PATTERN BECOMES A PLACE",
+              "x": 64,
+              "y": 56,
+              "w": 1152,
+              "h": 85,
+              "size": 54,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "chladni.jpg",
+              "x": 64,
+              "y": 190,
+              "w": 540,
+              "h": 350,
+              "fit": "contain"
+            },
+            {
+              "kind": "image",
+              "file": "resonance.jpg",
+              "x": 652,
+              "y": 190,
+              "w": 564,
+              "h": 350,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "EXPERIMENT",
+              "x": 64,
+              "y": 570,
+              "w": 540,
+              "h": 35,
+              "size": 24,
+              "font": "Input Mono",
+              "color": "#B9B9B9",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "GAME INTERPRETATION",
+              "x": 652,
+              "y": 570,
+              "w": 564,
+              "h": 35,
+              "size": 24,
+              "font": "Input Mono",
+              "color": "#B9B9B9",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "04 / RESONANCE",
+              "x": 64,
+              "y": 670,
+              "w": 1120,
+              "h": 25,
+              "size": 18,
+              "font": "Input Mono",
+              "color": "#989B9E",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Experiment photograph: Harvard Natural Sciences Lecture Demonstrations, https://sciencedemonstrations.fas.harvard.edu/presentations/big-chladni-plate. Sand collects at nodal lines on a vibrating plate. MASSIVE's Resonance uses authored Chladni-inspired curves; it is not a sand or plate solver.",
+          "video": "resonance.mp4"
+        },
+        {
+          "title": "Density changes the odds",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "text",
+              "text": "ORBITAL",
+              "x": 64,
+              "y": 53,
+              "w": 1152,
+              "h": 100,
+              "size": 84,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "density.png",
+              "x": 64,
+              "y": 190,
+              "w": 670,
+              "h": 425,
+              "fit": "cover"
+            },
+            {
+              "kind": "text",
+              "text": "MORE DENSITY.\nMORE ENCOUNTERS.",
+              "x": 790,
+              "y": 210,
+              "w": 440,
+              "h": 210,
+              "size": 42,
+              "font": "Input Mono",
+              "color": "#F2CF79",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "A visible distribution\nchanges the chance\nof a strike.",
+              "x": 790,
+              "y": 467,
+              "w": 440,
+              "h": 115,
+              "size": 26,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "05 / PROBABILITY / GAME INTERPRETATION",
+              "x": 64,
+              "y": 670,
+              "w": 1120,
+              "h": 25,
+              "size": 18,
+              "font": "Input Mono",
+              "color": "#989B9E",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Orbital-inspired game distributions share a density function with encounter probability. Shape basis: https://ocw.mit.edu/courses/18-755-lie-groups-and-lie-algebras-ii-spring-2024/mit18_755_s24_lec12.pdf. Not calibrated atomic wavefunctions; an impact ellipse is feedback, not an electron trajectory.",
+          "video": "orbital.mp4"
+        },
+        {
+          "title": "The safe place moves",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "text",
+              "text": "THE SAFE PLACE MOVES",
+              "x": 64,
+              "y": 56,
+              "w": 1152,
+              "h": 85,
+              "size": 60,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "nasa.jpg",
+              "x": 64,
+              "y": 190,
+              "w": 552,
+              "h": 310,
+              "fit": "contain"
+            },
+            {
+              "kind": "image",
+              "file": "dynamo.png",
+              "x": 664,
+              "y": 190,
+              "w": 552,
+              "h": 310,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "CONCEPTUAL ANIMATION",
+              "x": 64,
+              "y": 528,
+              "w": 552,
+              "h": 33,
+              "size": 22,
+              "font": "Input Mono",
+              "color": "#B5B5B5",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "GAME INTERPRETATION",
+              "x": 664,
+              "y": 528,
+              "w": 552,
+              "h": 33,
+              "size": 22,
+              "font": "Input Mono",
+              "color": "#B5B5B5",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Read the storm. Reposition.",
+              "x": 64,
+              "y": 598,
+              "w": 1152,
+              "h": 48,
+              "size": 32,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "06 / DYNAMO",
+              "x": 64,
+              "y": 670,
+              "w": 1120,
+              "h": 25,
+              "size": 18,
+              "font": "Input Mono",
+              "color": "#989B9E",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. NASA conceptual animation: NASA Goddard/CIL/Wes Buchanan, Krystofer Kim, https://svs.gsfc.nasa.gov/14892. The active DYNAMO level uses an authored organic field and storm envelope. SWMF/BATS-R-US snapshots remain a separate reference prototype and do not currently drive gameplay storms.",
+          "video": "dynamo.mp4"
+        },
+        {
+          "title": "The plane folds",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "text",
+              "text": "THE PLANE\nFOLDS",
+              "x": 64,
+              "y": 70,
+              "w": 680,
+              "h": 200,
+              "size": 73,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "fold.png",
+              "x": 572,
+              "y": 104,
+              "w": 644,
+              "h": 500,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "Same player.\nA different connection.",
+              "x": 64,
+              "y": 440,
+              "w": 520,
+              "h": 125,
+              "size": 30,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "07 / SINGULARITY / GEOMETRIC INTERPRETATION",
+              "x": 64,
+              "y": 670,
+              "w": 1120,
+              "h": 25,
+              "size": 18,
+              "font": "Input Mono",
+              "color": "#989B9E",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. SINGULARITY connects a continuous folded surface. Portal travel is an authored nonlethal passage; it does not model a traversable astrophysical black hole. Use a full uninterrupted traversal before showing the held diagram.",
+          "video": "singularity.mp4"
+        },
+        {
+          "title": "Structures at different scales",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "text",
+              "text": "STRUCTURES AT DIFFERENT SCALES",
+              "x": 64,
+              "y": 53,
+              "w": 1152,
+              "h": 80,
+              "size": 48,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "cosmos.png",
+              "x": 64,
+              "y": 190,
+              "w": 552,
+              "h": 330,
+              "fit": "contain"
+            },
+            {
+              "kind": "image",
+              "file": "emergence.png",
+              "x": 664,
+              "y": 190,
+              "w": 552,
+              "h": 330,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "COSMOS",
+              "x": 64,
+              "y": 560,
+              "w": 552,
+              "h": 48,
+              "size": 35,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "EMERGENCE",
+              "x": 664,
+              "y": 560,
+              "w": 552,
+              "h": 48,
+              "size": 35,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "08 / LARGE STRUCTURES / LOCAL INTERACTIONS",
+              "x": 64,
+              "y": 670,
+              "w": 1120,
+              "h": 25,
+              "size": 18,
+              "font": "Input Mono",
+              "color": "#989B9E",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. COSMOS is an art-directed evolving cosmic web, not a predictive cosmological solver. EMERGENCE combines local attraction/repulsion with authored organism recognition and metabolism; it does not reconstruct the origin of life. Both shown in new 15 October captures.",
+          "video": null
+        },
+        {
+          "title": "A small place in a larger world",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "text",
+              "text": "A SMALL PLACE\nIN A LARGER\nWORLD",
+              "x": 64,
+              "y": 137,
+              "w": 1152,
+              "h": 360,
+              "size": 92,
+              "font": "Input Mono",
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "MASSIVE / MATT FRY",
+              "x": 64,
+              "y": 620,
+              "w": 1152,
+              "h": 42,
+              "size": 24,
+              "font": "Input Mono",
+              "color": "#B1B1B1",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Sparse closing screen; return to the player and use Matt’s own closing language.",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "name": "Cosmic Atlas",
+      "desc": "A museum catalogue in motion: warm white, strong typographic hierarchy and black image fields.",
+      "tone": "#F1F0E8",
+      "font": "NeuzeitSHeavy-Book",
+      "accent": "#B84B32",
+      "slides": [
+        {
+          "title": "MASSIVE",
+          "bg": "#F1F0E8",
+          "e": [
+            {
+              "kind": "text",
+              "text": "MATT FRY / MUSEUM OF THE MOVING IMAGE",
+              "x": 64,
+              "y": 48,
+              "w": 1152,
+              "h": 34,
+              "size": 22,
+              "font": "Input Mono",
+              "color": "#242424",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "MASSIVE",
+              "x": 52,
+              "y": 104,
+              "w": 1170,
+              "h": 205,
+              "size": 184,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "A small place\nin a larger world",
+              "x": 64,
+              "y": 343,
+              "w": 650,
+              "h": 170,
+              "size": 66,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "surface.jpg",
+              "x": 770,
+              "y": 311,
+              "w": 446,
+              "h": 332,
+              "fit": "cover"
+            },
+            {
+              "kind": "text",
+              "text": "Science as a material for play",
+              "x": 64,
+              "y": 612,
+              "w": 650,
+              "h": 44,
+              "size": 27,
+              "font": "Input Mono",
+              "color": "#57574F",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. ",
+          "video": "surface.mp4"
+        },
+        {
+          "title": "Ways of seeing",
+          "bg": "#F1F0E8",
+          "e": [
+            {
+              "kind": "text",
+              "text": "Ways of seeing",
+              "x": 64,
+              "y": 54,
+              "w": 1152,
+              "h": 100,
+              "size": 76,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#101010",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "eames-scale.jpg",
+              "x": 620,
+              "y": 170,
+              "w": 596,
+              "h": 444,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "01",
+              "x": 64,
+              "y": 198,
+              "w": 64,
+              "h": 40,
+              "size": 24,
+              "font": "Input Mono",
+              "color": "#A0462F",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "COSMOS",
+              "x": 155,
+              "y": 182,
+              "w": 410,
+              "h": 62,
+              "size": 47,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Carl Sagan",
+              "x": 155,
+              "y": 244,
+              "w": 400,
+              "h": 34,
+              "size": 23,
+              "font": "Input Mono",
+              "color": "#55554E",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "02",
+              "x": 64,
+              "y": 340,
+              "w": 64,
+              "h": 40,
+              "size": 24,
+              "font": "Input Mono",
+              "color": "#A0462F",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Flatland",
+              "x": 155,
+              "y": 324,
+              "w": 410,
+              "h": 62,
+              "size": 47,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Edwin A. Abbott",
+              "x": 155,
+              "y": 386,
+              "w": 410,
+              "h": 34,
+              "size": 23,
+              "font": "Input Mono",
+              "color": "#55554E",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "03",
+              "x": 64,
+              "y": 482,
+              "w": 64,
+              "h": 40,
+              "size": 24,
+              "font": "Input Mono",
+              "color": "#A0462F",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Powers of Ten",
+              "x": 155,
+              "y": 466,
+              "w": 440,
+              "h": 62,
+              "size": 47,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Charles & Ray Eames",
+              "x": 155,
+              "y": 528,
+              "w": 440,
+              "h": 60,
+              "size": 23,
+              "font": "Input Mono",
+              "color": "#55554E",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "02 / WONDER / VIEWPOINT / SCALE",
+              "x": 64,
+              "y": 670,
+              "w": 1120,
+              "h": 25,
+              "size": 18,
+              "font": "Input Mono",
+              "color": "#696960",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Powers of Ten still © Eames Office, https://www.eamesoffice.com/the-work/powers-of-ten/. COSMOS and Flatland are influences named by Matt; personal story and signed-book photograph remain editorial inputs, not depicted here.",
+          "video": null
+        },
+        {
+          "title": "One plane of experience",
+          "bg": "#F1F0E8",
+          "e": [
+            {
+              "kind": "text",
+              "text": "One plane of experience",
+              "x": 64,
+              "y": 48,
+              "w": 1152,
+              "h": 98,
+              "size": 67,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "lattice.png",
+              "x": 314,
+              "y": 174,
+              "w": 902,
+              "h": 458,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "Move.\nAttack.\nDefend.",
+              "x": 64,
+              "y": 204,
+              "w": 230,
+              "h": 184,
+              "size": 42,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "A shared surface\nfor local play",
+              "x": 64,
+              "y": 482,
+              "w": 250,
+              "h": 100,
+              "size": 24,
+              "font": "Input Mono",
+              "color": "#56564F",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "03 / PLAYER / FIELD / CONTACT",
+              "x": 64,
+              "y": 670,
+              "w": 1120,
+              "h": 25,
+              "size": 18,
+              "font": "Input Mono",
+              "color": "#696960",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Ordinary gameplay uses a shared XZ plane. The flat-player premise is artistic and functional; colliders and effects have volume. Prior LATTICE capture, 6 October 2026.",
+          "video": null
+        },
+        {
+          "title": "A pattern becomes a place",
+          "bg": "#F1F0E8",
+          "e": [
+            {
+              "kind": "text",
+              "text": "A pattern becomes a place",
+              "x": 64,
+              "y": 54,
+              "w": 1152,
+              "h": 95,
+              "size": 65,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "rect",
+              "x": 64,
+              "y": 190,
+              "w": 552,
+              "h": 340,
+              "fill": "#000000"
+            },
+            {
+              "kind": "image",
+              "file": "chladni.jpg",
+              "x": 94,
+              "y": 204,
+              "w": 492,
+              "h": 312,
+              "fit": "contain"
+            },
+            {
+              "kind": "rect",
+              "x": 664,
+              "y": 190,
+              "w": 552,
+              "h": 340,
+              "fill": "#000000"
+            },
+            {
+              "kind": "image",
+              "file": "resonance.jpg",
+              "x": 664,
+              "y": 190,
+              "w": 552,
+              "h": 340,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "Chladni plate",
+              "x": 64,
+              "y": 555,
+              "w": 552,
+              "h": 48,
+              "size": 37,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Resonance",
+              "x": 664,
+              "y": 555,
+              "w": 552,
+              "h": 48,
+              "size": 37,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Experiment / Harvard",
+              "x": 64,
+              "y": 616,
+              "w": 552,
+              "h": 30,
+              "size": 22,
+              "font": "Input Mono",
+              "color": "#68685F",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Game interpretation / MASSIVE",
+              "x": 664,
+              "y": 616,
+              "w": 552,
+              "h": 30,
+              "size": 22,
+              "font": "Input Mono",
+              "color": "#68685F",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Experiment photograph: Harvard Natural Sciences Lecture Demonstrations, https://sciencedemonstrations.fas.harvard.edu/presentations/big-chladni-plate. Sand collects at nodal lines on a vibrating plate. MASSIVE's Resonance uses authored Chladni-inspired curves; it is not a sand or plate solver.",
+          "video": "resonance.mp4"
+        },
+        {
+          "title": "Density changes the odds",
+          "bg": "#F1F0E8",
+          "e": [
+            {
+              "kind": "text",
+              "text": "Probability becomes an encounter",
+              "x": 64,
+              "y": 54,
+              "w": 1152,
+              "h": 95,
+              "size": 59,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "density.png",
+              "x": 64,
+              "y": 190,
+              "w": 690,
+              "h": 430,
+              "fit": "cover"
+            },
+            {
+              "kind": "text",
+              "text": "Density\nchanges\nthe odds",
+              "x": 810,
+              "y": 202,
+              "w": 406,
+              "h": 270,
+              "size": 67,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "ORBITAL",
+              "x": 810,
+              "y": 558,
+              "w": 406,
+              "h": 40,
+              "size": 25,
+              "font": "Input Mono",
+              "color": "#A0462F",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "05 / GAME INTERPRETATION",
+              "x": 64,
+              "y": 670,
+              "w": 1120,
+              "h": 25,
+              "size": 18,
+              "font": "Input Mono",
+              "color": "#696960",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Orbital-inspired game distributions share a density function with encounter probability. Shape basis: https://ocw.mit.edu/courses/18-755-lie-groups-and-lie-algebras-ii-spring-2024/mit18_755_s24_lec12.pdf. Not calibrated atomic wavefunctions; an impact ellipse is feedback, not an electron trajectory.",
+          "video": "orbital.mp4"
+        },
+        {
+          "title": "The safe place moves",
+          "bg": "#F1F0E8",
+          "e": [
+            {
+              "kind": "text",
+              "text": "The safe place moves",
+              "x": 64,
+              "y": 54,
+              "w": 1152,
+              "h": 98,
+              "size": 74,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "nasa.jpg",
+              "x": 64,
+              "y": 196,
+              "w": 552,
+              "h": 310,
+              "fit": "contain"
+            },
+            {
+              "kind": "image",
+              "file": "dynamo.png",
+              "x": 664,
+              "y": 196,
+              "w": 552,
+              "h": 310,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "Solar wind / magnetosphere",
+              "x": 64,
+              "y": 536,
+              "w": 552,
+              "h": 44,
+              "size": 29,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "DYNAMO",
+              "x": 664,
+              "y": 536,
+              "w": 552,
+              "h": 44,
+              "size": 29,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "NASA / Conceptual animation",
+              "x": 64,
+              "y": 590,
+              "w": 552,
+              "h": 50,
+              "size": 22,
+              "font": "Input Mono",
+              "color": "#68685F",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "MASSIVE / Game interpretation",
+              "x": 664,
+              "y": 590,
+              "w": 552,
+              "h": 50,
+              "size": 22,
+              "font": "Input Mono",
+              "color": "#68685F",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. NASA conceptual animation: NASA Goddard/CIL/Wes Buchanan, Krystofer Kim, https://svs.gsfc.nasa.gov/14892. The active DYNAMO level uses an authored organic field and storm envelope. SWMF/BATS-R-US snapshots remain a separate reference prototype and do not currently drive gameplay storms.",
+          "video": "dynamo.mp4"
+        },
+        {
+          "title": "The plane folds",
+          "bg": "#F1F0E8",
+          "e": [
+            {
+              "kind": "text",
+              "text": "The plane\nfolds",
+              "x": 64,
+              "y": 71,
+              "w": 560,
+              "h": 220,
+              "size": 90,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "rect",
+              "x": 620,
+              "y": 64,
+              "w": 596,
+              "h": 570,
+              "fill": "#000000"
+            },
+            {
+              "kind": "image",
+              "file": "fold.png",
+              "x": 628,
+              "y": 70,
+              "w": 580,
+              "h": 550,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "Same player.\nA different connection.",
+              "x": 64,
+              "y": 431,
+              "w": 510,
+              "h": 130,
+              "size": 32,
+              "font": "Input Mono",
+              "color": "#292923",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "07 / SINGULARITY / GEOMETRIC INTERPRETATION",
+              "x": 64,
+              "y": 670,
+              "w": 1120,
+              "h": 25,
+              "size": 18,
+              "font": "Input Mono",
+              "color": "#696960",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. SINGULARITY connects a continuous folded surface. Portal travel is an authored nonlethal passage; it does not model a traversable astrophysical black hole. Use a full uninterrupted traversal before showing the held diagram.",
+          "video": "singularity.mp4"
+        },
+        {
+          "title": "Structures at different scales",
+          "bg": "#F1F0E8",
+          "e": [
+            {
+              "kind": "text",
+              "text": "Structures at different scales",
+              "x": 64,
+              "y": 53,
+              "w": 1152,
+              "h": 95,
+              "size": 64,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "cosmos.png",
+              "x": 64,
+              "y": 196,
+              "w": 552,
+              "h": 326,
+              "fit": "contain"
+            },
+            {
+              "kind": "image",
+              "file": "emergence.png",
+              "x": 664,
+              "y": 196,
+              "w": 552,
+              "h": 326,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "COSMOS",
+              "x": 64,
+              "y": 557,
+              "w": 552,
+              "h": 48,
+              "size": 37,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "EMERGENCE",
+              "x": 664,
+              "y": 557,
+              "w": 552,
+              "h": 48,
+              "size": 37,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "An evolving web",
+              "x": 64,
+              "y": 615,
+              "w": 552,
+              "h": 35,
+              "size": 23,
+              "font": "Input Mono",
+              "color": "#68685F",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Local interactions",
+              "x": 664,
+              "y": 615,
+              "w": 552,
+              "h": 35,
+              "size": 23,
+              "font": "Input Mono",
+              "color": "#68685F",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. COSMOS is an art-directed evolving cosmic web, not a predictive cosmological solver. EMERGENCE combines local attraction/repulsion with authored organism recognition and metabolism; it does not reconstruct the origin of life. Both shown in new 15 October captures.",
+          "video": null
+        },
+        {
+          "title": "A small place in a larger world",
+          "bg": "#F1F0E8",
+          "e": [
+            {
+              "kind": "text",
+              "text": "A small place\nin a larger world",
+              "x": 64,
+              "y": 150,
+              "w": 1152,
+              "h": 310,
+              "size": 111,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "MASSIVE / MATT FRY",
+              "x": 64,
+              "y": 617,
+              "w": 1152,
+              "h": 40,
+              "size": 24,
+              "font": "Input Mono",
+              "color": "#585850",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Sparse closing screen; return to the player and use Matt’s own closing language.",
+          "video": null
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "name": "Big / Small",
+      "desc": "A cinematic sequence of radical changes in scale: huge words, small players and uninterrupted moving images.",
+      "tone": "#000000",
+      "font": "NeuzeitSHeavy-Book",
+      "accent": "#FFFFFF",
+      "slides": [
+        {
+          "title": "MASSIVE",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "image",
+              "file": "surface.jpg",
+              "x": 0,
+              "y": 70,
+              "w": 1280,
+              "h": 650,
+              "fit": "cover"
+            },
+            {
+              "kind": "rect",
+              "x": 0,
+              "y": 0,
+              "w": 1280,
+              "h": 228,
+              "fill": "#000000"
+            },
+            {
+              "kind": "text",
+              "text": "MASSIVE",
+              "x": 44,
+              "y": 25,
+              "w": 1192,
+              "h": 205,
+              "size": 184,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "rect",
+              "x": 0,
+              "y": 560,
+              "w": 1280,
+              "h": 160,
+              "fill": "#000000"
+            },
+            {
+              "kind": "text",
+              "text": "A small place in a larger world",
+              "x": 64,
+              "y": 579,
+              "w": 1152,
+              "h": 69,
+              "size": 47,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Matt Fry / Museum of the Moving Image",
+              "x": 64,
+              "y": 665,
+              "w": 1152,
+              "h": 30,
+              "size": 20,
+              "font": "Input Mono",
+              "color": "#A5A5A5",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. ",
+          "video": "surface.mp4"
+        },
+        {
+          "title": "Ways of seeing",
+          "bg": "#F1F0E8",
+          "e": [
+            {
+              "kind": "text",
+              "text": "Look closer",
+              "x": 48,
+              "y": 30,
+              "w": 1184,
+              "h": 158,
+              "size": 144,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "eames-scale.jpg",
+              "x": 48,
+              "y": 214,
+              "w": 704,
+              "h": 448,
+              "fit": "cover"
+            },
+            {
+              "kind": "text",
+              "text": "COSMOS",
+              "x": 812,
+              "y": 247,
+              "w": 400,
+              "h": 60,
+              "size": 47,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Flatland",
+              "x": 812,
+              "y": 365,
+              "w": 400,
+              "h": 60,
+              "size": 47,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Powers\nof Ten",
+              "x": 812,
+              "y": 483,
+              "w": 400,
+              "h": 150,
+              "size": 57,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Powers of Ten still © Eames Office, https://www.eamesoffice.com/the-work/powers-of-ten/. COSMOS and Flatland are influences named by Matt; personal story and signed-book photograph remain editorial inputs, not depicted here.",
+          "video": null
+        },
+        {
+          "title": "One plane of experience",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "text",
+              "text": "One plane",
+              "x": 48,
+              "y": 27,
+              "w": 1184,
+              "h": 150,
+              "size": 138,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "lattice.png",
+              "x": 0,
+              "y": 180,
+              "w": 1280,
+              "h": 520,
+              "fit": "contain"
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Ordinary gameplay uses a shared XZ plane. The flat-player premise is artistic and functional; colliders and effects have volume. Prior LATTICE capture, 6 October 2026.",
+          "video": null
+        },
+        {
+          "title": "A pattern becomes a place",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "text",
+              "text": "Resonance",
+              "x": 48,
+              "y": 27,
+              "w": 1184,
+              "h": 160,
+              "size": 136,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "image",
+              "file": "chladni.jpg",
+              "x": 48,
+              "y": 214,
+              "w": 370,
+              "h": 376,
+              "fit": "contain"
+            },
+            {
+              "kind": "image",
+              "file": "resonance.jpg",
+              "x": 446,
+              "y": 214,
+              "w": 786,
+              "h": 376,
+              "fit": "cover"
+            },
+            {
+              "kind": "text",
+              "text": "Experiment / Harvard",
+              "x": 48,
+              "y": 638,
+              "w": 420,
+              "h": 40,
+              "size": 22,
+              "font": "Input Mono",
+              "color": "#BABABA",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Game interpretation / MASSIVE",
+              "x": 650,
+              "y": 638,
+              "w": 582,
+              "h": 40,
+              "size": 22,
+              "font": "Input Mono",
+              "color": "#BABABA",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Experiment photograph: Harvard Natural Sciences Lecture Demonstrations, https://sciencedemonstrations.fas.harvard.edu/presentations/big-chladni-plate. Sand collects at nodal lines on a vibrating plate. MASSIVE's Resonance uses authored Chladni-inspired curves; it is not a sand or plate solver.",
+          "video": "resonance.mp4"
+        },
+        {
+          "title": "Density changes the odds",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "image",
+              "file": "cloud.jpg",
+              "x": 440,
+              "y": 30,
+              "w": 840,
+              "h": 650,
+              "fit": "cover"
+            },
+            {
+              "kind": "text",
+              "text": "Chance",
+              "x": 48,
+              "y": 55,
+              "w": 1100,
+              "h": 154,
+              "size": 146,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "has a shape",
+              "x": 48,
+              "y": 220,
+              "w": 1150,
+              "h": 145,
+              "size": 105,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "More density.\nMore encounters.",
+              "x": 64,
+              "y": 509,
+              "w": 560,
+              "h": 120,
+              "size": 40,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "ORBITAL / Game interpretation",
+              "x": 64,
+              "y": 666,
+              "w": 1152,
+              "h": 28,
+              "size": 20,
+              "font": "Input Mono",
+              "color": "#A5A5A5",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Orbital-inspired game distributions share a density function with encounter probability. Shape basis: https://ocw.mit.edu/courses/18-755-lie-groups-and-lie-algebras-ii-spring-2024/mit18_755_s24_lec12.pdf. Not calibrated atomic wavefunctions; an impact ellipse is feedback, not an electron trajectory.",
+          "video": "orbital.mp4"
+        },
+        {
+          "title": "The safe place moves",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "image",
+              "file": "nasa.jpg",
+              "x": 0,
+              "y": 0,
+              "w": 640,
+              "h": 480,
+              "fit": "cover"
+            },
+            {
+              "kind": "image",
+              "file": "dynamo-field.png",
+              "x": 640,
+              "y": 0,
+              "w": 640,
+              "h": 480,
+              "fit": "cover"
+            },
+            {
+              "kind": "rect",
+              "x": 0,
+              "y": 464,
+              "w": 1280,
+              "h": 256,
+              "fill": "#F1F0E8"
+            },
+            {
+              "kind": "text",
+              "text": "Shelter moves",
+              "x": 48,
+              "y": 479,
+              "w": 1184,
+              "h": 143,
+              "size": 124,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "NASA / Conceptual animation",
+              "x": 48,
+              "y": 650,
+              "w": 560,
+              "h": 35,
+              "size": 21,
+              "font": "Input Mono",
+              "color": "#494942",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "DYNAMO / Game interpretation",
+              "x": 672,
+              "y": 650,
+              "w": 560,
+              "h": 35,
+              "size": 21,
+              "font": "Input Mono",
+              "color": "#494942",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. NASA conceptual animation: NASA Goddard/CIL/Wes Buchanan, Krystofer Kim, https://svs.gsfc.nasa.gov/14892. The active DYNAMO level uses an authored organic field and storm envelope. SWMF/BATS-R-US snapshots remain a separate reference prototype and do not currently drive gameplay storms.",
+          "video": "dynamo.mp4"
+        },
+        {
+          "title": "The plane folds",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "image",
+              "file": "fold.png",
+              "x": 450,
+              "y": 25,
+              "w": 830,
+              "h": 670,
+              "fit": "contain"
+            },
+            {
+              "kind": "text",
+              "text": "The plane",
+              "x": 48,
+              "y": 48,
+              "w": 1110,
+              "h": 145,
+              "size": 126,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "folds",
+              "x": 48,
+              "y": 215,
+              "w": 1110,
+              "h": 145,
+              "size": 126,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Same player.\nA different connection.",
+              "x": 64,
+              "y": 515,
+              "w": 560,
+              "h": 111,
+              "size": 37,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "SINGULARITY / Geometric interpretation",
+              "x": 64,
+              "y": 666,
+              "w": 1152,
+              "h": 30,
+              "size": 20,
+              "font": "Input Mono",
+              "color": "#A5A5A5",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. SINGULARITY connects a continuous folded surface. Portal travel is an authored nonlethal passage; it does not model a traversable astrophysical black hole. Use a full uninterrupted traversal before showing the held diagram.",
+          "video": "singularity.mp4"
+        },
+        {
+          "title": "Structures at different scales",
+          "bg": "#000000",
+          "e": [
+            {
+              "kind": "image",
+              "file": "cosmos.png",
+              "x": 0,
+              "y": 0,
+              "w": 1280,
+              "h": 720,
+              "fit": "cover"
+            },
+            {
+              "kind": "rect",
+              "x": 0,
+              "y": 0,
+              "w": 1280,
+              "h": 180,
+              "fill": "#000000"
+            },
+            {
+              "kind": "text",
+              "text": "Worlds within worlds",
+              "x": 48,
+              "y": 28,
+              "w": 1184,
+              "h": 126,
+              "size": 93,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "rect",
+              "x": 0,
+              "y": 543,
+              "w": 1280,
+              "h": 177,
+              "fill": "#000000"
+            },
+            {
+              "kind": "image",
+              "file": "ecology.png",
+              "x": 750,
+              "y": 554,
+              "w": 482,
+              "h": 143,
+              "fit": "cover"
+            },
+            {
+              "kind": "text",
+              "text": "COSMOS / EMERGENCE",
+              "x": 64,
+              "y": 574,
+              "w": 670,
+              "h": 57,
+              "size": 35,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#FFFFFF",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "Large structures. Local interactions.",
+              "x": 64,
+              "y": 652,
+              "w": 670,
+              "h": 37,
+              "size": 22,
+              "font": "Input Mono",
+              "color": "#B7B7B7",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. COSMOS is an art-directed evolving cosmic web, not a predictive cosmological solver. EMERGENCE combines local attraction/repulsion with authored organism recognition and metabolism; it does not reconstruct the origin of life. Both shown in new 15 October captures.",
+          "video": null
+        },
+        {
+          "title": "A small place in a larger world",
+          "bg": "#F1F0E8",
+          "e": [
+            {
+              "kind": "text",
+              "text": "A small place",
+              "x": 48,
+              "y": 70,
+              "w": 1184,
+              "h": 180,
+              "size": 132,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "in a larger",
+              "x": 48,
+              "y": 250,
+              "w": 1184,
+              "h": 180,
+              "size": 132,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "world",
+              "x": 48,
+              "y": 430,
+              "w": 1184,
+              "h": 180,
+              "size": 132,
+              "font": "NeuzeitSHeavy-Book",
+              "color": "#111111",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            },
+            {
+              "kind": "text",
+              "text": "MASSIVE / MATT FRY",
+              "x": 64,
+              "y": 660,
+              "w": 1152,
+              "h": 35,
+              "size": 22,
+              "font": "Input Mono",
+              "color": "#55554E",
+              "bold": false,
+              "align": "left",
+              "line": 1.05
+            }
+          ],
+          "notes": "Visual direction study for Matt Fry's MOMI talk, 17 October 2026. Sources: https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203. Current repo mattfryed/massive, commit 27a3e7ce. Captures with scripted movement through real input, silent, not human play. New captures ORBITAL/DYNAMO/COSMOS/EMERGENCE from 15 October checkout. Existing visual studies and isolated footage use September / 6 October states and illustrate the visual system; they do not certify final event capture. Sparse closing screen; return to the player and use Matt’s own closing language.",
+          "video": null
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "gdd": "https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203",
+    "eames": "https://www.eamesoffice.com/the-work/powers-of-ten/",
+    "harvard": "https://sciencedemonstrations.fas.harvard.edu/presentations/big-chladni-plate",
+    "nasa": "https://svs.gsfc.nasa.gov/14892",
+    "mit": "https://ocw.mit.edu/courses/18-755-lie-groups-and-lie-algebras-ii-spring-2024/mit18_755_s24_lec12.pdf"
+  }
+};
+let route=0,index=0;const stage=document.querySelector('#stage'),viewer=document.querySelector('#viewer'),nav=document.querySelector('.routes'),thumbs=document.querySelector('.thumbs');
+const fonts={'Input Mono':'Input','NeuzeitSHeavy-Book':'Neuzeit'};
+function scene(d){const el=document.createElement('div');el.className='scene';el.style.background=d.bg;d.e.forEach(e=>{let q;if(e.kind==='text'){q=document.createElement('div');q.className='txt';q.textContent=e.text;Object.assign(q.style,{fontSize:e.size+'px',fontFamily:fonts[e.font],color:e.color,fontWeight:e.bold?'700':'400',textAlign:e.align,lineHeight:e.line});}else if(e.kind==='image'){q=document.createElement('img');q.src='assets/'+e.file;q.alt='';q.style.objectFit=e.fit;q.draggable=false;}else{q=document.createElement('div');q.className='rect';q.style.background=e.fill;}Object.assign(q.style,{left:e.x+'px',top:e.y+'px',width:e.w+'px',height:e.h+'px'});el.append(q);});return el;}
+function scale(el){let q=el.querySelector('.scene');if(q)q.style.transform='scale('+el.clientWidth/1280+')';}
+const ro=new ResizeObserver(es=>es.forEach(e=>scale(e.target)));
+function makeScene(host,d){host.replaceChildren(scene(d));ro.observe(host);requestAnimationFrame(()=>scale(host));}
+function render(){const r=DATA.routes[route],d=r.slides[index];nav.replaceChildren();DATA.routes.forEach((r,i)=>{const b=document.createElement('button');b.textContent=r.id+' / '+r.name;b.className=i===route?'active':'';b.setAttribute('aria-pressed',i===route);b.onclick=()=>{route=i;render()};nav.append(b)});makeScene(stage,d);stage.setAttribute('aria-label',r.name+': '+d.title);document.querySelector('#counter').textContent=String(index+1).padStart(2,'0')+' / 09';document.querySelector('#slideTitle').textContent=d.title;document.querySelector('#motion').disabled=!d.video;document.querySelector('#motion').style.opacity=d.video?1:.3;thumbs.replaceChildren();r.slides.forEach((d,i)=>{const b=document.createElement('button');b.className='thumb';b.setAttribute('aria-current',i===index);b.setAttribute('aria-label','Slide '+(i+1)+': '+d.title);const mini=document.createElement('div');mini.className='mini';makeScene(mini,d);const text=document.createElement('span');text.textContent=String(i+1).padStart(2,'0')+' / '+d.title;b.append(mini,text);b.onclick=()=>{index=i;render()};thumbs.append(b)});history.replaceState(null,'','#'+(route+1)+'-'+(index+1));}
+function move(n){index=(index+n+9)%9;render()}document.querySelector('#prev').onclick=()=>move(-1);document.querySelector('#next').onclick=()=>move(1);
+function exitPlayback(){document.querySelector('.playback')?.remove()}
+document.querySelector('#motion').onclick=()=>{let d=DATA.routes[route].slides[index];if(!d.video)return;const p=document.createElement('div');p.className='playback';const v=document.createElement('video');v.src='assets/'+d.video;v.controls=true;v.autoplay=true;v.playsInline=true;v.muted=true;v.loop=false;const close=document.createElement('button');close.textContent='Back to study ×';close.onclick=exitPlayback;p.append(v,close);stage.append(p);v.play().catch(()=>{});};
+function fullscreen(){viewer.classList.toggle('fullscreen');scale(stage)}document.querySelector('#present').onclick=fullscreen;
+const dialog=document.querySelector('#comparison');document.querySelector('#compare').onclick=()=>{document.querySelector('#compareLabel').textContent=(index+1)+' / '+DATA.routes[route].slides[index].title;const c=dialog.querySelector('.compare');c.replaceChildren();DATA.routes.forEach((r,i)=>{const d=document.createElement('div'),h=document.createElement('h2'),mini=document.createElement('div'),p=document.createElement('p');h.textContent=r.id+' / '+r.name;mini.className='mini';makeScene(mini,r.slides[index]);p.textContent=r.desc;const b=document.createElement('button');b.textContent='View direction →';b.onclick=()=>{route=i;dialog.close();render()};d.append(h,mini,p,b);c.append(d)});dialog.showModal();};document.querySelector('#closeCompare').onclick=()=>dialog.close();
+addEventListener('keydown',e=>{if(dialog.open)return;if(e.key==='Escape'){exitPlayback();viewer.classList.remove('fullscreen');return}if(document.querySelector('.playback'))return;if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();move(1)}if(e.key==='ArrowLeft'){e.preventDefault();move(-1)}if(['1','2','3'].includes(e.key)){route=Number(e.key)-1;render()}if(e.key.toLowerCase()==='f')fullscreen()});
+const hash=location.hash.match(/#([123])-([1-9])/);if(hash){route=Number(hash[1])-1;index=Number(hash[2])-1}render();
+</script></body></html>
