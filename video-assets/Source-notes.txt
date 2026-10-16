@@ -1,0 +1,52 @@
+MASSIVE — MOMI video assets / 16 October 2026
+
+Delivery: My Drive > ChatGPT > MASSIVE MOMI > Video Captures — Deck Sources.
+The S06–S21 prefixes follow the supplied video asset brief; they do not renumber the current HTML presentation.
+
+PLAYBACK
+All MP4s are silent H.264. New Unity recordings are 1920x1080, 30 fps. Powers of Ten retains its prepared 960x960 picture. Sagan preserves the source's 960x720 picture without enlargement; the three-way layout reduces each panel. The approved GDD traversal retains its original 1280x720 source and visible half-speed disclosure. Play once and hold; no footage is reversed. GIFs are single-play 1280x720 copies of the complete plane/NOVA recordings.
+
+S06 / S07 — FLATLAND AND NOVA
+New live Unity recordings use the existing oblique camera and comparable framing. The actual player controller moves along the plane toward the held volumetric Carrier or NOVA. These remain explanatory stagings: the Carrier controller is held; the player and Carrier retain the earlier 2x demonstration size; NOVA is held at its existing stage 3, with native particles warmed for six seconds. No mathematical zero-thickness collision is claimed. Labelled plane and clean plane masters, plus unlabelled NOVA, each have MP4 and GIF versions. The production scenes were not saved or edited.
+
+POWERS OF TEN
+Motion: Human (8s), Solar System (11.96s), Galaxy Groups (12s), DNA (16s). Full-duration frame review confirms meaningful scale change in all four: the picnic recedes into the lawn; solar orbits recede; the galaxy becomes one among a larger field; DNA resolves into molecular detail. Still: Earth, Galaxy, Cell, Atom. Clean prepared MP4s are used, without additional zoom or reversal. Source: existing project reference-motion manifest and prepared footage, film by Charles and Ray Eames.
+
+LEVEL SELECTION
+36 seconds from the native level-selection scene: LATTICE, HIGGS, ORBITAL, EMERGENCE, PULSAR, DYNAMO, NOVA, SINGULARITY, COSMOS. Each receives four seconds, including its native transition. Menu graphics and other labels are hidden; the original levelTitleText and levelScaleText remain. Names and exponents are supplied by the project's LevelDefinition, not inferred from footage.
+
+S09–S11 — RESONANCE
+Reference: Harvard Natural Sciences Lecture Demonstrations, Chladni Plates, https://sciencedemonstrations.fas.harvard.edu/presentations/chladni-plates ; linked video https://www.youtube.com/watch?v=lRFysSAxWxI . Existing original 01:30–01:50 source excerpt, silent, without the old fade-to-black.
+New model: 32 seconds, four native authored spawn-pattern prefabs: 345, 776, 1660, 4129 Hz. Each eight-second section uses the project's formation and dissolution animation, with a settled state between them. Full-pattern preview is enabled; particle appearance and saved manifestation timing are unchanged. Camera framing includes the complete patterns and dispersed field. Labels are copied from Unity prefab names. These are authored game patterns, not a continuous physical frequency sweep.
+The comparison presents independent demonstrations side by side; it does not equate their frequencies. Harvard plays for 20 seconds then holds its final plate pattern while the game completes. The original Core-contact clip remains separate; it contains a staged Core launch and actual game deflections.
+
+S13 / S14 — ORBITAL
+Model is the requested C16_ORBITAL_CLEAN source, unchanged. Native colours, density and particle formation retained. Its existing presentation staging cycles formations every two seconds with 0.7-second transitions. Gameplay is the separate 24-second contact capture, showing approach, encounter, recoil/resource release and departure. Actual saved sampling settings are retained; other players and unrelated enemies were suppressed in the source capture.
+
+S15–S17 — DYNAMO
+Reference: NASA Goddard, Solar Wind Animations, SVS 14892, https://svs.gsfc.nasa.gov/14892/ . Existing approved magnetosphere excerpt.
+Field model remains the approved isolated native field/incoming-flow capture.
+New gameplay: 20 seconds from S-6_DYNAMO, keeping the original main-camera framing, arena grid and goals. One scripted player begins inside the calm boundary; the storm timing and incoming direction are staged. Exposure is logged from about 6 seconds, with mass falling from 1.000 to 0.663; the player moves into shelter from 12 seconds and is safe by 14 seconds. Mass stays at 0.663. Native field strength and damage are unchanged. Unrelated combatants are suppressed so exposure has a readable cause.
+
+S18 — SAGAN
+All three are from the exact requested source: https://www.youtube.com/watch?v=FbFmDZLBitg , Carl Sagan's Cosmos 10 — The Edge of Forever.
+30:19 selection: 30:18.00–30:34.70. Plane tilts and curves into a sphere; Sagan appears, ending before the close-up cut.
+33:46 selection: 33:43.50–33:53.00. Approach, open-arm curved-space gesture and recovery.
+34:14 selection: 34:13.00–34:26.50. Gravity-well formation and Sagan moving onto the rim, ending before the camera cut.
+Downloaded 1280x720 source includes baked pillar bars; removing those leaves the original 960x720 picture. No enhancement, denoising or upscaling. The three-way composition starts all three together and holds the shorter final frames. Individual clips are retained.
+
+S19–S21 — SINGULARITY
+Existing folded-plane model retained. New 12-second simultaneous camera recording follows a single real controller traversal, front > top turn > rear > bottom turn > front. External isometric view at left; actual Unity camera attached to the rendered player surface position at right, with the surface tangent as screen-up. The right camera is not the older coordinate diagram. Native rear-face dimming remains, so the player is fainter on the rear. Both source views and the side-by-side are supplied.
+Existing 21-second GDD traversal/passage source retained, stripped of audio only. Original half-speed close-up and staging labels remain visible.
+
+COSMOS
+C15_COSMOS_SCRUB retained in full, six seconds, Preview Age 0 through 1, background only. Separate gameplay uses C18_COSMOS_GAMEPLAY_HUD: 40 seconds, original camera, HUD and goal anchors. Frame review shows visible explosions and players pursuing matter/engaging enemies; source event logs report supernova releases throughout. This source starts the match clock at age 0.58, then runs forward at native speed with scripted controls and normal encounter/supernova scheduling. No events are fabricated. The earlier C17 shot with hidden HUD is not used.
+
+VERIFICATION AND PROVENANCE
+Source game commit: 27a3e7cefa11ac7968c2753e71c8ecbb2461359e, mattfryed/massive. Capture runs used an isolated project copy in Unity 6000.0.28f1. Recorder sources, capture notes, event logs and synchronized coordinates are retained with the local production files. Full-duration chronological frame reviews and complete decode/audio checks are recorded locally. Browser playback results and per-file hashes are included with this delivery. No production game source or scene edits were made. Projector/venue playback has not been tested.
+
+FINAL CHECKS
+35 media files: 28 silent MP4s, 3 single-play GIFs, 4 stills. All 28 MP4s decoded end to end without errors and have no audio stream. All 28 reached their ends in browser playback without playback failures; the browser reported zero dropped frames. All GIFs decode to 12 seconds and omit an infinite-repeat extension. The comparison holds were inspected after the shorter clips ended.
+
+WEB EDITION
+Larger MP4s are re-encoded for web playback at the original dimensions, duration and frame rate. Web files remain silent, play once and hold. Each item links to its full-quality Drive master. manifest.json records both web and master hashes.

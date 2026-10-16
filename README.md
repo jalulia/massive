@@ -43,3 +43,7 @@ Slide 24 uses a fresh 40-second capture of Unity’s native Game view, with its 
 ## Explorations
 
 [Open the standalone index](https://jalulia.github.io/massive/explorations/): the MOMI presentation, visual directions, Full Spectrum, Powers of Ten, Flatland and the attract cabinet. The index has no global navigation or back-links. Supporting pages keep playback and downloads without the earlier review commentary.
+
+## MOMI video assets
+
+[Open the standalone video library](https://jalulia.github.io/massive/video-assets/): 28 silent MP4s, three GIF downloads and four stills, grouped by system. Reference footage, isolated models and gameplay are labelled separately. The page includes individual downloads, full-quality Drive master links, source and capture notes, and a manifest with web/master hashes. Larger recordings use lighter H.264 web copies at their original dimensions. Clips play once and hold.
