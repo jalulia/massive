@@ -43,6 +43,6 @@ if(e.key.toLowerCase()==='b')document.body.classList.toggle('blank');
 if(e.key.toLowerCase()==='n'){document.body.classList.toggle('notes');noteView()}
 });
 addEventListener('click',()=>{if(!document.body.classList.contains('notes'))for(const v of boards[index].querySelectorAll('video'))if(v.paused&&!v.ended)v.play().catch(()=>{})});
-fit();document.fonts.ready.then(()=>show(Number(location.hash.slice(1)||1)-1));
+fit();document.fonts.ready.then(()=>{const n=Number(location.hash.slice(1));show(Number.isInteger(n)?n-1:0)});
 window.momi={show,replay,get index(){return index},get count(){return boards.length}};
 </script></body></html>
