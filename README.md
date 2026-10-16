@@ -39,3 +39,7 @@ This repository hosts presentation and media material. It is separate from the M
 COSMOS now presents a CMB / present-day cosmic-web comparison, a six-second background-only Unity Preview Age scrub, and a separate 40-second native gameplay capture. ORBITAL has a closer UI-free Unity capture with changing configurations. These three captures play once and hold their last frame; R replays. Slide links update correctly within an already open presentation.
 
 Slide 24 uses a fresh 40-second capture of Unity’s native Game view, with its saved camera, full game HUD and unchanged goal anchors. It fills the slide at 1920 × 1080.
+
+## Explorations
+
+[Open the standalone index](https://jalulia.github.io/massive/explorations/): the MOMI presentation, visual directions, Full Spectrum, Powers of Ten, Flatland and the attract cabinet. The index has no global navigation or back-links. Supporting pages keep playback and downloads without the earlier review commentary.
