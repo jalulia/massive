@@ -1,10 +1,25 @@
-# MASSIVE — MOMI
+# MASSIVE — Library
 
-[Open the presentation](https://jalulia.github.io/massive/)
+[Open the library](https://jalulia.github.io/massive/) · [Open the MOMI presentation](https://jalulia.github.io/massive/momi.html)
 
 MASSIVE: Making the invisible playable. A 26-board HTML presentation by Matt Fry for the Museum of the Moving Image, 17 October 2026. Suggested speaking time: 17 minutes 45 seconds, plus transitions.
 
-The root `index.html` is the standalone presentation. It includes the 1920 × 1080 layout, keyboard controls and speaker notes. `presentation-assets/` contains the game fonts, supplied book photographs, original reference material and approved Unity captures. There are no runtime libraries or third-party services.
+The standalone presentation is preserved at `momi.html`. It includes the 1920 × 1080 layout, keyboard controls and speaker notes. `presentation-assets/` contains the game fonts, supplied book photographs, original reference material and approved Unity captures. There are no runtime libraries or third-party services.
+
+## Library index
+
+The root `index.html` is a compact visual directory of every standalone HTML page, presentation direction, media set, study and the linked GDD. All repository files, all assets from all five GitHub releases, and the 35 linked Drive masters are searchable under **All files**. Dates come from Git history, release asset updates or the dated master manifest; filesystem modification times are not used. Live external documents have no invented version date.
+
+The original MOMI presentation is unchanged at `momi.html`; old numeric slide bookmarks at the root redirect there. The withdrawn Cosmic Atlas PDF is omitted; its PowerPoint remains available.
+
+To refresh the index after adding or changing material:
+
+```sh
+python3 tools/build-library.py --refresh-releases
+python3 tools/verify-library.py
+```
+
+Omit `--refresh-releases` to rebuild offline using `data/library-releases.json`. The generator inventories tracked and non-ignored files, so keep scratch files outside the repository. `data/library.json` is the complete machine-readable inventory. The page renders its links without JavaScript; search and file filters use a small local script.
 
 ## Presenting
 
@@ -18,7 +33,7 @@ The root `index.html` is the standalone presentation. It includes the 1920 × 10
 
 Videos are silent and start on arrival. Click once if the browser requires initial interaction. The game and scientific-reference sequences repeat with their existing brief black editorial reset. The two Sagan gestures play once and hold; R replays them. The archival footage is intentionally shown modestly. Source credits and distinctions are in `Speaker-notes.md` and the N view, not on the projected boards.
 
-The web edition uses the approved 1080p H.264 delivery encodes, with fast-start metadata for browser playback. The supplied cover and signature photographs and the fonts are unchanged. `presentation-assets/manifest.json` records exact published hashes. Download this repository and open `index.html` to present offline; keep its folders intact.
+The web edition uses the approved 1080p H.264 delivery encodes, with fast-start metadata for browser playback. The supplied cover and signature photographs and the fonts are unchanged. `presentation-assets/manifest.json` records exact published hashes. Download this repository and open `momi.html` to present offline; keep its folders intact.
 
 ## Previous material
 
@@ -32,7 +47,7 @@ This repository hosts presentation and media material. It is separate from the M
 
 ## Presentation directions
 
-[Open the standalone visual-direction review](https://jalulia.github.io/massive/presentation-directions/): Field Study, Cosmic Atlas and Big / Small. Each direction demonstrates nine screen types using MASSIVE imagery and scientific references. The page includes a visual audit, silent motion samples, source credits, PDF previews and editable PowerPoint downloads. These are design studies; the finished talk remains at the site root.
+[Open the standalone visual-direction review](https://jalulia.github.io/massive/presentation-directions/): Field Study, Cosmic Atlas and Big / Small. Each direction demonstrates nine screen types using MASSIVE imagery and scientific references. The page includes a visual audit, silent motion samples, source credits, PDF previews and editable PowerPoint downloads. These are design studies; the finished talk is at `momi.html`.
 
 ## COSMOS and ORBITAL capture revision
 
