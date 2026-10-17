@@ -41,7 +41,8 @@ GDD = 'https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203'
 GH = 'https://github.com/jalulia/massive'
 meta_cache = {}
 def metadata(path):
-    path = 'index.html' if path == 'momi.html' else path
+    if path == 'momi.html' and (ROOT/path).read_text().strip() == git('show','0b93497:index.html'):
+        return git('log','-1','--format=%cs|%h','0b93497','--','index.html').split('|')
     if path not in meta_cache:
         result = git('log','-1','--format=%cs|%h','--',path)
         meta_cache[path] = result.split('|') if result else ['', '']
@@ -54,12 +55,12 @@ def card(title, url, image, detail, source, links=(), version=None):
 
 sections = [
 ('presentations', 'Presentations', [
-card('MOMI presentation','momi.html#1','presentation-assets/C18_COSMOS_GAMEPLAY_HUD.png','26 boards · HTML', 'momi.html', [('Speaker notes','Speaker-notes.md'),('Deck notes','explorations/momi-notes.html')]),
+card('MOMI presentation','momi.html#1','presentation-assets/C18_COSMOS_GAMEPLAY_HUD.png','26 slides · HTML', 'momi.html', [('Speaker notes','Speaker-notes.md'),('Deck notes','explorations/momi-notes.html')]),
 card('Visual directions','presentation-directions/','presentation-directions/Directions-overview.jpg','3 directions · 27 screens','presentation-directions/index.html'),
 card('Field Study','presentation-directions/#1-1','assets/library-previews/field-study.png','Direction 01 · 9 screens','presentation-directions/MASSIVE-01-Field-Study.pptx',[('PPTX','presentation-directions/MASSIVE-01-Field-Study.pptx'),('PDF','presentation-directions/MASSIVE-01-Field-Study.pdf')]),
 card('Cosmic Atlas','presentation-directions/#2-1','assets/library-previews/cosmic-atlas.png','Direction 02 · 9 screens','presentation-directions/MASSIVE-02-Cosmic-Atlas.pptx',[('PPTX','presentation-directions/MASSIVE-02-Cosmic-Atlas.pptx')]),
 card('Big / Small','presentation-directions/#3-1','assets/library-previews/big-small.png','Direction 03 · 9 screens','presentation-directions/MASSIVE-03-Big-Small.pptx',[('PPTX','presentation-directions/MASSIVE-03-Big-Small.pptx'),('PDF','presentation-directions/MASSIVE-03-Big-Small.pdf')]),
-card('MOMI deck notes','explorations/momi-notes.html','presentation-assets/C12_PLANE_DIAGRAM.png','Slide-by-slide notes · HTML','explorations/momi-notes.html'),
+card('MOMI presentation notes','explorations/momi-notes.html','presentation-assets/C12_PLANE_DIAGRAM.png','Slide notes · HTML','explorations/momi-notes.html'),
 ]),
 ('libraries', 'Libraries & sets', [
 card('MOMI video library','video-assets/','video-assets/posters/S10_RESONANCE_REFERENCE_MODEL_SIDE_BY_SIDE.jpg','28 MP4s · 3 GIFs · 4 stills','video-assets/index.html',[('Drive masters','https://drive.google.com/drive/folders/1by-HCurNXxV2FKz6TZM3ak8g1Qdbi2m2'),('Source notes','video-assets/Source-notes.txt')]),
@@ -67,13 +68,13 @@ card('Presentation assets','?q=presentation-assets/#files','presentation-assets/
 card('Visual catalogue','archive/','media/MS-022/poster-1888ac075f1517e8.jpg','22 captures · 132 MP4 editions','data/catalogue.json',[('Manifest','data/catalogue.json'),('All release downloads','?q=catalogue-media#files')]),
 card('Powers of Ten','reference-motion/','reference-motion/stills/P02_EARTH.jpg','8 excerpts · full-frame & square','reference-motion/index.html',[('Source notes','reference-motion/Source-notes.md')]),
 card('Flatland / Sagan','reference-motion/sagan/','reference-motion/sagan/stills/01_ABSOLUTELY_FLAT.jpg','5 gestures · silent, sound & GIF','reference-motion/sagan/index.html',[('ZIP','reference-motion/sagan/Gesture-cuts.zip'),('Edit notes','reference-motion/sagan/Edit-notes.md')]),
-card('Attract cabinet','screensavers/','screensavers/posters/level-nova.jpg','18 recordings · 20 generative studies','screensavers/index.html',[('Windows & browser packages','?q=screensavers-v#files'),('Sources','screensavers/sources.json')],version='v4'),
+card('Attract cabinet','screensavers/','screensavers/posters/level-nova.jpg','18 recordings · 20 generative presets','screensavers/index.html',[('Windows & browser packages','?q=screensavers-v#files'),('Sources','screensavers/sources.json')],version='v4'),
 ]),
 ('studies', 'Studies & sources', [
 card('Full Spectrum','explorations/full-spectrum.html','media/explorations/full-spectrum-v2/poster-21226a146853.jpg','80-second study · 8 worlds','media/explorations/full-spectrum-v2/manifest.json',[('Visual board','media/explorations/full-spectrum-v2/visual-board-5251186ea02f.jpg'),('Study files','?q=full-spectrum-v2/#files')],version='Study 02 / v2'),
-card('Explorations','explorations/','media/explorations/full-spectrum-v2/visual-board-5251186ea02f.jpg','Original standalone index','explorations/index.html'),
-card('Game design document',GDD,'assets/library-previews/gdd.png','GDD · Notion',None,version='Live document'),
-card('Game source','https://github.com/mattfryed/massive','presentation-assets/C01_PLAY.png','Unity repository · mattfryed/massive',None,version='GitHub'),
+card('Explorations','explorations/','media/explorations/full-spectrum-v2/visual-board-5251186ea02f.jpg','6 studies · HTML','explorations/index.html'),
+card('Game design document',GDD,'assets/library-previews/gdd.png','Matt Fry · Notion',None,version='GDD'),
+card('Unity source','https://github.com/mattfryed/massive','presentation-assets/C01_PLAY.png','Unity repository · mattfryed/massive',None,version='GitHub'),
 ])]
 
 tracked = set(git('ls-files','--cached','--others','--exclude-standard').splitlines())
@@ -121,9 +122,6 @@ for a in json.loads((ROOT/'video-assets/manifest.json').read_text()):
     if a.get('master_url'):
         files.append(dict(path=a['file'],url=a['master_url'],kind=kind(a['file']),location='Drive master',
                          date='2026-10-16',version='MOMI master',image=preview('video-assets/media/'+a['file']),title=human(a['file'])))
-# Canonical external entry points remain searchable along with all physical files.
-for title,url in [('Game design document / GDD',GDD),('MASSIVE Unity source','https://github.com/mattfryed/massive'),('MOMI Drive master folder','https://drive.google.com/drive/folders/1by-HCurNXxV2FKz6TZM3ak8g1Qdbi2m2')]:
-    files.append(dict(path=title,title=title,url=url,kind='Source',location='External',date='',version='Live',image=''))
 
 snapshot = git('rev-parse','HEAD')
 manifest = dict(schemaVersion=1,sourceCommit=snapshot,sections=sections,files=files)
@@ -149,11 +147,11 @@ cards_html=''.join(f'<section class="collection" id="{sid}"><h2><span>0{i}</span
 counts=Counter(f['location'] for f in files)
 options=''.join(f'<option value="{x}">{x}</option>' for x in ['Pages','Presentations','Videos','Images','Downloads','Fonts','Notes','Source'])
 html=f'''<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080808"><title>MASSIVE — Library</title><meta name="description" content="MASSIVE library: presentations, films, asset sets, studies and the game design document."><link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="assets/library.css"><script src="assets/library.js" defer></script></head>
-<body><a class="skip" href="#content">Skip to library</a><main id="content"><header><div><p class="eyebrow">LIBRARY / INDEX</p><h1>MASSIVE</h1></div><div class="header-meta"><p>{sum(len(c) for _,_,c in sections)} collections & sources</p><p>{counts['Repository']} repository files<br>{counts['Release']} release downloads · {counts['Drive master']} Drive masters</p><a href="{GH}">Repository ↗</a></div></header>
-<div class="tools"><nav aria-label="Library sections"><a href="#presentations">Presentations</a><a href="#libraries">Libraries & sets</a><a href="#studies">Studies & sources</a><a href="#files">All files</a></nav><div class="search"><label class="sr" for="search">Search the whole library</label><input id="search" type="search" placeholder="Search everything…" autocomplete="off"><button id="clear" type="button" aria-label="Clear search" hidden>×</button></div></div><p id="status" class="status" role="status" aria-live="polite" hidden></p>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080808"><title>MASSIVE / Library</title><meta name="description" content="MASSIVE library: presentations, films, asset sets, studies and the game design document."><link rel="icon" href="assets/favicon.svg"><link rel="stylesheet" href="assets/library.css"><script src="assets/library.js" defer></script></head>
+<body><a class="skip" href="#content">Skip to library</a><main id="content"><header><div><h1>MASSIVE <span class="library-title">/ Library</span></h1></div><div class="header-meta"><p>{sum(len(c) for _,_,c in sections)} entries</p><p>{counts['Repository']} repository files<br>{counts['Release']} release downloads · {counts['Drive master']} Drive masters</p><a href="{GH}">Repository ↗</a></div></header>
+<div class="tools"><nav aria-label="Library sections"><a href="#presentations">Presentations</a><a href="#libraries">Libraries & sets</a><a href="#studies">Studies & sources</a><a href="#files">All files</a></nav><div class="search"><label class="sr" for="search">Search library</label><input id="search" type="search" placeholder="Search library…" autocomplete="off"><button id="clear" type="button" aria-label="Clear search" hidden>×</button></div></div><p id="status" class="status" role="status" aria-live="polite" hidden></p>
 {cards_html}
-<details id="files"><summary><span>04</span>All files<span class="section-count">{len(files)}</span></summary><div class="file-tools"><p>Every repository file, release download and linked master.</p><label for="kind">Show <select id="kind"><option value="">All types</option>{options}</select></label></div><ul class="file-list">{''.join(row_html(f) for f in files)}</ul><p id="empty" hidden>No matching files. Try another search or file type.</p></details>
+<details id="files"><summary><span>04</span>All files<span class="section-count">{len(files)}</span></summary><div class="file-tools"><p>Repository files, release downloads and Drive masters.</p><label for="kind">Show <select id="kind"><option value="">All types</option>{options}</select></label></div><ul class="file-list">{''.join(row_html(f) for f in files)}</ul><p id="empty" hidden>No matching files. Try another search or file type.</p></details>
 <footer><span>Dates: repository revision / release update. External documents are live.</span><div><a href="data/library.json">Full inventory ↗</a><a href="data/library-releases.json">Release inventory ↗</a><a href="{GH}/tree/{snapshot}">Source snapshot ↗</a></div></footer></main></body></html>'''
 (ROOT/'index.html').write_text(html)
 print(f'Indexed {len(files)} entries: {dict(counts)}; {sum(len(c) for _,_,c in sections)} collection cards.')

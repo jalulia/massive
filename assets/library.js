@@ -14,7 +14,7 @@ function filter(){
   clear.hidden=!search.value;
   document.querySelector('#empty').hidden=fileCount>0;
   const status=document.querySelector('#status');status.hidden=!words.length&&!kind.value;
-  status.textContent=`${cardCount} collections & sources · ${fileCount} files`;
+  status.textContent=`${cardCount} ${cardCount===1?"entry":"entries"} · ${fileCount} files`;
   if(words.length||kind.value)files.open=true;
   const url=new URL(location.href);
   if(search.value)url.searchParams.set('q',search.value);else url.searchParams.delete('q');

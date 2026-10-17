@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "sourceCommit": "ab8e6a07964fc216bc99b2acc73749d6ec731dfa",
+  "sourceCommit": "8324c86a19c32ddc0be363c267f8bcac94a0e8ba",
   "sections": [
     [
       "presentations",
@@ -10,7 +10,7 @@
           "title": "MOMI presentation",
           "url": "momi.html#1",
           "image": "presentation-assets/C18_COSMOS_GAMEPLAY_HUD.png",
-          "detail": "26 boards · HTML",
+          "detail": "26 slides · HTML",
           "date": "2026-10-16",
           "version": "rev 0b93497",
           "links": [
@@ -30,7 +30,7 @@
           "image": "presentation-directions/Directions-overview.jpg",
           "detail": "3 directions · 27 screens",
           "date": "2026-10-16",
-          "version": "rev c9cd48c",
+          "version": "rev 8324c86",
           "links": []
         },
         {
@@ -84,10 +84,10 @@
           ]
         },
         {
-          "title": "MOMI deck notes",
+          "title": "MOMI presentation notes",
           "url": "explorations/momi-notes.html",
           "image": "presentation-assets/C12_PLANE_DIAGRAM.png",
-          "detail": "Slide-by-slide notes · HTML",
+          "detail": "Slide notes · HTML",
           "date": "2026-10-16",
           "version": "rev bc32119",
           "links": []
@@ -184,7 +184,7 @@
           "title": "Attract cabinet",
           "url": "screensavers/",
           "image": "screensavers/posters/level-nova.jpg",
-          "detail": "18 recordings · 20 generative studies",
+          "detail": "18 recordings · 20 generative presets",
           "date": "2026-10-16",
           "version": "v4",
           "links": [
@@ -226,22 +226,22 @@
           "title": "Explorations",
           "url": "explorations/",
           "image": "media/explorations/full-spectrum-v2/visual-board-5251186ea02f.jpg",
-          "detail": "Original standalone index",
+          "detail": "6 studies · HTML",
           "date": "2026-10-16",
-          "version": "rev bc32119",
+          "version": "rev 8324c86",
           "links": []
         },
         {
           "title": "Game design document",
           "url": "https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203",
           "image": "assets/library-previews/gdd.png",
-          "detail": "GDD · Notion",
+          "detail": "Matt Fry · Notion",
           "date": "",
-          "version": "Live document",
+          "version": "GDD",
           "links": []
         },
         {
-          "title": "Game source",
+          "title": "Unity source",
           "url": "https://github.com/mattfryed/massive",
           "image": "presentation-assets/C01_PLAY.png",
           "detail": "Unity repository · mattfryed/massive",
@@ -289,7 +289,7 @@
       "kind": "Notes",
       "location": "Repository",
       "date": "2026-10-16",
-      "version": "ab8e6a0",
+      "version": "8324c86",
       "image": "",
       "title": "README"
     },
@@ -348,8 +348,8 @@
       "url": "assets/library-previews/big-small.png",
       "kind": "Images",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-16",
+      "version": "8324c86",
       "image": "assets/library-previews/big-small.png",
       "title": "big small"
     },
@@ -358,8 +358,8 @@
       "url": "assets/library-previews/cosmic-atlas.png",
       "kind": "Images",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-16",
+      "version": "8324c86",
       "image": "assets/library-previews/cosmic-atlas.png",
       "title": "cosmic atlas"
     },
@@ -368,8 +368,8 @@
       "url": "assets/library-previews/field-study.png",
       "kind": "Images",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-16",
+      "version": "8324c86",
       "image": "assets/library-previews/field-study.png",
       "title": "field study"
     },
@@ -378,8 +378,8 @@
       "url": "assets/library-previews/gdd.png",
       "kind": "Images",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-16",
+      "version": "8324c86",
       "image": "assets/library-previews/gdd.png",
       "title": "gdd"
     },
@@ -388,8 +388,8 @@
       "url": "assets/library.css",
       "kind": "Source",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-16",
+      "version": "8324c86",
       "image": "",
       "title": "library"
     },
@@ -398,8 +398,8 @@
       "url": "assets/library.js",
       "kind": "Source",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-16",
+      "version": "8324c86",
       "image": "",
       "title": "library"
     },
@@ -448,8 +448,8 @@
       "url": "data/library-releases.json",
       "kind": "Source",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-16",
+      "version": "8324c86",
       "image": "",
       "title": "library releases"
     },
@@ -458,8 +458,8 @@
       "url": "data/library.json",
       "kind": "Source",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-16",
+      "version": "8324c86",
       "image": "",
       "title": "library"
     },
@@ -479,7 +479,7 @@
       "kind": "Pages",
       "location": "Repository",
       "date": "2026-10-16",
-      "version": "bc32119",
+      "version": "8324c86",
       "image": "",
       "title": "index"
     },
@@ -519,7 +519,7 @@
       "kind": "Pages",
       "location": "Repository",
       "date": "2026-10-16",
-      "version": "0b93497",
+      "version": "8324c86",
       "image": "",
       "title": "index"
     },
@@ -3099,7 +3099,7 @@
       "kind": "Pages",
       "location": "Repository",
       "date": "2026-10-16",
-      "version": "c9cd48c",
+      "version": "8324c86",
       "image": "",
       "title": "index"
     },
@@ -4298,8 +4298,8 @@
       "url": "tools/build-library.py",
       "kind": "Source",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-16",
+      "version": "8324c86",
       "image": "",
       "title": "build library"
     },
@@ -4328,8 +4328,8 @@
       "url": "tools/verify-library.py",
       "kind": "Source",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-16",
+      "version": "8324c86",
       "image": "",
       "title": "verify library"
     },
@@ -7171,36 +7171,6 @@
       "version": "MOMI master",
       "image": "video-assets/posters/S21_SINGULARITY_GAMEPLAY_TRAVERSAL_PASSAGE.jpg",
       "title": "S21 SINGULARITY GAMEPLAY TRAVERSAL PASSAGE"
-    },
-    {
-      "path": "Game design document / GDD",
-      "title": "Game design document / GDD",
-      "url": "https://mattfryed.notion.site/MASSIVE-11e617c6d8ae4eeda7f0424645db5203",
-      "kind": "Source",
-      "location": "External",
-      "date": "",
-      "version": "Live",
-      "image": ""
-    },
-    {
-      "path": "MASSIVE Unity source",
-      "title": "MASSIVE Unity source",
-      "url": "https://github.com/mattfryed/massive",
-      "kind": "Source",
-      "location": "External",
-      "date": "",
-      "version": "Live",
-      "image": ""
-    },
-    {
-      "path": "MOMI Drive master folder",
-      "title": "MOMI Drive master folder",
-      "url": "https://drive.google.com/drive/folders/1by-HCurNXxV2FKz6TZM3ak8g1Qdbi2m2",
-      "kind": "Source",
-      "location": "External",
-      "date": "",
-      "version": "Live",
-      "image": ""
     }
   ]
 }
