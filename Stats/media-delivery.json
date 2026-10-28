@@ -317,5 +317,18 @@
   "visualInspection": {
     "result": "All nine isolated source compositions retain complete stage art at start, midpoint and near end; PULSAR jets fully inside frame. Delivery scales the complete frame without recropping.",
     "limitations": "This pass preserves source animation sequences; it does not establish a mathematically periodic or invisible loop boundary. SINGULARITY container timing normalizes by approximately one frame (33 ms); all source frames retained."
+  },
+  "plane_excerpt": {
+    "source_revision": "8f777f0146dacd6a4514a8b4fc4dcff3e9352bdc",
+    "source_path": "assets-r3/media/C12_PLANE_DIAGRAM.mp4",
+    "source_sha256": "c8716ee274f4b834aaca06f6e341453fe2b6150094cef1a7861574f0722a8066",
+    "delivery_path": "assets-r3/media/C12_PLANE_DIAGRAM.mp4",
+    "delivery_sha256": "f306f9ec5df6f0ae21b3239427fa191d52e6579c6ca7df6d1004de8a4d51f99d",
+    "start_seconds": 0.5,
+    "requested_duration_seconds": 12.95,
+    "codec": "H.264",
+    "crf": 18,
+    "purpose": "Remove the captured fade-in and fade-out; retain native animation and framing.",
+    "delivery_duration_seconds": 12.966667
   }
 }

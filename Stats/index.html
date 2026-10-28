@@ -206,7 +206,7 @@ html[data-motion=off] .hud .bar i,html[data-motion=off] .sbar i,html[data-motion
 .detail .head .right{text-align:right;font-size:10px;letter-spacing:.12em;color:var(--ink-3);line-height:1.9;text-transform:uppercase;white-space:nowrap;flex:none}
 .detail .head .right b{color:#fff;font-weight:500}
 .detail .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line)}
-.detail .grid div{background:#000;padding:12px 14px 10px}
+.detail .grid>div{background:#000;padding:12px 14px 10px}
 .detail .grid .l{font-size:9px;letter-spacing:.18em;color:var(--ink-3);text-transform:uppercase}
 .detail .grid .v{font:700 19px/1.1 var(--f);letter-spacing:.02em;margin-top:8px;white-space:nowrap}
 .detail .grid .v small{font-size:9.5px;font-weight:400;letter-spacing:.06em;color:var(--ink-2);margin-left:4px}
@@ -346,15 +346,16 @@ footer svg{height:10px;width:auto}
 }
 </style>
 <link rel="stylesheet" href="version-nav.css">
+<link rel="stylesheet" href="refinement.css">
 </head>
-<body>
+<body class="v01">
 <a class="skip" href="#overview">Skip to telemetry</a>
 
 <header class="mast">
   <div class="shell">
     <a href="#top" aria-label="MASSIVE"><svg class="wm" viewBox="0 0 1647.03 264.69" aria-hidden="true"><g fill="#fff" id="wm-paths"></g></svg></a>
     <nav aria-label="Sections">
-      <a href="#overview" class="on">Overview</a><a href="#window">Window</a><a href="#stages">Stages</a><a href="#exits">Exits</a><a href="#notes">Notes</a>
+      <a href="#overview" class="on">Overview</a><a href="#window">Days</a><a href="#stages">Stages</a><a href="#exits">Exits</a>
     </nav>
     <div class="tag"><span class="sq" aria-hidden="true"></span><span>MATCH TELEMETRY</span><span class="dim">15–18 OCT 2026</span><button type="button" class="motion" id="motion" aria-pressed="true">Motion on</button><a href="assets-r3/MASSIVEmatch-snapshot-20261015-18.json" download>JSON ↓</a></div>
   </div>
@@ -367,43 +368,41 @@ footer svg{height:10px;width:auto}
       <svg viewBox="0 0 1647.03 264.69" role="img" aria-labelledby="h-title"><title id="h-title">MASSIVE</title><g fill="#fff" class="wm-use"></g></svg>
       <div class="sub">
         <span class="k"><b>Match telemetry</b></span>
-        <span class="k">15–18 October 2026 · EDT · 4 days</span>
+        <span class="k">15–18 October 2026 · EDT</span>
         <span class="k dim">9 stages · 2 modes · 180 s regulation</span>
       </div>
     </div>
     <div class="lead rv-el">
       <div>
-        <div class="k" style="margin-bottom:18px">01 — Matches started</div>
+        <div class="k" style="margin-bottom:18px">Matches started</div>
         <div class="big num" data-count="228">228</div>
       </div>
-      <p class="dek" id="dek"></p>
-      <div class="hud" style="max-width:420px"><span class="lbl">REG</span><span class="bar"><i id="hud-completion"></i></span><span class="val num" id="hud-completion-v"></span></div>
+      <div class="hud" style="max-width:420px"><span class="lbl">COMPLETED</span><span class="bar"><i id="hud-completion"></i></span><span class="val num" id="hud-completion-v"></span></div>
     </div>
     <figure class="fig rv-el">
       <div class="vp">
         <span class="ret tl"></span><span class="ret tr"></span><span class="ret bl"></span><span class="ret br"></span>
-        <video id="hero-video" muted loop playsinline autoplay preload="metadata" poster="assets-r3/media/C12_PLANE_DIAGRAM.jpg" aria-label="Field model: a flat arena plane deformed by two masses, with a wireframe sphere above it"><source src="assets-r3/media/C12_PLANE_DIAGRAM.mp4" type="video/mp4"></video>
+        <video id="hero-video" muted loop playsinline autoplay preload="metadata" poster="assets-r3/media/C12_PLANE_DIAGRAM.jpg" aria-label="Field model: a flat arena plane deformed by two masses, with a wireframe sphere above it"><source src="assets-r3/media/C12_PLANE_DIAGRAM.mp4?v=2" type="video/mp4"></video>
       </div>
-      <figcaption class="cap"><span>Fig. 01 — <b>Field model</b> · plane, masses, grid displacement</span><span>MOMI capture C12</span></figcaption>
     </figure>
   </section>
 
   <section class="sec" id="overview" aria-labelledby="h-ov">
-    <div class="sec-h"><h2 id="h-ov"><i>02</i> Overview</h2><span class="meta">All started matches · 2 builds · 1 settings fingerprint</span></div>
+    <div class="sec-h"><h2 id="h-ov"><i>02</i> Overview</h2></div>
     <div class="frame tiles" id="tiles"></div>
   </section>
 
   <section class="sec" id="window" aria-labelledby="h-win">
-    <div class="sec-h"><h2 id="h-win"><i>03</i> Window</h2><span class="meta">Starts by day · outcomes by mode</span></div>
+    <div class="sec-h"><h2 id="h-win"><i>03</i> Days</h2></div>
     <div class="frame days" id="days"></div>
   </section>
 
   <section class="sec" id="stages" aria-labelledby="h-st">
-    <div class="sec-h"><h2 id="h-st"><i>04</i> Stages</h2><span class="meta">9 stages · select one · ← → to step · sort by any column</span></div>
+    <div class="sec-h"><h2 id="h-st"><i>04</i> Stages</h2><span class="meta">Combat rates / player-minute</span></div>
     <nav class="snav" id="snav" aria-label="Stage navigator"></nav>
     <div class="frame stages">
       <aside class="detail" id="stage-detail" aria-live="polite"></aside>
-      <div class="stab"><p class="table-hint">Select a stage. Tap a column heading to sort.</p>
+      <div class="stab">
         <table>
           <thead><tr>
             <th scope="col" data-sort="num" aria-sort="ascending"><button type="button">Stage <i>↓</i></button></th>
@@ -413,40 +412,31 @@ footer svg{height:10px;width:auto}
             <th scope="col" class="r" data-sort="a"><button type="button">Exits <i></i></button></th>
             <th scope="col" class="hide-m" data-sort="lshare"><button type="button">Light · Dark <i></i></button></th>
             <th scope="col" class="r hide-m" data-sort="dpm"><button type="button">Deaths<br>/ min <i></i></button></th>
-            <th scope="col" class="r hide-m" data-sort="kpm"><button type="button">Kills<br>/ min <i></i></button></th>
-            <th scope="col" class="r" data-sort="pvp"><button type="button">PvP <i></i></button></th>
+            <th scope="col" class="r hide-m" data-sort="kpm"><button type="button">Enemy kills<br>/ min <i></i></button></th>
+            <th scope="col" class="r" data-sort="pvp"><button type="button">PvP kills <i></i></button></th>
           </tr></thead>
           <tbody id="stage-rows"></tbody>
         </table>
-        <div class="tfoot">Rates are per player-minute on that stage · Light · Dark bar = share of completed matches, dotted = ties · Exits = inactivity returns to Attract · share bars are relative to LATTICE (80)</div>
+        <div class="tfoot">Outcomes / completed matches · dotted = ties</div>
       </div>
     </div>
   </section>
 
   <section class="sec" id="exits" aria-labelledby="h-ex">
-    <div class="sec-h"><h2 id="h-ex"><i>05</i> Inactivity exits</h2><span class="meta">17 records · the only per-match records in this export</span></div>
+    <div class="sec-h"><h2 id="h-ex"><i>05</i> Inactivity exits</h2><span class="meta">17 matches</span></div>
     <div class="frame exits">
       <div class="tl" id="exit-timeline"></div>
-      <div class="xtab"><table><thead><tr><th scope="col">Start (EDT)</th><th scope="col">Stage</th><th scope="col" class="hide-m">Mode</th><th scope="col">Active before exit</th><th scope="col" class="r hide-m">Match ID</th></tr></thead><tbody id="exit-rows"></tbody></table></div>
+      <div class="xtab"><table><thead><tr><th scope="col">Start (EDT)</th><th scope="col">Stage</th><th scope="col" class="hide-m">Mode</th><th scope="col">Active time / 3:00</th></tr></thead><tbody id="exit-rows"></tbody></table></div>
     </div>
   </section>
 
-  <section class="sec" id="notes" aria-labelledby="h-no">
-    <div class="sec-h"><h2 id="h-no"><i>06</i> Notes</h2><span class="meta">Reads · definitions · provenance</span></div>
-    <div class="frame notes">
-      <div class="reads"><div class="k" style="margin-bottom:6px">Reads from the window</div><ol id="reads"></ol></div>
-      <div class="defs" id="defs"></div>
-      <div class="prov" id="prov"></div>
-    </div>
-  </section>
 
 </main>
 
 <footer>
   <div class="shell">
-    <svg viewBox="0 0 1647.03 264.69" aria-hidden="true"><g fill="#6a6a6a" class="wm-use"></g></svg>
-    <span>Match data: 15–18 October 2026 · EDT</span>
-    <span>Footage captured in MASSIVE.</span>
+    <span>15–18 October 2026 · EDT</span>
+    <a href="assets-r3/MASSIVEmatch-snapshot-20261015-18.json" download>JSON ↓</a>
     <a href="#top">Top ↑</a>
   </div>
 </footer>
@@ -467,42 +457,38 @@ const tz={timeZone:'America/New_York'};
 const tfmt=new Intl.DateTimeFormat('en-US',{...tz,hour:'2-digit',minute:'2-digit',hourCycle:'h23'});
 const dfmt=new Intl.DateTimeFormat('en-US',{...tz,weekday:'short'});
 const S=D.summary, T=D.totals, L=D.levels, W=S.completed_winners;
-const decided=W.Light+W.Dark;
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 /* wordmark */
 const paths=window.MASSIVE_WORDMARK_PATHS.map(d=>`<path d="${d}"/>`).join('');
 document.querySelectorAll('.wm-use,#wm-paths').forEach(g=>g.innerHTML=paths);
 
-/* dek */
-$('#dek').innerHTML=`<b>${S.status.Completed} reached final scoring (${pct(S.status.Completed,S.starts)}%)</b>; ${S.status.Abandoned} ended in an inactivity exit, ${L.HIGGS.status.Abandoned} of them on HIGGS. <b>Light won ${W.Light} of ${decided} decided matches (${pct(W.Light,decided)}%)</b>. ${S.modes['1v1']} 1v1 and ${S.modes['2v2']} 2v2 matches, ${fmt(T.player_slots)} player slots, ${fmt(Math.round(T.player_minutes))} player-minutes.`;
 $('#hud-completion').style.setProperty('--v',S.status.Completed/S.starts);
-$('#hud-completion-v').textContent=`${pct(S.status.Completed,S.starts)}% COMPLETED`;
+$('#hud-completion-v').textContent=`${pct(S.status.Completed,S.starts)}%`;
 
 /* tiles */
 const tiles=[
- {k:'Starts',v:`${fmt(S.starts)}`,bar:1,barv:`${S.starts} / ${S.starts}`,lbl:'ALL',foot:[`${S.status.Completed} completed`,`${S.status.Abandoned} exits`]},
- {k:'Completion',v:`${pct(S.status.Completed,S.starts)}<small>%</small>`,bar:S.status.Completed/S.starts,barv:`${S.status.Completed} / ${S.starts}`,lbl:'REG',foot:['completed ÷ started','exits = inactivity']},
- {k:'Light · Dark · Tie',v:`<span class="sm" style="font:inherit">${W.Light}<span class="sep">/</span>${W.Dark}<span class="sep">/</span>${W.Tie}</span>`,bar:W.Light/decided,barv:`${pct(W.Light,decided)}% L`,lbl:'L:D',foot:['of 211 completed',`light ${pct(W.Light,decided)}% of decided`]},
- {k:'Active match time',v:hm(S.active_minutes).replace(/h /,'<small>h</small> ').replace(/m$/,'<small>m</small>'),bar:S.active_minutes/S.elapsed_minutes,barv:`${pct(S.active_minutes,S.elapsed_minutes)}% of elapsed`,lbl:'ACT',foot:[`within-match clock · elapsed ${hm(S.elapsed_minutes)}`,`completed mean ${mss(S.completed_mean_seconds)}`]},
- {k:'Player-minutes',v:fmt(Math.round(T.player_minutes)),bar:(2*D.mode_wins['1v1'].active_minutes)/T.player_minutes,barv:`${pct(2*D.mode_wins['1v1'].active_minutes,T.player_minutes)}% in 1v1`,lbl:'1v1',foot:[`active minutes × seats · ${T.player_slots} slots`,`${(T.player_minutes/T.player_slots).toFixed(2)} min / slot · not unique people`]},
- {k:'Distance',v:`${(T.distance_meters/1000).toFixed(1)}<small>km</small>`,bar:null,barv:`${(T.distance_meters/T.player_minutes).toFixed(0)} m / player-min`,lbl:'DST',foot:[`${fmt(Math.round(T.distance_meters))} m across all starts`,`${(T.distance_meters/T.player_slots).toFixed(0)} m / slot`]},
+ {k:'Inactivity exits',v:fmt(S.status.Abandoned),bar:S.status.Abandoned/S.starts,barv:`${pct(S.status.Abandoned,S.starts)}% of starts`,lbl:'EXIT'},
+ {k:'Completion',v:`${pct(S.status.Completed,S.starts)}<small>%</small>`,bar:S.status.Completed/S.starts,barv:`${S.status.Completed} / ${S.starts}`,lbl:'DONE',foot:'Completed / started'},
+ {k:'Enemy kills',v:fmt(T.enemies_killed),foot:`${(T.enemies_killed/T.player_minutes).toFixed(1)} / player-minute<br>${fmt(T.deaths)} deaths<br>${T.pvp_kills} PvP kills`},
+ {k:'Active match time',v:hm(S.active_minutes).replace(/h /,'<small>h</small> ').replace(/m$/,'<small>m</small>'),foot:'Regulation + bonus play'},
+ {k:'Player-minutes',v:fmt(Math.round(T.player_minutes)),bar:(2*D.mode_wins['1v1'].active_minutes)/T.player_minutes,barv:`${pct(2*D.mode_wins['1v1'].active_minutes,T.player_minutes)}% in 1v1`,lbl:'1v1',foot:'Active minutes × seats'},
+ {k:'Distance',v:`${(T.distance_meters/1000).toFixed(1)}<small>km</small>`,foot:`${(T.distance_meters/T.player_minutes).toFixed(0)} m / player-minute`},
 ];
-$('#tiles').innerHTML=tiles.map(t=>`<div class="tile rv-el"><div class="k">${t.k}</div><div class="v num${t.k.startsWith('Light')?' sm':''}">${t.v}</div>${t.bar==null?`<div class="hud"><span class="lbl">${t.lbl}</span><span class="val num" style="grid-column:2/-1">${t.barv}</span></div>`:`<div class="hud"><span class="lbl">${t.lbl}</span><span class="bar"><i style="--v:${t.bar}"></i></span><span class="val num">${t.barv}</span></div>`}<div class="foot num"><span>${t.foot[0]}</span><span>${t.foot[1]}</span></div></div>`).join('');
+$('#tiles').innerHTML=tiles.map(t=>`<div class="tile rv-el"><div class="k">${t.k}</div><div class="v num${t.k.startsWith('Light')?' sm':''}">${t.v}</div>${t.bar==null?'':`<div class="hud"><span class="lbl">${t.lbl}</span><span class="bar"><i style="--v:${t.bar}"></i></span><span class="val num">${t.barv}</span></div>`}${t.foot?`<div class="foot num"><span>${t.foot}</span></div>`:''}</div>`).join('');
 
 /* days */
 const dayKeys=Object.keys(D.days).sort();
 const maxStarts=Math.max(...dayKeys.map(k=>D.days[k].starts));
 let dayHTML=dayKeys.map(k=>{
   const d=D.days[k], c=d.status.Completed||0, a=d.status.Abandoned||0, w=d.completed_winners||{};
-  const first=new Date(d.first), last=new Date(d.last);
+  const first=new Date(d.first);
   const hC=c/maxStarts*100, hA=a/maxStarts*100;
   return `<div class="day rv-el">
-    <div class="d"><span class="date">${k.slice(8)} OCT</span><span class="dow">${dfmt.format(first).toUpperCase()} · activity ${tfmt.format(first)}–${tfmt.format(last)}</span></div>
+    <div class="d"><span class="date">${k.slice(8)} OCT</span><span class="dow">${dfmt.format(first).toUpperCase()}</span></div>
     <div class="n num">${d.starts}<small>STARTS</small></div>
     <div class="cols" aria-hidden="true">
       <div class="col"><i style="--h:${hC}"></i></div>
-      <div class="col"><i class="x" style="--h:${Math.max(hA,1.2)}"></i></div>
+      <div class="col"><i class="x" style="--h:${hA}"></i></div>
     </div>
     <div class="leg"><span>COMPLETED ${c}</span><span>EXITS ${a}</span></div>
     <div class="rows num"><span>Active</span><b>${hm(d.active_minutes)}</b><span>L · D · T</span><b>${w.Light||0} · ${w.Dark||0} · ${w.Tie||0}</b><span>1v1 · 2v2</span><b>${d.modes['1v1']||0} · ${d.modes['2v2']||0}</b><span>Completion</span><b>${pct(c,d.starts)}%</b></div>
@@ -517,12 +503,12 @@ dayHTML+=`<div class="results rv-el">
 </div>`;
 $('#days').innerHTML=dayHTML;
 function setMode(m){
-  const src=m==='all'?S:D.mode_wins[m]; const w=src.completed_winners, c=src.status.Completed, dec=w.Light+w.Dark;
+  const src=m==='all'?S:D.mode_wins[m]; const w=src.completed_winners, c=src.status.Completed;
   $('#r-l').textContent=w.Light; $('#r-d').textContent=w.Dark;
-  $('#r-lp').innerHTML=`${pct(w.Light,c)}% OF COMPLETED<br>${pct(w.Light,dec)}% OF DECIDED`;
-  $('#r-dp').innerHTML=`${pct(w.Dark,c)}% OF COMPLETED<br>${pct(w.Dark,dec)}% OF DECIDED`;
+  $('#r-lp').innerHTML=`${pct(w.Light,c)}% OF COMPLETED`;
+  $('#r-dp').innerHTML=`${pct(w.Dark,c)}% OF COMPLETED`;
   $('#r-bl').style.setProperty('--v',w.Light/c); $('#r-bt').style.setProperty('--v',(w.Tie||0)/c);
-  $('#r-t').textContent=`TIE ${w.Tie||0} · ${pct(w.Tie||0,c)}%`; $('#r-n').textContent=`${c} COMPLETED · ${src.status.Abandoned||0} EXITS`;
+  $('#r-t').textContent=`TIE ${w.Tie||0} · ${pct(w.Tie||0,c)}%`; $('#r-n').textContent=`${c} COMPLETED`;
   document.querySelectorAll('.seg [data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===m)));
 }
 document.querySelectorAll('.seg [data-mode]').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.mode)));
@@ -530,15 +516,14 @@ setMode('all');
 
 /* stages */
 const rows=ST.map(s=>{const v=L[s.name];const c=v.status.Completed||0,a=v.status.Abandoned||0,w=v.completed_winners;return {...s,v,c,a,w,starts:v.starts,pvp:v.pvp_kills,dpm:v.deaths/v.player_minutes,kpm:v.enemies_killed/v.player_minutes,ppm:v.pvp_kills/v.player_minutes,share:v.starts/S.starts,lshare:(w.Light||0)/c}});
-const maxShare=Math.max(...rows.map(r=>r.share));
 let sortKey='num',sortDir=1,selected=null;
-$('#snav').innerHTML=rows.map(r=>`<button type="button" data-stage="${r.name}" aria-current="false"><img src="assets-r3/stages/${r.name.toLowerCase()}.jpg" alt="" loading="lazy"><span class="id">STAGE_${String(r.num).padStart(3,'0')}</span><span class="nm">${r.name}</span><span class="st num"><b>${r.v.starts}</b> starts<br>${r.a} exits</span></button>`).join('');
+$('#snav').innerHTML=rows.map(r=>`<button type="button" data-stage="${r.name}" aria-current="false"><img src="assets-r3/stages/${r.name.toLowerCase()}.jpg" alt="" loading="lazy"><span class="nm">${r.name}</span><span class="st num"><b>${r.v.starts}</b> starts<br>${r.a} exits</span></button>`).join('');
 function renderRows(){
   const sorted=rows.slice().sort((x,y)=>(x[sortKey]>y[sortKey]?1:x[sortKey]<y[sortKey]?-1:x.num-y.num)*sortDir);
   $('#stage-rows').innerHTML=sorted.map(r=>`<tr tabindex="0" data-stage="${r.name}" aria-selected="${r.name===selected}">
-  <td><div class="nm"><img src="assets-r3/stages/${r.name.toLowerCase()}.jpg" alt="" width="28" height="28" loading="lazy"><div><span class="id">STAGE_${String(r.num).padStart(3,'0')}</span><div class="t">${r.name}</div><div class="a">${r.anomaly}</div></div></div></td>
+  <td><div class="nm"><img src="assets-r3/stages/${r.name.toLowerCase()}.jpg" alt="" width="28" height="28" loading="lazy"><div><div class="t">${r.name}</div></div></div></td>
   <td class="r num"><b style="font-weight:700">${r.v.starts}</b></td>
-  <td class="hide-m"><div class="share num"><span class="bar"><i style="--v:${r.share/maxShare}"></i></span><span>${pct(r.v.starts,S.starts)}%</span></div></td>
+  <td class="hide-m"><div class="share num"><span class="bar"><i style="--v:${r.share}"></i></span><span>${pct(r.v.starts,S.starts)}%</span></div></td>
   <td class="r num">${r.c}</td>
   <td class="r num ex"><b class="${r.a?'warn':''}">${r.a}</b> <span class="dim">${r.a?pct(r.a,r.v.starts,0)+'%':''}</span></td>
   <td class="hide-m"><div class="ld num"><span>${r.w.Light||0}</span><span class="sbar"><i class="l" style="--v:${(r.w.Light||0)/r.c}"></i><i class="t" style="--v:${(r.w.Tie||0)/r.c}"></i></span><span style="text-align:right;color:var(--ink-2)">${r.w.Dark||0}</span></div></td>
@@ -565,14 +550,13 @@ function showStage(name,focusDetail,updateHash=true){
   const diag={NOVA:'C13_NOVA_DIAGRAM',ORBITAL:'C16_ORBITAL_CLEAN',SINGULARITY:'GDD_SINGULARITY'}[r.name];
   const src=hero?`assets-r3/media/${r.hero}`:(diag?`assets-r3/media/${diag}`:null);
   const icon=`assets-r3/stages/${r.name.toLowerCase()}`;
-  const capLabel=hero?`${hero.id} · ${esc(hero.title)} · ${hero.dur}s native capture`:(diag?{NOVA:'MOMI Fig. — NOVA model · core collapse on the plane',ORBITAL:'MOMI Fig. — ORBITAL model · probability cloud',SINGULARITY:'GDD Fig. — SINGULARITY model · ring on the folded grid'}[r.name]:'Native level-select object');
-  const mediaHTML=src?`<video class="on" muted loop playsinline preload="metadata" poster="${src}.jpg" aria-label="${esc(capLabel)}"><source src="${src}.mp4" type="video/mp4"></video>`:`<video class="on obj" muted loop playsinline preload="metadata" poster="${icon}.jpg" aria-label="${r.name} level-select object"><source src="${icon}.mp4" type="video/mp4"></video>`;
-  det.innerHTML=`<div class="top"><span>Selected · ${i+1} of 9</span><span class="pn"><button type="button" data-go="${prev.name}" aria-label="Previous stage, ${prev.name}">← ${prev.name}</button><button type="button" data-go="${next.name}" aria-label="Next stage, ${next.name}">${next.name} →</button></span></div>
-  <div class="media">${mediaHTML}<div class="cap">${capLabel}</div></div>
-  <div class="head"><div><span class="id">STAGE_${String(r.num).padStart(3,'0')}</span><h3>${r.name}</h3><div class="an">Anomaly · ${r.anomaly}</div></div><div class="right num">Starts <b>${r.v.starts}</b> · ${pct(r.v.starts,S.starts)}%<br>Completed <b>${r.c}</b> · Exits <b>${r.a}</b><br>1v1 <b>${r.v.modes['1v1']||0}</b> · 2v2 <b>${r.v.modes['2v2']||0}</b></div></div>
+  const mediaHTML=src?`<video class="on" muted loop playsinline preload="metadata" poster="${src}.jpg" aria-label="${r.name} animation"><source src="${src}.mp4" type="video/mp4"></video>`:`<video class="on obj" muted loop playsinline preload="metadata" poster="${icon}.jpg" aria-label="${r.name} level-select object"><source src="${icon}.mp4" type="video/mp4"></video>`;
+  det.innerHTML=`<div class="top"><span>${String(i+1).padStart(2,'0')} / 09</span><span class="pn"><button type="button" data-go="${prev.name}" aria-label="Previous stage, ${prev.name}">← ${prev.name}</button><button type="button" data-go="${next.name}" aria-label="Next stage, ${next.name}">${next.name} →</button></span></div>
+  <div class="media">${mediaHTML}</div>
+  <div class="head"><div><h3>${r.name}</h3></div><div class="right num"><b>${r.v.starts}</b> starts · ${pct(r.v.starts,S.starts)}% of total<br>Completed <b>${r.c}</b> · Exits <b>${r.a}</b><br>1v1 <b>${r.v.modes['1v1']||0}</b> · 2v2 <b>${r.v.modes['2v2']||0}</b></div></div>
   <div class="grid num">
     <div><div class="l">Player-minutes</div><div class="v">${r.v.player_minutes.toFixed(1)}</div></div>
-    <div><div class="l">Completed mean</div><div class="v">${mss(r.v.completed_mean_seconds)}<small>m:s</small></div></div>
+    <div><div class="l">Completed mean<br>(m:ss)</div><div class="v">${mss(r.v.completed_mean_seconds)}</div></div>
     <div><div class="l">Exit rate</div><div class="v">${pct(r.a,r.v.starts)}<small>%</small></div></div>
     <div><div class="l">Deaths</div><div class="v">${fmt(r.v.deaths)}<small class="rate">${r.dpm.toFixed(2)} / min</small></div></div>
     <div><div class="l">Enemy kills</div><div class="v">${fmt(r.v.enemies_killed)}<small class="rate">${r.kpm.toFixed(1)} / min</small></div></div>
@@ -580,9 +564,9 @@ function showStage(name,focusDetail,updateHash=true){
   </div>
   <div class="ldsplit num">
     <div class="row"><span>LIGHT ${r.w.Light||0}</span><span class="sbar" style="height:9px"><i class="l" style="--v:${(r.w.Light||0)/r.c}"></i><i class="t" style="--v:${(r.w.Tie||0)/r.c}"></i></span><span>DARK ${r.w.Dark||0}</span></div>
-    <div class="row" style="color:var(--ink-3)"><span>${pct(r.w.Light||0,r.c)}%</span><span style="text-align:center">TIE ${r.w.Tie||0}</span><span>${pct(r.w.Dark||0,r.c)}%</span></div>
+    <div class="row" style="color:var(--ink-3)"><span>${pct(r.w.Light||0,r.c)}%</span><span style="text-align:center">${r.c} COMPLETED · TIE ${r.w.Tie||0}</span><span>${pct(r.w.Dark||0,r.c)}%</span></div>
   </div>
-  <div class="foot">Rates are per player-minute on this stage (${r.v.player_minutes.toFixed(1)} min across ${r.v.starts} starts). Outcome shares use completed matches; ties stay in the denominator.</div>`;
+`;
   det.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showStage(b.dataset.go,true)));
   if(focusDetail){const f=det.querySelector('.top .pn button');if(f)f.focus({preventScroll:true})}
 }
@@ -606,55 +590,23 @@ const hourOf=iso=>{const d=new Date(iso);const parts=new Intl.DateTimeFormat('en
 const ticks=[];for(let h=H0;h<=H1;h+=2)ticks.push(`<span>${String(h).padStart(2,'0')}:00</span>`);
 let tl=`<div class="axis"><span>EDT</span><div class="ticks num">${ticks.join('')}</div></div>`;
 for(const k of dayKeys){
-  const d=D.days[k]; const f=hourOf(d.first), l=hourOf(d.last);
+  const d=D.days[k];
   const marks=inc.filter(x=>x.start.slice(0,10)===k).map(x=>{
-    const left=(hourOf(x.start)-H0)/(H1-H0)*100; const w=x.active_seconds/180*100/((H1-H0)); // span scaled: 180s ≈ one hour-cell / (hours) → keep readable
+    const left=(hourOf(x.start)-H0)/(H1-H0)*100;
     return `<span class="mark" style="left:${left}%" tabindex="0" data-id="${x.id}"><span class="tip num">${x.level} · ${tfmt.format(new Date(x.start))}<small>${mss(x.active_seconds)} active</small></span></span>`;
   }).join('');
-  tl+=`<div class="row"><div class="lab num">${k.slice(8)} OCT<small>${d.starts} starts · ${(d.status.Abandoned||0)} exits</small></div><div class="track"><span class="start" style="left:${(f-H0)/(H1-H0)*100}%" title="first recorded activity ${tfmt.format(new Date(d.first))}"></span><span class="start" style="left:${(l-H0)/(H1-H0)*100}%" title="last recorded activity ${tfmt.format(new Date(d.last))}"></span>${marks}</div></div>`;
+  tl+=`<div class="row"><div class="lab num">${k.slice(8)} OCT<small>${d.starts} starts · ${(d.status.Abandoned||0)} exits</small></div><div class="track">${marks}</div></div>`;
 }
 const medOf=a=>{a=a.slice().sort((x,y)=>x-y);const n=a.length;return n%2?a[(n-1)/2]:(a[n/2-1]+a[n/2])/2};
 const med=medOf(inc.map(x=>x.active_seconds)), medH=medOf(inc.filter(x=>x.level==='HIGGS').map(x=>x.active_seconds));
-tl+=`<div class="note"><span>◇ one exit · placed at match start · hover for stage and active time · ticks = recorded activity span of the day</span><span>median ${mss(med)} active before exit (HIGGS only: ${mss(medH)}) · all 17 read "All players inactive; returned to Attract."</span></div>`;
+tl+=`<div class="note"><span>◇ Match start</span><span>Median active time: ${mss(med)} · HIGGS ${mss(medH)}</span></div>`;
 $('#exit-timeline').innerHTML=tl;
-$('#exit-rows').innerHTML=inc.map(x=>`<tr data-id="${x.id}"><td class="num">${x.start.slice(8,10)} OCT ${tfmt.format(new Date(x.start))}</td><td><b style="font-weight:500">${x.level}</b> <span class="dim">STAGE_${String(ST.find(s=>s.name===x.level).num).padStart(3,'0')}</span></td><td class="hide-m">${x.mode===1?'2v2':'1v1'}</td><td class="num"><span class="pbar"><i style="--v:${x.active_seconds/180}"></i></span>${mss(x.active_seconds)} <span class="dim">/ 3:00.0</span></td><td class="r num dim hide-m">${x.id.slice(0,8)}…</td></tr>`).join('');
+$('#exit-rows').innerHTML=inc.map(x=>`<tr data-id="${x.id}"><td class="num">${x.start.slice(8,10)} OCT ${tfmt.format(new Date(x.start))}</td><td><b style="font-weight:500">${x.level}</b></td><td class="hide-m">${x.mode===1?'2v2':'1v1'}</td><td class="num"><span class="pbar"><i style="--v:${x.active_seconds/180}"></i></span>${mss(x.active_seconds)}</td></tr>`).join('');
 document.querySelectorAll('.tl .mark').forEach(m=>{m.addEventListener('mouseenter',()=>document.querySelector(`#exit-rows tr[data-id="${m.dataset.id}"]`)?.style.setProperty('background','#111'));m.addEventListener('mouseleave',()=>document.querySelector(`#exit-rows tr[data-id="${m.dataset.id}"]`)?.style.removeProperty('background'))});
-
-/* reads */
-const higgs=L.HIGGS, lat=L.LATTICE, nova=L.NOVA, m1=D.mode_wins['1v1'].completed_winners, m2=D.mode_wins['2v2'].completed_winners;
-const peakKey=dayKeys.reduce((a,b)=>D.days[a].starts>=D.days[b].starts?a:b);
-const reads=[
- ['Side outcomes',`Light won <b>${W.Light} of ${decided} decided matches (${pct(W.Light,decided)}%)</b>; ${W.Tie} ties sit outside that denominator. The share is similar in both modes: ${pct(m1.Light,m1.Light+m1.Dark)}% in 1v1 (${m1.Light}/${m1.Light+m1.Dark}) and ${pct(m2.Light,m2.Light+m2.Dark)}% in 2v2 (${m2.Light}/${m2.Light+m2.Dark}). A side-outcome signal, not a cause: player identity, skill and seat history are not in the export. Cheapest next step is a controlled side-swap test.`],
- ['Inactivity exits concentrate on HIGGS',`HIGGS (STAGE_002) recorded <b>${higgs.status.Abandoned} inactivity exits in ${higgs.starts} starts (${pct(higgs.status.Abandoned,higgs.starts)}%)</b>, ${higgs.status.Abandoned} of the window's ${S.status.Abandoned}. Median active time before exit on HIGGS: ${mss(medH)} (all stages: ${mss(med)}). EMERGENCE has the same rate on a smaller base (${L.EMERGENCE.status.Abandoned}/${L.EMERGENCE.starts}). Inactivity is the recorded end reason, not a cause; it does not exclude a disconnect, and the export cannot separate comprehension, input or hardware. Review these ${higgs.status.Abandoned} match records to establish it.`],
- ['LATTICE is the default',`<b>${lat.starts} starts (${pct(lat.starts,S.starts)}%)</b>, zero exits, Light ${pct(lat.completed_winners.Light,lat.status.Completed)}% of its completed matches. Consistent with first position in the level-select carousel. Read every stage-share figure against that selection bias; stage bases run from ${Math.min(...Object.values(L).map(v=>v.starts))} to ${lat.starts} starts.`],
- ['NOVA runs long',`The only material deviation from the 3:00 baseline: completed mean <b>${mss(nova.completed_mean_seconds)}</b>; every other stage sits within milliseconds of 180.0 s. The export lists ${D.bonus_matches} bonus-play matches and NOVA has ${nova.starts} starts; the file does not link the two, so treat the match as plausible, not confirmed.`],
- ['Throughput',`<b>${fmt(T.enemies_killed)} enemy kills, ${fmt(T.deaths)} deaths, ${T.pvp_kills} PvP kills</b> over ${fmt(Math.round(T.player_minutes))} player-minutes: ${(T.enemies_killed/T.player_minutes).toFixed(1)} kills and ${(T.deaths/T.player_minutes).toFixed(2)} deaths per player-minute. Highest death rate in the window: DYNAMO, ${(L.DYNAMO.deaths/L.DYNAMO.player_minutes).toFixed(2)}/min on ${L.DYNAMO.starts} starts. Lowest: SINGULARITY, ${(L.SINGULARITY.deaths/L.SINGULARITY.player_minutes).toFixed(2)}/min and ${(L.SINGULARITY.enemies_killed/L.SINGULARITY.player_minutes).toFixed(1)} kills/min on ${L.SINGULARITY.starts}. Rates normalize exposure, not skill, mode mix or stage mechanics.`],
- ['Peak day',`<b>${peakKey.slice(8)} October: ${D.days[peakKey].starts} starts, ${hm(D.days[peakKey].active_minutes)} active, ${D.days[peakKey].status.Abandoned||0} exits.</b> 16 October had the fewest starts (${D.days['2026-10-16'].starts}) and the highest exit rate (${D.days['2026-10-16'].status.Abandoned} of ${D.days['2026-10-16'].starts}, ${pct(D.days['2026-10-16'].status.Abandoned,D.days['2026-10-16'].starts)}%).`],
-];
-$('#reads').innerHTML=reads.map((r,i)=>`<li class="rv-el"><i>R${String(i+1).padStart(2,'0')}</i><div><span class="h">${r[0]}</span>${r[1]}</div></li>`).join('');
-
-/* defs */
-const builds=Object.entries(D.builds), rs=Object.keys(D.rulesets)[0], fp=Object.keys(D.settings)[0];
-$('#defs').innerHTML=`<div class="k" style="margin-bottom:16px">Definitions</div>
-<dl>
-<dt>Start</dt><dd>Recorded when regulation begins. Includes completed and abandoned matches.</dd>
-<dt>Completed</dt><dd>Final scoring resolved. <b>Completion = completed ÷ started.</b></dd>
-<dt>Exit</dt><dd>All active players inactive past the hold timer; the cabinet returned to Attract. The recorded reason is inactivity; it does not exclude a disconnect and does not establish cause.</dd>
-<dt>Outcome</dt><dd>Light, Dark or Tie as a share of completed matches. "Decided" excludes ties.</dd>
-<dt>Active time</dt><dd>Regulation plus bonus play while the match clock ran. Elapsed adds non-scoring transitions; active ÷ elapsed is a within-match clock ratio, not uptime. Completed mean uses completed matches only.</dd>
-<dt>Player slot</dt><dd>One seat in one match: 1v1 × 2 + 2v2 × 4 = ${T.player_slots}. Not unique players.</dd>
-<dt>Player-minutes</dt><dd>Active match minutes × seats (2 × 1v1 + 4 × 2v2 = ${fmt(Math.round(T.player_minutes))}). Exposure, not continuous input or engagement.</dd>
-<dt>Activity span</dt><dd>Per-day first/last are the earliest and latest recorded timestamps, which can be match ends. Not cabinet hours or utilization.</dd>
-<dt>Rates</dt><dd>Deaths, kills and PvP kills per player-minute. Stage rates use that stage's own player-minutes.</dd>
-</dl>
-<hr>
-<div class="k" style="margin-bottom:16px">Not in this export</div>
-<dl><dt>Missing</dt><dd>Unique players, per-match scores, a complete match log, hourly distribution. 235 records were selected and 228 counted as starts in the window; the export does not say what the other 7 are. Per-day session counts (2/1/2/1) do not sum to the summary's ${S.sessions}; the session boundary rule is not stated.</dd></dl>`;
-$('#prov').innerHTML=`<span>Source <b>MASSIVEmatch-snapshot-20261015-18.json</b></span><span>Records <b>${D.quality.selected_records_all_folders} selected · ${S.starts} in window</b></span><span>Read issues <b>${D.quality.read_issues.length}</b></span><span>Dev / non-primary <b>${D.quality.development_in_window} / ${D.quality.nonprimary_selected}</b></span><span>Builds <b>${builds.map(b=>`${b[0].slice(0,8)} (${b[1]})`).join(' · ')}</b></span><span>Ruleset <b>${rs} · standard</b></span><span>Settings <b>${fp.slice(0,10)}…</b></span><span>Duration <b>180.0 s × ${D.durations['180.0']}</b></span><a href="assets-r3/MASSIVEmatch-snapshot-20261015-18.json" download>Download match data (JSON) ↓</a>`;
 
 /* count-up */
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-function countUp(el){const to=+el.dataset.count;if(!motion){el.textContent=fmt(to);return}const t0=performance.now(),dur=1100;const step=t=>{const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,4);el.textContent=fmt(Math.round(to*e));if(k<1)requestAnimationFrame(step)};requestAnimationFrame(step)}
+function countUp(el){el.textContent=fmt(+el.dataset.count)}
 /* reveal */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');e.target.classList.add('rv');e.target.querySelectorAll('[data-count]').forEach(countUp);if(e.target.dataset.count)countUp(e.target);io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px',threshold:.08});
 document.querySelectorAll('.rv-el,.frame').forEach(el=>io.observe(el));

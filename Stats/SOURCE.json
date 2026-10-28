@@ -51,7 +51,7 @@
       "source_commit": "924bd60246027d1ff638900a7131814c5b6d82bc"
     }
   ],
-  "release_revision": "2026-10-28 / Claude Rev 3 with Codex final integration",
+  "release_revision": "2026-10-28 / Editorial and visual refinement of Claude Rev 3",
   "original_packaging_changes": [
     "Replace V01/V02 two-option navigation and add V03 navigation with the same three links",
     "Add shared version-nav.css, README.md and SOURCE.json",
@@ -78,7 +78,7 @@
     "posters": "Original V03 poster files copied byte-for-byte",
     "timing": "Source frame counts retained; SINGULARITY container timing normalizes by approximately one frame."
   },
-  "final_integration_changes": [
+  "previous_integration_changes": [
     "Retain the shared V01/V02/V03 bottom-right navigation and preserve the published original V01/V02 HTML and assets.",
     "Place Claude Rev 3 assets in assets-r3/ so current revisions do not overwrite original comparison media.",
     "Replace vague footer copy with explicit reporting dates and the statement that footage was captured in MASSIVE.",
@@ -91,7 +91,7 @@
     "Replace the short cropped stage icon excerpts with 720px delivery encodes of the isolated native V03 stage animations; preserve original posters.",
     "Leave V03 source, calculations, copy, layout and media unchanged."
   ],
-  "final_review": {
+  "integration_review": {
     "date": "2026-10-28",
     "reviewer": "Codex",
     "pages": {
@@ -103,6 +103,33 @@
       "Selected stage remains visible after resizing and stage links update within the page",
       "Stage deep links land after document and font loading",
       "Source download and footer use plain match-data wording"
+    ]
+  },
+  "final_integration_changes": [
+    "Remove Notes, Reads, Definitions and Provenance from both report pages, including advice, inferred causes, production captions and repeated instructions.",
+    "Keep metric units and denominators beside the values; use completed matches consistently for outcome shares and a 0\u2013100 percent scale for stage start shares.",
+    "Retain all nine stages, 17 inactivity records and aggregate combat totals; preserve the original JSON and embedded data.",
+    "Add shared refinement.css with readable labels, compact metric cards, responsive daily chart labels and full-frame selected-stage playback.",
+    "Use existing higher-resolution native V03 stage animations for the V02 hero, with ten-second rotation and crossfades, no hero controls or captions.",
+    "Trim the editorial fades from the V01 plane delivery clip; retain native animation and framing.",
+    "Keep stage names, starts, completions and exits in phone comparison tables; retain combat metrics in selected-stage detail.",
+    "Preserve archived original comparisons and all V03 files."
+  ],
+  "final_review": {
+    "date": "2026-10-28",
+    "reviewer": "Codex",
+    "pages": {
+      "index.html": "42f4ce831254d9a8b719cbc578dacb2e689a0e8d6593489673d96d7963aa3afd",
+      "v02.html": "6ea2c0e94829c43be00615137119537c1ee1f8f1c624fe4d1c375adda6cccb3b"
+    },
+    "stylesheet_sha256": "f5a2be331596c21206ceef91f3ece62ee8154e510fc6856657eb83e89f0da834",
+    "validation": [
+      "No page overflow at 360, 768, 1280 or 1512 CSS pixels",
+      "All nine selected-stage videos load and loop with contain framing",
+      "All 17 inactivity records retained",
+      "Stage sorting, keyboard navigation and mode filtering verified",
+      "Hero rotation and motion control verified; reduced-motion preference verified",
+      "No browser Runtime exceptions in the tested interactions"
     ]
   }
 }
