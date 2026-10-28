@@ -1,0 +1,44 @@
+{
+  "purpose": "Preserved MASSIVE stats-page comparison options with shared version navigation",
+  "source_zip": {
+    "filename": "MASSIVE-match-telemetry.zip",
+    "sha256": "1c024368f65976562c46ed3fc6f85570cebc61665b427eea8f83c34b6c3cfbe7"
+  },
+  "snapshot": {
+    "filename": "MASSIVEmatch-snapshot-20261015-18.json",
+    "sha256": "2871bf192eae2e46895d8b306449fc14ac3ade3ca5b90ac2ab58bd0c724b5990",
+    "copies": [
+      "assets/MASSIVEmatch-snapshot-20261015-18.json",
+      "v03/snapshot.json"
+    ]
+  },
+  "options": [
+    {
+      "version": "V01",
+      "author": "Claude",
+      "entry": "index.html",
+      "source": "MASSIVE-match-telemetry.zip:massive-stats/index.html",
+      "source_html_sha256": "481b6a32d7a024dee42c15ebc889b3df635eb6f3e9047b9e649af4fb18286e14"
+    },
+    {
+      "version": "V02",
+      "author": "Claude",
+      "entry": "v02.html",
+      "source": "MASSIVE-match-telemetry.zip:massive-stats/v02.html",
+      "source_html_sha256": "5b9db657412420516ddfebd72a1134efbe755843673728f864a8f74e2efd413c"
+    },
+    {
+      "version": "V03",
+      "author": "Codex",
+      "entry": "v03/index.html",
+      "source": "Sites/massive-state/dist/index.html",
+      "source_html_sha256": "44327081d5180ac6c5d9d70fce42eebee4408714056b49bb87b8043e573191e8",
+      "source_commit": "924bd60246027d1ff638900a7131814c5b6d82bc"
+    }
+  ],
+  "packaging_changes": [
+    "Replace V01/V02 two-option navigation and add V03 navigation with the same three links",
+    "Add shared version-nav.css, README.md and SOURCE.json",
+    "No changes to underlying calculations, copy, media or page design"
+  ]
+}

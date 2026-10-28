@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="MASSIVE match statistics. 228 starts across nine stages, 15–18 October 2026.">
+  <title>MASSIVE / Match Statistics</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/InputMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/InputMono-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+<link rel="stylesheet" href="../version-nav.css">
+</head>
+<body>
+  <a class="skip" href="#overview">SKIP TO STATISTICS</a>
+  <div class="site-shell">
+    <header class="masthead">
+      <a class="brand" href="#top" aria-label="MASSIVE, back to top"><img src="assets/massive-wordmark.png" width="1792" height="313" alt="MASSIVE"></a>
+      <nav aria-label="Page sections"><a href="#overview" class="nav-active">OVERVIEW</a><a href="#stages">STAGES</a><a href="#records">RECORDS</a></nav>
+      <div class="snapshot-tag"><span class="square"></span> SNAPSHOT <span class="muted">/ 2026.10</span></div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="section-num">00</span> MATCH REPORT</p>
+          <h1 id="page-title">MATCH<br>STATISTICS</h1>
+          <div class="report-date"><span class="crosshair" aria-hidden="true">+</span><span>15—18 OCTOBER 2026</span><span class="muted">EDT</span></div>
+          <div class="hero-foot"><span>09 STAGES</span><span>02 MODES</span><span>04 DAYS</span></div>
+        </div>
+        <div class="hero-art" id="hero-art" aria-hidden="true">
+          <video class="hero-level is-active" data-stage="singularity" muted playsinline loop preload="none" poster="assets/game/stage-singularity-poster.jpg" tabindex="-1" disablepictureinpicture></video>
+          <video class="hero-level" muted playsinline loop preload="none" tabindex="-1" disablepictureinpicture></video>
+        </div>
+      </section>
+
+      <section id="overview" class="overview" aria-label="Match overview">
+        <div class="metric"><p>MATCHES STARTED</p><div class="metric-value" id="total-starts">228</div><div class="metric-note"><span id="completed-count">211 COMPLETED</span><span class="muted" id="abandoned-count">17 ABANDONED</span></div></div>
+        <div class="metric"><p>COMPLETION RATE</p><div class="metric-value" id="completion-rate">92.5<span class="unit">%</span></div><div class="metric-note"><span class="mini-meter" aria-hidden="true"><i id="completion-meter" style="width:92.5439%"></i></span><span id="completion-denominator">211 / 228 STARTS</span></div></div>
+        <div class="metric"><p>TOTAL MATCH TIME</p><div class="metric-value time-value" id="total-match-time">11<span class="time-unit">h</span>03<span class="time-unit">m</span></div><div class="metric-note"><span>ACTIVE TIME</span><span class="muted">ALL STARTED MATCHES</span></div></div>
+        <div class="metric"><p>AVG. MATCH DURATION</p><div class="metric-value" id="average-duration">3:00.9</div><div class="metric-note"><span>MIN:SEC</span><span class="muted">COMPLETED / INCLUDES BONUS</span></div></div>
+      </section>
+
+      <section class="section-block" aria-labelledby="activity-heading">
+        <div class="section-heading"><h2 id="activity-heading"><span class="section-num">01</span> MATCH ACTIVITY</h2><span class="section-meta">15.10.26 — 18.10.26</span></div>
+        <div class="activity-grid">
+          <article class="daily-panel panel">
+            <div class="panel-heading"><h3>MATCHES BY DAY</h3><div class="legend"><span><i class="legend-dot"></i>COMPLETED</span><span><i class="legend-cross">×</i>ABANDONED</span></div></div>
+            <div id="day-chart" class="day-chart" aria-label="Select a day to inspect its match statistics"></div>
+            <div class="chart-foot"><span>1 MARK = 1 MATCH</span><span>SELECT A DAY <span aria-hidden="true">↓</span></span></div>
+            <div id="day-detail" class="day-detail" aria-live="polite"></div>
+          </article>
+          <article class="outcomes-panel panel">
+            <div class="panel-heading"><h3>MATCH RESULTS</h3><div class="segmented" role="group" aria-label="Filter match results by mode"><button type="button" data-mode="all" aria-pressed="true">ALL</button><button type="button" data-mode="1v1" aria-pressed="false">1v1</button><button type="button" data-mode="2v2" aria-pressed="false">2v2</button></div></div>
+            <div id="outcomes" aria-live="polite"></div>
+            <div class="mode-distribution"><div class="panel-heading"><h3>MATCHES BY MODE</h3><span class="muted">ALL STARTS</span></div><div class="mode-row"><span>1v1</span><div class="mode-track"><i style="width:83.7719%"></i></div><b>191</b><span class="muted">83.8%</span></div><div class="mode-row"><span>2v2</span><div class="mode-track"><i style="width:16.2281%"></i></div><b>37</b><span class="muted">16.2%</span></div></div>
+          </article>
+        </div>
+        <div class="secondary-metrics"><div><span>ENEMIES KILLED</span><b id="enemy-total">16,782</b></div><div><span>PVP KILLS</span><b id="pvp-total">156</b></div><div><span>PLAYER DEATHS</span><b id="deaths-total">2,355</b></div><div><span>DISTANCE TRAVELED</span><b id="distance-total">168.01 <small>km</small></b></div></div>
+        <p class="metrics-scope">Player totals across all started matches. Match time includes active regulation and bonus play.</p>
+      </section>
+
+      <section id="stages" class="section-block" aria-labelledby="stages-heading">
+        <div class="section-heading"><h2 id="stages-heading"><span class="section-num">02</span> STAGE BREAKDOWN</h2><span class="section-meta">09 STAGES / 228 STARTS</span></div>
+        <div class="stage-layout">
+          <div class="stage-table-panel panel">
+            <div class="panel-heading"><span class="muted">SELECT A STAGE</span><label class="sort-control">SORT <select id="stage-sort" aria-label="Sort stages"><option value="starts">STARTS ↓</option><option value="name">NAME A–Z</option><option value="completion">COMPLETION ↑</option></select></label></div>
+            <table class="stage-table"><thead><tr><th scope="col">STAGE</th><th scope="col">STARTS</th><th scope="col" class="share-column">% OF STARTS</th><th scope="col">COMPLETION RATE</th></tr></thead><tbody id="stage-rows"></tbody></table>
+            <div class="table-foot"><span>SHARE OF ALL STARTS</span><span>COMPLETION RATE = COMPLETED / STARTED</span></div>
+          </div>
+          <aside id="stage-detail" class="stage-detail panel" aria-live="polite" aria-label="Selected stage statistics"></aside>
+        </div>
+      </section>
+
+      <section id="records" class="section-block" aria-labelledby="records-heading">
+        <div class="section-heading"><h2 id="records-heading"><span class="section-num">03</span> ABANDONED MATCHES</h2><a class="text-link" href="snapshot.json" download="MASSIVEmatch-snapshot-20261015-18.json">DOWNLOAD JSON <span aria-hidden="true">↓</span></a></div>
+        <details class="records-panel panel">
+          <summary><div><span class="record-count">17</span><span>INACTIVITY EXITS</span></div><span class="record-reason">AUTOMATIC RETURN TO ATTRACT MODE</span><span class="expand-icon" aria-hidden="true">+</span></summary>
+          <div class="records-body"><div class="records-toolbar"><p>All players inactive. Times shown in EDT; active duration is mm:ss.s.</p><label>STAGE <select id="record-stage"><option value="all">ALL STAGES</option><option value="HIGGS">HIGGS</option><option value="EMERGENCE">EMERGENCE</option><option value="PULSAR">PULSAR</option></select></label></div><div class="records-scroll"><table class="records-table"><thead><tr><th scope="col">START / EDT</th><th scope="col">STAGE</th><th scope="col">MODE</th><th scope="col">ACTIVE DURATION</th><th scope="col">MATCH ID</th></tr></thead><tbody id="record-rows"></tbody></table></div><p class="table-foot" id="record-result" aria-live="polite"></p></div>
+        </details>
+        <details class="source-panel"><summary><span>METRIC DEFINITIONS &amp; DATA SCOPE</span><span class="expand-icon" aria-hidden="true">+</span></summary>
+          <div class="source-content">
+            <dl class="report-metadata">
+              <div><dt>REPORTING WINDOW</dt><dd>15 OCT 00:00 — 19 OCT 00:00, 2026<br>EDT (UTC−04:00), end exclusive</dd></div>
+              <div><dt>MATCH CONFIGURATION</dt><dd>Scoring rules v6 / Standard settings<br>180 s regulation / 10 matches with bonus play</dd></div>
+              <div><dt>PLAYER PARTICIPATION</dt><dd>530 player slots used<br>25h 39m total player time</dd></div>
+              <div><dt>DATA VALIDATION</dt><dd>0 reported read issues<br>0 development matches in the window</dd></div>
+            </dl>
+            <dl class="metric-definitions">
+              <div><dt>MATCHES STARTED</dt><dd>Recorded when regulation begins. Includes completed and abandoned matches.</dd></div>
+              <div><dt>COMPLETION RATE</dt><dd>Completed matches divided by matches started. A match is completed when final scoring resolves.</dd></div>
+              <div><dt>MATCH RESULTS</dt><dd>Light wins, Dark wins, and ties as a share of completed matches. Ties remain in the denominator.</dd></div>
+              <div><dt>MATCH DURATION</dt><dd>Active regulation plus active bonus time. Application suspension and non-scoring transitions are excluded. Average duration uses completed matches only.</dd></div>
+              <div><dt>ABANDONED MATCHES</dt><dd>All players became inactive and the cabinet returned to attract mode. These records do not indicate a crash or connection failure.</dd></div>
+              <div><dt>PLAYER PARTICIPATION</dt><dd>Player slots count entries across matches: 191 × 2 + 37 × 4. They are not unique players. Cumulative player time uses the player-minutes reported by the export.</dd></div>
+            </dl>
+            <p>Reporting dates and daily aggregates are taken directly from the export. Day, stage, and mode controls apply only to their own panels. Combat and movement totals include completed and abandoned matches.</p>
+            <p>Two builds are represented: <code>152821da…</code> (113 starts) and <code>3e51c8e6…</code> (115 starts). Both use the same scoring rules version and settings fingerprint.</p>
+            <p>The export reports 235 selected records across all folders and 228 starts in this window; it does not classify the remaining seven. Only abandoned matches have individual records in this export. Unique-player counts, retention, scores, and a complete match log are unavailable.</p>
+            <p>Source: <a href="snapshot.json" download="MASSIVEmatch-snapshot-20261015-18.json">MASSIVEmatch-snapshot-20261015-18.json</a>. Game footage and stage art are presentation assets, not replays of these records.</p>
+          </div>
+        </details>
+      </section>
+    </main>
+    <footer><span class="footer-brand">MASSIVE</span><span>MATCH STATISTICS / OCTOBER 2026</span><a href="#top">BACK TO TOP ↑</a></footer>
+    <div id="load-error" class="load-error" role="alert" hidden>SNAPSHOT UNAVAILABLE. <button type="button" id="retry">RELOAD</button></div>
+    <noscript><p class="inline-note">Enable JavaScript to inspect the day, stage, and match breakdowns. <a href="snapshot.json">Download the source JSON.</a></p></noscript>
+  </div>
+<nav class="stats-version-nav" aria-label="Design version"><a href="../index.html" title="V01 — Claude · Table report" aria-label="V01 — Claude · Table report">V01</a><a href="../v02.html" title="V02 — Claude · Field and instruments" aria-label="V02 — Claude · Field and instruments">V02</a><a href="../v03/index.html" title="V03 — Codex · Native animation report" aria-label="V03 — Codex · Native animation report" aria-current="page">V03</a></nav>
+</body>
+</html>
