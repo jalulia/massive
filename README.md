@@ -1,6 +1,8 @@
 # MASSIVE — Library
 
-[Open the library](https://jalulia.github.io/massive/) · [Open the MOMI presentation](https://jalulia.github.io/massive/momi.html)
+[Open the library](https://jalulia.github.io/massive/) · [Compare stats options](https://jalulia.github.io/massive/#stats) · [Presentation archive](https://jalulia.github.io/massive/#presentations)
+
+**All presentations in section 01 are archived and not approved.** The six entries and their linked documents remain accessible for version reference. This status applies to the presentation documents and notes; it does not change the status of the underlying game art, fonts or video assets.
 
 MASSIVE: Making the invisible playable. A 26-board HTML presentation by Matt Fry for the Museum of the Moving Image, 17 October 2026. Suggested speaking time: 17 minutes 45 seconds, plus transitions.
 
@@ -8,9 +10,13 @@ The standalone presentation is preserved at `momi.html`. It includes the 1920 ×
 
 ## Library index
 
-The root `index.html` is a compact visual directory of every standalone HTML page, presentation direction, media set, study and the linked GDD. All repository files, all assets from all five GitHub releases, and the 35 linked Drive masters are searchable under **All files**. Dates come from Git history, release asset updates or the dated master manifest; filesystem modification times are not used. Live external documents have no invented version date.
+The root `index.html` is a compact visual directory of every standalone HTML page, presentation direction, stats option, media set, study and the linked GDD. Section 01 is a collapsed presentation archive; section 02 links the three stats design options. Archive and approval labels also appear in **All files** and are searchable. All repository files, all assets from all five GitHub releases, and the 35 linked Drive masters are searchable under **All files**. Dates come from Git history, release asset updates or the dated master manifest; filesystem modification times are not used. Live external documents have no invented version date.
 
-The original MOMI presentation is unchanged at `momi.html`; old numeric slide bookmarks at the root redirect there. The withdrawn Cosmic Atlas PDF is omitted; its PowerPoint remains available.
+The original MOMI presentation is preserved at `momi.html`; old numeric slide bookmarks at the root redirect there. The withdrawn Cosmic Atlas PDF is omitted; its PowerPoint remains available. Archive labels are library metadata; the original presentation files and downloads are unchanged.
+
+## Stats options
+
+[V01 — Match telemetry](https://jalulia.github.io/massive/Stats/) and [V02 — Telemetry field](https://jalulia.github.io/massive/Stats/v02.html) use an embedded copy of Matt’s match snapshot, with a comparison grid and a more expressive stage field respectively. [V03 — Match statistics](https://jalulia.github.io/massive/Stats/v03/index.html) loads the JSON file directly and pairs the report with native stage animations. All three are design options; [review notes and source details](Stats/README.md) record the known limitations.
 
 To refresh the index after adding or changing material:
 
@@ -47,7 +53,7 @@ This repository hosts presentation and media material. It is separate from the M
 
 ## Presentation directions
 
-[Open the standalone visual-direction review](https://jalulia.github.io/massive/presentation-directions/): Field Study, Cosmic Atlas and Big / Small. Each direction demonstrates nine screen types using MASSIVE imagery and scientific references. The page includes a visual audit, silent motion samples, source credits, PDF previews and editable PowerPoint downloads. These are design studies; the finished talk is at `momi.html`.
+[Open the archived visual directions](https://jalulia.github.io/massive/presentation-directions/): Field Study, Cosmic Atlas and Big / Small. Each direction demonstrates nine screen types using MASSIVE imagery and scientific references. The page includes a visual audit, silent motion samples, source credits, PDF previews and editable PowerPoint downloads. All three directions and the MOMI talk at `momi.html` are archived and not approved.
 
 ## COSMOS and ORBITAL capture revision
 

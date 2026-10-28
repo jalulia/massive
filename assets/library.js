@@ -11,6 +11,8 @@ function filter(){
   for(const el of rows){el.hidden=!(matches(el)&&(!kind.value||el.dataset.kind===kind.value));if(!el.hidden)fileCount++;}
   for(const el of cards){el.hidden=!matches(el);if(!el.hidden)cardCount++;}
   for(const section of document.querySelectorAll('.collection'))section.hidden=![...section.querySelectorAll('.card')].some(el=>!el.hidden);
+  const archive=document.querySelector('.archive-versions');
+  if(words.length&&archive.querySelector('.card:not([hidden])'))archive.open=true;
   clear.hidden=!search.value;
   document.querySelector('#empty').hidden=fileCount>0;
   const status=document.querySelector('#status');status.hidden=!words.length&&!kind.value;

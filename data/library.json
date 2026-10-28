@@ -1,10 +1,10 @@
 {
-  "schemaVersion": 1,
-  "sourceCommit": "8324c86a19c32ddc0be363c267f8bcac94a0e8ba",
+  "schemaVersion": 2,
+  "sourceCommit": "e1d459f058630abe05569a330d605831f60f785d",
   "sections": [
     [
       "presentations",
-      "Presentations",
+      "Presentation archive",
       [
         {
           "title": "MOMI presentation",
@@ -22,7 +22,9 @@
               "Deck notes",
               "explorations/momi-notes.html"
             ]
-          ]
+          ],
+          "status": "archived",
+          "approval": "not-approved"
         },
         {
           "title": "Visual directions",
@@ -31,7 +33,9 @@
           "detail": "3 directions · 27 screens",
           "date": "2026-10-16",
           "version": "rev 8324c86",
-          "links": []
+          "links": [],
+          "status": "archived",
+          "approval": "not-approved"
         },
         {
           "title": "Field Study",
@@ -49,7 +53,9 @@
               "PDF",
               "presentation-directions/MASSIVE-01-Field-Study.pdf"
             ]
-          ]
+          ],
+          "status": "archived",
+          "approval": "not-approved"
         },
         {
           "title": "Cosmic Atlas",
@@ -63,7 +69,9 @@
               "PPTX",
               "presentation-directions/MASSIVE-02-Cosmic-Atlas.pptx"
             ]
-          ]
+          ],
+          "status": "archived",
+          "approval": "not-approved"
         },
         {
           "title": "Big / Small",
@@ -81,7 +89,9 @@
               "PDF",
               "presentation-directions/MASSIVE-03-Big-Small.pdf"
             ]
-          ]
+          ],
+          "status": "archived",
+          "approval": "not-approved"
         },
         {
           "title": "MOMI presentation notes",
@@ -90,7 +100,75 @@
           "detail": "Slide notes · HTML",
           "date": "2026-10-16",
           "version": "rev bc32119",
-          "links": []
+          "links": [],
+          "status": "archived",
+          "approval": "not-approved"
+        }
+      ]
+    ],
+    [
+      "stats",
+      "Stats",
+      [
+        {
+          "title": "V01 / Match telemetry",
+          "url": "Stats/",
+          "image": "assets/library-previews/stats-v01.png",
+          "detail": "Claude · Embedded JSON · Comparison grid",
+          "date": "2026-10-28",
+          "version": "V01",
+          "links": [
+            [
+              "Review notes",
+              "Stats/README.md"
+            ],
+            [
+              "Original",
+              "Stats/v01-original.html"
+            ]
+          ],
+          "status": "design-option",
+          "approval": "unapproved"
+        },
+        {
+          "title": "V02 / Telemetry field",
+          "url": "Stats/v02.html",
+          "image": "assets/library-previews/stats-v02.png",
+          "detail": "Claude · Embedded JSON · Stage field",
+          "date": "2026-10-28",
+          "version": "V02",
+          "links": [
+            [
+              "Review notes",
+              "Stats/README.md"
+            ],
+            [
+              "Original",
+              "Stats/v02-original.html"
+            ]
+          ],
+          "status": "design-option",
+          "approval": "unapproved"
+        },
+        {
+          "title": "V03 / Match statistics",
+          "url": "Stats/v03/index.html",
+          "image": "assets/library-previews/stats-v03.png",
+          "detail": "Codex · JSON file · Animated stage report",
+          "date": "2026-10-28",
+          "version": "V03",
+          "links": [
+            [
+              "Review notes",
+              "Stats/README.md"
+            ],
+            [
+              "Snapshot JSON",
+              "Stats/v03/snapshot.json"
+            ]
+          ],
+          "status": "design-option",
+          "approval": "unapproved"
         }
       ]
     ],
@@ -301,7 +379,1049 @@
       "date": "2026-10-16",
       "version": "0b93497",
       "image": "",
-      "title": "Speaker notes"
+      "title": "Speaker notes",
+      "status": "archived",
+      "approval": "not-approved"
+    },
+    {
+      "path": "Stats/README.md",
+      "url": "Stats/README.md",
+      "kind": "Notes",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "e1d459f",
+      "image": "",
+      "title": "README"
+    },
+    {
+      "path": "Stats/SOURCE.json",
+      "url": "Stats/SOURCE.json",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "e1d459f",
+      "image": "",
+      "title": "SOURCE"
+    },
+    {
+      "path": "Stats/assets/MASSIVEmatch-snapshot-20261015-18.json",
+      "url": "Stats/assets/MASSIVEmatch-snapshot-20261015-18.json",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "MASSIVEmatch snapshot 20261015 18"
+    },
+    {
+      "path": "Stats/assets/fonts/InputMono-Bold.woff",
+      "url": "Stats/assets/fonts/InputMono-Bold.woff",
+      "kind": "Fonts",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "InputMono Bold"
+    },
+    {
+      "path": "Stats/assets/fonts/InputMono-Light.woff",
+      "url": "Stats/assets/fonts/InputMono-Light.woff",
+      "kind": "Fonts",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "InputMono Light"
+    },
+    {
+      "path": "Stats/assets/fonts/InputMono-Medium.woff",
+      "url": "Stats/assets/fonts/InputMono-Medium.woff",
+      "kind": "Fonts",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "InputMono Medium"
+    },
+    {
+      "path": "Stats/assets/fonts/InputMono-Regular.woff",
+      "url": "Stats/assets/fonts/InputMono-Regular.woff",
+      "kind": "Fonts",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "InputMono Regular"
+    },
+    {
+      "path": "Stats/assets/fonts/NeuzeitSHeavy.woff",
+      "url": "Stats/assets/fonts/NeuzeitSHeavy.woff",
+      "kind": "Fonts",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "NeuzeitSHeavy"
+    },
+    {
+      "path": "Stats/assets/massive-data.js",
+      "url": "Stats/assets/massive-data.js",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "massive data"
+    },
+    {
+      "path": "Stats/assets/media/C08_COSMOS_MODEL.jpg",
+      "url": "Stats/assets/media/C08_COSMOS_MODEL.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/C08_COSMOS_MODEL.jpg",
+      "title": "C08 COSMOS MODEL"
+    },
+    {
+      "path": "Stats/assets/media/C12_PLANE_DIAGRAM.jpg",
+      "url": "Stats/assets/media/C12_PLANE_DIAGRAM.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/C12_PLANE_DIAGRAM.jpg",
+      "title": "C12 PLANE DIAGRAM"
+    },
+    {
+      "path": "Stats/assets/media/C12_PLANE_DIAGRAM.mp4",
+      "url": "Stats/assets/media/C12_PLANE_DIAGRAM.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/C12_PLANE_DIAGRAM.jpg",
+      "title": "C12 PLANE DIAGRAM"
+    },
+    {
+      "path": "Stats/assets/media/C13_NOVA_DIAGRAM.jpg",
+      "url": "Stats/assets/media/C13_NOVA_DIAGRAM.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/C13_NOVA_DIAGRAM.jpg",
+      "title": "C13 NOVA DIAGRAM"
+    },
+    {
+      "path": "Stats/assets/media/C13_NOVA_DIAGRAM.mp4",
+      "url": "Stats/assets/media/C13_NOVA_DIAGRAM.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/C13_NOVA_DIAGRAM.jpg",
+      "title": "C13 NOVA DIAGRAM"
+    },
+    {
+      "path": "Stats/assets/media/C16_ORBITAL_CLEAN.jpg",
+      "url": "Stats/assets/media/C16_ORBITAL_CLEAN.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/C16_ORBITAL_CLEAN.jpg",
+      "title": "C16 ORBITAL CLEAN"
+    },
+    {
+      "path": "Stats/assets/media/C16_ORBITAL_CLEAN.mp4",
+      "url": "Stats/assets/media/C16_ORBITAL_CLEAN.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/C16_ORBITAL_CLEAN.jpg",
+      "title": "C16 ORBITAL CLEAN"
+    },
+    {
+      "path": "Stats/assets/media/C18_COSMOS_GAMEPLAY_HUD.jpg",
+      "url": "Stats/assets/media/C18_COSMOS_GAMEPLAY_HUD.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/C18_COSMOS_GAMEPLAY_HUD.jpg",
+      "title": "C18 COSMOS GAMEPLAY HUD"
+    },
+    {
+      "path": "Stats/assets/media/GDD_RESONANCE.jpg",
+      "url": "Stats/assets/media/GDD_RESONANCE.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/GDD_RESONANCE.jpg",
+      "title": "GDD RESONANCE"
+    },
+    {
+      "path": "Stats/assets/media/GDD_RESONANCE.mp4",
+      "url": "Stats/assets/media/GDD_RESONANCE.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/GDD_RESONANCE.jpg",
+      "title": "GDD RESONANCE"
+    },
+    {
+      "path": "Stats/assets/media/GDD_SINGULARITY.jpg",
+      "url": "Stats/assets/media/GDD_SINGULARITY.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/GDD_SINGULARITY.jpg",
+      "title": "GDD SINGULARITY"
+    },
+    {
+      "path": "Stats/assets/media/GDD_SINGULARITY.mp4",
+      "url": "Stats/assets/media/GDD_SINGULARITY.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/GDD_SINGULARITY.jpg",
+      "title": "GDD SINGULARITY"
+    },
+    {
+      "path": "Stats/assets/media/attract-orb.jpg",
+      "url": "Stats/assets/media/attract-orb.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/attract-orb.jpg",
+      "title": "attract orb"
+    },
+    {
+      "path": "Stats/assets/media/attract-orb.mp4",
+      "url": "Stats/assets/media/attract-orb.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/attract-orb.jpg",
+      "title": "attract orb"
+    },
+    {
+      "path": "Stats/assets/media/charged-boundary.jpg",
+      "url": "Stats/assets/media/charged-boundary.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/charged-boundary.jpg",
+      "title": "charged boundary"
+    },
+    {
+      "path": "Stats/assets/media/charged-boundary.mp4",
+      "url": "Stats/assets/media/charged-boundary.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/charged-boundary.jpg",
+      "title": "charged boundary"
+    },
+    {
+      "path": "Stats/assets/media/dynamo-field-loop.jpg",
+      "url": "Stats/assets/media/dynamo-field-loop.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/dynamo-field-loop.jpg",
+      "title": "dynamo field loop"
+    },
+    {
+      "path": "Stats/assets/media/dynamo-field-loop.mp4",
+      "url": "Stats/assets/media/dynamo-field-loop.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/dynamo-field-loop.jpg",
+      "title": "dynamo field loop"
+    },
+    {
+      "path": "Stats/assets/media/dynamo-fieldlines.jpg",
+      "url": "Stats/assets/media/dynamo-fieldlines.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/dynamo-fieldlines.jpg",
+      "title": "dynamo fieldlines"
+    },
+    {
+      "path": "Stats/assets/media/dynamo-fieldlines.mp4",
+      "url": "Stats/assets/media/dynamo-fieldlines.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/dynamo-fieldlines.jpg",
+      "title": "dynamo fieldlines"
+    },
+    {
+      "path": "Stats/assets/media/dynamo-goal.jpg",
+      "url": "Stats/assets/media/dynamo-goal.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/dynamo-goal.jpg",
+      "title": "dynamo goal"
+    },
+    {
+      "path": "Stats/assets/media/dynamo-goal.mp4",
+      "url": "Stats/assets/media/dynamo-goal.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/dynamo-goal.jpg",
+      "title": "dynamo goal"
+    },
+    {
+      "path": "Stats/assets/media/dynamo-max-amp.jpg",
+      "url": "Stats/assets/media/dynamo-max-amp.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/dynamo-max-amp.jpg",
+      "title": "dynamo max amp"
+    },
+    {
+      "path": "Stats/assets/media/dynamo-max-amp.mp4",
+      "url": "Stats/assets/media/dynamo-max-amp.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/dynamo-max-amp.jpg",
+      "title": "dynamo max amp"
+    },
+    {
+      "path": "Stats/assets/media/goal-wave.jpg",
+      "url": "Stats/assets/media/goal-wave.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/goal-wave.jpg",
+      "title": "goal wave"
+    },
+    {
+      "path": "Stats/assets/media/goal-wave.mp4",
+      "url": "Stats/assets/media/goal-wave.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/goal-wave.jpg",
+      "title": "goal wave"
+    },
+    {
+      "path": "Stats/assets/media/higgs-map.jpg",
+      "url": "Stats/assets/media/higgs-map.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/higgs-map.jpg",
+      "title": "higgs map"
+    },
+    {
+      "path": "Stats/assets/media/higgs-map.mp4",
+      "url": "Stats/assets/media/higgs-map.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/higgs-map.jpg",
+      "title": "higgs map"
+    },
+    {
+      "path": "Stats/assets/media/higgs-play.jpg",
+      "url": "Stats/assets/media/higgs-play.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/higgs-play.jpg",
+      "title": "higgs play"
+    },
+    {
+      "path": "Stats/assets/media/higgs-play.mp4",
+      "url": "Stats/assets/media/higgs-play.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/higgs-play.jpg",
+      "title": "higgs play"
+    },
+    {
+      "path": "Stats/assets/media/nova-map.jpg",
+      "url": "Stats/assets/media/nova-map.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/nova-map.jpg",
+      "title": "nova map"
+    },
+    {
+      "path": "Stats/assets/media/nova-map.mp4",
+      "url": "Stats/assets/media/nova-map.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/nova-map.jpg",
+      "title": "nova map"
+    },
+    {
+      "path": "Stats/assets/media/nova-play.jpg",
+      "url": "Stats/assets/media/nova-play.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/nova-play.jpg",
+      "title": "nova play"
+    },
+    {
+      "path": "Stats/assets/media/nova-play.mp4",
+      "url": "Stats/assets/media/nova-play.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/nova-play.jpg",
+      "title": "nova play"
+    },
+    {
+      "path": "Stats/assets/media/orbital-cloud.jpg",
+      "url": "Stats/assets/media/orbital-cloud.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/orbital-cloud.jpg",
+      "title": "orbital cloud"
+    },
+    {
+      "path": "Stats/assets/media/orbital-cloud.mp4",
+      "url": "Stats/assets/media/orbital-cloud.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/orbital-cloud.jpg",
+      "title": "orbital cloud"
+    },
+    {
+      "path": "Stats/assets/media/select-stage.jpg",
+      "url": "Stats/assets/media/select-stage.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/select-stage.jpg",
+      "title": "select stage"
+    },
+    {
+      "path": "Stats/assets/media/select-stage.mp4",
+      "url": "Stats/assets/media/select-stage.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/select-stage.jpg",
+      "title": "select stage"
+    },
+    {
+      "path": "Stats/assets/media/singularity-map.jpg",
+      "url": "Stats/assets/media/singularity-map.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/singularity-map.jpg",
+      "title": "singularity map"
+    },
+    {
+      "path": "Stats/assets/media/singularity-map.mp4",
+      "url": "Stats/assets/media/singularity-map.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/singularity-map.jpg",
+      "title": "singularity map"
+    },
+    {
+      "path": "Stats/assets/media/singularity-play.jpg",
+      "url": "Stats/assets/media/singularity-play.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/singularity-play.jpg",
+      "title": "singularity play"
+    },
+    {
+      "path": "Stats/assets/media/singularity-play.mp4",
+      "url": "Stats/assets/media/singularity-play.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/singularity-play.jpg",
+      "title": "singularity play"
+    },
+    {
+      "path": "Stats/assets/media/worlds-in-play.jpg",
+      "url": "Stats/assets/media/worlds-in-play.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/worlds-in-play.jpg",
+      "title": "worlds in play"
+    },
+    {
+      "path": "Stats/assets/media/worlds-in-play.mp4",
+      "url": "Stats/assets/media/worlds-in-play.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/media/worlds-in-play.jpg",
+      "title": "worlds in play"
+    },
+    {
+      "path": "Stats/assets/stages/cosmos.jpg",
+      "url": "Stats/assets/stages/cosmos.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/cosmos.jpg",
+      "title": "cosmos"
+    },
+    {
+      "path": "Stats/assets/stages/cosmos.mp4",
+      "url": "Stats/assets/stages/cosmos.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/cosmos.jpg",
+      "title": "cosmos"
+    },
+    {
+      "path": "Stats/assets/stages/dynamo.jpg",
+      "url": "Stats/assets/stages/dynamo.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/dynamo.jpg",
+      "title": "dynamo"
+    },
+    {
+      "path": "Stats/assets/stages/dynamo.mp4",
+      "url": "Stats/assets/stages/dynamo.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/dynamo.jpg",
+      "title": "dynamo"
+    },
+    {
+      "path": "Stats/assets/stages/emergence.jpg",
+      "url": "Stats/assets/stages/emergence.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/emergence.jpg",
+      "title": "emergence"
+    },
+    {
+      "path": "Stats/assets/stages/emergence.mp4",
+      "url": "Stats/assets/stages/emergence.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/emergence.jpg",
+      "title": "emergence"
+    },
+    {
+      "path": "Stats/assets/stages/higgs.jpg",
+      "url": "Stats/assets/stages/higgs.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/higgs.jpg",
+      "title": "higgs"
+    },
+    {
+      "path": "Stats/assets/stages/higgs.mp4",
+      "url": "Stats/assets/stages/higgs.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/higgs.jpg",
+      "title": "higgs"
+    },
+    {
+      "path": "Stats/assets/stages/lattice.jpg",
+      "url": "Stats/assets/stages/lattice.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/lattice.jpg",
+      "title": "lattice"
+    },
+    {
+      "path": "Stats/assets/stages/lattice.mp4",
+      "url": "Stats/assets/stages/lattice.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/lattice.jpg",
+      "title": "lattice"
+    },
+    {
+      "path": "Stats/assets/stages/nova.jpg",
+      "url": "Stats/assets/stages/nova.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/nova.jpg",
+      "title": "nova"
+    },
+    {
+      "path": "Stats/assets/stages/nova.mp4",
+      "url": "Stats/assets/stages/nova.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/nova.jpg",
+      "title": "nova"
+    },
+    {
+      "path": "Stats/assets/stages/orbital.jpg",
+      "url": "Stats/assets/stages/orbital.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/orbital.jpg",
+      "title": "orbital"
+    },
+    {
+      "path": "Stats/assets/stages/orbital.mp4",
+      "url": "Stats/assets/stages/orbital.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/orbital.jpg",
+      "title": "orbital"
+    },
+    {
+      "path": "Stats/assets/stages/pulsar.jpg",
+      "url": "Stats/assets/stages/pulsar.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/pulsar.jpg",
+      "title": "pulsar"
+    },
+    {
+      "path": "Stats/assets/stages/pulsar.mp4",
+      "url": "Stats/assets/stages/pulsar.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/pulsar.jpg",
+      "title": "pulsar"
+    },
+    {
+      "path": "Stats/assets/stages/singularity.jpg",
+      "url": "Stats/assets/stages/singularity.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/singularity.jpg",
+      "title": "singularity"
+    },
+    {
+      "path": "Stats/assets/stages/singularity.mp4",
+      "url": "Stats/assets/stages/singularity.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/assets/stages/singularity.jpg",
+      "title": "singularity"
+    },
+    {
+      "path": "Stats/index.html",
+      "url": "Stats/index.html",
+      "kind": "Pages",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "assets/library-previews/stats-v01.png",
+      "title": "index",
+      "status": "design-option",
+      "approval": "unapproved"
+    },
+    {
+      "path": "Stats/v01-original.html",
+      "url": "Stats/v01-original.html",
+      "kind": "Pages",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "v01 original",
+      "status": "design-option",
+      "approval": "unapproved"
+    },
+    {
+      "path": "Stats/v02-original.html",
+      "url": "Stats/v02-original.html",
+      "kind": "Pages",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "v02 original",
+      "status": "design-option",
+      "approval": "unapproved"
+    },
+    {
+      "path": "Stats/v02.html",
+      "url": "Stats/v02.html",
+      "kind": "Pages",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "assets/library-previews/stats-v02.png",
+      "title": "v02",
+      "status": "design-option",
+      "approval": "unapproved"
+    },
+    {
+      "path": "Stats/v03/app.js",
+      "url": "Stats/v03/app.js",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "app"
+    },
+    {
+      "path": "Stats/v03/assets/InputMono-Bold.ttf",
+      "url": "Stats/v03/assets/InputMono-Bold.ttf",
+      "kind": "Fonts",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "InputMono Bold"
+    },
+    {
+      "path": "Stats/v03/assets/InputMono-Regular.ttf",
+      "url": "Stats/v03/assets/InputMono-Regular.ttf",
+      "kind": "Fonts",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "InputMono Regular"
+    },
+    {
+      "path": "Stats/v03/assets/favicon.svg",
+      "url": "Stats/v03/assets/favicon.svg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/v03/assets/favicon.svg",
+      "title": "favicon"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-cosmos-loop.mp4",
+      "url": "Stats/v03/assets/game/stage-cosmos-loop.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "stage cosmos loop"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-cosmos-poster.jpg",
+      "url": "Stats/v03/assets/game/stage-cosmos-poster.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/v03/assets/game/stage-cosmos-poster.jpg",
+      "title": "stage cosmos poster"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-dynamo-loop.mp4",
+      "url": "Stats/v03/assets/game/stage-dynamo-loop.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "stage dynamo loop"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-dynamo-poster.jpg",
+      "url": "Stats/v03/assets/game/stage-dynamo-poster.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/v03/assets/game/stage-dynamo-poster.jpg",
+      "title": "stage dynamo poster"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-emergence-loop.mp4",
+      "url": "Stats/v03/assets/game/stage-emergence-loop.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "stage emergence loop"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-emergence-poster.jpg",
+      "url": "Stats/v03/assets/game/stage-emergence-poster.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/v03/assets/game/stage-emergence-poster.jpg",
+      "title": "stage emergence poster"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-higgs-loop.mp4",
+      "url": "Stats/v03/assets/game/stage-higgs-loop.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "stage higgs loop"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-higgs-poster.jpg",
+      "url": "Stats/v03/assets/game/stage-higgs-poster.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/v03/assets/game/stage-higgs-poster.jpg",
+      "title": "stage higgs poster"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-lattice-loop.mp4",
+      "url": "Stats/v03/assets/game/stage-lattice-loop.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "stage lattice loop"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-lattice-poster.jpg",
+      "url": "Stats/v03/assets/game/stage-lattice-poster.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/v03/assets/game/stage-lattice-poster.jpg",
+      "title": "stage lattice poster"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-nova-loop.mp4",
+      "url": "Stats/v03/assets/game/stage-nova-loop.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "stage nova loop"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-nova-poster.jpg",
+      "url": "Stats/v03/assets/game/stage-nova-poster.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/v03/assets/game/stage-nova-poster.jpg",
+      "title": "stage nova poster"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-orbital-loop.mp4",
+      "url": "Stats/v03/assets/game/stage-orbital-loop.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "stage orbital loop"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-orbital-poster.jpg",
+      "url": "Stats/v03/assets/game/stage-orbital-poster.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/v03/assets/game/stage-orbital-poster.jpg",
+      "title": "stage orbital poster"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-pulsar-loop.mp4",
+      "url": "Stats/v03/assets/game/stage-pulsar-loop.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "stage pulsar loop"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-pulsar-poster.jpg",
+      "url": "Stats/v03/assets/game/stage-pulsar-poster.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/v03/assets/game/stage-pulsar-poster.jpg",
+      "title": "stage pulsar poster"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-singularity-loop.mp4",
+      "url": "Stats/v03/assets/game/stage-singularity-loop.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "stage singularity loop"
+    },
+    {
+      "path": "Stats/v03/assets/game/stage-singularity-poster.jpg",
+      "url": "Stats/v03/assets/game/stage-singularity-poster.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/v03/assets/game/stage-singularity-poster.jpg",
+      "title": "stage singularity poster"
+    },
+    {
+      "path": "Stats/v03/assets/massive-wordmark.png",
+      "url": "Stats/v03/assets/massive-wordmark.png",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "Stats/v03/assets/massive-wordmark.png",
+      "title": "massive wordmark"
+    },
+    {
+      "path": "Stats/v03/game-video.js",
+      "url": "Stats/v03/game-video.js",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "game video"
+    },
+    {
+      "path": "Stats/v03/index.html",
+      "url": "Stats/v03/index.html",
+      "kind": "Pages",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "assets/library-previews/stats-v03.png",
+      "title": "index",
+      "status": "design-option",
+      "approval": "unapproved"
+    },
+    {
+      "path": "Stats/v03/snapshot.json",
+      "url": "Stats/v03/snapshot.json",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "snapshot"
+    },
+    {
+      "path": "Stats/v03/styles.css",
+      "url": "Stats/v03/styles.css",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "styles"
+    },
+    {
+      "path": "Stats/version-nav.css",
+      "url": "Stats/version-nav.css",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-10-28",
+      "version": "dc1cae8",
+      "image": "",
+      "title": "version nav"
     },
     {
       "path": "archive/README.md",
@@ -320,7 +1440,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "fd01958",
-      "image": "",
+      "image": "media/MS-022/poster-1888ac075f1517e8.jpg",
       "title": "index"
     },
     {
@@ -384,12 +1504,42 @@
       "title": "gdd"
     },
     {
+      "path": "assets/library-previews/stats-v01.png",
+      "url": "assets/library-previews/stats-v01.png",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "assets/library-previews/stats-v01.png",
+      "title": "stats v01"
+    },
+    {
+      "path": "assets/library-previews/stats-v02.png",
+      "url": "assets/library-previews/stats-v02.png",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "assets/library-previews/stats-v02.png",
+      "title": "stats v02"
+    },
+    {
+      "path": "assets/library-previews/stats-v03.png",
+      "url": "assets/library-previews/stats-v03.png",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "assets/library-previews/stats-v03.png",
+      "title": "stats v03"
+    },
+    {
       "path": "assets/library.css",
       "url": "assets/library.css",
       "kind": "Source",
       "location": "Repository",
       "date": "2026-10-16",
-      "version": "8324c86",
+      "version": "8695deb",
       "image": "",
       "title": "library"
     },
@@ -399,7 +1549,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-10-16",
-      "version": "8324c86",
+      "version": "8695deb",
       "image": "",
       "title": "library"
     },
@@ -459,7 +1609,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-10-16",
-      "version": "8324c86",
+      "version": "8695deb",
       "image": "",
       "title": "library"
     },
@@ -480,7 +1630,7 @@
       "location": "Repository",
       "date": "2026-10-16",
       "version": "8324c86",
-      "image": "",
+      "image": "media/explorations/full-spectrum-v2/visual-board-5251186ea02f.jpg",
       "title": "index"
     },
     {
@@ -491,7 +1641,9 @@
       "date": "2026-10-16",
       "version": "bc32119",
       "image": "presentation-assets/C12_PLANE_DIAGRAM.png",
-      "title": "momi notes"
+      "title": "momi notes",
+      "status": "archived",
+      "approval": "not-approved"
     },
     {
       "path": "fonts/InputMono-Regular.ttf",
@@ -519,7 +1671,7 @@
       "kind": "Pages",
       "location": "Repository",
       "date": "2026-10-16",
-      "version": "8324c86",
+      "version": "8695deb",
       "image": "",
       "title": "index"
     },
@@ -2131,7 +3283,9 @@
       "date": "2026-10-16",
       "version": "0b93497",
       "image": "presentation-assets/C18_COSMOS_GAMEPLAY_HUD.png",
-      "title": "momi"
+      "title": "momi",
+      "status": "archived",
+      "approval": "not-approved"
     },
     {
       "path": "presentation-assets/01_ABSOLUTELY_FLAT.jpg",
@@ -2320,7 +3474,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "fd01958",
-      "image": "presentation-assets/C08_COSMOS_MODEL.png",
+      "image": "Stats/assets/media/C08_COSMOS_MODEL.jpg",
       "title": "C08 COSMOS MODEL"
     },
     {
@@ -2360,7 +3514,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "fd01958",
-      "image": "presentation-assets/C12_PLANE_DIAGRAM.png",
+      "image": "Stats/assets/media/C12_PLANE_DIAGRAM.jpg",
       "title": "C12 PLANE DIAGRAM"
     },
     {
@@ -2380,7 +3534,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "fd01958",
-      "image": "presentation-assets/C13_NOVA_DIAGRAM.png",
+      "image": "Stats/assets/media/C13_NOVA_DIAGRAM.jpg",
       "title": "C13 NOVA DIAGRAM"
     },
     {
@@ -2420,7 +3574,7 @@
       "location": "Repository",
       "date": "2026-10-16",
       "version": "57e51e1",
-      "image": "presentation-assets/C16_ORBITAL_CLEAN.png",
+      "image": "Stats/assets/media/C16_ORBITAL_CLEAN.jpg",
       "title": "C16 ORBITAL CLEAN"
     },
     {
@@ -2460,7 +3614,7 @@
       "location": "Repository",
       "date": "2026-10-16",
       "version": "0b93497",
-      "image": "presentation-assets/C18_COSMOS_GAMEPLAY_HUD.png",
+      "image": "Stats/assets/media/C18_COSMOS_GAMEPLAY_HUD.jpg",
       "title": "C18 COSMOS GAMEPLAY HUD"
     },
     {
@@ -2480,7 +3634,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "fd01958",
-      "image": "presentation-assets/GDD_RESONANCE.png",
+      "image": "Stats/assets/media/GDD_RESONANCE.jpg",
       "title": "GDD RESONANCE"
     },
     {
@@ -2500,7 +3654,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "fd01958",
-      "image": "presentation-assets/GDD_SINGULARITY.png",
+      "image": "Stats/assets/media/GDD_SINGULARITY.jpg",
       "title": "GDD SINGULARITY"
     },
     {
@@ -2751,7 +3905,9 @@
       "date": "2026-10-15",
       "version": "e2cb952",
       "image": "",
-      "title": "MASSIVE 01 Field Study"
+      "title": "MASSIVE 01 Field Study",
+      "status": "archived",
+      "approval": "not-approved"
     },
     {
       "path": "presentation-directions/MASSIVE-01-Field-Study.pptx",
@@ -2761,7 +3917,9 @@
       "date": "2026-10-15",
       "version": "e2cb952",
       "image": "",
-      "title": "MASSIVE 01 Field Study"
+      "title": "MASSIVE 01 Field Study",
+      "status": "archived",
+      "approval": "not-approved"
     },
     {
       "path": "presentation-directions/MASSIVE-02-Cosmic-Atlas.pptx",
@@ -2771,7 +3929,9 @@
       "date": "2026-10-15",
       "version": "e2cb952",
       "image": "",
-      "title": "MASSIVE 02 Cosmic Atlas"
+      "title": "MASSIVE 02 Cosmic Atlas",
+      "status": "archived",
+      "approval": "not-approved"
     },
     {
       "path": "presentation-directions/MASSIVE-03-Big-Small.pdf",
@@ -2781,7 +3941,9 @@
       "date": "2026-10-15",
       "version": "e2cb952",
       "image": "",
-      "title": "MASSIVE 03 Big Small"
+      "title": "MASSIVE 03 Big Small",
+      "status": "archived",
+      "approval": "not-approved"
     },
     {
       "path": "presentation-directions/MASSIVE-03-Big-Small.pptx",
@@ -2791,7 +3953,9 @@
       "date": "2026-10-15",
       "version": "e2cb952",
       "image": "",
-      "title": "MASSIVE 03 Big Small"
+      "title": "MASSIVE 03 Big Small",
+      "status": "archived",
+      "approval": "not-approved"
     },
     {
       "path": "presentation-directions/Read-me.txt",
@@ -2900,7 +4064,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "e2cb952",
-      "image": "presentation-directions/assets/dynamo.png",
+      "image": "Stats/assets/stages/dynamo.jpg",
       "title": "dynamo"
     },
     {
@@ -3000,7 +4164,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "e2cb952",
-      "image": "presentation-directions/assets/orbital.png",
+      "image": "Stats/assets/stages/orbital.jpg",
       "title": "orbital"
     },
     {
@@ -3060,7 +4224,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "e2cb952",
-      "image": "",
+      "image": "Stats/assets/stages/singularity.jpg",
       "title": "singularity"
     },
     {
@@ -3100,8 +4264,10 @@
       "location": "Repository",
       "date": "2026-10-16",
       "version": "8324c86",
-      "image": "",
-      "title": "index"
+      "image": "presentation-directions/Directions-overview.jpg",
+      "title": "index",
+      "status": "archived",
+      "approval": "not-approved"
     },
     {
       "path": "reference-motion/Source-notes.md",
@@ -3290,7 +4456,7 @@
       "location": "Repository",
       "date": "2026-10-16",
       "version": "c9cd48c",
-      "image": "",
+      "image": "reference-motion/stills/P02_EARTH.jpg",
       "title": "index"
     },
     {
@@ -3570,7 +4736,7 @@
       "location": "Repository",
       "date": "2026-10-16",
       "version": "c9cd48c",
-      "image": "",
+      "image": "reference-motion/sagan/stills/01_ABSOLUTELY_FLAT.jpg",
       "title": "index"
     },
     {
@@ -3900,7 +5066,7 @@
       "location": "Repository",
       "date": "2026-10-16",
       "version": "c9cd48c",
-      "image": "",
+      "image": "screensavers/posters/level-nova.jpg",
       "title": "index"
     },
     {
@@ -4299,7 +5465,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-10-16",
-      "version": "8324c86",
+      "version": "8695deb",
       "image": "",
       "title": "build library"
     },
@@ -4370,7 +5536,7 @@
       "location": "Repository",
       "date": "2026-10-16",
       "version": "ab8e6a0",
-      "image": "",
+      "image": "video-assets/posters/S10_RESONANCE_REFERENCE_MODEL_SIDE_BY_SIDE.jpg",
       "title": "index"
     },
     {
