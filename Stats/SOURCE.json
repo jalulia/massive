@@ -18,14 +18,16 @@
       "author": "Claude",
       "entry": "index.html",
       "source": "MASSIVE-match-telemetry.zip:massive-stats/index.html",
-      "source_html_sha256": "481b6a32d7a024dee42c15ebc889b3df635eb6f3e9047b9e649af4fb18286e14"
+      "source_html_sha256": "481b6a32d7a024dee42c15ebc889b3df635eb6f3e9047b9e649af4fb18286e14",
+      "reviewed_entry": "v01-original.html"
     },
     {
       "version": "V02",
       "author": "Claude",
       "entry": "v02.html",
       "source": "MASSIVE-match-telemetry.zip:massive-stats/v02.html",
-      "source_html_sha256": "5b9db657412420516ddfebd72a1134efbe755843673728f864a8f74e2efd413c"
+      "source_html_sha256": "5b9db657412420516ddfebd72a1134efbe755843673728f864a8f74e2efd413c",
+      "reviewed_entry": "v02-original.html"
     },
     {
       "version": "V03",

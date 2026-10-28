@@ -14,6 +14,10 @@ Serve `Stats` with any static HTTP server. No build step or package installation
 
 The relative links support deployment under `/massive/Stats/`, another subdirectory, or a local server. V01 is the directory’s default page.
 
+## Reviewed originals
+
+The versions reviewed before the feedback pass remain available as [V01 original](v01-original.html) and [V02 original](v02-original.html). They share the original assets and retain the same bottom-right links to the three main options.
+
 ## Data and provenance
 
 - Reporting window: 15–18 October 2026, EDT.
