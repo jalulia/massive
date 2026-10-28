@@ -16,7 +16,7 @@ The original MOMI presentation is preserved at `momi.html`; old numeric slide bo
 
 ## Stats options
 
-[V01 — Match telemetry](https://jalulia.github.io/massive/Stats/) and [V02 — Telemetry field](https://jalulia.github.io/massive/Stats/v02.html) use an embedded copy of Matt’s match snapshot, with a comparison grid and a more expressive stage field respectively. [V03 — Match statistics](https://jalulia.github.io/massive/Stats/v03/index.html) loads the JSON file directly and pairs the report with native stage animations. All three are design options; [review notes and source details](Stats/README.md) record the known limitations.
+[V01 — Match telemetry](https://jalulia.github.io/massive/Stats/) and [V02 — Stage report](https://jalulia.github.io/massive/Stats/v02.html) use an embedded copy of Matt’s match snapshot, with a comparison grid and a native level-select carousel with stage comparisons respectively. [V03 — Match statistics](https://jalulia.github.io/massive/Stats/v03/index.html) loads the JSON file directly and pairs the report with native stage animations. All three are design options; [review notes and source details](Stats/README.md) record the known limitations.
 
 To refresh the index after adding or changing material:
 

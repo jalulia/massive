@@ -1,5 +1,5 @@
 {
-  "purpose": "Preserved MASSIVE stats-page comparison options with shared version navigation",
+  "purpose": "MASSIVE stats design options: revised Claude V01/V02 and preserved Codex V03, with original comparisons retained",
   "source_zip": {
     "filename": "MASSIVE-match-telemetry.zip",
     "sha256": "1c024368f65976562c46ed3fc6f85570cebc61665b427eea8f83c34b6c3cfbe7"
@@ -9,6 +9,7 @@
     "sha256": "2871bf192eae2e46895d8b306449fc14ac3ade3ca5b90ac2ab58bd0c724b5990",
     "copies": [
       "assets/MASSIVEmatch-snapshot-20261015-18.json",
+      "assets-r3/MASSIVEmatch-snapshot-20261015-18.json",
       "v03/snapshot.json"
     ]
   },
@@ -17,17 +18,29 @@
       "version": "V01",
       "author": "Claude",
       "entry": "index.html",
-      "source": "MASSIVE-match-telemetry.zip:massive-stats/index.html",
-      "source_html_sha256": "481b6a32d7a024dee42c15ebc889b3df635eb6f3e9047b9e649af4fb18286e14",
-      "reviewed_entry": "v01-original.html"
+      "source": "Sites/massive-stats/index.html",
+      "source_html_sha256": "09b9a711f3f001db839970bf0f59f15605a8a2d26927de9956137938749fd7e3",
+      "reviewed_entry": "v01-original.html",
+      "original_source": "MASSIVE-match-telemetry.zip:massive-stats/index.html",
+      "original_source_html_sha256": "481b6a32d7a024dee42c15ebc889b3df635eb6f3e9047b9e649af4fb18286e14",
+      "source_revision": "Claude Rev 3",
+      "assets": "assets-r3/",
+      "original_assets": "assets/",
+      "integration_author": "Codex"
     },
     {
       "version": "V02",
       "author": "Claude",
       "entry": "v02.html",
-      "source": "MASSIVE-match-telemetry.zip:massive-stats/v02.html",
-      "source_html_sha256": "5b9db657412420516ddfebd72a1134efbe755843673728f864a8f74e2efd413c",
-      "reviewed_entry": "v02-original.html"
+      "source": "Sites/massive-stats/v02.html",
+      "source_html_sha256": "35b3e37bf216c24ba10de504b288606493483d8345b2527b5dfed3367e81f7b7",
+      "reviewed_entry": "v02-original.html",
+      "original_source": "MASSIVE-match-telemetry.zip:massive-stats/v02.html",
+      "original_source_html_sha256": "5b9db657412420516ddfebd72a1134efbe755843673728f864a8f74e2efd413c",
+      "source_revision": "Claude Rev 3",
+      "assets": "assets-r3/",
+      "original_assets": "assets/",
+      "integration_author": "Codex"
     },
     {
       "version": "V03",
@@ -38,9 +51,58 @@
       "source_commit": "924bd60246027d1ff638900a7131814c5b6d82bc"
     }
   ],
-  "packaging_changes": [
+  "release_revision": "2026-10-28 / Claude Rev 3 with Codex final integration",
+  "original_packaging_changes": [
     "Replace V01/V02 two-option navigation and add V03 navigation with the same three links",
     "Add shared version-nav.css, README.md and SOURCE.json",
     "No changes to underlying calculations, copy, media or page design"
-  ]
+  ],
+  "revised_data_module": {
+    "path": "assets-r3/massive-data.js",
+    "source_sha256": "003ac23dc0f5616a4d914519351c9456c52b2948c548aa39a734ac32eb1c238e",
+    "snapshot_equivalent_to_original": true
+  },
+  "media_delivery": {
+    "manifest": "media-delivery.json",
+    "source": "Existing V03 isolated native MASSIVE stage animations",
+    "destination": "assets-r3/stages/",
+    "video_count": 9,
+    "total_video_bytes": 40308627,
+    "encoding": {
+      "codec": "H.264",
+      "width": 720,
+      "height": 720,
+      "crf": 23,
+      "faststart": true
+    },
+    "posters": "Original V03 poster files copied byte-for-byte",
+    "timing": "Source frame counts retained; SINGULARITY container timing normalizes by approximately one frame."
+  },
+  "final_integration_changes": [
+    "Retain the shared V01/V02/V03 bottom-right navigation and preserve the published original V01/V02 HTML and assets.",
+    "Place Claude Rev 3 assets in assets-r3/ so current revisions do not overwrite original comparison media.",
+    "Replace vague footer copy with explicit reporting dates and the statement that footage was captured in MASSIVE.",
+    "Use Native level-select object captions in place of unsupported missing-arena-capture claims.",
+    "Remove duplicate inset videos from selected-stage detail.",
+    "Load and play V02 navigator videos on hover or focus instead of automatically downloading all nine.",
+    "Keep the selected stage visible in the horizontal navigator and open selected-stage deep links.",
+    "Rename the duplicate top-level Stages navigation item to Report.",
+    "Fit the V02 carousel hero within its frame instead of cropping it.",
+    "Replace the short cropped stage icon excerpts with 720px delivery encodes of the isolated native V03 stage animations; preserve original posters.",
+    "Leave V03 source, calculations, copy, layout and media unchanged."
+  ],
+  "final_review": {
+    "date": "2026-10-28",
+    "reviewer": "Codex",
+    "pages": {
+      "index.html": "554e0cfa936bb9861da77881d0327a020e0f952879f7d44a7b54cf91a1c9eca8",
+      "v02.html": "679900431dc45be76cd96fd9629ab11ee5922cb7db72f00db2c96521202529ec"
+    },
+    "additional_fixes": [
+      "Responsive comparison columns and natural table height keep all nine stages visible",
+      "Selected stage remains visible after resizing and stage links update within the page",
+      "Stage deep links land after document and font loading",
+      "Source download and footer use plain match-data wording"
+    ]
+  }
 }

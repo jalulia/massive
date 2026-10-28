@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#000000">
-<title>MASSIVE — Match Telemetry · Field</title>
-<meta name="description" content="MASSIVE cabinet telemetry, 15–18 October 2026, read as a field: nine stage wells, 228 starts, 1,539 player-minutes.">
+<title>MASSIVE — Match Telemetry · Stage report</title>
+<meta name="description" content="MASSIVE match report, 15–18 October 2026: 228 starts across nine stages, with outcomes, activity and stage comparisons.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23000'/%3E%3Ccircle cx='8' cy='8' r='4.5' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3C/svg%3E">
 <style>
-@font-face{font-family:Input;src:url(assets/fonts/InputMono-Light.woff) format('woff');font-weight:300;font-display:swap}
-@font-face{font-family:Input;src:url(assets/fonts/InputMono-Regular.woff) format('woff');font-weight:400;font-display:swap}
-@font-face{font-family:Input;src:url(assets/fonts/InputMono-Medium.woff) format('woff');font-weight:500;font-display:swap}
-@font-face{font-family:Input;src:url(assets/fonts/InputMono-Bold.woff) format('woff');font-weight:700;font-display:swap}
-@font-face{font-family:Neuzeit;src:url(assets/fonts/NeuzeitSHeavy.woff) format('woff');font-weight:800;font-display:swap}
+@font-face{font-family:Input;src:url(assets-r3/fonts/InputMono-Light.woff) format('woff');font-weight:300;font-display:swap}
+@font-face{font-family:Input;src:url(assets-r3/fonts/InputMono-Regular.woff) format('woff');font-weight:400;font-display:swap}
+@font-face{font-family:Input;src:url(assets-r3/fonts/InputMono-Medium.woff) format('woff');font-weight:500;font-display:swap}
+@font-face{font-family:Input;src:url(assets-r3/fonts/InputMono-Bold.woff) format('woff');font-weight:700;font-display:swap}
+@font-face{font-family:Neuzeit;src:url(assets-r3/fonts/NeuzeitSHeavy.woff) format('woff');font-weight:800;font-display:swap}
 :root{
   color-scheme:dark;
-  --bg:#000;--ink:#fff;--ink-2:#a8a8a8;--ink-3:#6a6a6a;--ink-4:#333;
+  --bg:#000;--ink:#fff;--ink-2:#b0b0b0;--ink-3:#7c7c7c;--ink-4:#333;
   --line:#242424;--line-2:#141414;
   --f:Input,"SF Mono",Menlo,Consolas,monospace;--fd:Neuzeit,"Helvetica Neue",Arial,sans-serif;
   --gut:40px;--unit:40px;--ease:cubic-bezier(.2,.7,.1,1);
@@ -65,11 +65,17 @@ p,h1,h2,h3,dl,dd,figure,ol,ul{margin:0}ol,ul{padding:0;list-style:none}
 .mast .live{margin-left:auto;display:flex;align-items:center;gap:14px;font-size:9.5px;letter-spacing:.14em;color:var(--ink-2);white-space:nowrap}
 .mast .live .sq{width:5px;height:5px;background:#fff;animation:blink 2.4s steps(1) infinite}
 @keyframes blink{50%{opacity:.25}}
+.mast .motion{font-size:9.5px;letter-spacing:.14em;color:var(--ink-2);text-transform:uppercase}
+.mast .motion:hover{color:#fff}
+html[data-motion=off] .rv-el{opacity:1;transform:none;transition:none}
+html[data-motion=off] .draw path.line,html[data-motion=off] .draw line.line{stroke-dashoffset:0;transition:none}html[data-motion=off] .draw .pt{opacity:1}html[data-motion=off] .draw .sweep{display:none}
+html[data-motion=off] .digits .d .strip,html[data-motion=off] .pbar .bar i,html[data-motion=off] .card .ld .bar i,html[data-motion=off] .xlist div .bar i{transition:none}
+html[data-motion=off] .mast .live .sq{animation:none}
 
-/* hero field */
-.hero{position:relative;height:min(88vh,920px);min-height:600px;border-bottom:1px solid var(--line);overflow:hidden}
-.hero canvas{position:absolute;inset:0;width:100%;height:100%}
-.hero .grid-overlay{position:absolute;inset:0;pointer-events:none}
+/* hero: native carousel */
+.hero{position:relative;height:min(88vh,920px);min-height:600px;border-bottom:1px solid var(--line);overflow:hidden;background:#000}
+.hero .vp{position:absolute;inset:0}
+.hero .vp video{width:100%;height:100%;object-fit:contain;object-position:50% 50%}
 .hero .hud{position:absolute;inset:0;pointer-events:none}
 .hero .hud>*{pointer-events:auto}
 .hero .tl{position:absolute;left:var(--gut);top:36px;display:flex;flex-direction:column;gap:14px}
@@ -79,27 +85,22 @@ p,h1,h2,h3,dl,dd,figure,ol,ul{margin:0}ol,ul{padding:0;list-style:none}
 .hero .tr b{color:#fff;font-weight:500}
 .hero .bl{position:absolute;left:var(--gut);bottom:34px;display:flex;flex-direction:column;gap:10px;max-width:520px}
 .hero .bl .big{font:700 clamp(72px,10vw,160px)/.9 var(--f);letter-spacing:.06em;margin-left:-.04em}
-.hero .bl p{font-size:12px;line-height:1.6;color:var(--ink-2);max-width:54ch}
+.hero .bl p{font-size:12px;line-height:1.6;color:var(--ink-2);max-width:54ch;background:rgba(0,0,0,.6);padding:4px 0}
 .hero .bl p b{color:#fff;font-weight:500}
-.hero .br{position:absolute;right:var(--gut);bottom:34px;width:300px}
+.hero .br{position:absolute;right:var(--gut);bottom:34px;width:320px;display:flex;flex-direction:column;gap:10px}
 .hero .br .win>.body{padding:10px 12px}
 .hero .read{display:grid;grid-template-columns:1fr auto;gap:5px 14px;font-size:10px;letter-spacing:.1em;color:var(--ink-2)}
 .hero .read b{color:#fff;font-weight:500;text-align:right}
 .hero .read .h{grid-column:1/-1;font:800 18px/1 var(--fd);letter-spacing:.05em;color:#fff;margin:2px 0 6px;display:flex;justify-content:space-between;align-items:baseline}
 .hero .read .h small{font:400 9px/1 var(--f);letter-spacing:.2em;color:var(--ink-3)}
-.hero .lbl{position:absolute;transform:translate(-50%,-50%);font-size:9px;letter-spacing:.22em;color:var(--ink-2);text-transform:uppercase;pointer-events:auto;cursor:pointer;padding:6px;transition:color .2s}
-.hero .lbl::before{content:"";position:absolute;left:50%;top:50%;width:3px;height:3px;background:#fff;transform:translate(-50%,-50%)}
-.hero .lbl span{position:absolute;left:calc(50% + 10px);top:50%;transform:translateY(-50%);white-space:nowrap;background:rgba(0,0,0,.75);padding:2px 4px}
-.hero .lbl.l span{left:auto;right:calc(50% + 10px)}
-.hero .lbl:hover,.hero .lbl.on{color:#fff}
-.hero .lbl.on::after{content:"";position:absolute;left:50%;top:50%;width:26px;height:26px;border:1px solid rgba(255,255,255,.7);border-radius:50%;transform:translate(-50%,-50%)}
+.hero .idx{display:grid;grid-template-columns:repeat(9,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.hero .idx li{background:#000}
+.hero .idx button{width:100%;padding:7px 0 6px;font-size:8.5px;letter-spacing:.08em;color:var(--ink-3);text-align:center;display:flex;flex-direction:column;gap:3px;align-items:center}
+.hero .idx button b{font-weight:700;color:var(--ink-2)}
+.hero .idx button:hover{color:#fff}.hero .idx button:hover b{color:#fff}
+.hero .idx li.on button{background:#fff;color:#000}.hero .idx li.on button b{color:#000}
 .hero .ret{position:absolute;width:12px;height:12px;border:0 solid #777}
 .hero .ret.a{left:14px;top:14px;border-width:1px 0 0 1px}.hero .ret.b{right:14px;top:14px;border-width:1px 1px 0 0}.hero .ret.c{left:14px;bottom:14px;border-width:0 0 1px 1px}.hero .ret.d{right:14px;bottom:14px;border-width:0 1px 1px 0}
-.hero .axis{position:absolute;font-size:9px;letter-spacing:.18em;color:var(--ink-3);text-transform:uppercase;background:#000;padding:2px 8px}
-.hero .axis.x{right:var(--gut);top:50%;transform:translateY(-50%) rotate(90deg);transform-origin:center}
-.hero .axis.y{left:50%;top:14px;transform:translateX(-50%)}
-.hero .ctl{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);font-size:9px;letter-spacing:.18em;color:var(--ink-3);text-transform:uppercase;background:#000;padding:2px 8px}
-.hero .ctl:hover{color:#fff}
 
 /* odometer */
 .odo{margin-top:var(--unit)}
@@ -120,7 +121,8 @@ p,h1,h2,h3,dl,dd,figure,ol,ul{margin:0}ol,ul{padding:0;list-style:none}
 .digits .d .strip{position:absolute;left:0;top:0;display:flex;flex-direction:column;transform:translateY(calc(var(--n,0) * -1em));transition:transform 1.6s var(--ease)}
 .digits .d .strip span{height:1em;display:block}
 .digits .dot{width:.3em;text-align:center}
-.scale{display:flex;justify-content:space-between;width:min(100%,420px);font-size:10px;letter-spacing:.08em;color:var(--ink-3);text-transform:none}
+.scale{display:flex;justify-content:space-between;width:min(100%,420px);font-size:9.5px;letter-spacing:.08em;color:var(--ink-3);text-transform:none;position:relative}
+.scale .mk{position:absolute;top:0;width:1px;height:8px;background:#fff;transform:translateX(-.5px)}
 .scale span{position:relative;padding-top:8px}
 .scale span::before{content:"";position:absolute;left:50%;top:0;width:1px;height:4px;background:var(--ink-4)}
 .scale span.on{color:#fff;font-weight:700}
@@ -150,6 +152,7 @@ p,h1,h2,h3,dl,dd,figure,ol,ul{margin:0}ol,ul{padding:0;list-style:none}
 .tile .v small{font-size:.5em;letter-spacing:.14em;font-weight:400;color:var(--ink-2);margin-left:.2em}
 .tile .foot{margin-top:auto;display:flex;flex-direction:column;gap:3px;font-size:9.5px;letter-spacing:.08em;color:var(--ink-3)}
 .tile .dots-bar{margin-top:2px}
+.tile .dl{font-size:9.5px;letter-spacing:.08em;color:var(--ink-2)}
 
 /* scan chart */
 .scan{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(300px,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
@@ -171,50 +174,78 @@ p,h1,h2,h3,dl,dd,figure,ol,ul{margin:0}ol,ul{padding:0;list-style:none}
 .dayt tr.on td{background:#111}
 .dayt .actv{padding:16px 16px 14px;border-top:1px solid var(--line)}
 
-/* stage cards */
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-.card{background:#000;position:relative;display:grid;grid-template-columns:132px minmax(0,1fr);min-height:190px;cursor:pointer;transition:background .25s}
-.card:hover,.card.on{background:#0a0a0a}
-.card .obj{position:relative;border-right:1px solid var(--line-2);overflow:hidden}
-.card .obj video,.card .obj img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.card .obj .g{position:absolute;inset:0;background-image:linear-gradient(#ffffff10 1px,transparent 1px),linear-gradient(90deg,#ffffff10 1px,transparent 1px);background-size:22px 22px;background-position:center;opacity:.6;transition:opacity .3s}
-.card:hover .obj .g,.card.on .obj .g{opacity:1}
-.card .obj .st{position:absolute;left:8px;top:6px;font-size:8.5px;letter-spacing:.18em;color:var(--ink-2)}
-.card .obj .ex{position:absolute;left:8px;bottom:6px;font-size:8.5px;letter-spacing:.14em;color:var(--ink-3)}
-.card .inf{padding:12px 14px 10px;display:flex;flex-direction:column;gap:9px;min-width:0}
-.card .inf .h{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
-.card .inf .h b{font:800 17px/1 var(--fd);letter-spacing:.05em}
-.card .inf .h span{font-size:9px;letter-spacing:.16em;color:var(--ink-3);text-transform:uppercase;text-align:right}
-.card .inf .an{font-size:8.5px;letter-spacing:.18em;color:var(--ink-3);text-transform:uppercase;margin-top:-5px}
-.card .m{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;font-size:9.5px;letter-spacing:.08em;color:var(--ink-3)}
-.card .m div{display:flex;justify-content:space-between;gap:6px;border-bottom:1px solid var(--line-2);padding-bottom:3px}
-.card .m b{color:#fff;font-weight:500}
-.card .m b.w{text-decoration:underline;text-underline-offset:3px;text-decoration-color:#777}
-.card .ld{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;font-size:9px;letter-spacing:.14em;color:var(--ink-2);margin-top:auto}
-.card .ld .bar{height:7px;border:1px solid #fff;display:flex;overflow:hidden}
-.card .ld .bar i{height:100%;transform-origin:left;transform:scaleX(var(--v,0));transition:transform 1s var(--ease)}
-.card .ld .bar i.l{background:#fff}
-.card .ld .bar i.t{background:repeating-linear-gradient(90deg,#fff 0 1px,transparent 1px 3px)}
-.drawer{grid-column:1/-1;background:#000;display:none;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);border-top:1px solid var(--line)}
-.drawer.open{display:grid}
-.drawer .media{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden;border-right:1px solid var(--line)}
-.drawer .media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.drawer .media .none{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:9.5px;letter-spacing:.22em;color:var(--ink-3);text-transform:uppercase}
-.drawer .media .cap{position:absolute;left:0;right:0;bottom:0;padding:8px 12px;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);background:linear-gradient(transparent,rgba(0,0,0,.85))}
-.drawer .data{padding:18px 20px;display:flex;flex-direction:column;gap:14px}
-.drawer .data h3{font:800 34px/1 var(--fd);letter-spacing:.04em}
-.drawer .data .id{font-size:9.5px;letter-spacing:.2em;color:var(--ink-2)}
-.drawer .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-.drawer .grid div{background:#000;padding:10px 12px}
-.drawer .grid .l{font-size:8.5px;letter-spacing:.18em;color:var(--ink-3);text-transform:uppercase}
-.drawer .grid .v{font:700 17px/1.1 var(--f);margin-top:6px;white-space:nowrap}
-.drawer .grid .v small{display:block;font-size:9px;font-weight:400;color:var(--ink-2);margin-top:3px;letter-spacing:.06em}
-.drawer .data p{font-size:10px;letter-spacing:.06em;line-height:1.7;color:var(--ink-3)}
-.drawer .close{align-self:flex-start;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3)}
-.drawer .close:hover{color:#fff}
+/* stages: navigator · detail · table */
+.snav{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.snav button{background:#000;display:flex;flex-direction:column;gap:0;text-align:left;position:relative;transition:background .2s;min-width:0}
+.snav button:hover{background:#0a0a0a}
+.snav button[aria-current=true]{background:#111}
+.snav button[aria-current=true]::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:#fff}
+.snav .obj{position:relative;width:100%;aspect-ratio:1;overflow:hidden;border-bottom:1px solid var(--line-2);display:block}
+.snav .obj video,.snav .obj img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.snav .obj .g{position:absolute;inset:0;background-image:linear-gradient(#ffffff10 1px,transparent 1px),linear-gradient(90deg,#ffffff10 1px,transparent 1px);background-size:22px 22px;background-position:center;opacity:.5;transition:opacity .3s}
+.snav button:hover .obj .g,.snav button[aria-current=true] .obj .g{opacity:1}
+.snav .obj .id{position:absolute;left:8px;top:6px;font-size:8.5px;letter-spacing:.18em;color:var(--ink-2);background:rgba(0,0,0,.6);padding:1px 3px}
+.snav .txt{padding:9px 10px 10px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.snav .nm{font:800 12.5px/1.1 var(--fd);letter-spacing:.05em;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.snav .st{font-size:9px;letter-spacing:.08em;color:var(--ink-3);white-space:nowrap}
+.snav .st b{color:#fff;font-weight:500}
+.sdetail{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);border:1px solid var(--line);border-top:0;margin-bottom:1px}
+.sdetail .media{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden;border-right:1px solid var(--line)}
+.sdetail .media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sdetail .media video.obj{object-fit:contain}
+.sdetail .media .icon{position:absolute;inset:auto;right:12px;bottom:34px;width:68px;height:68px;border:1px solid var(--line);object-fit:cover;background:#000}
+.sdetail .media .cap{position:absolute;left:0;right:0;bottom:0;padding:8px 12px;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);background:linear-gradient(transparent,rgba(0,0,0,.85))}
+.sdetail .data{padding:14px 18px 16px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.sdetail .top{display:flex;align-items:center;justify-content:space-between;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-2)}
+.sdetail .top .pn{display:inline-flex;border:1px solid var(--line)}
+.sdetail .top .pn button{padding:5px 10px;font-size:9.5px;letter-spacing:.12em;color:var(--ink-2);border-right:1px solid var(--line);text-transform:uppercase}
+.sdetail .top .pn button:last-child{border-right:0}
+.sdetail .top .pn button:hover{color:#fff;background:#111}
+.sdetail h3{font:800 34px/1 var(--fd);letter-spacing:.04em}
+.sdetail .id{font-size:9.5px;letter-spacing:.2em;color:var(--ink-2);display:block;margin-bottom:6px}
+.sdetail .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.sdetail .grid div{background:#000;padding:10px 12px;min-width:0}
+.sdetail .grid .l{font-size:8.5px;letter-spacing:.18em;color:var(--ink-3);text-transform:uppercase}
+.sdetail .grid .v{font:700 17px/1.1 var(--f);margin-top:6px;white-space:nowrap}
+.sdetail .grid .v small{display:block;font-size:9px;font-weight:400;color:var(--ink-2);margin-top:3px;letter-spacing:.06em;white-space:normal}
+.sdetail .ld{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;font-size:10px;letter-spacing:.14em}
+.sdetail .ld .bar{height:9px;border:1px solid #fff;display:flex;overflow:hidden}
+.sdetail .ld .bar i{display:block;height:100%}
+.sdetail .ld .bar i.l{background:#fff}
+.sdetail .ld .bar i.t{background:repeating-linear-gradient(90deg,#fff 0 1px,transparent 1px 3px)}
+.sdetail p{font-size:9.5px;letter-spacing:.06em;line-height:1.7;color:var(--ink-3);margin-top:auto}
+.stab.win{border-top:0}
+.stab table{border-collapse:collapse;width:100%}
+.stab table th{font-size:9px;letter-spacing:.14em;color:var(--ink-3);text-transform:uppercase;font-weight:400;text-align:left;padding:0;border-bottom:1px solid var(--line);white-space:nowrap;vertical-align:bottom}
+.stab table th button{display:block;width:100%;text-align:inherit;padding:10px 8px;letter-spacing:inherit;text-transform:inherit;color:inherit;font-size:inherit}
+.stab table th button:hover{color:#fff}
+.stab table th[aria-sort] button{color:#fff}
+.stab table th i{font-style:normal;color:var(--ink-2)}
+.stab table th:first-child button,.stab table td:first-child{padding-left:14px}
+.stab table th:last-child button,.stab table td:last-child{padding-right:14px}
+.stab table th.r,.stab table td.r{text-align:right}
+.stab tbody tr{cursor:pointer;transition:background .2s}
+.stab tbody tr:hover{background:#0a0a0a}
+.stab tbody tr[aria-selected=true]{background:#111}
+.stab tbody tr[aria-selected=true] td:first-child{box-shadow:inset 3px 0 0 #fff}
+.stab td{padding:9px 8px;border-bottom:1px solid var(--line-2);vertical-align:middle;font-size:10.5px;letter-spacing:.04em;white-space:nowrap}
+.stab tbody tr:last-child td{border-bottom:0}
+.stab .nm{display:flex;align-items:center;gap:10px}
+.stab .nm img{width:26px;height:26px;object-fit:cover;border:1px solid var(--line-2)}
+.stab .nm .t{font:800 12px/1.1 var(--fd);letter-spacing:.05em}
+.stab .nm .a{font-size:8.5px;letter-spacing:.14em;color:var(--ink-3);margin-top:2px}
+.stab .ldc{display:grid;grid-template-columns:18px 1fr 18px;gap:6px;align-items:center;min-width:90px;font-size:10px}
+.stab .ldc .bar{height:7px;border:1px solid #fff;display:flex;overflow:hidden}
+.stab .ldc .bar i{display:block;height:100%}
+.stab .ldc .bar i.l{background:#fff}
+.stab .ldc .bar i.t{background:repeating-linear-gradient(90deg,#fff 0 1px,transparent 1px 3px)}
+.stab b.w{text-decoration:underline;text-underline-offset:3px;text-decoration-color:#777}
+.stab .tfoot{padding:10px 14px;font-size:9px;letter-spacing:.12em;color:var(--ink-3);border-top:1px solid var(--line);text-transform:uppercase;line-height:1.7}
 
 /* exits lollipop */
 .ex{border:1px solid var(--line);padding:16px 18px 10px;position:relative}
+.ex .k,.scan .k{flex-wrap:wrap;gap:4px 16px}
+@media (max-width:820px){.ex .k>span,.scan .k>span{display:block}}
 .ex svg{width:100%;height:auto;overflow:visible}
 .ex .tip{position:absolute;background:#000;border:1px solid var(--line);padding:6px 8px;font-size:9px;letter-spacing:.12em;white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .15s;transform:translate(-50%,calc(-100% - 10px))}
 .ex .tip.on{opacity:1}
@@ -276,25 +307,27 @@ footer svg{height:10px;width:auto}
 }
 @media (max-width:1180px){
   .tiles{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
   .scan{grid-template-columns:minmax(0,1fr)}
   .notes .reads,.notes .defs,.notes .orbwin,.notes .prov{grid-column:1/-1}
-  .drawer{grid-template-columns:minmax(0,1fr)}
-  .drawer .media{border-right:0;border-bottom:1px solid var(--line)}
+  .sdetail{grid-template-columns:minmax(0,1fr)}
+  .sdetail .media{border-right:0;border-bottom:1px solid var(--line)}
+  .snav{grid-template-columns:repeat(9,minmax(120px,1fr));overflow-x:auto}
+  .stab{overflow-x:auto}
 }
 @media (max-width:820px){
   :root{--gut:16px;--unit:28px}
   .mast nav{display:none}.mast .live span:not(.sq){display:none}
   .hero{height:auto;min-height:0}
-  .hero canvas{position:absolute;top:0;left:0;height:70vh;width:100%}
-  .hero .hud{position:relative;inset:auto;padding-top:70vh;display:block}
-  .hero .tr,.hero .axis,.hero .br{display:none}
+  .hero .vp{position:relative;height:56vw;min-height:230px;margin-top:84px}
+  .hero .vp video{object-fit:contain}
+  .hero .hud{position:static}
+  .hero .tr{display:none}
+  .hero .ret{display:none}
   .hero .tl{top:20px}
-  .hero .bl{position:relative;left:auto;bottom:auto;padding:18px var(--gut) 28px;max-width:none;background:#000;border-top:1px solid var(--line)}
+  .hero .bl{position:relative;left:auto;bottom:auto;padding:18px var(--gut) 20px;max-width:none}
   .hero .bl .big{font-size:72px}
-  .hero .ctl{bottom:auto;top:calc(70vh - 26px)}
-  .hero .ret.c,.hero .ret.d{top:calc(70vh - 26px);bottom:auto}
-  .hero .lbl span,.hero .lbl.l span{left:50%;right:auto;top:calc(50% + 10px);transform:translateX(-50%);font-size:7.5px;letter-spacing:.14em;padding:1px 3px}
+  .hero .br{position:relative;right:auto;bottom:auto;width:auto;padding:0 var(--gut) 24px}
+  .hero .idx button{font-size:7.5px;padding:6px 0}
   .odorow{grid-template-columns:1fr;gap:24px}
   .side.r{align-items:flex-start;text-align:left}.side.r .lab{margin-right:0}
   .odo .mid{flex-direction:row;padding:0}
@@ -303,11 +336,32 @@ footer svg{height:10px;width:auto}
   .sec .rail .n{font-size:28px}.sec .rail .v{display:none}.sec .rail .t{margin:0}
   .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
   .tile{min-height:120px}
-  .cards{grid-template-columns:minmax(0,1fr)}
-  .card{grid-template-columns:110px minmax(0,1fr);min-height:160px}
+  .snav{grid-template-columns:repeat(9,108px)}
+  .sdetail .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .reads li{grid-template-columns:26px 1fr}
   .defs dl{grid-template-columns:1fr}
   .dayt{overflow-x:auto}
+}
+
+/* Compact comparison controls on narrow screens. */
+.table-hint{display:none}
+#stages .cont>*{flex:0 0 auto}
+@media(max-width:820px){
+ .stab{overflow-x:auto}
+ .stab .hide-m,.stab .id,.stab .nm .a{display:none}
+ .stab .nm img{display:none}
+ .stab .nm .t{font-size:12px}
+ .stab table th button,.stab td{padding:10px 6px}
+ .stab table th:first-child button,.stab table td:first-child{padding-left:10px}
+ .stab table th:last-child button,.stab table td:last-child{padding-right:10px}
+ .table-hint{display:block;color:var(--ink-2);font-size:10px;letter-spacing:.04em;padding:10px;margin:0}
+ .snav{grid-template-columns:repeat(9,124px)}
+ .snav .nm{font-size:12px}
+ .sdetail .grid .l,.detail .grid .l{font-size:10px;letter-spacing:.1em}
+ .sdetail p,.detail .foot{font-size:11px}
+ .sdetail .top,.detail .top{gap:8px;flex-wrap:wrap}
+ .sdetail .top .pn button,.detail .top .pn button{min-height:32px;padding:7px 9px}
+ .stab.win>.bar{height:auto;min-height:26px;flex-wrap:wrap;white-space:normal;padding:7px 10px}
 }
 </style>
 <link rel="stylesheet" href="version-nav.css">
@@ -317,33 +371,30 @@ footer svg{height:10px;width:auto}
 <header class="mast">
   <div class="shell">
     <a href="#top" aria-label="MASSIVE"><svg viewBox="0 0 1647.03 264.69" aria-hidden="true"><g fill="#fff" class="wm-use"></g></svg></a>
-    <nav aria-label="Sections"><a href="#top" class="on">Field</a><a href="#outcomes">Outcomes</a><a href="#overview">Overview</a><a href="#window">Window</a><a href="#stages">Stages</a><a href="#exits">Exits</a><a href="#notes">Notes</a></nav>
-    <div class="live"><span class="sq" aria-hidden="true"></span><span>MATCH TELEMETRY</span><span class="dim">SNAPSHOT 20261015-18</span><a href="assets/MASSIVEmatch-snapshot-20261015-18.json" download>JSON ↓</a></div>
+    <nav aria-label="Sections"><a href="#top" class="on">Report</a><a href="#outcomes">Outcomes</a><a href="#overview">Overview</a><a href="#window">Window</a><a href="#stages">Stages</a><a href="#exits">Exits</a><a href="#notes">Notes</a></nav>
+    <div class="live"><span class="sq" aria-hidden="true"></span><span>MATCH TELEMETRY</span><span class="dim">15–18 OCT 2026</span><button type="button" class="motion" id="motion" aria-pressed="true">Motion on</button><a href="assets-r3/MASSIVEmatch-snapshot-20261015-18.json" download>JSON ↓</a></div>
   </div>
 </header>
 
 <main id="top">
-  <section class="hero" aria-label="Stage field: nine wells sized by player-minutes">
-    <canvas id="field" aria-hidden="true"></canvas>
+  <section class="hero" aria-label="Level select: the nine stages, native capture">
+    <div class="vp"><video id="carousel" muted loop playsinline preload="auto" poster="assets-r3/media/level-select.jpg" aria-label="MASSIVE level-select carousel, native capture: nine stage objects rotating with their names and scale"><source src="assets-r3/media/level-select.mp4" type="video/mp4"></video></div>
     <div class="hud">
       <span class="ret a"></span><span class="ret b"></span><span class="ret c"></span><span class="ret d"></span>
-      <span class="axis y">Field · nine stage wells · depth ∝ player-minutes · line weight ∝ strain</span>
-      <span class="axis x">Reporting window 2026-10-15 → 10-19 EDT</span>
       <div class="tl">
         <svg viewBox="0 0 1647.03 264.69" role="img" aria-label="MASSIVE"><g fill="#fff" class="wm-use"></g></svg>
-        <span class="k"><b>Match telemetry</b> · 15–18 October 2026</span>
+        <span class="k"><b>Match telemetry</b> · 15–18 October 2026 · EDT</span>
       </div>
-      <div class="tr num"><span>Ruleset <b>6</b> · regulation <b>180 s</b></span><span>Builds <b>2</b> · settings <b>1</b></span><span>Stages <b>9</b> · modes <b>2</b></span><span id="tr-clock">—</span></div>
+      <div class="tr num"><span>Stages <b>9</b> · modes <b>2</b> · regulation <b>180 s</b></span><span>Builds <b>2</b> · settings <b>1</b> · ruleset <b>6</b></span><span class="dim">Level select · native capture · 36 s</span></div>
       <div class="bl">
         <span class="k" style="color:#fff">01 — Matches started</span>
         <div class="big num" id="big-starts">000</div>
         <p id="dek"></p>
       </div>
       <div class="br">
-        <div class="win"><div class="bar"><span><span class="dots"><i></i><i></i><i></i></span>Well readout</span><b id="well-id">—</b></div><div class="body"><div class="read num" id="well"></div></div></div>
+        <div class="win"><div class="bar"><span><span class="dots"><i></i><i></i><i></i></span>Level select</span><b id="well-id">—</b></div><div class="body"><div class="read num" id="well"></div></div></div>
+        <ol class="idx num" id="idx" aria-label="Stages"></ol>
       </div>
-      <div id="labels"></div>
-      <button class="ctl" type="button" id="field-ctl" aria-pressed="true">Field · running — pause</button>
     </div>
   </section>
 
@@ -351,20 +402,20 @@ footer svg{height:10px;width:auto}
 
     <section class="odo" id="outcomes" aria-labelledby="h-out">
       <div class="win">
-        <div class="bar"><span><span class="dots"><i></i><i></i><i></i></span>Outcomes · completed matches</span><b id="h-out">LIGHT MASS · DARK MASS readout</b></div>
+        <div class="bar"><span><span class="dots"><i></i><i></i><i></i></span>Outcomes · completed matches</span><b id="h-out">Light · Dark · share of completed</b></div>
         <div class="body">
           <div class="odorow">
             <div class="side">
               <span class="lab">Light wins</span>
               <div class="digits num" id="od-l" aria-live="polite"></div>
               <div class="scale" id="sc-l"></div>
-              <div class="pbar num"><b>P1</b><span class="bar"><i id="pb-l"></i><em id="pe-l"></em></span></div>
+              <div class="pbar num"><b>L</b><span class="bar"><i id="pb-l"></i><em id="pe-l"></em></span></div>
             </div>
             <div class="side r">
               <span class="lab dark">Dark wins</span>
               <div class="digits num" id="od-d" aria-live="polite"></div>
               <div class="scale" id="sc-d"></div>
-              <div class="pbar num" style="direction:rtl"><b>P3</b><span class="bar"><i id="pb-d" style="transform-origin:right"></i><em id="pe-d" style="left:auto;right:6px"></em></span></div>
+              <div class="pbar num" style="direction:rtl"><b>D</b><span class="bar"><i id="pb-d" style="transform-origin:right"></i><em id="pe-d" style="left:auto;right:6px"></em></span></div>
             </div>
           </div>
           <div class="foot num"><span class="mid" style="flex-direction:row;padding:0;gap:14px"><span class="seg" role="group" aria-label="Mode"><button type="button" data-mode="all" aria-pressed="true">ALL</button><button type="button" data-mode="1v1" aria-pressed="false">1v1</button><button type="button" data-mode="2v2" aria-pressed="false">2v2</button></span><span id="od-tie"></span></span><span id="od-note"></span></div>
@@ -383,8 +434,29 @@ footer svg{height:10px;width:auto}
     </section>
 
     <section class="sec" id="stages" aria-labelledby="h-st">
-      <div class="rail"><div><div class="n">04</div><div class="t" id="h-st">Stages</div></div><div class="v">Nine stages · level-select objects · select a card</div></div>
-      <div class="cont"><div class="cards" id="cards"></div></div>
+      <div class="rail"><div><div class="n">04</div><div class="t" id="h-st">Stages</div></div><div class="v">Nine stages · select one · ← → to step · sort by any column</div></div>
+      <div class="cont">
+        <nav class="snav" id="snav" aria-label="Stage navigator"></nav>
+        <div class="sdetail" id="stage-detail" aria-live="polite"></div>
+        <div class="stab win"><p class="table-hint">Select a stage. Tap a column heading to sort.</p><div class="bar"><span><span class="dots"><i></i><i></i><i></i></span>Comparison · all nine stages</span><b>sort by any column · selected row marked</b></div>
+          <table>
+            <thead><tr>
+              <th scope="col" data-sort="num" aria-sort="ascending"><button type="button">Stage <i>↓</i></button></th>
+              <th scope="col" class="r" data-sort="starts"><button type="button">Starts <i></i></button></th>
+              <th scope="col" class="r hide-m" data-sort="share"><button type="button">Share <i></i></button></th>
+              <th scope="col" class="r" data-sort="c"><button type="button">Completed <i></i></button></th>
+              <th scope="col" class="r" data-sort="a"><button type="button">Exits <i></i></button></th>
+              <th scope="col" class="hide-m" data-sort="lshare"><button type="button">Light · Dark <i></i></button></th>
+              <th scope="col" class="r hide-m" data-sort="pm"><button type="button">Player-min <i></i></button></th>
+              <th scope="col" class="r hide-m" data-sort="dpm"><button type="button">Deaths / min <i></i></button></th>
+              <th scope="col" class="r hide-m" data-sort="kpm"><button type="button">Kills / min <i></i></button></th>
+              <th scope="col" class="r" data-sort="pvp"><button type="button">PvP <i></i></button></th>
+            </tr></thead>
+            <tbody id="stage-rows"></tbody>
+          </table>
+          <div class="tfoot">Rates per player-minute on that stage · Light · Dark bar = share of completed, dotted = ties · Exits = inactivity returns to Attract</div>
+        </div>
+      </div>
     </section>
 
     <section class="sec" id="exits" aria-labelledby="h-ex">
@@ -397,7 +469,7 @@ footer svg{height:10px;width:auto}
       <div class="cont"><div class="notes">
         <div class="reads"><div class="k" style="margin-bottom:4px">Reads from the window</div><ol id="reads"></ol></div>
         <div class="defs" id="defs"></div>
-        <div class="win orbwin"><div class="bar"><span><span class="dots"><i></i><i></i><i></i></span>Attract · native surface</span><b>MS-022 · 20 s cycle</b></div><div class="vp"><video muted loop playsinline autoplay preload="metadata" poster="assets/media/attract-orb.jpg" aria-label="MASSIVE attract orb, native surface, one 20 second shader cycle"><source src="assets/media/attract-orb.mp4" type="video/mp4"></video></div></div>
+        <div class="win orbwin"><div class="bar"><span><span class="dots"><i></i><i></i><i></i></span>Attract · native surface</span><b>MS-022 · 20 s cycle</b></div><div class="vp"><video muted loop playsinline autoplay preload="metadata" poster="assets-r3/media/attract-orb.jpg" aria-label="MASSIVE attract orb, native surface, one 20 second shader cycle"><source src="assets-r3/media/attract-orb.mp4" type="video/mp4"></video></div></div>
         <div class="prov" id="prov"></div>
       </div></div>
     </section>
@@ -405,10 +477,10 @@ footer svg{height:10px;width:auto}
   </div>
 </main>
 
-<footer><div class="shell"><svg viewBox="0 0 1647.03 264.69" aria-hidden="true"><g fill="#6a6a6a" class="wm-use"></g></svg><span>Match telemetry · 15–18 October 2026 · EDT</span><span>Field, odometers and charts are drawn from the snapshot; captures are from the MASSIVE build</span><a href="#top">Top ↑</a></div></footer>
+<footer><div class="shell"><svg viewBox="0 0 1647.03 264.69" aria-hidden="true"><g fill="#6a6a6a" class="wm-use"></g></svg><span>Match data: 15–18 October 2026 · EDT</span><span>Footage captured in MASSIVE.</span><a href="#top">Top ↑</a></div></footer>
 
 
-<script src="assets/massive-data.js"></script>
+<script src="assets-r3/massive-data.js"></script>
 <script>
 (function(){
 'use strict';
@@ -425,67 +497,32 @@ const S=D.summary,T=D.totals,L=D.levels,W=S.completed_winners;const decided=W.Li
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const fine=matchMedia('(pointer:fine)').matches;
+let motion=!reduce;try{const m=localStorage.getItem('massive-motion');if(m==='on')motion=true;if(m==='off')motion=false}catch(e){}
 const paths=window.MASSIVE_WORDMARK_PATHS.map(d=>`<path d="${d}"/>`).join('');
 document.querySelectorAll('.wm-use').forEach(g=>g.innerHTML=paths);
 const rows=ST.map(s=>{const v=L[s.name];const c=v.status.Completed||0,a=v.status.Abandoned||0,w=v.completed_winners;return {...s,v,c,a,w,dpm:v.deaths/v.player_minutes,kpm:v.enemies_killed/v.player_minutes,ppm:v.pvp_kills/v.player_minutes,share:v.starts/S.starts}});
 const maxPM=Math.max(...rows.map(r=>r.v.player_minutes));
 
-/* ---------- FIELD: spring-lattice plane deformed by nine stage wells ---------- */
-const cv=$('#field'),ctx=cv.getContext('2d');
-let Wd=0,Hd=0,dpr=1,running=!reduce,t0=performance.now(),hot=-1,raf=0;
-const wells=rows.map((r,i)=>({r,i,ang:-Math.PI/2+i*(Math.PI*2/9),mass:0.35+0.65*Math.sqrt(r.v.player_minutes/maxPM)}));
-function layout(){
-  const b=cv.getBoundingClientRect();Wd=Math.max(320,b.width);Hd=Math.max(320,b.height);dpr=Math.min(2,devicePixelRatio||1);
-  cv.width=Wd*dpr;cv.height=Hd*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
-  const cx=Wd/2,cy=Hd*.54,R=Math.min(Wd*.30,Hd*.31);
-  const narrow=Wd<820;
-  wells.forEach(w=>{const k=narrow?.86:1;w.x=cx+Math.cos(w.ang)*R*(narrow?.82:1.25)*k;w.y=cy+Math.sin(w.ang)*R*k;w.rad=(narrow?44:64)*(0.7+w.mass*.8)});
-  // labels
-  $('#labels').innerHTML=wells.map(w=>`<button class="lbl${Math.cos(w.ang)<-.2?' l':''}" style="left:${w.x}px;top:${w.y}px" data-i="${w.i}" aria-label="${w.r.name}: ${w.r.v.player_minutes.toFixed(1)} player-minutes"><span>${narrow?'':'STAGE_'+String(w.r.num).padStart(3,'0')+' '}${w.r.name}</span></button>`).join('');
-  document.querySelectorAll('.lbl').forEach(b=>{b.addEventListener('mouseenter',()=>setHot(+b.dataset.i));b.addEventListener('focus',()=>setHot(+b.dataset.i));b.addEventListener('click',()=>{setHot(+b.dataset.i);document.getElementById('stages').scrollIntoView({behavior:reduce?'auto':'smooth'});openCard(wells[+b.dataset.i].r.name)})});
-  if(!running)draw(performance.now());
-}
-function setHot(i){hot=i;document.querySelectorAll('.lbl').forEach(b=>b.classList.toggle('on',+b.dataset.i===i));const r=wells[i].r;
+/* ---------- HERO: native carousel with synced stage readout ---------- */
+const car=$('#carousel');const SEG=4;
+function stageAt(t){return Math.max(0,Math.min(8,Math.floor((t+0.5)/SEG)))}
+let curStage=-1;
+function readout(i){const r=rows[i];
   $('#well-id').textContent=`STAGE_${String(r.num).padStart(3,'0')}`;
-  $('#well').innerHTML=`<div class="h">${r.name}<small>${r.anomaly}</small></div><span>Player-minutes</span><b>${r.v.player_minutes.toFixed(1)}</b><span>Starts · completed · exits</span><b>${r.v.starts} · ${r.c} · ${r.a}</b><span>Light · Dark · Tie</span><b>${r.w.Light||0} · ${r.w.Dark||0} · ${r.w.Tie||0}</b><span>Deaths / kills per min</span><b>${r.dpm.toFixed(2)} · ${r.kpm.toFixed(1)}</b><span>PvP kills</span><b>${r.v.pvp_kills}</b>`;
-  if(!running)draw(performance.now());
-}
-function disp(x,y,t){ // displacement of lattice point toward wells
-  let dx=0,dy=0,s=0;
-  for(const w of wells){const ex=x-w.x,ey=y-w.y;const d2=ex*ex+ey*ey;const rad=w.rad*(1+0.05*Math.sin(t*0.0007+w.i*1.7))*(w.i===hot?1.18:1);const g=Math.exp(-d2/(2*rad*rad));const k=g*w.mass*rad*0.34;const d=Math.sqrt(d2)+1e-3;dx-=ex/d*k;dy-=ey/d*k;s+=g*w.mass}
-  // idle wobble, low frequency
-  dx+=Math.sin(y*0.012+t*0.00035)*1.2;dy+=Math.cos(x*0.011-t*0.0003)*1.2;
-  return [dx,dy,s];
-}
-function draw(now){
-  const t=now-t0;ctx.clearRect(0,0,Wd,Hd);
-  const step=Wd<820?26:32;const nx=Math.ceil(Wd/step)+2,ny=Math.ceil(Hd/step)+2;const ox=(Wd-(nx-1)*step)/2,oy=(Hd-(ny-1)*step)/2;
-  const P=new Float32Array(nx*ny*3);
-  for(let j=0;j<ny;j++)for(let i=0;i<nx;i++){const x=ox+i*step,y=oy+j*step;const [dx,dy,s]=disp(x,y,t);const k=(j*nx+i)*3;P[k]=x+dx;P[k+1]=y+dy;P[k+2]=s}
-  ctx.lineWidth=1;ctx.lineCap='butt';
-  const seg=(k1,k2)=>{const x1=P[k1],y1=P[k1+1],x2=P[k2],y2=P[k2+1];const len=Math.hypot(x2-x1,y2-y1);const strain=Math.min(1,Math.abs(len-step)/(step*0.5));const s=Math.max(P[k1+2],P[k2+2]);const a=0.045+0.62*Math.pow(strain,1.1)+0.1*Math.min(1,s);ctx.strokeStyle=`rgba(255,255,255,${a.toFixed(3)})`;ctx.beginPath();ctx.moveTo(x1,y1);ctx.lineTo(x2,y2);ctx.stroke()};
-  for(let j=0;j<ny;j++)for(let i=0;i<nx;i++){const k=(j*nx+i)*3;if(i<nx-1)seg(k,k+3);if(j<ny-1)seg(k,k+nx*3)}
-  // well cores: ring whose radius breathes; hot well brighter
-  wells.forEach(w=>{const rr=6+w.mass*8+(w.i===hot?2:0);ctx.strokeStyle=w.i===hot?'#fff':'rgba(255,255,255,.75)';ctx.lineWidth=w.i===hot?1.5:1;ctx.beginPath();ctx.arc(w.x,w.y,rr,0,Math.PI*2);ctx.stroke();ctx.fillStyle='#000';ctx.beginPath();ctx.arc(w.x,w.y,rr-1.5,0,Math.PI*2);ctx.fill()});
-  if(running)raf=requestAnimationFrame(draw);
-}
-layout();addEventListener('resize',layout);
-setHot(0);
-if(running)raf=requestAnimationFrame(draw);else draw(performance.now());
-$('#field-ctl').addEventListener('click',()=>{running=!running;$('#field-ctl').textContent=running?'Field · running — pause':'Field · paused — run';$('#field-ctl').setAttribute('aria-pressed',String(running));if(running){t0=performance.now()-0;raf=requestAnimationFrame(draw)}else cancelAnimationFrame(raf)});
-new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting){cancelAnimationFrame(raf)}else if(running){raf=requestAnimationFrame(draw)}}),{threshold:0}).observe(cv);
-// clock in tr
-const clock=()=>{$('#tr-clock').innerHTML=`Local <b>${new Intl.DateTimeFormat('en-US',{...tz,hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'}).format(new Date())}</b> EDT`};clock();setInterval(clock,1000);
-
+  $('#well').innerHTML=`<div class="h">${r.name}<small>${r.anomaly}</small></div><span>Starts · completed · exits</span><b>${r.v.starts} · ${r.c} · ${r.a}</b><span>Light · Dark · Tie</span><b>${r.w.Light||0} · ${r.w.Dark||0} · ${r.w.Tie||0}</b><span>Player-minutes</span><b>${r.v.player_minutes.toFixed(1)}</b><span>Deaths / kills per player-min</span><b>${r.dpm.toFixed(2)} · ${r.kpm.toFixed(1)}</b><span>PvP kills</span><b>${r.v.pvp_kills}</b>`;
+  document.querySelectorAll('#idx li').forEach((li,k)=>li.classList.toggle('on',k===i));}
+$('#idx').innerHTML=rows.map((r,i)=>`<li><button type="button" data-i="${i}" aria-label="Show ${r.name}"><b>${String(r.num).padStart(2,'0')}</b><span>${r.name.slice(0,3)}</span></button></li>`).join('');
+$('#idx').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const i=+b.dataset.i;curStage=i;readout(i);try{car.currentTime=i*SEG+3}catch(err){}});
+car.addEventListener('timeupdate',()=>{const i=stageAt(car.currentTime);if(i!==curStage){curStage=i;readout(i)}});
+readout(0);
 /* dek + big */
-$('#dek').innerHTML=`<b>${S.status.Completed} reached final scoring</b>; ${S.status.Abandoned} timed out to Attract. ${S.modes['1v1']} 1v1 and ${S.modes['2v2']} 2v2 matches, ${fmt(T.player_slots)} player slots, ${hm(T.player_minutes)} of controller time. Every start on ruleset 6 at 180 s.`;
-function countUp(el,to,pad=0,dur=1400){if(reduce){el.textContent=String(to).padStart(pad,'0');return}const t0=performance.now();const step=t=>{const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,4);el.textContent=String(Math.round(to*e)).padStart(pad,'0');if(k<1)requestAnimationFrame(step)};requestAnimationFrame(step)}
+$('#dek').innerHTML=`<b>${S.status.Completed} reached final scoring (${pct(S.status.Completed,S.starts)}%)</b>; ${S.status.Abandoned} ended in an inactivity exit, ${L.HIGGS.status.Abandoned} of them on HIGGS. <b>Light won ${W.Light} of ${decided} decided matches (${pct(W.Light,decided)}%)</b>. ${fmt(T.player_slots)} player slots, ${fmt(Math.round(T.player_minutes))} player-minutes.`;
+function countUp(el,to,pad=0,dur=1400){if(!motion){el.textContent=String(to).padStart(pad,'0');return}const t0=performance.now();const step=t=>{const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,4);el.textContent=String(Math.round(to*e)).padStart(pad,'0');if(k<1)requestAnimationFrame(step)};requestAnimationFrame(step)}
 countUp($('#big-starts'),S.starts,3);
 
 /* ---------- ODOMETER ---------- */
 function odo(el,n,width){const s=String(n).padStart(width,'0');el.innerHTML=[...s].map(ch=>ch==='.'?`<span class="dot">.</span>`:`<span class="d"><span class="strip" style="--n:0">${[0,1,2,3,4,5,6,7,8,9].map(d=>`<span>${d}</span>`).join('')}</span></span>`).join('');requestAnimationFrame(()=>requestAnimationFrame(()=>{el.querySelectorAll('.d .strip').forEach((st,i)=>st.style.setProperty('--n',s.replace(/\./g,'')[i]))}))}
-const UNITS=['meV','eV','keV','MeV','GeV','TeV'];
-function scale(el,v,max){const idx=Math.min(5,Math.floor(v/max*5.999));el.innerHTML=UNITS.map((u,i)=>`<span class="${i===idx?'on':''}">${u}</span>`).join('')}
+function scale(el,v,max){const sh=v/max*100;el.innerHTML=[0,25,50,75,100].map(t=>`<span class="${Math.abs(sh-t)<12.5?'on':''}">${t}%</span>`).join('')+`<i class="mk" style="left:${sh}%" aria-hidden="true"></i>`}
 function setMode(m){
   const src=m==='all'?S:D.mode_wins[m];const w=src.completed_winners,c=src.status.Completed,dec=w.Light+w.Dark;
   odo($('#od-l'),w.Light,3);odo($('#od-d'),w.Dark,3);
@@ -493,7 +530,7 @@ function setMode(m){
   $('#pb-l').style.setProperty('--v',w.Light/c);$('#pb-d').style.setProperty('--v',w.Dark/c);
   $('#pe-l').textContent=`${pct(w.Light,c,0)}%`;$('#pe-d').textContent=`${pct(w.Dark,c,0)}%`;
   $('#od-tie').textContent=`TIE ${w.Tie||0} · ${pct(w.Tie||0,c)}% · ${c} COMPLETED`;
-  $('#od-note').innerHTML=`Light <b>${pct(w.Light,dec)}%</b> of decided · Dark <b>${pct(w.Dark,dec)}%</b> · scale = share of completed, meV→TeV`;
+  $('#od-note').innerHTML=`Light <b>${pct(w.Light,dec)}%</b> of decided (${dec}) · Dark <b>${pct(w.Dark,dec)}%</b> · scale and bars = share of ${c} completed`;
   document.querySelectorAll('.seg [data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===m)));
 }
 document.querySelectorAll('.seg [data-mode]').forEach(b=>b.addEventListener('click',()=>setMode(b.dataset.mode)));
@@ -503,14 +540,14 @@ new IntersectionObserver((es,o)=>{if(es[0].isIntersecting&&!odoDone){odoDone=tru
 /* ---------- TILES ---------- */
 const dots=(v,n=12)=>`<div class="dots-bar" aria-hidden="true">${Array.from({length:n},(_,i)=>`<i class="${i<Math.round(v*n)?'on':''}"></i>`).join('')}</div>`;
 const tiles=[
- {k:'Starts',v:`${fmt(S.starts)}`,d:1,foot:[`${S.status.Completed} completed`,`${S.status.Abandoned} inactivity exits`]},
- {k:'Completion',v:`${pct(S.status.Completed,S.starts)}<small>%</small>`,d:S.status.Completed/S.starts,foot:['completed ÷ started',`${S.status.Abandoned} / ${S.starts} returned to Attract`]},
- {k:'Active match time',v:hm(S.active_minutes).replace(/h /,'<small>h</small> ').replace(/m$/,'<small>m</small>'),d:S.active_minutes/S.elapsed_minutes,foot:[`elapsed ${hm(S.elapsed_minutes)}`,`completed mean ${mss(S.completed_mean_seconds)}`]},
- {k:'Player time',v:hm(T.player_minutes).replace(/h /,'<small>h</small> ').replace(/m$/,'<small>m</small>'),d:(S.modes['1v1']*2)/T.player_slots,foot:[`${T.player_slots} player slots · ${pct(S.modes['1v1']*2,T.player_slots,0)}% in 1v1`,`${(T.player_minutes/T.player_slots).toFixed(2)} min / slot`]},
- {k:'Combat',v:`${fmt(T.enemies_killed)}<small>kills</small>`,d:T.deaths/T.enemies_killed*4,foot:[`${fmt(T.deaths)} deaths · ${T.pvp_kills} PvP`,`${(T.enemies_killed/T.player_minutes).toFixed(1)} kills · ${(T.deaths/T.player_minutes).toFixed(2)} deaths / min`]},
- {k:'Distance',v:`${(T.distance_meters/1000).toFixed(1)}<small>km</small>`,d:Math.min(1,(T.distance_meters/T.player_minutes)/150),foot:[`${(T.distance_meters/T.player_minutes).toFixed(0)} m / player-min`,`${(T.distance_meters/T.player_slots).toFixed(0)} m / slot`]},
+ {k:'Starts',v:`${fmt(S.starts)}`,d:S.modes['1v1']/S.starts,dl:`${pct(S.modes['1v1'],S.starts)}% 1v1 · ${pct(S.modes['2v2'],S.starts)}% 2v2`,foot:[`${S.status.Completed} completed`,`${S.status.Abandoned} inactivity exits`]},
+ {k:'Completion',v:`${pct(S.status.Completed,S.starts)}<small>%</small>`,d:S.status.Completed/S.starts,dl:`${S.status.Completed} of ${S.starts} started`,foot:['completed ÷ started',`${S.status.Abandoned} returned to Attract`]},
+ {k:'Active match time',v:hm(S.active_minutes).replace(/h /,'<small>h</small> ').replace(/m$/,'<small>m</small>'),d:S.active_minutes/S.elapsed_minutes,dl:`${pct(S.active_minutes,S.elapsed_minutes)}% of elapsed · within-match clock`,foot:[`elapsed ${hm(S.elapsed_minutes)}`,`completed mean ${mss(S.completed_mean_seconds)}`]},
+ {k:'Player-minutes',v:fmt(Math.round(T.player_minutes)),d:(2*D.mode_wins['1v1'].active_minutes)/T.player_minutes,dl:`${pct(2*D.mode_wins['1v1'].active_minutes,T.player_minutes)}% in 1v1`,foot:[`active minutes × seats · ${T.player_slots} slots`,`${(T.player_minutes/T.player_slots).toFixed(2)} min / slot · not unique people`]},
+ {k:'Combat',v:`${fmt(T.enemies_killed)}<small>kills</small>`,d:null,dl:`${(T.enemies_killed/T.player_minutes).toFixed(1)} kills · ${(T.deaths/T.player_minutes).toFixed(2)} deaths / player-min`,foot:[`${fmt(T.deaths)} deaths · ${T.pvp_kills} PvP kills`,`all started matches`]},
+ {k:'Distance',v:`${(T.distance_meters/1000).toFixed(1)}<small>km</small>`,d:null,dl:`${(T.distance_meters/T.player_minutes).toFixed(0)} m / player-min`,foot:[`${fmt(Math.round(T.distance_meters))} m across all starts`,`${(T.distance_meters/T.player_slots).toFixed(0)} m / slot`]},
 ];
-$('#tiles').innerHTML=tiles.map(t=>`<div class="tile rv-el"><div class="k">${t.k}</div><div class="v num">${t.v}</div>${dots(t.d)}<div class="foot num"><span>${t.foot[0]}</span><span>${t.foot[1]}</span></div></div>`).join('');
+$('#tiles').innerHTML=tiles.map(t=>`<div class="tile rv-el"><div class="k">${t.k}</div><div class="v num">${t.v}</div>${t.d==null?'':dots(t.d)}<div class="dl num">${t.dl}</div><div class="foot num"><span>${t.foot[0]}</span><span>${t.foot[1]}</span></div></div>`).join('');
 
 /* ---------- SCAN CHART (days) ---------- */
 const dayKeys=Object.keys(D.days).sort();
@@ -524,7 +561,7 @@ const dayKeys=Object.keys(D.days).sort();
   const cols=dayKeys.map((k,i)=>{const d=D.days[k];const h0=hourOf(d.first),h1=hourOf(d.last);const cw=iw/dayKeys.length;const bx=pl+cw*i;return `<rect x="${bx+cw*(h0-8)/14}" y="${H-pb+10}" width="${Math.max(1,cw*(h1-h0)/14)}" height="3" fill="#fff" opacity=".5"/><text x="${bx+cw/2}" y="${H-6}" text-anchor="middle" font-size="9" fill="#a8a8a8" letter-spacing="1.5">${k.slice(8)} OCT · ${dfmt.format(new Date(d.first)).toUpperCase()}</text><text x="${bx+4}" y="${H-pb+8}" font-size="7.5" fill="#6a6a6a">${tfmt.format(new Date(d.first))}</text><text x="${bx+cw-4}" y="${H-pb+8}" text-anchor="end" font-size="7.5" fill="#6a6a6a">${tfmt.format(new Date(d.last))}</text>`}).join('');
   const ex=D.incomplete.map(e=>{const i=dayKeys.indexOf(e.start.slice(0,10));const cw=iw/dayKeys.length;const px=pl+cw*i+cw*(hourOf(e.start)-8)/14;return `<text class="pt" x="${px}" y="${y(0)-4}" text-anchor="middle" font-size="9" fill="#fff">×</text>`}).join('');
   const lab=dayKeys.map((k,i)=>`<text class="pt" x="${ptsS[i][0]}" y="${ptsS[i][1]-10}" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">${D.days[k].starts}</text><text class="pt" x="${ptsC[i][0]+10}" y="${ptsC[i][1]+4}" font-size="8.5" fill="#a8a8a8">${D.days[k].status.Completed||0}</text>`).join('');
-  $('#scan').innerHTML=`<div class="k" style="display:flex;justify-content:space-between"><span>Starts per day</span><span class="dim">axis = starts · × = exit at time of day · bar = first→last start</span></div>
+  $('#scan').innerHTML=`<div class="k" style="display:flex;justify-content:space-between"><span>Starts per day</span><span class="dim">axis = starts · × = exit at time of day · bar = recorded activity span</span></div>
   <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Starts per day: ${dayKeys.map(k=>k.slice(8)+' Oct '+D.days[k].starts).join(', ')}">${grid}${cols}
   <path class="line" d="${path(ptsS)}" fill="none" stroke="#fff" stroke-width="1.5"/>
   <path class="line" d="${path(ptsC)}" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="3 3"/>
@@ -539,40 +576,64 @@ const dayKeys=Object.keys(D.days).sort();
 })();
 function hourOf(iso){const parts=new Intl.DateTimeFormat('en-US',{...tz,hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date(iso));return +parts.find(p=>p.type==='hour').value+(+parts.find(p=>p.type==='minute').value)/60}
 
-/* ---------- STAGE CARDS ---------- */
-const cards=$('#cards');
-cards.innerHTML=rows.map(r=>`<article class="card" data-stage="${r.name}" tabindex="0" aria-label="${r.name}, stage ${r.num}">
-  <div class="obj"><div class="g"></div><video muted loop playsinline preload="${fine?'metadata':'none'}" poster="assets/stages/${r.name.toLowerCase()}.jpg" aria-hidden="true"><source src="assets/stages/${r.name.toLowerCase()}.mp4" type="video/mp4"></video><span class="st">STAGE_${String(r.num).padStart(3,'0')}</span><span class="ex">${r.v.player_minutes.toFixed(0)} MIN</span></div>
-  <div class="inf">
-    <div class="h"><b>${r.name}</b><span>${r.v.starts} starts<br>${pct(r.v.starts,S.starts)}%</span></div>
-    <div class="an">${r.anomaly}</div>
-    <div class="m num"><div><span>Completed</span><b>${r.c}</b></div><div><span>Exits</span><b class="${r.a?'w':''}">${r.a}</b></div><div><span>Deaths/min</span><b>${r.dpm.toFixed(2)}</b></div><div><span>Kills/min</span><b>${r.kpm.toFixed(1)}</b></div><div><span>PvP</span><b>${r.v.pvp_kills}</b></div><div><span>Mean</span><b>${mss(r.v.completed_mean_seconds)}</b></div></div>
-    ${dots(r.v.player_minutes/maxPM,16)}
-    <div class="ld num"><span>L ${r.w.Light||0}</span><span class="bar"><i class="l" style="--v:${(r.w.Light||0)/r.c}"></i><i class="t" style="--v:${(r.w.Tie||0)/r.c}"></i></span><span>D ${r.w.Dark||0}</span></div>
-  </div>
-</article>`).join('')+`<div class="drawer" id="drawer"></div>`;
-const drawer=$('#drawer');let openName=null;
-function openCard(name){
-  const r=rows.find(x=>x.name===name);
-  if(openName===name){drawer.classList.remove('open');drawer.innerHTML='';openName=null;document.querySelectorAll('.card').forEach(c=>c.classList.remove('on'));return}
-  openName=name;document.querySelectorAll('.card').forEach(c=>c.classList.toggle('on',c.dataset.stage===name));
-  const hero=r.hero?MEDIA[r.hero]:null;const diag={NOVA:'C13_NOVA_DIAGRAM',ORBITAL:'C16_ORBITAL_CLEAN',SINGULARITY:'GDD_SINGULARITY'}[r.name];
-  const src=hero?`assets/media/${r.hero}`:(diag?`assets/media/${diag}`:null);
-  const cap=hero?`${hero.id} · ${esc(hero.title)} · ${hero.dur} s native capture`:(diag?{NOVA:'MOMI Fig. — NOVA model · core collapse on the plane',ORBITAL:'MOMI Fig. — ORBITAL model · probability cloud',SINGULARITY:'GDD Fig. — SINGULARITY model · ring on the folded grid'}[r.name]:'No capture of this stage in the library');
-  drawer.innerHTML=`<div class="media">${src?`<video muted loop playsinline autoplay preload="metadata" poster="${src}.jpg" aria-label="${esc(cap)}"><source src="${src}.mp4" type="video/mp4"></video>`:`<div class="none">No capture in library</div>`}<div class="cap">${cap}</div></div>
-  <div class="data"><div><span class="id">STAGE_${String(r.num).padStart(3,'0')} · ${r.anomaly}</span><h3>${r.name}</h3></div>
-  <div class="grid num"><div><div class="l">Starts</div><div class="v">${r.v.starts}<small>${r.v.modes['1v1']||0} 1v1 · ${r.v.modes['2v2']||0} 2v2</small></div></div><div><div class="l">Completed · exits</div><div class="v">${r.c} · ${r.a}<small>${pct(r.a,r.v.starts)}% exit rate</small></div></div><div><div class="l">Player-minutes</div><div class="v">${r.v.player_minutes.toFixed(1)}<small>mean ${mss(r.v.completed_mean_seconds)}</small></div></div><div><div class="l">Deaths</div><div class="v">${fmt(r.v.deaths)}<small>${r.dpm.toFixed(2)} / min</small></div></div><div><div class="l">Enemy kills</div><div class="v">${fmt(r.v.enemies_killed)}<small>${r.kpm.toFixed(1)} / min</small></div></div><div><div class="l">PvP kills</div><div class="v">${r.v.pvp_kills}<small>${r.ppm.toFixed(3)} / min</small></div></div></div>
-  <div class="ld num" style="display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;font-size:10px;letter-spacing:.14em"><span>LIGHT ${r.w.Light||0} · ${pct(r.w.Light||0,r.c)}%</span><span class="bar" style="height:9px;border:1px solid #fff;display:flex;overflow:hidden"><i class="l" style="display:block;height:100%;background:#fff;width:${(r.w.Light||0)/r.c*100}%"></i><i class="t" style="display:block;height:100%;width:${(r.w.Tie||0)/r.c*100}%;background:repeating-linear-gradient(90deg,#fff 0 1px,transparent 1px 3px)"></i></span><span>DARK ${r.w.Dark||0} · ${pct(r.w.Dark||0,r.c)}%</span></div>
-  <p>Rates are per player-minute on this stage (${r.v.player_minutes.toFixed(1)} min across ${r.v.starts} starts). Outcome shares use completed matches; ties stay in the denominator. Object: this stage's level-select icon, captured from the carousel.</p>
-  <button class="close" type="button">Close ×</button></div>`;
-  drawer.classList.add('open');drawer.querySelector('.close').addEventListener('click',()=>openCard(name));
-  drawer.scrollIntoView({behavior:reduce?'auto':'smooth',block:'nearest'});
+/* ---------- STAGES: navigator · detail · comparison table ---------- */
+const snav=$('#snav'),sdet=$('#stage-detail');
+rows.forEach(r=>{r.starts=r.v.starts;r.pvp=r.v.pvp_kills;r.pm=r.v.player_minutes;r.lshare=(r.w.Light||0)/r.c});
+let sortKey='num',sortDir=1,selected=null;
+snav.innerHTML=rows.map(r=>`<button type="button" data-stage="${r.name}" aria-current="false" aria-label="${r.name}, stage ${r.num}"><span class="obj"><span class="g"></span><video muted loop playsinline preload="none" poster="assets-r3/stages/${r.name.toLowerCase()}.jpg" aria-hidden="true" data-hover="1"><source src="assets-r3/stages/${r.name.toLowerCase()}.mp4" type="video/mp4"></video><span class="id">STAGE_${String(r.num).padStart(3,'0')}</span></span><span class="txt"><span class="nm">${r.name}</span><span class="st num"><b>${r.v.starts}</b> starts · ${r.a} exits</span></span></button>`).join('');
+function renderRows(){
+  const sorted=rows.slice().sort((x,y)=>(x[sortKey]>y[sortKey]?1:x[sortKey]<y[sortKey]?-1:x.num-y.num)*sortDir);
+  $('#stage-rows').innerHTML=sorted.map(r=>`<tr tabindex="0" data-stage="${r.name}" aria-selected="${r.name===selected}">
+  <td><div class="nm"><img src="assets-r3/stages/${r.name.toLowerCase()}.jpg" alt="" width="26" height="26" loading="lazy"><div><div class="t">${r.name}</div><div class="a">STAGE_${String(r.num).padStart(3,'0')} · ${r.anomaly}</div></div></div></td>
+  <td class="r num"><b>${r.v.starts}</b></td>
+  <td class="r num hide-m">${pct(r.v.starts,S.starts)}%</td>
+  <td class="r num">${r.c}</td>
+  <td class="r num"><b class="${r.a?'w':''}">${r.a}</b> <span class="dim">${r.a?pct(r.a,r.v.starts,0)+'%':''}</span></td>
+  <td class="hide-m"><div class="ldc num"><span>${r.w.Light||0}</span><span class="bar"><i class="l" style="width:${(r.w.Light||0)/r.c*100}%"></i><i class="t" style="width:${(r.w.Tie||0)/r.c*100}%"></i></span><span style="text-align:right;color:var(--ink-2)">${r.w.Dark||0}</span></div></td>
+  <td class="r num hide-m">${r.v.player_minutes.toFixed(1)}</td>
+  <td class="r num hide-m">${r.dpm.toFixed(2)}</td>
+  <td class="r num hide-m">${r.kpm.toFixed(1)}</td>
+  <td class="r num">${r.v.pvp_kills}</td>
+</tr>`).join('');
+  document.querySelectorAll('.stab th[data-sort]').forEach(th=>{const on=th.dataset.sort===sortKey;if(on)th.setAttribute('aria-sort',sortDir>0?'ascending':'descending');else th.removeAttribute('aria-sort');th.querySelector('i').textContent=on?(sortDir>0?'↓':'↑'):''});
 }
-cards.addEventListener('click',e=>{const c=e.target.closest('.card');if(c)openCard(c.dataset.stage)});
-cards.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){const c=e.target.closest('.card');if(c){e.preventDefault();openCard(c.dataset.stage)}}});
-cards.querySelectorAll('.card').forEach(c=>{const v=c.querySelector('video');c.addEventListener('mouseenter',()=>{if(!reduce)v.play().catch(()=>{})});c.addEventListener('mouseleave',()=>{if(!c.classList.contains('on'))v.pause()})});
-// autoplay the icon loops when visible on fine pointers (desktop); posters elsewhere
-if(fine&&!reduce){const vio=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target.querySelector('video');if(e.isIntersecting)v.play().catch(()=>{});else v.pause()}),{threshold:.3});cards.querySelectorAll('.card').forEach(c=>vio.observe(c))}
+document.querySelectorAll('.stab th[data-sort]').forEach(th=>th.querySelector('button').addEventListener('click',()=>{const k=th.dataset.sort;if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=(k==='num')?1:-1}renderRows()}));
+function revealSelectedStage(){
+  const stageNav=document.getElementById('snav'),activeStage=stageNav.querySelector('[aria-current="true"]');
+  if(activeStage&&stageNav.scrollWidth>stageNav.clientWidth){const a=activeStage.getBoundingClientRect(),n=stageNav.getBoundingClientRect();stageNav.scrollLeft+=a.left-n.left-(n.width-a.width)/2;}
+}
+function showStage(name,focusDetail,updateHash=true){
+  const r=rows.find(x=>x.name===name);if(!r)return;selected=name;
+  document.querySelectorAll('#stage-rows tr').forEach(tr=>tr.setAttribute('aria-selected',String(tr.dataset.stage===name)));
+  snav.querySelectorAll('button').forEach(b=>b.setAttribute('aria-current',String(b.dataset.stage===name)));
+  if(updateHash){try{history.replaceState(null,'','#stage='+name)}catch(e){}}
+  revealSelectedStage();
+  const i=rows.indexOf(r),prev=rows[(i+8)%9],next=rows[(i+1)%9];
+  const hero=r.hero?MEDIA[r.hero]:null;const diag={NOVA:'C13_NOVA_DIAGRAM',ORBITAL:'C16_ORBITAL_CLEAN',SINGULARITY:'GDD_SINGULARITY'}[r.name];
+  const src=hero?`assets-r3/media/${r.hero}`:(diag?`assets-r3/media/${diag}`:null);const icon=`assets-r3/stages/${r.name.toLowerCase()}`;
+  const cap=hero?`${hero.id} · ${esc(hero.title)} · ${hero.dur} s native capture`:(diag?{NOVA:'MOMI Fig. — NOVA model · core collapse on the plane',ORBITAL:'MOMI Fig. — ORBITAL model · probability cloud',SINGULARITY:'GDD Fig. — SINGULARITY model · ring on the folded grid'}[r.name]:'Native level-select object');
+  sdet.innerHTML=`<div class="media">${src?`<video muted loop playsinline preload="metadata" poster="${src}.jpg" aria-label="${esc(cap)}"><source src="${src}.mp4" type="video/mp4"></video>`:`<video class="obj" muted loop playsinline preload="metadata" poster="${icon}.jpg" aria-label="${r.name} level-select object"><source src="${icon}.mp4" type="video/mp4"></video>`}<div class="cap">${cap}</div></div>
+  <div class="data"><div class="top"><span>Selected · ${i+1} of 9</span><span class="pn"><button type="button" data-go="${prev.name}" aria-label="Previous stage, ${prev.name}">← ${prev.name}</button><button type="button" data-go="${next.name}" aria-label="Next stage, ${next.name}">${next.name} →</button></span></div>
+  <div><span class="id">STAGE_${String(r.num).padStart(3,'0')} · ${r.anomaly}</span><h3>${r.name}</h3></div>
+  <div class="grid num"><div><div class="l">Starts</div><div class="v">${r.v.starts}<small>${pct(r.v.starts,S.starts)}% of all · ${r.v.modes['1v1']||0} 1v1 · ${r.v.modes['2v2']||0} 2v2</small></div></div><div><div class="l">Completed · exits</div><div class="v">${r.c} · ${r.a}<small>${pct(r.a,r.v.starts)}% exit rate</small></div></div><div><div class="l">Player-minutes</div><div class="v">${r.v.player_minutes.toFixed(1)}<small>completed mean ${mss(r.v.completed_mean_seconds)}</small></div></div><div><div class="l">Deaths</div><div class="v">${fmt(r.v.deaths)}<small>${r.dpm.toFixed(2)} / min</small></div></div><div><div class="l">Enemy kills</div><div class="v">${fmt(r.v.enemies_killed)}<small>${r.kpm.toFixed(1)} / min</small></div></div><div><div class="l">PvP kills</div><div class="v">${r.v.pvp_kills}<small>${r.ppm.toFixed(3)} / min</small></div></div></div>
+  <div class="ld num"><span>LIGHT ${r.w.Light||0} · ${pct(r.w.Light||0,r.c)}%</span><span class="bar"><i class="l" style="width:${(r.w.Light||0)/r.c*100}%"></i><i class="t" style="width:${(r.w.Tie||0)/r.c*100}%"></i></span><span>DARK ${r.w.Dark||0} · ${pct(r.w.Dark||0,r.c)}%</span></div>
+  <p>Rates are per player-minute on this stage (${r.v.player_minutes.toFixed(1)} min across ${r.v.starts} starts). Outcome shares use completed matches; ties stay in the denominator. Objects are the level-select icons, cut from the carousel capture.</p></div>`;
+  sdet.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showStage(b.dataset.go,true)));
+  if(focusDetail){const f=sdet.querySelector('.pn button');if(f)f.focus({preventScroll:true})}
+}
+renderRows();
+snav.addEventListener('click',e=>{const b=e.target.closest('button');if(b)showStage(b.dataset.stage)});
+snav.querySelectorAll('button').forEach(b=>{const v=b.querySelector('video');const play=()=>{if(motion)v.play().catch(()=>{})};b.addEventListener('mouseenter',play);b.addEventListener('focus',play);b.addEventListener('mouseleave',()=>v.pause());b.addEventListener('blur',()=>v.pause())});
+$('#stage-rows').addEventListener('click',e=>{const tr=e.target.closest('tr');if(tr)showStage(tr.dataset.stage)});
+$('#stage-rows').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){const tr=e.target.closest('tr');if(tr){e.preventDefault();showStage(tr.dataset.stage)}}});
+document.getElementById('stages').addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){const i=rows.findIndex(r=>r.name===selected);showStage(rows[(i+(e.key==='ArrowRight'?1:8))%9].name,true);e.preventDefault()}});
+const hashStage=(location.hash.match(/stage=([A-Z]+)/)||[])[1];
+const hasStageLink=rows.some(r=>r.name===hashStage);
+showStage(hasStageLink?hashStage:'HIGGS',false,hasStageLink);
+if(hasStageLink){const landOnStage=()=>document.fonts.ready.then(()=>requestAnimationFrame(()=>document.getElementById('stages').scrollIntoView({behavior:'instant',block:'start'})));if(document.readyState==='complete')landOnStage();else addEventListener('load',landOnStage,{once:true});}
+addEventListener('resize',revealSelectedStage);
+document.fonts.ready.then(revealSelectedStage);
+addEventListener('hashchange',()=>{const name=(location.hash.match(/stage=([A-Z]+)/)||[])[1];if(name&&name!==selected&&rows.some(r=>r.name===name)){showStage(name,false,false);document.getElementById('stages').scrollIntoView({behavior:'instant',block:'start'});}});
 
 /* ---------- EXITS lollipop ---------- */
 (function(){
@@ -582,11 +643,11 @@ if(fine&&!reduce){const vio=new IntersectionObserver(es=>es.forEach(e=>{const v=
   const grid=[0,60,120,180].map(s=>`<line x1="${pl}" x2="${W-pr}" y1="${y(s)}" y2="${y(s)}" stroke="#1a1a1a"${s===180?' stroke-dasharray="2 3" stroke-opacity="1" stroke="#444"':''}/><text x="${pl-8}" y="${y(s)+3}" text-anchor="end" font-size="9" fill="#6a6a6a">${s===180?'3:00':s/60+':00'}</text>`).join('');
   const days=dayKeys.map((k,i)=>{const cw=iw/dayKeys.length;const bx=pl+cw*i;const d=D.days[k];return `<line x1="${bx}" x2="${bx}" y1="${pt}" y2="${H-pb}" stroke="#222"/><text x="${bx+6}" y="${H-10}" font-size="9" fill="#a8a8a8" letter-spacing="1.5">${k.slice(8)} OCT</text><text x="${bx+cw-6}" y="${H-10}" text-anchor="end" font-size="8.5" fill="#6a6a6a">${d.status.Abandoned||0} EXITS / ${d.starts} STARTS</text><rect x="${x(k,hourOf(d.first))}" y="${H-pb+2}" width="${Math.max(1,x(k,hourOf(d.last))-x(k,hourOf(d.first)))}" height="2" fill="#fff" opacity=".45"/>`}).join('');
   let lastX=-99,lastLy=0;const marks=inc.map((e,i)=>{const px=x(e.start.slice(0,10),hourOf(e.start)),py=y(e.active_seconds);let ly=py-9;if(px-lastX<16&&Math.abs(ly-lastLy)<12)ly=lastLy-11;lastX=px;lastLy=ly;return `<g class="mk" data-i="${i}" tabindex="0" style="cursor:pointer"><line class="line" x1="${px}" x2="${px}" y1="${y(0)}" y2="${py}" stroke="#fff" stroke-width="1"/><rect class="pt" x="${px-3.5}" y="${py-3.5}" width="7" height="7" fill="#000" stroke="#fff" transform="rotate(45 ${px} ${py})"/><text class="pt" x="${px}" y="${ly}" text-anchor="middle" font-size="7.5" fill="#a8a8a8" letter-spacing="1">${e.level.slice(0,3)}</text></g>`}).join('');
-  const act=inc.map(e=>e.active_seconds).sort((a,b)=>a-b);const med=act[Math.floor(act.length/2)];
-  $('#exchart').innerHTML=`<div class="k" style="display:flex;justify-content:space-between;margin-bottom:6px"><span>Active time before exit · by start time</span><span class="dim">height = m:ss active of 3:00 regulation · x = time of day</span></div>
+  const medOf=a=>{a=a.slice().sort((x,y)=>x-y);const n=a.length;return n%2?a[(n-1)/2]:(a[n/2-1]+a[n/2])/2};const med=medOf(inc.map(e=>e.active_seconds));
+  $('#exchart').innerHTML=`<div class="k" style="display:flex;justify-content:space-between;margin-bottom:6px"><span>Active time before exit · by start time</span><span class="dim">height = m:ss active of 3:00 regulation · x = time of day · bar = recorded activity span</span></div>
   <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Seventeen inactivity exits by start time and active seconds">${grid}${days}<line x1="${pl}" x2="${W-pr}" y1="${y(med)}" y2="${y(med)}" stroke="#fff" stroke-opacity=".35" stroke-dasharray="1 4"/><text x="${W-pr}" y="${y(med)-4}" text-anchor="end" font-size="8.5" fill="#a8a8a8">MEDIAN ${mss(med)}</text>${marks}</svg>
   <div class="tip" id="xtip"></div>
-  <div class="note"><span>◇ one exit · ${inc.filter(e=>e.level==='HIGGS').length} of ${inc.length} on HIGGS · median ${mss(med)} active · all read "All players inactive; returned to Attract."</span><span>Modes: ${inc.filter(e=>e.mode===1).length} in 2v2 · ${inc.filter(e=>e.mode===0).length} in 1v1</span></div>`;
+  <div class="note"><span>◇ one exit · ${inc.filter(e=>e.level==='HIGGS').length} of ${inc.length} on HIGGS · median ${mss(med)} active (HIGGS only ${mss(medOf(inc.filter(e=>e.level==='HIGGS').map(e=>e.active_seconds)))}) · all read "All players inactive; returned to Attract."</span><span>Modes: ${inc.filter(e=>e.mode===1).length} in 2v2 · ${inc.filter(e=>e.mode===0).length} in 1v1</span></div>`;
   $('#exchart').querySelectorAll('path.line,line.line').forEach(p=>{const len=p.getTotalLength?p.getTotalLength():200;p.style.setProperty('--len',len+2)});
   const tip=$('#xtip');const svg=$('#exchart svg');
   const show=i=>{const e=inc[i];const g=svg.querySelector(`.mk[data-i="${i}"] rect`);const r=g.getBoundingClientRect(),c=$('#exchart').getBoundingClientRect();tip.innerHTML=`${e.level} · ${e.start.slice(8,10)} OCT ${tfmt.format(new Date(e.start))} · ${e.mode===1?'2v2':'1v1'}<small>${mss(e.active_seconds)} active · id ${e.id.slice(0,8)}</small>`;tip.style.left=(r.left-c.left+r.width/2)+'px';tip.style.top=(r.top-c.top)+'px';tip.classList.add('on');document.querySelectorAll('#xlist div').forEach(d=>d.classList.toggle('on',+d.dataset.i===i))};
@@ -598,28 +659,29 @@ if(fine&&!reduce){const vio=new IntersectionObserver(es=>es.forEach(e=>{const v=
 
 /* ---------- READS / DEFS / PROV ---------- */
 const higgs=L.HIGGS,lat=L.LATTICE,nova=L.NOVA,m1=D.mode_wins['1v1'].completed_winners,m2=D.mode_wins['2v2'].completed_winners;
-const medAct=(()=>{const a=D.incomplete.map(e=>e.active_seconds).sort((x,y)=>x-y);return a[Math.floor(a.length/2)]})();
+const medOf2=a=>{a=a.slice().sort((x,y)=>x-y);const n=a.length;return n%2?a[(n-1)/2]:(a[n/2-1]+a[n/2])/2};const medAct=medOf2(D.incomplete.map(e=>e.active_seconds)),medHig=medOf2(D.incomplete.filter(e=>e.level==='HIGGS').map(e=>e.active_seconds));
 const peakKey=dayKeys.reduce((a,b)=>D.days[a].starts>=D.days[b].starts?a:b);
 const reads=[
- ['Side balance',`Light took <b>${W.Light} of ${decided} decided matches (${pct(W.Light,decided)}%)</b>. The ratio holds in 1v1 (${m1.Light}:${m1.Dark}) and 2v2 (${m2.Light}:${m2.Dark}), which argues against a mode-specific cause. Candidates to rule out: seat assignment, spawn geometry, goal placement. A controlled side-swap test is the cheapest next step.`],
- ['HIGGS carries the exits',`<b>${higgs.status.Abandoned} of ${S.status.Abandoned} inactivity exits</b> happened on HIGGS (STAGE_002), ${pct(higgs.status.Abandoned,higgs.starts,0)}% of its starts. Median exit at ${mss(medAct)} of a 3:00 match. Every record reads "All players inactive," so this is a readability signal for SYMMETRY KNOTS, not a hardware or input fault.`],
- ['LATTICE is the default',`<b>${lat.starts} starts (${pct(lat.starts,S.starts)}%)</b>, zero exits, Light ${pct(lat.completed_winners.Light,lat.status.Completed)}%. Consistent with first position in the carousel. Read every stage-share figure, and the depth of the LATTICE well above, against that selection bias.`],
- ['NOVA runs long',`Only stage whose completed mean exceeds regulation: <b>${mss(nova.completed_mean_seconds)}</b> against 3:00.0 everywhere else. The export lists ${D.bonus_matches} bonus-play matches and NOVA has ${nova.starts} starts; the file does not link the two, so treat the match as plausible, not confirmed.`],
- ['Throughput',`<b>${fmt(T.enemies_killed)} enemy kills, ${fmt(T.deaths)} deaths, ${T.pvp_kills} PvP kills</b> over ${fmt(Math.round(T.player_minutes))} player-minutes: ${(T.enemies_killed/T.player_minutes).toFixed(1)} kills and ${(T.deaths/T.player_minutes).toFixed(2)} deaths per player-minute. DYNAMO is the deadliest stage (${(L.DYNAMO.deaths/L.DYNAMO.player_minutes).toFixed(2)}/min); SINGULARITY the quietest (${(L.SINGULARITY.deaths/L.SINGULARITY.player_minutes).toFixed(2)}/min, ${(L.SINGULARITY.enemies_killed/L.SINGULARITY.player_minutes).toFixed(1)} kills/min).`],
- ['Peak day',`<b>${peakKey.slice(8)} October: ${D.days[peakKey].starts} starts, ${hm(D.days[peakKey].active_minutes)} active, ${D.days[peakKey].status.Abandoned||0} exits.</b> 16 October was the slowest (${D.days['2026-10-16'].starts} starts) and the leakiest (${D.days['2026-10-16'].status.Abandoned} exits, ${pct(D.days['2026-10-16'].status.Abandoned,D.days['2026-10-16'].starts)}%).`],
+ ['Side outcomes',`Light won <b>${W.Light} of ${decided} decided matches (${pct(W.Light,decided)}%)</b>; ${W.Tie} ties sit outside that denominator. The share is similar in both modes: ${pct(m1.Light,m1.Light+m1.Dark)}% in 1v1 (${m1.Light}/${m1.Light+m1.Dark}) and ${pct(m2.Light,m2.Light+m2.Dark)}% in 2v2 (${m2.Light}/${m2.Light+m2.Dark}). A side-outcome signal, not a cause: player identity, skill and seat history are not in the export. Cheapest next step is a controlled side-swap test.`],
+ ['Inactivity exits concentrate on HIGGS',`HIGGS (STAGE_002) recorded <b>${higgs.status.Abandoned} inactivity exits in ${higgs.starts} starts (${pct(higgs.status.Abandoned,higgs.starts)}%)</b>, ${higgs.status.Abandoned} of the window's ${S.status.Abandoned}. Median active time before exit on HIGGS: ${mss(medHig)} (all stages: ${mss(medAct)}). EMERGENCE has the same rate on a smaller base (${L.EMERGENCE.status.Abandoned}/${L.EMERGENCE.starts}). Inactivity is the recorded end reason, not a cause; it does not exclude a disconnect, and the export cannot separate comprehension, input or hardware. Review these ${higgs.status.Abandoned} match records to establish it.`],
+ ['LATTICE is the default',`<b>${lat.starts} starts (${pct(lat.starts,S.starts)}%)</b>, zero exits, Light ${pct(lat.completed_winners.Light,lat.status.Completed)}% of its completed matches. Consistent with first position in the level-select carousel. Read every stage-share figure against that selection bias; stage bases run from ${Math.min(...Object.values(L).map(v=>v.starts))} to ${lat.starts} starts.`],
+ ['NOVA runs long',`The only material deviation from the 3:00 baseline: completed mean <b>${mss(nova.completed_mean_seconds)}</b>; every other stage sits within milliseconds of 180.0 s. The export lists ${D.bonus_matches} bonus-play matches and NOVA has ${nova.starts} starts; the file does not link the two, so treat the match as plausible, not confirmed.`],
+ ['Throughput',`<b>${fmt(T.enemies_killed)} enemy kills, ${fmt(T.deaths)} deaths, ${T.pvp_kills} PvP kills</b> over ${fmt(Math.round(T.player_minutes))} player-minutes: ${(T.enemies_killed/T.player_minutes).toFixed(1)} kills and ${(T.deaths/T.player_minutes).toFixed(2)} deaths per player-minute. Highest death rate in the window: DYNAMO, ${(L.DYNAMO.deaths/L.DYNAMO.player_minutes).toFixed(2)}/min on ${L.DYNAMO.starts} starts. Lowest: SINGULARITY, ${(L.SINGULARITY.deaths/L.SINGULARITY.player_minutes).toFixed(2)}/min and ${(L.SINGULARITY.enemies_killed/L.SINGULARITY.player_minutes).toFixed(1)} kills/min on ${L.SINGULARITY.starts}. Rates normalize exposure, not skill, mode mix or stage mechanics.`],
+ ['Peak day',`<b>${peakKey.slice(8)} October: ${D.days[peakKey].starts} starts, ${hm(D.days[peakKey].active_minutes)} active, ${D.days[peakKey].status.Abandoned||0} exits.</b> 16 October had the fewest starts (${D.days['2026-10-16'].starts}) and the highest exit rate (${D.days['2026-10-16'].status.Abandoned} of ${D.days['2026-10-16'].starts}, ${pct(D.days['2026-10-16'].status.Abandoned,D.days['2026-10-16'].starts)}%).`],
 ];
 $('#reads').innerHTML=reads.map((r,i)=>`<li class="rv-el"><i>R${String(i+1).padStart(2,'0')}</i><div><span class="h">${r[0]}</span>${r[1]}</div></li>`).join('');
 const builds=Object.entries(D.builds),rs=Object.keys(D.rulesets)[0],fp=Object.keys(D.settings)[0];
 $('#defs').innerHTML=`<div class="k" style="margin-bottom:14px">Definitions</div><dl>
 <dt>Start</dt><dd>Recorded when regulation begins. Includes completed and abandoned matches.</dd>
 <dt>Completed</dt><dd>Final scoring resolved. <b>Completion = completed ÷ started.</b></dd>
-<dt>Exit</dt><dd>All active players inactive past the hold timer; the cabinet returned to Attract. Not a crash, disconnect or reset.</dd>
+<dt>Exit</dt><dd>All active players inactive past the hold timer; the cabinet returned to Attract. The recorded reason is inactivity; it does not exclude a disconnect and does not establish cause.</dd>
 <dt>Outcome</dt><dd>Light, Dark or Tie as a share of completed matches. "Decided" excludes ties.</dd>
-<dt>Active time</dt><dd>Regulation plus bonus play while the match clock ran. Elapsed adds non-scoring transitions. Completed mean uses completed matches only.</dd>
-<dt>Player slot</dt><dd>One seat in one match: 1v1 × 2 + 2v2 × 4 = ${T.player_slots}. Not unique players. Player-minutes sum the per-seat clock.</dd>
-<dt>Field</dt><dd>The hero lattice is a visualization of the stage table, not a replay: each well's depth is that stage's player-minutes, line brightness is local strain. Positions follow the level-select ring order.</dd>
-</dl><hr><div class="k" style="margin-bottom:14px">Not in this export</div><dl><dt>Missing</dt><dd>Unique players, per-match scores, a complete match log, hourly distribution, cause of the 7 selected records outside the window. Per-day session counts (2/1/2/1) do not sum to the summary's ${S.sessions}; the session boundary rule is not stated.</dd></dl>`;
-$('#prov').innerHTML=`<span>Source <b>MASSIVEmatch-snapshot-20261015-18.json</b></span><span>Records <b>${D.quality.selected_records_all_folders} selected · ${S.starts} in window</b></span><span>Read issues <b>${D.quality.read_issues.length}</b></span><span>Dev / non-primary <b>${D.quality.development_in_window} / ${D.quality.nonprimary_selected}</b></span><span>Builds <b>${builds.map(b=>`${b[0].slice(0,8)} (${b[1]})`).join(' · ')}</b></span><span>Ruleset <b>${rs} · standard</b></span><span>Settings <b>${fp.slice(0,10)}…</b></span><span>Duration <b>180.0 s × ${D.durations['180.0']}</b></span><span>Captures <b>MS-022 attract · level-select icons · stage captures MS-011…032 · MOMI model figures</b></span><a href="assets/MASSIVEmatch-snapshot-20261015-18.json" download>Download snapshot ↓</a>`;
+<dt>Active time</dt><dd>Regulation plus bonus play while the match clock ran. Elapsed adds non-scoring transitions; active ÷ elapsed is a within-match clock ratio, not uptime. Completed mean uses completed matches only.</dd>
+<dt>Player slot</dt><dd>One seat in one match: 1v1 × 2 + 2v2 × 4 = ${T.player_slots}. Not unique players.</dd>
+<dt>Player-minutes</dt><dd>Active match minutes × seats (2 × 1v1 + 4 × 2v2 = ${fmt(Math.round(T.player_minutes))}). Exposure, not continuous input or engagement.</dd>
+<dt>Activity span</dt><dd>Per-day first/last are the earliest and latest recorded timestamps, which can be match ends. Not cabinet hours or utilization.</dd>
+</dl><hr><div class="k" style="margin-bottom:14px">Not in this export</div><dl><dt>Missing</dt><dd>Unique players, per-match scores, a complete match log, hourly distribution. 235 records were selected and 228 counted as starts in the window; the export does not say what the other 7 are. Per-day session counts (2/1/2/1) do not sum to the summary's ${S.sessions}; the session boundary rule is not stated.</dd></dl>`;
+$('#prov').innerHTML=`<span>Source <b>MASSIVEmatch-snapshot-20261015-18.json</b></span><span>Records <b>${D.quality.selected_records_all_folders} selected · ${S.starts} in window</b></span><span>Read issues <b>${D.quality.read_issues.length}</b></span><span>Dev / non-primary <b>${D.quality.development_in_window} / ${D.quality.nonprimary_selected}</b></span><span>Builds <b>${builds.map(b=>`${b[0].slice(0,8)} (${b[1]})`).join(' · ')}</b></span><span>Ruleset <b>${rs} · standard</b></span><span>Settings <b>${fp.slice(0,10)}…</b></span><span>Duration <b>180.0 s × ${D.durations['180.0']}</b></span><span>Captures <b>LEVEL_SELECTION native capture · MS-022 attract · stage captures MS-011…032 · MOMI model figures</b></span><a href="assets-r3/MASSIVEmatch-snapshot-20261015-18.json" download>Download match data (JSON) ↓</a>`;
 
 /* reveal + draw */
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px',threshold:.1});
@@ -628,11 +690,16 @@ const secs=[...document.querySelectorAll('section[id]')];
 const nio=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){document.querySelectorAll('.mast nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+(e.target.id==='top'?'top':e.target.id)))}})},{rootMargin:'-30% 0px -60% 0px'});
 secs.forEach(s=>nio.observe(s));
 document.querySelector('.hero').id='top';
-const vio=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(v.closest('.card'))return;if(e.isIntersecting)v.play().catch(()=>{});else v.pause()}),{threshold:.1});
-document.querySelectorAll('video[autoplay]').forEach(v=>vio.observe(v));
-if(reduce)document.querySelectorAll('video').forEach(v=>{v.removeAttribute('autoplay');v.pause()});
+/* motion preference: one control for every video, the field and transitions; defaults from prefers-reduced-motion, remembered per viewer */
+const mbtn=$('#motion');
+function applyMotion(){document.documentElement.dataset.motion=motion?'on':'off';mbtn.textContent=motion?'Motion on':'Motion off';mbtn.setAttribute('aria-pressed',String(motion));document.querySelectorAll('video').forEach(v=>{if(!motion)v.pause();else if(v._vis&&!v.dataset.hover)v.play().catch(()=>{})})}
+mbtn.addEventListener('click',()=>{motion=!motion;try{localStorage.setItem('massive-motion',motion?'on':'off')}catch(e){}applyMotion()});
+const vio=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;v._vis=e.isIntersecting;if(e.isIntersecting&&motion&&!v.dataset.hover)v.play().catch(()=>{});else v.pause()}),{threshold:.1});
+function watch(){document.querySelectorAll('video').forEach(v=>{if(!v._o){v._o=1;v.removeAttribute('autoplay');vio.observe(v)}})}
+new MutationObserver(watch).observe(document.body,{childList:true,subtree:true});
+watch();applyMotion();
 })();
 </script>
-<nav class="stats-version-nav" aria-label="Design version"><a href="index.html" title="V01 — Claude · Table report" aria-label="V01 — Claude · Table report">V01</a><a href="v02.html" title="V02 — Claude · Field and instruments" aria-label="V02 — Claude · Field and instruments" aria-current="page">V02</a><a href="v03/index.html" title="V03 — Codex · Native animation report" aria-label="V03 — Codex · Native animation report">V03</a></nav>
+<nav class="stats-version-nav" aria-label="Design version"><a href="index.html" title="V01 — Claude · Match telemetry" aria-label="V01 — Claude · Match telemetry">V01</a><a href="v02.html" title="V02 — Claude · Stage report" aria-label="V02 — Claude · Stage report" aria-current="page">V02</a><a href="v03/index.html" title="V03 — Codex · Native animation report" aria-label="V03 — Codex · Native animation report">V03</a></nav>
 </body>
 </html>

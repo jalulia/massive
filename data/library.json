@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "sourceCommit": "e1d459f058630abe05569a330d605831f60f785d",
+  "sourceCommit": "a341ecfdadac6e4c20609a530963919e53980bc2",
   "sections": [
     [
       "presentations",
@@ -131,10 +131,10 @@
           "approval": "unapproved"
         },
         {
-          "title": "V02 / Telemetry field",
+          "title": "V02 / Stage report",
           "url": "Stats/v02.html",
           "image": "assets/library-previews/stats-v02.png",
-          "detail": "Claude · Embedded JSON · Stage field",
+          "detail": "Claude · Embedded JSON · Native stage carousel",
           "date": "2026-10-28",
           "version": "V02",
           "links": [
@@ -366,8 +366,8 @@
       "url": "README.md",
       "kind": "Notes",
       "location": "Repository",
-      "date": "2026-10-16",
-      "version": "8324c86",
+      "date": "2026-10-28",
+      "version": "a341ecf",
       "image": "",
       "title": "README"
     },
@@ -402,6 +402,716 @@
       "version": "e1d459f",
       "image": "",
       "title": "SOURCE"
+    },
+    {
+      "path": "Stats/assets-r3/MASSIVEmatch-snapshot-20261015-18.json",
+      "url": "Stats/assets-r3/MASSIVEmatch-snapshot-20261015-18.json",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "",
+      "title": "MASSIVEmatch snapshot 20261015 18"
+    },
+    {
+      "path": "Stats/assets-r3/fonts/InputMono-Bold.woff",
+      "url": "Stats/assets-r3/fonts/InputMono-Bold.woff",
+      "kind": "Fonts",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "",
+      "title": "InputMono Bold"
+    },
+    {
+      "path": "Stats/assets-r3/fonts/InputMono-Light.woff",
+      "url": "Stats/assets-r3/fonts/InputMono-Light.woff",
+      "kind": "Fonts",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "",
+      "title": "InputMono Light"
+    },
+    {
+      "path": "Stats/assets-r3/fonts/InputMono-Medium.woff",
+      "url": "Stats/assets-r3/fonts/InputMono-Medium.woff",
+      "kind": "Fonts",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "",
+      "title": "InputMono Medium"
+    },
+    {
+      "path": "Stats/assets-r3/fonts/InputMono-Regular.woff",
+      "url": "Stats/assets-r3/fonts/InputMono-Regular.woff",
+      "kind": "Fonts",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "",
+      "title": "InputMono Regular"
+    },
+    {
+      "path": "Stats/assets-r3/fonts/NeuzeitSHeavy.woff",
+      "url": "Stats/assets-r3/fonts/NeuzeitSHeavy.woff",
+      "kind": "Fonts",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "",
+      "title": "NeuzeitSHeavy"
+    },
+    {
+      "path": "Stats/assets-r3/massive-data.js",
+      "url": "Stats/assets-r3/massive-data.js",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "",
+      "title": "massive data"
+    },
+    {
+      "path": "Stats/assets-r3/media/C08_COSMOS_MODEL.jpg",
+      "url": "Stats/assets-r3/media/C08_COSMOS_MODEL.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/C08_COSMOS_MODEL.jpg",
+      "title": "C08 COSMOS MODEL"
+    },
+    {
+      "path": "Stats/assets-r3/media/C12_PLANE_DIAGRAM.jpg",
+      "url": "Stats/assets-r3/media/C12_PLANE_DIAGRAM.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/C12_PLANE_DIAGRAM.jpg",
+      "title": "C12 PLANE DIAGRAM"
+    },
+    {
+      "path": "Stats/assets-r3/media/C12_PLANE_DIAGRAM.mp4",
+      "url": "Stats/assets-r3/media/C12_PLANE_DIAGRAM.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/C12_PLANE_DIAGRAM.jpg",
+      "title": "C12 PLANE DIAGRAM"
+    },
+    {
+      "path": "Stats/assets-r3/media/C13_NOVA_DIAGRAM.jpg",
+      "url": "Stats/assets-r3/media/C13_NOVA_DIAGRAM.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/C13_NOVA_DIAGRAM.jpg",
+      "title": "C13 NOVA DIAGRAM"
+    },
+    {
+      "path": "Stats/assets-r3/media/C13_NOVA_DIAGRAM.mp4",
+      "url": "Stats/assets-r3/media/C13_NOVA_DIAGRAM.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/C13_NOVA_DIAGRAM.jpg",
+      "title": "C13 NOVA DIAGRAM"
+    },
+    {
+      "path": "Stats/assets-r3/media/C16_ORBITAL_CLEAN.jpg",
+      "url": "Stats/assets-r3/media/C16_ORBITAL_CLEAN.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/C16_ORBITAL_CLEAN.jpg",
+      "title": "C16 ORBITAL CLEAN"
+    },
+    {
+      "path": "Stats/assets-r3/media/C16_ORBITAL_CLEAN.mp4",
+      "url": "Stats/assets-r3/media/C16_ORBITAL_CLEAN.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/C16_ORBITAL_CLEAN.jpg",
+      "title": "C16 ORBITAL CLEAN"
+    },
+    {
+      "path": "Stats/assets-r3/media/C18_COSMOS_GAMEPLAY_HUD.jpg",
+      "url": "Stats/assets-r3/media/C18_COSMOS_GAMEPLAY_HUD.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/C18_COSMOS_GAMEPLAY_HUD.jpg",
+      "title": "C18 COSMOS GAMEPLAY HUD"
+    },
+    {
+      "path": "Stats/assets-r3/media/GDD_RESONANCE.jpg",
+      "url": "Stats/assets-r3/media/GDD_RESONANCE.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/GDD_RESONANCE.jpg",
+      "title": "GDD RESONANCE"
+    },
+    {
+      "path": "Stats/assets-r3/media/GDD_RESONANCE.mp4",
+      "url": "Stats/assets-r3/media/GDD_RESONANCE.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/GDD_RESONANCE.jpg",
+      "title": "GDD RESONANCE"
+    },
+    {
+      "path": "Stats/assets-r3/media/GDD_SINGULARITY.jpg",
+      "url": "Stats/assets-r3/media/GDD_SINGULARITY.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/GDD_SINGULARITY.jpg",
+      "title": "GDD SINGULARITY"
+    },
+    {
+      "path": "Stats/assets-r3/media/GDD_SINGULARITY.mp4",
+      "url": "Stats/assets-r3/media/GDD_SINGULARITY.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/GDD_SINGULARITY.jpg",
+      "title": "GDD SINGULARITY"
+    },
+    {
+      "path": "Stats/assets-r3/media/attract-orb.jpg",
+      "url": "Stats/assets-r3/media/attract-orb.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/attract-orb.jpg",
+      "title": "attract orb"
+    },
+    {
+      "path": "Stats/assets-r3/media/attract-orb.mp4",
+      "url": "Stats/assets-r3/media/attract-orb.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/attract-orb.jpg",
+      "title": "attract orb"
+    },
+    {
+      "path": "Stats/assets-r3/media/charged-boundary.jpg",
+      "url": "Stats/assets-r3/media/charged-boundary.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/charged-boundary.jpg",
+      "title": "charged boundary"
+    },
+    {
+      "path": "Stats/assets-r3/media/charged-boundary.mp4",
+      "url": "Stats/assets-r3/media/charged-boundary.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/charged-boundary.jpg",
+      "title": "charged boundary"
+    },
+    {
+      "path": "Stats/assets-r3/media/dynamo-field-loop.jpg",
+      "url": "Stats/assets-r3/media/dynamo-field-loop.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/dynamo-field-loop.jpg",
+      "title": "dynamo field loop"
+    },
+    {
+      "path": "Stats/assets-r3/media/dynamo-field-loop.mp4",
+      "url": "Stats/assets-r3/media/dynamo-field-loop.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/dynamo-field-loop.jpg",
+      "title": "dynamo field loop"
+    },
+    {
+      "path": "Stats/assets-r3/media/dynamo-fieldlines.jpg",
+      "url": "Stats/assets-r3/media/dynamo-fieldlines.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/dynamo-fieldlines.jpg",
+      "title": "dynamo fieldlines"
+    },
+    {
+      "path": "Stats/assets-r3/media/dynamo-fieldlines.mp4",
+      "url": "Stats/assets-r3/media/dynamo-fieldlines.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/dynamo-fieldlines.jpg",
+      "title": "dynamo fieldlines"
+    },
+    {
+      "path": "Stats/assets-r3/media/dynamo-goal.jpg",
+      "url": "Stats/assets-r3/media/dynamo-goal.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/dynamo-goal.jpg",
+      "title": "dynamo goal"
+    },
+    {
+      "path": "Stats/assets-r3/media/dynamo-goal.mp4",
+      "url": "Stats/assets-r3/media/dynamo-goal.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/dynamo-goal.jpg",
+      "title": "dynamo goal"
+    },
+    {
+      "path": "Stats/assets-r3/media/dynamo-max-amp.jpg",
+      "url": "Stats/assets-r3/media/dynamo-max-amp.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/dynamo-max-amp.jpg",
+      "title": "dynamo max amp"
+    },
+    {
+      "path": "Stats/assets-r3/media/dynamo-max-amp.mp4",
+      "url": "Stats/assets-r3/media/dynamo-max-amp.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/dynamo-max-amp.jpg",
+      "title": "dynamo max amp"
+    },
+    {
+      "path": "Stats/assets-r3/media/goal-wave.jpg",
+      "url": "Stats/assets-r3/media/goal-wave.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/goal-wave.jpg",
+      "title": "goal wave"
+    },
+    {
+      "path": "Stats/assets-r3/media/goal-wave.mp4",
+      "url": "Stats/assets-r3/media/goal-wave.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/goal-wave.jpg",
+      "title": "goal wave"
+    },
+    {
+      "path": "Stats/assets-r3/media/higgs-map.jpg",
+      "url": "Stats/assets-r3/media/higgs-map.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/higgs-map.jpg",
+      "title": "higgs map"
+    },
+    {
+      "path": "Stats/assets-r3/media/higgs-map.mp4",
+      "url": "Stats/assets-r3/media/higgs-map.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/higgs-map.jpg",
+      "title": "higgs map"
+    },
+    {
+      "path": "Stats/assets-r3/media/higgs-play.jpg",
+      "url": "Stats/assets-r3/media/higgs-play.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/higgs-play.jpg",
+      "title": "higgs play"
+    },
+    {
+      "path": "Stats/assets-r3/media/higgs-play.mp4",
+      "url": "Stats/assets-r3/media/higgs-play.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/higgs-play.jpg",
+      "title": "higgs play"
+    },
+    {
+      "path": "Stats/assets-r3/media/level-select.jpg",
+      "url": "Stats/assets-r3/media/level-select.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/level-select.jpg",
+      "title": "level select"
+    },
+    {
+      "path": "Stats/assets-r3/media/level-select.mp4",
+      "url": "Stats/assets-r3/media/level-select.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/level-select.jpg",
+      "title": "level select"
+    },
+    {
+      "path": "Stats/assets-r3/media/nova-map.jpg",
+      "url": "Stats/assets-r3/media/nova-map.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/nova-map.jpg",
+      "title": "nova map"
+    },
+    {
+      "path": "Stats/assets-r3/media/nova-map.mp4",
+      "url": "Stats/assets-r3/media/nova-map.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/nova-map.jpg",
+      "title": "nova map"
+    },
+    {
+      "path": "Stats/assets-r3/media/nova-play.jpg",
+      "url": "Stats/assets-r3/media/nova-play.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/nova-play.jpg",
+      "title": "nova play"
+    },
+    {
+      "path": "Stats/assets-r3/media/nova-play.mp4",
+      "url": "Stats/assets-r3/media/nova-play.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/nova-play.jpg",
+      "title": "nova play"
+    },
+    {
+      "path": "Stats/assets-r3/media/orbital-cloud.jpg",
+      "url": "Stats/assets-r3/media/orbital-cloud.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/orbital-cloud.jpg",
+      "title": "orbital cloud"
+    },
+    {
+      "path": "Stats/assets-r3/media/orbital-cloud.mp4",
+      "url": "Stats/assets-r3/media/orbital-cloud.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/orbital-cloud.jpg",
+      "title": "orbital cloud"
+    },
+    {
+      "path": "Stats/assets-r3/media/select-stage.jpg",
+      "url": "Stats/assets-r3/media/select-stage.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/select-stage.jpg",
+      "title": "select stage"
+    },
+    {
+      "path": "Stats/assets-r3/media/select-stage.mp4",
+      "url": "Stats/assets-r3/media/select-stage.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/select-stage.jpg",
+      "title": "select stage"
+    },
+    {
+      "path": "Stats/assets-r3/media/singularity-map.jpg",
+      "url": "Stats/assets-r3/media/singularity-map.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/singularity-map.jpg",
+      "title": "singularity map"
+    },
+    {
+      "path": "Stats/assets-r3/media/singularity-map.mp4",
+      "url": "Stats/assets-r3/media/singularity-map.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/singularity-map.jpg",
+      "title": "singularity map"
+    },
+    {
+      "path": "Stats/assets-r3/media/singularity-play.jpg",
+      "url": "Stats/assets-r3/media/singularity-play.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/singularity-play.jpg",
+      "title": "singularity play"
+    },
+    {
+      "path": "Stats/assets-r3/media/singularity-play.mp4",
+      "url": "Stats/assets-r3/media/singularity-play.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/singularity-play.jpg",
+      "title": "singularity play"
+    },
+    {
+      "path": "Stats/assets-r3/media/worlds-in-play.jpg",
+      "url": "Stats/assets-r3/media/worlds-in-play.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/worlds-in-play.jpg",
+      "title": "worlds in play"
+    },
+    {
+      "path": "Stats/assets-r3/media/worlds-in-play.mp4",
+      "url": "Stats/assets-r3/media/worlds-in-play.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/media/worlds-in-play.jpg",
+      "title": "worlds in play"
+    },
+    {
+      "path": "Stats/assets-r3/stages/cosmos.jpg",
+      "url": "Stats/assets-r3/stages/cosmos.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/cosmos.jpg",
+      "title": "cosmos"
+    },
+    {
+      "path": "Stats/assets-r3/stages/cosmos.mp4",
+      "url": "Stats/assets-r3/stages/cosmos.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/cosmos.jpg",
+      "title": "cosmos"
+    },
+    {
+      "path": "Stats/assets-r3/stages/dynamo.jpg",
+      "url": "Stats/assets-r3/stages/dynamo.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/dynamo.jpg",
+      "title": "dynamo"
+    },
+    {
+      "path": "Stats/assets-r3/stages/dynamo.mp4",
+      "url": "Stats/assets-r3/stages/dynamo.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/dynamo.jpg",
+      "title": "dynamo"
+    },
+    {
+      "path": "Stats/assets-r3/stages/emergence.jpg",
+      "url": "Stats/assets-r3/stages/emergence.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/emergence.jpg",
+      "title": "emergence"
+    },
+    {
+      "path": "Stats/assets-r3/stages/emergence.mp4",
+      "url": "Stats/assets-r3/stages/emergence.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/emergence.jpg",
+      "title": "emergence"
+    },
+    {
+      "path": "Stats/assets-r3/stages/higgs.jpg",
+      "url": "Stats/assets-r3/stages/higgs.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/higgs.jpg",
+      "title": "higgs"
+    },
+    {
+      "path": "Stats/assets-r3/stages/higgs.mp4",
+      "url": "Stats/assets-r3/stages/higgs.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/higgs.jpg",
+      "title": "higgs"
+    },
+    {
+      "path": "Stats/assets-r3/stages/lattice.jpg",
+      "url": "Stats/assets-r3/stages/lattice.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/lattice.jpg",
+      "title": "lattice"
+    },
+    {
+      "path": "Stats/assets-r3/stages/lattice.mp4",
+      "url": "Stats/assets-r3/stages/lattice.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/lattice.jpg",
+      "title": "lattice"
+    },
+    {
+      "path": "Stats/assets-r3/stages/nova.jpg",
+      "url": "Stats/assets-r3/stages/nova.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/nova.jpg",
+      "title": "nova"
+    },
+    {
+      "path": "Stats/assets-r3/stages/nova.mp4",
+      "url": "Stats/assets-r3/stages/nova.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/nova.jpg",
+      "title": "nova"
+    },
+    {
+      "path": "Stats/assets-r3/stages/orbital.jpg",
+      "url": "Stats/assets-r3/stages/orbital.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/orbital.jpg",
+      "title": "orbital"
+    },
+    {
+      "path": "Stats/assets-r3/stages/orbital.mp4",
+      "url": "Stats/assets-r3/stages/orbital.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/orbital.jpg",
+      "title": "orbital"
+    },
+    {
+      "path": "Stats/assets-r3/stages/pulsar.jpg",
+      "url": "Stats/assets-r3/stages/pulsar.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/pulsar.jpg",
+      "title": "pulsar"
+    },
+    {
+      "path": "Stats/assets-r3/stages/pulsar.mp4",
+      "url": "Stats/assets-r3/stages/pulsar.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/pulsar.jpg",
+      "title": "pulsar"
+    },
+    {
+      "path": "Stats/assets-r3/stages/singularity.jpg",
+      "url": "Stats/assets-r3/stages/singularity.jpg",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/singularity.jpg",
+      "title": "singularity"
+    },
+    {
+      "path": "Stats/assets-r3/stages/singularity.mp4",
+      "url": "Stats/assets-r3/stages/singularity.mp4",
+      "kind": "Videos",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "Stats/assets-r3/stages/singularity.jpg",
+      "title": "singularity"
     },
     {
       "path": "Stats/assets/MASSIVEmatch-snapshot-20261015-18.json",
@@ -500,7 +1210,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/C12_PLANE_DIAGRAM.jpg",
+      "image": "Stats/assets-r3/media/C12_PLANE_DIAGRAM.jpg",
       "title": "C12 PLANE DIAGRAM"
     },
     {
@@ -520,7 +1230,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/C13_NOVA_DIAGRAM.jpg",
+      "image": "Stats/assets-r3/media/C13_NOVA_DIAGRAM.jpg",
       "title": "C13 NOVA DIAGRAM"
     },
     {
@@ -540,7 +1250,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/C16_ORBITAL_CLEAN.jpg",
+      "image": "Stats/assets-r3/media/C16_ORBITAL_CLEAN.jpg",
       "title": "C16 ORBITAL CLEAN"
     },
     {
@@ -570,7 +1280,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/GDD_RESONANCE.jpg",
+      "image": "Stats/assets-r3/media/GDD_RESONANCE.jpg",
       "title": "GDD RESONANCE"
     },
     {
@@ -590,7 +1300,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/GDD_SINGULARITY.jpg",
+      "image": "Stats/assets-r3/media/GDD_SINGULARITY.jpg",
       "title": "GDD SINGULARITY"
     },
     {
@@ -610,7 +1320,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/attract-orb.jpg",
+      "image": "Stats/assets-r3/media/attract-orb.jpg",
       "title": "attract orb"
     },
     {
@@ -630,7 +1340,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/charged-boundary.jpg",
+      "image": "Stats/assets-r3/media/charged-boundary.jpg",
       "title": "charged boundary"
     },
     {
@@ -650,7 +1360,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/dynamo-field-loop.jpg",
+      "image": "Stats/assets-r3/media/dynamo-field-loop.jpg",
       "title": "dynamo field loop"
     },
     {
@@ -670,7 +1380,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/dynamo-fieldlines.jpg",
+      "image": "Stats/assets-r3/media/dynamo-fieldlines.jpg",
       "title": "dynamo fieldlines"
     },
     {
@@ -690,7 +1400,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/dynamo-goal.jpg",
+      "image": "Stats/assets-r3/media/dynamo-goal.jpg",
       "title": "dynamo goal"
     },
     {
@@ -710,7 +1420,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/dynamo-max-amp.jpg",
+      "image": "Stats/assets-r3/media/dynamo-max-amp.jpg",
       "title": "dynamo max amp"
     },
     {
@@ -730,7 +1440,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/goal-wave.jpg",
+      "image": "Stats/assets-r3/media/goal-wave.jpg",
       "title": "goal wave"
     },
     {
@@ -750,7 +1460,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/higgs-map.jpg",
+      "image": "Stats/assets-r3/media/higgs-map.jpg",
       "title": "higgs map"
     },
     {
@@ -770,7 +1480,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/higgs-play.jpg",
+      "image": "Stats/assets-r3/media/higgs-play.jpg",
       "title": "higgs play"
     },
     {
@@ -790,7 +1500,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/nova-map.jpg",
+      "image": "Stats/assets-r3/media/nova-map.jpg",
       "title": "nova map"
     },
     {
@@ -810,7 +1520,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/nova-play.jpg",
+      "image": "Stats/assets-r3/media/nova-play.jpg",
       "title": "nova play"
     },
     {
@@ -830,7 +1540,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/orbital-cloud.jpg",
+      "image": "Stats/assets-r3/media/orbital-cloud.jpg",
       "title": "orbital cloud"
     },
     {
@@ -850,7 +1560,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/select-stage.jpg",
+      "image": "Stats/assets-r3/media/select-stage.jpg",
       "title": "select stage"
     },
     {
@@ -870,7 +1580,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/singularity-map.jpg",
+      "image": "Stats/assets-r3/media/singularity-map.jpg",
       "title": "singularity map"
     },
     {
@@ -890,7 +1600,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/singularity-play.jpg",
+      "image": "Stats/assets-r3/media/singularity-play.jpg",
       "title": "singularity play"
     },
     {
@@ -910,7 +1620,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/media/worlds-in-play.jpg",
+      "image": "Stats/assets-r3/media/worlds-in-play.jpg",
       "title": "worlds in play"
     },
     {
@@ -930,7 +1640,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/stages/cosmos.jpg",
+      "image": "Stats/assets-r3/stages/cosmos.jpg",
       "title": "cosmos"
     },
     {
@@ -950,7 +1660,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/stages/dynamo.jpg",
+      "image": "Stats/assets-r3/stages/dynamo.jpg",
       "title": "dynamo"
     },
     {
@@ -970,7 +1680,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/stages/emergence.jpg",
+      "image": "Stats/assets-r3/stages/emergence.jpg",
       "title": "emergence"
     },
     {
@@ -990,7 +1700,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/stages/higgs.jpg",
+      "image": "Stats/assets-r3/stages/higgs.jpg",
       "title": "higgs"
     },
     {
@@ -1010,7 +1720,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/stages/lattice.jpg",
+      "image": "Stats/assets-r3/stages/lattice.jpg",
       "title": "lattice"
     },
     {
@@ -1030,7 +1740,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/stages/nova.jpg",
+      "image": "Stats/assets-r3/stages/nova.jpg",
       "title": "nova"
     },
     {
@@ -1050,7 +1760,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/stages/orbital.jpg",
+      "image": "Stats/assets-r3/stages/orbital.jpg",
       "title": "orbital"
     },
     {
@@ -1070,7 +1780,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/stages/pulsar.jpg",
+      "image": "Stats/assets-r3/stages/pulsar.jpg",
       "title": "pulsar"
     },
     {
@@ -1090,7 +1800,7 @@
       "location": "Repository",
       "date": "2026-10-28",
       "version": "dc1cae8",
-      "image": "Stats/assets/stages/singularity.jpg",
+      "image": "Stats/assets-r3/stages/singularity.jpg",
       "title": "singularity"
     },
     {
@@ -1104,6 +1814,16 @@
       "title": "index",
       "status": "design-option",
       "approval": "unapproved"
+    },
+    {
+      "path": "Stats/media-delivery.json",
+      "url": "Stats/media-delivery.json",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "",
+      "title": "media delivery"
     },
     {
       "path": "Stats/v01-original.html",
@@ -1508,8 +2228,8 @@
       "url": "assets/library-previews/stats-v01.png",
       "kind": "Images",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-28",
+      "version": "a341ecf",
       "image": "assets/library-previews/stats-v01.png",
       "title": "stats v01"
     },
@@ -1518,8 +2238,8 @@
       "url": "assets/library-previews/stats-v02.png",
       "kind": "Images",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-28",
+      "version": "a341ecf",
       "image": "assets/library-previews/stats-v02.png",
       "title": "stats v02"
     },
@@ -1528,8 +2248,8 @@
       "url": "assets/library-previews/stats-v03.png",
       "kind": "Images",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-28",
+      "version": "a341ecf",
       "image": "assets/library-previews/stats-v03.png",
       "title": "stats v03"
     },
@@ -1538,8 +2258,8 @@
       "url": "assets/library.css",
       "kind": "Source",
       "location": "Repository",
-      "date": "2026-10-16",
-      "version": "8695deb",
+      "date": "2026-10-28",
+      "version": "a341ecf",
       "image": "",
       "title": "library"
     },
@@ -1548,8 +2268,8 @@
       "url": "assets/library.js",
       "kind": "Source",
       "location": "Repository",
-      "date": "2026-10-16",
-      "version": "8695deb",
+      "date": "2026-10-28",
+      "version": "a341ecf",
       "image": "",
       "title": "library"
     },
@@ -1608,8 +2328,8 @@
       "url": "data/library.json",
       "kind": "Source",
       "location": "Repository",
-      "date": "2026-10-16",
-      "version": "8695deb",
+      "date": "2026-10-28",
+      "version": "a341ecf",
       "image": "",
       "title": "library"
     },
@@ -1670,8 +2390,8 @@
       "url": "index.html",
       "kind": "Pages",
       "location": "Repository",
-      "date": "2026-10-16",
-      "version": "8695deb",
+      "date": "2026-10-28",
+      "version": "a341ecf",
       "image": "",
       "title": "index"
     },
@@ -3474,7 +4194,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "fd01958",
-      "image": "Stats/assets/media/C08_COSMOS_MODEL.jpg",
+      "image": "Stats/assets-r3/media/C08_COSMOS_MODEL.jpg",
       "title": "C08 COSMOS MODEL"
     },
     {
@@ -3514,7 +4234,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "fd01958",
-      "image": "Stats/assets/media/C12_PLANE_DIAGRAM.jpg",
+      "image": "Stats/assets-r3/media/C12_PLANE_DIAGRAM.jpg",
       "title": "C12 PLANE DIAGRAM"
     },
     {
@@ -3534,7 +4254,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "fd01958",
-      "image": "Stats/assets/media/C13_NOVA_DIAGRAM.jpg",
+      "image": "Stats/assets-r3/media/C13_NOVA_DIAGRAM.jpg",
       "title": "C13 NOVA DIAGRAM"
     },
     {
@@ -3574,7 +4294,7 @@
       "location": "Repository",
       "date": "2026-10-16",
       "version": "57e51e1",
-      "image": "Stats/assets/media/C16_ORBITAL_CLEAN.jpg",
+      "image": "Stats/assets-r3/media/C16_ORBITAL_CLEAN.jpg",
       "title": "C16 ORBITAL CLEAN"
     },
     {
@@ -3614,7 +4334,7 @@
       "location": "Repository",
       "date": "2026-10-16",
       "version": "0b93497",
-      "image": "Stats/assets/media/C18_COSMOS_GAMEPLAY_HUD.jpg",
+      "image": "Stats/assets-r3/media/C18_COSMOS_GAMEPLAY_HUD.jpg",
       "title": "C18 COSMOS GAMEPLAY HUD"
     },
     {
@@ -3634,7 +4354,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "fd01958",
-      "image": "Stats/assets/media/GDD_RESONANCE.jpg",
+      "image": "Stats/assets-r3/media/GDD_RESONANCE.jpg",
       "title": "GDD RESONANCE"
     },
     {
@@ -3654,7 +4374,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "fd01958",
-      "image": "Stats/assets/media/GDD_SINGULARITY.jpg",
+      "image": "Stats/assets-r3/media/GDD_SINGULARITY.jpg",
       "title": "GDD SINGULARITY"
     },
     {
@@ -4064,7 +4784,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "e2cb952",
-      "image": "Stats/assets/stages/dynamo.jpg",
+      "image": "Stats/assets-r3/stages/dynamo.jpg",
       "title": "dynamo"
     },
     {
@@ -4164,7 +4884,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "e2cb952",
-      "image": "Stats/assets/stages/orbital.jpg",
+      "image": "Stats/assets-r3/stages/orbital.jpg",
       "title": "orbital"
     },
     {
@@ -4224,7 +4944,7 @@
       "location": "Repository",
       "date": "2026-10-15",
       "version": "e2cb952",
-      "image": "Stats/assets/stages/singularity.jpg",
+      "image": "Stats/assets-r3/stages/singularity.jpg",
       "title": "singularity"
     },
     {
@@ -5464,8 +6184,8 @@
       "url": "tools/build-library.py",
       "kind": "Source",
       "location": "Repository",
-      "date": "2026-10-16",
-      "version": "8695deb",
+      "date": "2026-10-28",
+      "version": "a341ecf",
       "image": "",
       "title": "build library"
     },
@@ -5494,8 +6214,8 @@
       "url": "tools/verify-library.py",
       "kind": "Source",
       "location": "Repository",
-      "date": "2026-10-16",
-      "version": "8324c86",
+      "date": "2026-10-28",
+      "version": "a341ecf",
       "image": "",
       "title": "verify library"
     },

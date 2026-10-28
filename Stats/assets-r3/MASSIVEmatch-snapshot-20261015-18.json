@@ -1,0 +1,611 @@
+{
+  "window_start": "2026-10-15T00:00:00-04:00",
+  "window_end_exclusive": "2026-10-19T00:00:00-04:00",
+  "quality": {
+    "selected_records_all_folders": 235,
+    "read_issues": [],
+    "nonprimary_selected": 0,
+    "development_in_window": 0,
+    "production_today": 0
+  },
+  "summary": {
+    "starts": 228,
+    "status": {
+      "Completed": 211,
+      "Abandoned": 17
+    },
+    "active_minutes": 662.997301710368,
+    "elapsed_minutes": 664.545331019999,
+    "completed_mean_seconds": 180.87367441473714,
+    "modes": {
+      "1v1": 191,
+      "2v2": 37
+    },
+    "completed_winners": {
+      "Light": 137,
+      "Tie": 9,
+      "Dark": 65
+    },
+    "sessions": 4,
+    "first": "2026-10-15T10:05:08.276980-04:00",
+    "last": "2026-10-18T18:02:03.649065-04:00"
+  },
+  "days": {
+    "2026-10-15": {
+      "starts": 58,
+      "status": {
+        "Completed": 53,
+        "Abandoned": 5
+      },
+      "active_minutes": 168.39382160820585,
+      "elapsed_minutes": 168.85863629000002,
+      "completed_mean_seconds": 181.04370129382738,
+      "modes": {
+        "1v1": 49,
+        "2v2": 9
+      },
+      "completed_winners": {
+        "Light": 31,
+        "Dark": 17,
+        "Tie": 5
+      },
+      "sessions": 2,
+      "first": "2026-10-15T10:05:08.276980-04:00",
+      "last": "2026-10-15T21:32:11.182009-04:00"
+    },
+    "2026-10-16": {
+      "starts": 37,
+      "status": {
+        "Completed": 30,
+        "Abandoned": 7
+      },
+      "active_minutes": 103.49193737481122,
+      "elapsed_minutes": 103.80045510166661,
+      "completed_mean_seconds": 181.22505809216744,
+      "modes": {
+        "1v1": 34,
+        "2v2": 3
+      },
+      "completed_winners": {
+        "Tie": 4,
+        "Light": 20,
+        "Dark": 6
+      },
+      "sessions": 1,
+      "first": "2026-10-16T08:51:43.854039-04:00",
+      "last": "2026-10-16T19:20:44.776770-04:00"
+    },
+    "2026-10-17": {
+      "starts": 79,
+      "status": {
+        "Completed": 77,
+        "Abandoned": 2
+      },
+      "active_minutes": 234.53595343667538,
+      "elapsed_minutes": 235.1543835566664,
+      "completed_mean_seconds": 180.95755116194894,
+      "modes": {
+        "2v2": 13,
+        "1v1": 66
+      },
+      "completed_winners": {
+        "Light": 50,
+        "Dark": 27
+      },
+      "sessions": 2,
+      "first": "2026-10-17T10:25:43.729695-04:00",
+      "last": "2026-10-17T17:53:42.244341-04:00"
+    },
+    "2026-10-18": {
+      "starts": 54,
+      "status": {
+        "Completed": 51,
+        "Abandoned": 3
+      },
+      "active_minutes": 156.5755892906755,
+      "elapsed_minutes": 156.73185607166596,
+      "completed_mean_seconds": 180.36364609218808,
+      "modes": {
+        "2v2": 12,
+        "1v1": 42
+      },
+      "completed_winners": {
+        "Dark": 15,
+        "Light": 36
+      },
+      "sessions": 1,
+      "first": "2026-10-18T11:06:45.246475-04:00",
+      "last": "2026-10-18T18:02:03.649065-04:00"
+    }
+  },
+  "levels": {
+    "COSMOS": {
+      "starts": 20,
+      "status": {
+        "Completed": 20
+      },
+      "active_minutes": 59.99909148561582,
+      "elapsed_minutes": 60.00020136333291,
+      "completed_mean_seconds": 179.99727445684746,
+      "modes": {
+        "1v1": 15,
+        "2v2": 5
+      },
+      "completed_winners": {
+        "Dark": 7,
+        "Light": 13
+      },
+      "sessions": 3,
+      "first": "2026-10-15T12:27:33.060415-04:00",
+      "last": "2026-10-18T17:05:20.803899-04:00",
+      "deaths": 233,
+      "enemies_killed": 1600,
+      "pvp_kills": 25,
+      "scoring_settings": 1,
+      "player_minutes": 149.99792063468618
+    },
+    "DYNAMO": {
+      "starts": 9,
+      "status": {
+        "Completed": 9
+      },
+      "active_minutes": 27.000978491473113,
+      "elapsed_minutes": 27.001323139999872,
+      "completed_mean_seconds": 180.00652327648743,
+      "modes": {
+        "1v1": 8,
+        "2v2": 1
+      },
+      "completed_winners": {
+        "Light": 5,
+        "Tie": 2,
+        "Dark": 2
+      },
+      "sessions": 3,
+      "first": "2026-10-15T14:18:08.935912-04:00",
+      "last": "2026-10-18T17:55:56.116538-04:00",
+      "deaths": 170,
+      "enemies_killed": 663,
+      "pvp_kills": 9,
+      "scoring_settings": 1,
+      "player_minutes": 60.00231549626836
+    },
+    "EMERGENCE": {
+      "starts": 9,
+      "status": {
+        "Completed": 6,
+        "Abandoned": 3
+      },
+      "active_minutes": 24.325682339734552,
+      "elapsed_minutes": 24.325982571666586,
+      "completed_mean_seconds": 180.00383913218107,
+      "modes": {
+        "1v1": 9
+      },
+      "completed_winners": {
+        "Light": 2,
+        "Dark": 4
+      },
+      "sessions": 3,
+      "first": "2026-10-15T16:55:12.276071-04:00",
+      "last": "2026-10-18T14:51:24.622892-04:00",
+      "deaths": 52,
+      "enemies_killed": 749,
+      "pvp_kills": 3,
+      "scoring_settings": 1,
+      "player_minutes": 48.651364679469104
+    },
+    "HIGGS": {
+      "starts": 36,
+      "status": {
+        "Abandoned": 12,
+        "Completed": 24
+      },
+      "active_minutes": 88.42496494437415,
+      "elapsed_minutes": 88.42696364999924,
+      "completed_mean_seconds": 179.99835248931268,
+      "modes": {
+        "1v1": 30,
+        "2v2": 6
+      },
+      "completed_winners": {
+        "Dark": 9,
+        "Light": 15
+      },
+      "sessions": 3,
+      "first": "2026-10-15T15:42:21.802334-04:00",
+      "last": "2026-10-18T17:57:08.742860-04:00",
+      "deaths": 321,
+      "enemies_killed": 1966,
+      "pvp_kills": 22,
+      "scoring_settings": 1,
+      "player_minutes": 203.56821486867065
+    },
+    "LATTICE": {
+      "starts": 80,
+      "status": {
+        "Completed": 80
+      },
+      "active_minutes": 240.00055160135662,
+      "elapsed_minutes": 240.00307125000003,
+      "completed_mean_seconds": 180.0004137010175,
+      "modes": {
+        "1v1": 68,
+        "2v2": 12
+      },
+      "completed_winners": {
+        "Tie": 5,
+        "Dark": 18,
+        "Light": 57
+      },
+      "sessions": 4,
+      "first": "2026-10-15T10:05:08.276980-04:00",
+      "last": "2026-10-18T17:33:48.677559-04:00",
+      "deaths": 1011,
+      "enemies_killed": 6032,
+      "pvp_kills": 52,
+      "scoring_settings": 1,
+      "player_minutes": 552.0019788385794
+    },
+    "NOVA": {
+      "starts": 10,
+      "status": {
+        "Completed": 10
+      },
+      "active_minutes": 33.06253250295246,
+      "elapsed_minutes": 34.60084619999984,
+      "completed_mean_seconds": 198.37519501771476,
+      "modes": {
+        "1v1": 9,
+        "2v2": 1
+      },
+      "completed_winners": {
+        "Light": 7,
+        "Dark": 3
+      },
+      "sessions": 3,
+      "first": "2026-10-15T15:10:17.198989-04:00",
+      "last": "2026-10-18T15:11:45.077050-04:00",
+      "deaths": 88,
+      "enemies_killed": 836,
+      "pvp_kills": 6,
+      "scoring_settings": 1,
+      "player_minutes": 72.73852222269446
+    },
+    "ORBITAL": {
+      "starts": 16,
+      "status": {
+        "Completed": 16
+      },
+      "active_minutes": 48.001106509590244,
+      "elapsed_minutes": 48.00166550666693,
+      "completed_mean_seconds": 180.0041494109634,
+      "modes": {
+        "2v2": 3,
+        "1v1": 13
+      },
+      "completed_winners": {
+        "Light": 13,
+        "Dark": 3
+      },
+      "sessions": 3,
+      "first": "2026-10-15T14:24:38.121900-04:00",
+      "last": "2026-10-18T18:02:03.649065-04:00",
+      "deaths": 171,
+      "enemies_killed": 1319,
+      "pvp_kills": 7,
+      "scoring_settings": 1,
+      "player_minutes": 114.00201055177673
+    },
+    "PULSAR": {
+      "starts": 26,
+      "status": {
+        "Completed": 24,
+        "Abandoned": 2
+      },
+      "active_minutes": 76.17942392632807,
+      "elapsed_minutes": 76.18118485166687,
+      "completed_mean_seconds": 180.0136657073781,
+      "modes": {
+        "1v1": 23,
+        "2v2": 3
+      },
+      "completed_winners": {
+        "Dark": 10,
+        "Light": 14
+      },
+      "sessions": 3,
+      "first": "2026-10-15T14:06:37.509375-04:00",
+      "last": "2026-10-18T17:01:43.768983-04:00",
+      "deaths": 206,
+      "enemies_killed": 2341,
+      "pvp_kills": 24,
+      "scoring_settings": 1,
+      "player_minutes": 170.36111317271485
+    },
+    "SINGULARITY": {
+      "starts": 22,
+      "status": {
+        "Completed": 22
+      },
+      "active_minutes": 66.00296990894289,
+      "elapsed_minutes": 66.00409248666668,
+      "completed_mean_seconds": 180.0080997516624,
+      "modes": {
+        "1v1": 16,
+        "2v2": 6
+      },
+      "completed_winners": {
+        "Light": 11,
+        "Dark": 9,
+        "Tie": 2
+      },
+      "sessions": 3,
+      "first": "2026-10-15T15:02:52.103470-04:00",
+      "last": "2026-10-18T16:53:37.540012-04:00",
+      "deaths": 103,
+      "enemies_killed": 1276,
+      "pvp_kills": 8,
+      "scoring_settings": 1,
+      "player_minutes": 168.0070761184338
+    }
+  },
+  "totals": {
+    "deaths": 2355,
+    "enemies_killed": 16782,
+    "pvp_kills": 156,
+    "distance_meters": 168012.6006007101,
+    "player_slots": 530,
+    "player_minutes": 1539.3305165832933
+  },
+  "incomplete": [
+    {
+      "id": "1f5e3bb6e798411083d9b127464789a1",
+      "level": "PULSAR",
+      "mode": 0,
+      "start": "2026-10-15T16:48:18.348412-04:00",
+      "end": "2026-10-15T16:49:58.100799-04:00",
+      "active_seconds": 99.74761690050946,
+      "elapsed_seconds": 99.7514751000017,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "b446c8a94a0a4b0899b9a4434729cae1",
+      "level": "EMERGENCE",
+      "mode": 0,
+      "start": "2026-10-15T16:55:12.276071-04:00",
+      "end": "2026-10-15T16:57:41.019672-04:00",
+      "active_seconds": 148.73916515022574,
+      "elapsed_seconds": 148.7436755000017,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "62e2aa66936c4dc398af51d75596b28f",
+      "level": "HIGGS",
+      "mode": 1,
+      "start": "2026-10-15T17:50:05.379813-04:00",
+      "end": "2026-10-15T17:51:37.897490-04:00",
+      "active_seconds": 92.51401539824292,
+      "elapsed_seconds": 92.51712709999993,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "a5fc9f7339b4417ea1d0be8336ed3922",
+      "level": "EMERGENCE",
+      "mode": 0,
+      "start": "2026-10-15T18:04:49.605759-04:00",
+      "end": "2026-10-15T18:06:33.172990-04:00",
+      "active_seconds": 103.56488404194897,
+      "elapsed_seconds": 103.5670278999969,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "bd1a9ca1a5d24bf099a17af766fe1980",
+      "level": "HIGGS",
+      "mode": 0,
+      "start": "2026-10-15T19:18:39.809746-04:00",
+      "end": "2026-10-15T19:19:43.561237-04:00",
+      "active_seconds": 63.74744642857331,
+      "elapsed_seconds": 63.75197399999888,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "defe084cf0c14933acd8eda0e545d36e",
+      "level": "HIGGS",
+      "mode": 0,
+      "start": "2026-10-16T14:42:19.208731-04:00",
+      "end": "2026-10-16T14:44:28.822856-04:00",
+      "active_seconds": 129.61429736394348,
+      "elapsed_seconds": 129.6139994000041,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "e2e0b819dfbb456e88c7f8edfb854111",
+      "level": "HIGGS",
+      "mode": 0,
+      "start": "2026-10-16T15:38:09.052275-04:00",
+      "end": "2026-10-16T15:40:44.547590-04:00",
+      "active_seconds": 155.48596287557302,
+      "elapsed_seconds": 155.49524550000206,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "e20abde68e734b62b0dfa045baef1544",
+      "level": "HIGGS",
+      "mode": 0,
+      "start": "2026-10-16T15:47:50.709653-04:00",
+      "end": "2026-10-16T15:48:41.517098-04:00",
+      "active_seconds": 50.806775573975756,
+      "elapsed_seconds": 50.80698020000273,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "a84c0d9b095b4ff2bd7b75fafde1adae",
+      "level": "HIGGS",
+      "mode": 0,
+      "start": "2026-10-16T16:42:57.888666-04:00",
+      "end": "2026-10-16T16:44:52.246738-04:00",
+      "active_seconds": 114.35660600198025,
+      "elapsed_seconds": 114.35826199999428,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "7d6f1493507045a7add6cae4a2494d93",
+      "level": "EMERGENCE",
+      "mode": 0,
+      "start": "2026-10-16T17:19:44.437120-04:00",
+      "end": "2026-10-16T17:21:51.655487-04:00",
+      "active_seconds": 127.21385639881191,
+      "elapsed_seconds": 127.21771730000182,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "62dba92c3c7642f59c648fdca3b0081c",
+      "level": "PULSAR",
+      "mode": 0,
+      "start": "2026-10-16T17:30:41.308523-04:00",
+      "end": "2026-10-16T17:33:12.004673-04:00",
+      "active_seconds": 150.68984170210024,
+      "elapsed_seconds": 150.6959035999971,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "4e12ad9585504a75971837e07db13cb9",
+      "level": "HIGGS",
+      "mode": 0,
+      "start": "2026-10-16T17:57:01.887073-04:00",
+      "end": "2026-10-16T17:57:46.485022-04:00",
+      "active_seconds": 44.59715980726469,
+      "elapsed_seconds": 44.598488999996334,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "0f520b228b204f69acdfec41e1916260",
+      "level": "HIGGS",
+      "mode": 0,
+      "start": "2026-10-17T10:25:43.729695-04:00",
+      "end": "2026-10-17T10:26:08.738873-04:00",
+      "active_seconds": 25.010269997175783,
+      "elapsed_seconds": 25.010055799997644,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "521af8538eb440f0bef76a0464b8cd94",
+      "level": "HIGGS",
+      "mode": 1,
+      "start": "2026-10-17T17:51:48.825818-04:00",
+      "end": "2026-10-17T17:53:42.244341-04:00",
+      "active_seconds": 113.41549673327609,
+      "elapsed_seconds": 113.41909089999899,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "1f21a5b1c7c24d2295d56376a5ad3af8",
+      "level": "HIGGS",
+      "mode": 0,
+      "start": "2026-10-18T11:58:09.545087-04:00",
+      "end": "2026-10-18T11:59:46.686254-04:00",
+      "active_seconds": 97.13904710176575,
+      "elapsed_seconds": 97.14187059999676,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "7a372664615a4ecbb903ed130a7c8877",
+      "level": "HIGGS",
+      "mode": 1,
+      "start": "2026-10-18T13:57:23.971359-04:00",
+      "end": "2026-10-18T13:58:19.599334-04:00",
+      "active_seconds": 55.62358373723691,
+      "elapsed_seconds": 55.62862690001202,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    },
+    {
+      "id": "e4eefc0090024708a56fdb09f20ab761",
+      "level": "HIGGS",
+      "mode": 0,
+      "start": "2026-10-18T17:56:25.509917-04:00",
+      "end": "2026-10-18T17:57:08.742860-04:00",
+      "active_seconds": 43.22677589993691,
+      "elapsed_seconds": 43.233037599988165,
+      "status": "Abandoned",
+      "reason": "All players inactive; returned to Attract."
+    }
+  ],
+  "builds": {
+    "152821da60c348a1904acfe988fbe335": 113,
+    "3e51c8e6c4e844c681cb22b4be0e13c5": 115
+  },
+  "rulesets": {
+    "6": 228
+  },
+  "settings": {
+    "bb09108a5a65c639f3fb106ce7f3a087a4b061ad3e97ed64bfc518a1b93c0386": 228
+  },
+  "standard_rules": {
+    "True": 228
+  },
+  "bonus_matches": 10,
+  "durations": {
+    "180.0": 228
+  },
+  "mode_wins": {
+    "1v1": {
+      "starts": 191,
+      "status": {
+        "Completed": 177,
+        "Abandoned": 14
+      },
+      "active_minutes": 556.3293451290889,
+      "elapsed_minutes": 557.7216656483322,
+      "completed_mean_seconds": 180.93684182204274,
+      "modes": {
+        "1v1": 191
+      },
+      "completed_winners": {
+        "Light": 115,
+        "Tie": 8,
+        "Dark": 54
+      },
+      "sessions": 3,
+      "first": "2026-10-15T11:47:38.492106-04:00",
+      "last": "2026-10-18T18:02:03.649065-04:00"
+    },
+    "2v2": {
+      "starts": 37,
+      "status": {
+        "Completed": 34,
+        "Abandoned": 3
+      },
+      "active_minutes": 106.66795658127877,
+      "elapsed_minutes": 106.82366537166699,
+      "completed_mean_seconds": 180.54483232376384,
+      "modes": {
+        "2v2": 37
+      },
+      "completed_winners": {
+        "Dark": 11,
+        "Light": 22,
+        "Tie": 1
+      },
+      "sessions": 4,
+      "first": "2026-10-15T10:05:08.276980-04:00",
+      "last": "2026-10-18T17:33:48.677559-04:00"
+    }
+  }
+}

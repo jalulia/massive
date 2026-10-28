@@ -1,43 +1,49 @@
 # MASSIVE — Stats options
 
-Three reviewed design options using Matt’s 15–18 October 2026 match snapshot. The small **V01 / V02 / V03** links at the bottom right switch between all options. These are preserved comparison snapshots; the packaging change adds shared navigation and does not apply the design-review recommendations.
+Three design options using Matt’s 15–18 October 2026 match data. V01 and V02 contain Claude’s Rev 3 and the final integration changes listed below. V03 remains the earlier Codex comparison. The small **V01 / V02 / V03** links at the bottom right switch between options.
 
-| Option | Page | Approach |
+| Option | Page | Data and design approach |
 | --- | --- | --- |
-| V01 · Claude | [Open V01](index.html) | Computes totals, outcomes and stage rates from an embedded copy of the JSON, with the original export available for download. A restrained grid, native plane diagram and aligned stage table prioritize comparison and inspection. |
-| V02 · Claude | [Open V02](v02.html) | Uses the same embedded snapshot for a stage field, animated outcome readouts, stage cards and an exit-duration chart. It extends MASSIVE’s instrument and HUD language into a more expressive presentation. |
-| V03 · Codex | [Open V03](v03/index.html) | Loads the original JSON directly and presents daily counts, mode outcomes, sortable stages and the 17 available inactivity records. A large native-animation hero, slow crossfades and selected-stage loops provide the visual focus. |
+| V01 · Claude, Rev 3 | [Open V01](index.html) | Computes totals, outcomes and stage rates from an embedded copy of the JSON. A restrained grid, native level-select imagery, a stage navigator and a sortable comparison table prioritize inspection. |
+| V02 · Claude, Rev 3 | [Open V02](v02.html) | Uses the same embedded data for outcome readouts, daily activity and the 17 inactivity records. A native carousel hero, instrument panels and a stage navigator with adjacent detail make the report more visual; the illustrative field has been removed. |
+| V03 · Codex | [Open V03](v03/index.html) | Loads the original JSON directly and presents daily counts, mode outcomes, sortable stages and the 17 inactivity records. A large native-animation hero, slow crossfades and selected-stage loops provide the visual focus. |
 
 ## Run
 
-Serve `Stats` with any static HTTP server. No build step or package installation is needed. V03 fetches its JSON, so use HTTP rather than opening the HTML with `file://`.
+Serve `Stats` with a static HTTP server. No build step or package installation is needed. V03 fetches its JSON, so use HTTP rather than opening the HTML with `file://`.
 
-The relative links support deployment under `/massive/Stats/`, another subdirectory, or a local server. V01 is the directory’s default page.
+Relative links support deployment under `/massive/Stats/`, another subdirectory, or a local server. V01 is the directory’s default page.
 
-## Reviewed originals
+## Current V01 and V02
 
-The versions reviewed before the feedback pass remain available as [V01 original](v01-original.html) and [V02 original](v02-original.html). They share the original assets and retain the same bottom-right links to the three main options.
+The stage section now separates selection, selected-stage detail and comparison. It includes all nine stage names, previous/next controls, sortable columns and stage deep links. The selected item stays visible in the horizontal navigator. Mobile comparisons keep all nine rows visible and retain stage names, starts, completed matches, exits and PvP counts.
+
+The revisions correct the HIGGS median to **1:18.1**, distinguish completed from decided-match denominators, and use player-minutes for exposure rates. Inactivity is described as the recorded end reason, without assigning a cause. The seven-record difference between the selection count and window starts remains unexplained. Empty outcome bars, hidden mobile stage names, score-energy units on win counts and invented gauge ceilings have been removed or corrected.
+
+One motion control governs playback and transitions, with the initial preference taken from the operating system. V02 navigator animations load and play on hover or focus instead of starting all nine clips at once. Selected-stage footage loops; duplicate inset videos have been removed. The V02 hero preserves the full frame.
+
+The short, tightly cropped stage icons have been replaced with isolated native MASSIVE animations already used in V03. The nine delivery files are 720 × 720 H.264 with fast-start metadata and total **40.3 MB**, down from 82.7 MB for those source files. Original poster files are preserved. Source frame counts are retained; SINGULARITY’s container timing normalizes by approximately one frame. [Media provenance](media-delivery.json) records hashes, dimensions and timing. Playback retains the source sequence boundaries; this encoding pass does not establish seamless animation cycles.
+
+The footer states the reporting dates and identifies the footage as captured in MASSIVE. Revised assets live in `assets-r3/`, separately from the original comparison assets.
+
+## Original comparisons
+
+[V01 original](v01-original.html) and [V02 original](v02-original.html), together with `assets/`, are unchanged from the first published comparison package. They retain their bottom-right links to the three current options.
+
+These originals retain the issues identified in the first review: incorrect HIGGS median and causal copy, zero-width V01 outcome bars, missing mobile stage names, motion-preference conflicts, V02 score units on win counts, an unclear illustrative field, a remote stage drawer, and tightly cropped 480px stage excerpts. Those findings describe the archived originals, not the current Rev 3 pages.
+
+## V03 review notes
+
+V03 is unchanged in this release. It still emphasizes average duration despite fixed three-minute regulation, shows raw stage combat totals, places selected-stage detail below the table on mobile, and uses some very small mobile headers. Its nine stage videos still total 82.7 MB; the smaller delivery files are used by V01 and V02 only.
 
 ## Data and provenance
 
-- Reporting window: 15–18 October 2026, EDT.
-- Original export: `MASSIVEmatch-snapshot-20261015-18.json`.
-- Both included JSON files preserve the same original bytes. V01 and V02 also contain an equivalent embedded copy in `assets/massive-data.js`.
-- Claude V01/V02 source: the user-supplied `MASSIVE-match-telemetry.zip`. Its media is preserved from the ZIP, rather than substituted from the separate local working folder.
-- Codex V03 source: the current built `Sites/massive-state/dist` directory. Site-hosting configuration and nested Git metadata are excluded.
-- `SOURCE.json` records source hashes and the narrow packaging changes.
-- Game art illustrates MASSIVE; it is not a replay of these match records.
+- Reporting window: **15–18 October 2026, EDT**.
+- Original export: `MASSIVEmatch-snapshot-20261015-18.json`. The copies in `assets/`, `assets-r3/` and `v03/snapshot.json` preserve the original bytes.
+- Current V01/V02 use an equivalent embedded copy in `assets-r3/massive-data.js`; the originals use `assets/massive-data.js`.
+- Current Claude source: Rev 3 from `Sites/massive-stats/`. The original comparison source was the supplied `MASSIVE-match-telemetry.zip`.
+- Codex V03 source: `Sites/massive-state/dist`. Site-hosting configuration and nested Git metadata are excluded.
+- [SOURCE.json](SOURCE.json) records original and revised source hashes and the final integration changes.
+- Game art illustrates MASSIVE. It is not a replay of these match records.
 
-## Review status
-
-These are design comparisons, not a corrected production release. Known review findings remain visible so the options can be assessed accurately:
-
-- V01/V02 infer a HIGGS readability problem from inactivity records; those records do not establish cause. Their HIGGS note uses the all-stage median (1:39.7); the HIGGS-specific median is 1:18.1.
-- V02 uses score-energy units beneath match-win counts and describes a nonlinear illustrative field as proportional to player-minutes. Several gauges lack a meaningful reference scale.
-- V01 outcome bars render empty, mobile hides stage names, and reduced-motion handling is overridden by playback visibility behavior. Some stage details show an empty capture area despite an available stage icon.
-- V02’s mobile field hides its readout, and the stage drawer follows all nine cards. Its level-select clips are 480 × 480, 1.3-second excerpts.
-- V03 prioritizes average duration despite fixed three-minute regulation, uses raw stage combat totals, and places selected-stage details below the table on mobile. Some mobile headers are 7px.
-- V03’s nine videos total 82.7 MB. Native capture masters need smaller delivery encodes before production use.
-- Copy such as “controller time,” “last start” and causal stage judgments needs reconciliation with the export’s actual semantics.
-
-All options are limited by the same aggregate export: player slots are not unique people, full completed-match records are unavailable, and observed side/stage differences do not establish causes or game balance.
+All options remain design comparisons. Player slots are not unique people, completed-match records are not included individually, and the export does not establish the causes of exits or side/stage differences. Rates normalize exposure; they do not control for skill, mode mix or stage mechanics. Per-day activity spans are recorded timestamp bounds, not cabinet utilization.

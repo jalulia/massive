@@ -1,0 +1,321 @@
+{
+  "source": "Existing published V03 isolated native MASSIVE stage animations",
+  "encoding": {
+    "codec": "libx264",
+    "crf": 23,
+    "preset": "medium",
+    "width": 720,
+    "height": 720,
+    "resizeFilter": "Lanczos",
+    "pixelFormat": "yuv420p",
+    "faststart": true,
+    "audio": false,
+    "fpsMode": "passthrough",
+    "parallelEncodes": 2,
+    "threadsPerEncode": 2
+  },
+  "posters": "Copied byte-for-byte from V03",
+  "assets": [
+    {
+      "stage": "LATTICE",
+      "source": "v03/assets/game/stage-lattice-loop.mp4",
+      "sourceSha256": "6ee74278e4f287108f88b04a24d78e53b3b45f664bcbdde0e38694f930f9c16e",
+      "sourceBytes": 4250546,
+      "sourceMedia": {
+        "duration": "00:00:19.00",
+        "width": 960,
+        "height": 960,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 960x960 [SAR 1:1 DAR 1:1], 1786 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "delivery": "assets-r3/stages/lattice.mp4",
+      "deliverySha256": "3c0024134a7b5adf9fb84d6fc33239f5bde4b0d7af80aae736cedfb2e0c08e8b",
+      "deliveryBytes": 2124636,
+      "deliveryMedia": {
+        "duration": "00:00:19.00",
+        "width": 720,
+        "height": 720,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x720 [SAR 1:1 DAR 1:1], 891 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "posterSource": "v03/assets/game/stage-lattice-poster.jpg",
+      "posterSourceSha256": "c359dd67a244e92a9b93f22cd0e28b08b93fc941a8d6771df373c87e06aace61",
+      "posterDelivery": "assets-r3/stages/lattice.jpg",
+      "posterDeliverySha256": "c359dd67a244e92a9b93f22cd0e28b08b93fc941a8d6771df373c87e06aace61",
+      "posterBytes": 73425,
+      "sourceFrameCount": 570,
+      "deliveryFrameCount": 570,
+      "timingNote": "Source frame count, duration and frame rate preserved.",
+      "faststartVerified": true
+    },
+    {
+      "stage": "HIGGS",
+      "source": "v03/assets/game/stage-higgs-loop.mp4",
+      "sourceSha256": "7aadff6ffc4d4ed162e1ffd5e545ce12e2612bd8fe7546d51a06e8617739c866",
+      "sourceBytes": 5197832,
+      "sourceMedia": {
+        "duration": "00:00:19.00",
+        "width": 960,
+        "height": 960,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 960x960 [SAR 1:1 DAR 1:1], 2185 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "delivery": "assets-r3/stages/higgs.mp4",
+      "deliverySha256": "20adbc45b67170cb96859a984098df9cc1727d709eff78316621f1f964dc4aa9",
+      "deliveryBytes": 3060010,
+      "deliveryMedia": {
+        "duration": "00:00:19.00",
+        "width": 720,
+        "height": 720,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x720 [SAR 1:1 DAR 1:1], 1285 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "posterSource": "v03/assets/game/stage-higgs-poster.jpg",
+      "posterSourceSha256": "f0df2199ebff53709327e45d0dce4a26f55530c09fc16c767918a1cba505cce9",
+      "posterDelivery": "assets-r3/stages/higgs.jpg",
+      "posterDeliverySha256": "f0df2199ebff53709327e45d0dce4a26f55530c09fc16c767918a1cba505cce9",
+      "posterBytes": 100812,
+      "sourceFrameCount": 570,
+      "deliveryFrameCount": 570,
+      "timingNote": "Source frame count, duration and frame rate preserved.",
+      "faststartVerified": true
+    },
+    {
+      "stage": "ORBITAL",
+      "source": "v03/assets/game/stage-orbital-loop.mp4",
+      "sourceSha256": "2c09d8223a3c603a0c5dda45dca0fc8937e657ff8e3ba1e4d145fe701979366f",
+      "sourceBytes": 20624233,
+      "sourceMedia": {
+        "duration": "00:00:19.00",
+        "width": 960,
+        "height": 960,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 960x960 [SAR 1:1 DAR 1:1], 8680 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "delivery": "assets-r3/stages/orbital.mp4",
+      "deliverySha256": "03d04e6c8b07244820fbcc0a75d0c2e26db8f53bc49bd0108615d657443206e0",
+      "deliveryBytes": 16668672,
+      "deliveryMedia": {
+        "duration": "00:00:19.00",
+        "width": 720,
+        "height": 720,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x720 [SAR 1:1 DAR 1:1], 7015 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "posterSource": "v03/assets/game/stage-orbital-poster.jpg",
+      "posterSourceSha256": "f470d8be0e2daf94f38fcc06d80722fe728dbd82c241ad6b371965f541b4fc9b",
+      "posterDelivery": "assets-r3/stages/orbital.jpg",
+      "posterDeliverySha256": "f470d8be0e2daf94f38fcc06d80722fe728dbd82c241ad6b371965f541b4fc9b",
+      "posterBytes": 168427,
+      "sourceFrameCount": 570,
+      "deliveryFrameCount": 570,
+      "timingNote": "Source frame count, duration and frame rate preserved.",
+      "faststartVerified": true
+    },
+    {
+      "stage": "EMERGENCE",
+      "source": "v03/assets/game/stage-emergence-loop.mp4",
+      "sourceSha256": "ec3112f88b0cf01341525d65ce0d2e1217232aa561ac3b44aa376227edd52abe",
+      "sourceBytes": 5453784,
+      "sourceMedia": {
+        "duration": "00:00:19.00",
+        "width": 960,
+        "height": 960,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 960x960 [SAR 1:1 DAR 1:1], 2293 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "delivery": "assets-r3/stages/emergence.mp4",
+      "deliverySha256": "5a7c074d490a822c1e65b753617b470756e413bea153b1af482dc8baa0bbaa4b",
+      "deliveryBytes": 3237456,
+      "deliveryMedia": {
+        "duration": "00:00:19.00",
+        "width": 720,
+        "height": 720,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x720 [SAR 1:1 DAR 1:1], 1359 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "posterSource": "v03/assets/game/stage-emergence-poster.jpg",
+      "posterSourceSha256": "317a04cbea2877e2417392f464a72dccb3a6e56a1d04ae23e140bc8688b9f3e1",
+      "posterDelivery": "assets-r3/stages/emergence.jpg",
+      "posterDeliverySha256": "317a04cbea2877e2417392f464a72dccb3a6e56a1d04ae23e140bc8688b9f3e1",
+      "posterBytes": 94235,
+      "sourceFrameCount": 570,
+      "deliveryFrameCount": 570,
+      "timingNote": "Source frame count, duration and frame rate preserved.",
+      "faststartVerified": true
+    },
+    {
+      "stage": "PULSAR",
+      "source": "v03/assets/game/stage-pulsar-loop.mp4",
+      "sourceSha256": "01d899555a834abd5b3fcc84a68cd4d246b19372bec9f1a5bd6507f436fd9759",
+      "sourceBytes": 7294785,
+      "sourceMedia": {
+        "duration": "00:00:19.00",
+        "width": 960,
+        "height": 960,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 960x960 [SAR 1:1 DAR 1:1], 3068 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "delivery": "assets-r3/stages/pulsar.mp4",
+      "deliverySha256": "fea13ba428c6f5430001a2e1b8f3d6f6e5760e08f86f7f3a321883bac20d187d",
+      "deliveryBytes": 3412446,
+      "deliveryMedia": {
+        "duration": "00:00:19.00",
+        "width": 720,
+        "height": 720,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x720 [SAR 1:1 DAR 1:1], 1433 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "posterSource": "v03/assets/game/stage-pulsar-poster.jpg",
+      "posterSourceSha256": "6c718e508d373cc344f545ad54aa5e95a20464232fa663acf10a200380d8d105",
+      "posterDelivery": "assets-r3/stages/pulsar.jpg",
+      "posterDeliverySha256": "6c718e508d373cc344f545ad54aa5e95a20464232fa663acf10a200380d8d105",
+      "posterBytes": 41306,
+      "sourceFrameCount": 570,
+      "deliveryFrameCount": 570,
+      "timingNote": "Source frame count, duration and frame rate preserved.",
+      "faststartVerified": true
+    },
+    {
+      "stage": "DYNAMO",
+      "source": "v03/assets/game/stage-dynamo-loop.mp4",
+      "sourceSha256": "5b80d40cdc51d1be200a94cceaf1b21ee300f319c9a0f5626ab81787ab9ff2c2",
+      "sourceBytes": 4313033,
+      "sourceMedia": {
+        "duration": "00:00:02.40",
+        "width": 1280,
+        "height": 1280,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x1280 [SAR 1:1 DAR 1:1], 14370 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "delivery": "assets-r3/stages/dynamo.mp4",
+      "deliverySha256": "57a52ecd93b12601cee7d2f4d79feb12731c71695215393379b7633e6650db3d",
+      "deliveryBytes": 975087,
+      "deliveryMedia": {
+        "duration": "00:00:02.40",
+        "width": 720,
+        "height": 720,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x720 [SAR 1:1 DAR 1:1], 3244 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "posterSource": "v03/assets/game/stage-dynamo-poster.jpg",
+      "posterSourceSha256": "b088a51731a9ed90076fdeef45584e145036a59981ad8f0b9b9e901a92cebe37",
+      "posterDelivery": "assets-r3/stages/dynamo.jpg",
+      "posterDeliverySha256": "b088a51731a9ed90076fdeef45584e145036a59981ad8f0b9b9e901a92cebe37",
+      "posterBytes": 291626,
+      "sourceFrameCount": 72,
+      "deliveryFrameCount": 72,
+      "timingNote": "Source frame count, duration and frame rate preserved.",
+      "faststartVerified": true
+    },
+    {
+      "stage": "NOVA",
+      "source": "v03/assets/game/stage-nova-loop.mp4",
+      "sourceSha256": "a4bfd431ea217453e3df01bf2331d8179b4d1b8b87912c2f342ae6f40a1039aa",
+      "sourceBytes": 11715189,
+      "sourceMedia": {
+        "duration": "00:00:05.20",
+        "width": 1280,
+        "height": 1280,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1280x1280 [SAR 1:1 DAR 1:1], 18019 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "delivery": "assets-r3/stages/nova.mp4",
+      "deliverySha256": "cb73899568c5e965cb558591a5434e1898485f2fd1018e28e462de4e9977cea2",
+      "deliveryBytes": 3137222,
+      "deliveryMedia": {
+        "duration": "00:00:05.20",
+        "width": 720,
+        "height": 720,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x720 [SAR 1:1 DAR 1:1], 4822 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "posterSource": "v03/assets/game/stage-nova-poster.jpg",
+      "posterSourceSha256": "fc92d997a1ba4fd4d5fb6f9dd23db295feb0e31c756c0f58e7d6a26965f6aa68",
+      "posterDelivery": "assets-r3/stages/nova.jpg",
+      "posterDeliverySha256": "fc92d997a1ba4fd4d5fb6f9dd23db295feb0e31c756c0f58e7d6a26965f6aa68",
+      "posterBytes": 281318,
+      "sourceFrameCount": 156,
+      "deliveryFrameCount": 156,
+      "timingNote": "Source frame count, duration and frame rate preserved.",
+      "faststartVerified": true
+    },
+    {
+      "stage": "SINGULARITY",
+      "source": "v03/assets/game/stage-singularity-loop.mp4",
+      "sourceSha256": "2ed56fc00c6274a476b28af5d7f4458aa6febcc14b98bb27e04846647b4e6512",
+      "sourceBytes": 14279427,
+      "sourceMedia": {
+        "duration": "00:00:11.17",
+        "width": 1440,
+        "height": 1440,
+        "fps": 30.09,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 1440x1440 [SAR 1:1 DAR 1:1], 10225 kb/s, 30.09 fps, 30 tbr, 1000k tbn (default)"
+      },
+      "delivery": "assets-r3/stages/singularity.mp4",
+      "deliverySha256": "c641a6494d841676671c0b3f8fed8f9901432be68c82dfd7dd884d99d9265007",
+      "deliveryBytes": 4143083,
+      "deliveryMedia": {
+        "duration": "00:00:11.20",
+        "width": 720,
+        "height": 720,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x720 [SAR 1:1 DAR 1:1], 2955 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "posterSource": "v03/assets/game/stage-singularity-poster.jpg",
+      "posterSourceSha256": "513eac46248b3428ad12e4c28af6ea47d2d644969b850bcf171f23a3e5be28da",
+      "posterDelivery": "assets-r3/stages/singularity.jpg",
+      "posterDeliverySha256": "513eac46248b3428ad12e4c28af6ea47d2d644969b850bcf171f23a3e5be28da",
+      "posterBytes": 279286,
+      "sourceFrameCount": 336,
+      "deliveryFrameCount": 336,
+      "timingNote": "Same source frame count; source container 11.17 s / 30.09 average fps normalizes to 11.20 s / 30 fps (one final-frame hold of about 33 ms).",
+      "faststartVerified": true
+    },
+    {
+      "stage": "COSMOS",
+      "source": "v03/assets/game/stage-cosmos-loop.mp4",
+      "sourceSha256": "2d0c2a5b0ff9c7b019b1e2cdae8bace19af320d7866c813a000b71d90660a782",
+      "sourceBytes": 9559904,
+      "sourceMedia": {
+        "duration": "00:00:19.00",
+        "width": 960,
+        "height": 960,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 960x960 [SAR 1:1 DAR 1:1], 4021 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "delivery": "assets-r3/stages/cosmos.mp4",
+      "deliverySha256": "44cff2d3ca5032424edcecd8e215908625d34231a7cb86fef67b81ec9299920b",
+      "deliveryBytes": 3550015,
+      "deliveryMedia": {
+        "duration": "00:00:19.00",
+        "width": 720,
+        "height": 720,
+        "fps": 30.0,
+        "stream": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 720x720 [SAR 1:1 DAR 1:1], 1491 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+      },
+      "posterSource": "v03/assets/game/stage-cosmos-poster.jpg",
+      "posterSourceSha256": "d58da7d07b805a652a66ab407133d4a992da048723fe59cab4d0b12da813fbec",
+      "posterDelivery": "assets-r3/stages/cosmos.jpg",
+      "posterDeliverySha256": "d58da7d07b805a652a66ab407133d4a992da048723fe59cab4d0b12da813fbec",
+      "posterBytes": 98123,
+      "sourceFrameCount": 570,
+      "deliveryFrameCount": 570,
+      "timingNote": "Source frame count, duration and frame rate preserved.",
+      "faststartVerified": true
+    }
+  ],
+  "totalSourceVideoBytes": 82688733,
+  "totalDeliveryVideoBytes": 40308627,
+  "totalPosterBytes": 1428558,
+  "videoReductionFromSourcePercent": 51.25,
+  "comparison": {
+    "rejectedNativeDimensionCRF21VideoBytes": 85095726,
+    "selected720CRF23VideoBytes": 40308627,
+    "visualAssessment": "PULSAR, ORBITAL and SINGULARITY midpoint comparisons retain fine detail without objectionable blocking at delivery size. Framing unchanged; no neighboring carousel objects."
+  },
+  "visualInspection": {
+    "result": "All nine isolated source compositions retain complete stage art at start, midpoint and near end; PULSAR jets fully inside frame. Delivery scales the complete frame without recropping.",
+    "limitations": "This pass preserves source animation sequences; it does not establish a mathematically periodic or invisible loop boundary. SINGULARITY container timing normalizes by approximately one frame (33 ms); all source frames retained."
+  }
+}

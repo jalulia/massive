@@ -86,7 +86,7 @@ card('MOMI presentation notes','explorations/momi-notes.html','presentation-asse
 ]),
 ('stats', 'Stats', [
 card('V01 / Match telemetry','Stats/','assets/library-previews/stats-v01.png','Claude · Embedded JSON · Comparison grid','Stats/index.html',[('Review notes','Stats/README.md'),('Original','Stats/v01-original.html')],version='V01'),
-card('V02 / Telemetry field','Stats/v02.html','assets/library-previews/stats-v02.png','Claude · Embedded JSON · Stage field','Stats/v02.html',[('Review notes','Stats/README.md'),('Original','Stats/v02-original.html')],version='V02'),
+card('V02 / Stage report','Stats/v02.html','assets/library-previews/stats-v02.png','Claude · Embedded JSON · Native stage carousel','Stats/v02.html',[('Review notes','Stats/README.md'),('Original','Stats/v02-original.html')],version='V02'),
 card('V03 / Match statistics','Stats/v03/index.html','assets/library-previews/stats-v03.png','Codex · JSON file · Animated stage report','Stats/v03/index.html',[('Review notes','Stats/README.md'),('Snapshot JSON','Stats/v03/snapshot.json')],version='V03'),
 ]),
 ('libraries', 'Libraries & sets', [
