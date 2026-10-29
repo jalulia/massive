@@ -491,7 +491,7 @@ let dayHTML=dayKeys.map(k=>{
       <div class="col"><i class="x" style="--h:${hA}"></i></div>
     </div>
     <div class="leg"><span>COMPLETED ${c}</span><span>EXITS ${a}</span></div>
-    <div class="rows num"><span>Active</span><b>${hm(d.active_minutes)}</b><span>L · D · T</span><b>${w.Light||0} · ${w.Dark||0} · ${w.Tie||0}</b><span>1v1 · 2v2</span><b>${d.modes['1v1']||0} · ${d.modes['2v2']||0}</b><span>Completion</span><b>${pct(c,d.starts)}%</b></div>
+    <div class="rows num"><span>Active</span><b>${hm(d.active_minutes)}</b><span>L · D · T</span><b>${w.Light||0}·${w.Dark||0}·${w.Tie||0}</b><span>1v1 · 2v2</span><b>${d.modes['1v1']||0} · ${d.modes['2v2']||0}</b><span>Completion</span><b>${pct(c,d.starts)}%</b></div>
   </div>`;
 }).join('');
 dayHTML+=`<div class="results rv-el">

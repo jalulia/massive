@@ -119,10 +119,10 @@
     "date": "2026-10-28",
     "reviewer": "Codex",
     "pages": {
-      "index.html": "42f4ce831254d9a8b719cbc578dacb2e689a0e8d6593489673d96d7963aa3afd",
+      "index.html": "67a473f26b947012121385efc0a090339b521634a571add3f7b6c0bf6b250040",
       "v02.html": "6ea2c0e94829c43be00615137119537c1ee1f8f1c624fe4d1c375adda6cccb3b"
     },
-    "stylesheet_sha256": "f5a2be331596c21206ceef91f3ece62ee8154e510fc6856657eb83e89f0da834",
+    "stylesheet_sha256": "d8c353a59e04bbd6fbeca872a31587c52fed0a4c0b06a452a23522cf5a13524b",
     "validation": [
       "No page overflow at 360, 768, 1280 or 1512 CSS pixels",
       "All nine selected-stage videos load and loop with contain framing",

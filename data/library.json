@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "sourceCommit": "8f777f0146dacd6a4514a8b4fc4dcff3e9352bdc",
+  "sourceCommit": "02302be098c8faff556c082a5052bca2784af9a0",
   "sections": [
     [
       "presentations",
@@ -367,7 +367,7 @@
       "kind": "Notes",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "8f777f0",
+      "version": "02302be",
       "image": "",
       "title": "README"
     },
@@ -389,7 +389,7 @@
       "kind": "Notes",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "8f777f0",
+      "version": "02302be",
       "image": "",
       "title": "README"
     },
@@ -399,7 +399,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "8f777f0",
+      "version": "02302be",
       "image": "",
       "title": "SOURCE"
     },
@@ -499,7 +499,7 @@
       "kind": "Videos",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "8f777f0",
+      "version": "02302be",
       "image": "Stats/assets-r3/media/C12_PLANE_DIAGRAM.jpg",
       "title": "C12 PLANE DIAGRAM"
     },
@@ -1809,7 +1809,7 @@
       "kind": "Pages",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "8f777f0",
+      "version": "02302be",
       "image": "assets/library-previews/stats-v01.png",
       "title": "index",
       "status": "design-option",
@@ -1821,7 +1821,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "8f777f0",
+      "version": "02302be",
       "image": "",
       "title": "media delivery"
     },
@@ -1830,8 +1830,8 @@
       "url": "Stats/refinement.css",
       "kind": "Source",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-10-28",
+      "version": "02302be",
       "image": "",
       "title": "refinement"
     },
@@ -1865,7 +1865,7 @@
       "kind": "Pages",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "8f777f0",
+      "version": "02302be",
       "image": "assets/library-previews/stats-v02.png",
       "title": "v02",
       "status": "design-option",
@@ -2239,7 +2239,7 @@
       "kind": "Images",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "8f777f0",
+      "version": "02302be",
       "image": "assets/library-previews/stats-v01.png",
       "title": "stats v01"
     },
@@ -2249,7 +2249,7 @@
       "kind": "Images",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "8f777f0",
+      "version": "02302be",
       "image": "assets/library-previews/stats-v02.png",
       "title": "stats v02"
     },
@@ -2339,7 +2339,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "8f777f0",
+      "version": "02302be",
       "image": "",
       "title": "library"
     },
@@ -2401,7 +2401,7 @@
       "kind": "Pages",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "8f777f0",
+      "version": "02302be",
       "image": "",
       "title": "index"
     },
@@ -6195,7 +6195,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "8f777f0",
+      "version": "02302be",
       "image": "",
       "title": "build library"
     },
