@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "sourceCommit": "32b93328bbe575a8dcb6b6e70ea3983d7c78ac22",
+  "sourceCommit": "e160f5cf9f6206d1e52f9afd4efeac7b716c3e78",
   "sections": [
     [
       "presentations",
@@ -383,7 +383,7 @@
       "kind": "Notes",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "485d41f",
+      "version": "7103bbb",
       "image": "",
       "title": "README"
     },
@@ -405,7 +405,7 @@
       "kind": "Notes",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "32b9332",
+      "version": "e160f5c",
       "image": "",
       "title": "README"
     },
@@ -415,7 +415,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "32b9332",
+      "version": "e160f5c",
       "image": "",
       "title": "SOURCE"
     },
@@ -2165,9 +2165,29 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "32b9332",
+      "version": "e160f5c",
       "image": "",
       "title": "app"
+    },
+    {
+      "path": "Stats/v04/daily.css",
+      "url": "Stats/v04/daily.css",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-11-01",
+      "version": "e160f5c",
+      "image": "",
+      "title": "daily"
+    },
+    {
+      "path": "Stats/v04/daily.mjs",
+      "url": "Stats/v04/daily.mjs",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-11-01",
+      "version": "e160f5c",
+      "image": "",
+      "title": "daily"
     },
     {
       "path": "Stats/v04/data.mjs",
@@ -2185,7 +2205,7 @@
       "kind": "Pages",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "32b9332",
+      "version": "e160f5c",
       "image": "assets/library-previews/stats-v04.png",
       "title": "index",
       "status": "in-review",
@@ -2222,12 +2242,32 @@
       "title": "pdf"
     },
     {
+      "path": "Stats/v04/period.css",
+      "url": "Stats/v04/period.css",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-11-01",
+      "version": "e160f5c",
+      "image": "",
+      "title": "period"
+    },
+    {
+      "path": "Stats/v04/period.mjs",
+      "url": "Stats/v04/period.mjs",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-11-01",
+      "version": "e160f5c",
+      "image": "",
+      "title": "period"
+    },
+    {
       "path": "Stats/v04/styles.css",
       "url": "Stats/v04/styles.css",
       "kind": "Source",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "32b9332",
+      "version": "e160f5c",
       "image": "",
       "title": "styles"
     },
@@ -2357,7 +2397,7 @@
       "kind": "Images",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "32b9332",
+      "version": "e160f5c",
       "image": "assets/library-previews/stats-v04.png",
       "title": "stats v04"
     },
@@ -2437,7 +2477,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "485d41f",
+      "version": "7103bbb",
       "image": "",
       "title": "library"
     },
@@ -2499,7 +2539,7 @@
       "kind": "Pages",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "485d41f",
+      "version": "7103bbb",
       "image": "",
       "title": "index"
     },
@@ -6293,7 +6333,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "485d41f",
+      "version": "7103bbb",
       "image": "",
       "title": "build library"
     },
@@ -6333,7 +6373,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "485d41f",
+      "version": "7103bbb",
       "image": "",
       "title": "verify library"
     },
