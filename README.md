@@ -16,7 +16,7 @@ The original MOMI presentation is preserved at `momi.html`; old numeric slide bo
 
 ## Stats options
 
-**V04 / MoMI event report · In review.** The report uses Matt’s 15–18 October match data to show participation, cabinet match time and completion for a selected date range. [Review V04](https://jalulia.github.io/massive/Stats/v04/?review=1) · [Open the venue report](https://jalulia.github.io/massive/Stats/v04/)
+**V04 / MoMI event report · In review.** Select dates to see match starts, player entries, active match time and completions. **Print PDF** downloads the selected report in black on white. [Open V04](https://jalulia.github.io/massive/Stats/v04/)
 
 [V01 — Match telemetry](https://jalulia.github.io/massive/Stats/) and [V02 — Stage report](https://jalulia.github.io/massive/Stats/v02.html) use an embedded copy of Matt’s match snapshot, with a comparison grid and rotating native stage animations with stage comparisons respectively. [V03 — Match statistics](https://jalulia.github.io/massive/Stats/v03/index.html) loads the JSON file directly and pairs the report with native stage animations. All three are design options; [review notes and source details](Stats/README.md) record the known limitations.
 

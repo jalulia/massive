@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "sourceCommit": "d480a51e14895be3b02fbc76ff4069267def134c",
+  "sourceCommit": "32b93328bbe575a8dcb6b6e70ea3983d7c78ac22",
   "sections": [
     [
       "presentations",
@@ -112,16 +112,12 @@
       [
         {
           "title": "V04 / MoMI event report",
-          "url": "Stats/v04/?review=1",
+          "url": "Stats/v04/",
           "image": "assets/library-previews/stats-v04.png",
           "detail": "15–18 Oct 2026 · Match starts, player entries and play time by date",
           "date": "2026-11-01",
           "version": "V04",
           "links": [
-            [
-              "Venue report",
-              "Stats/v04/"
-            ],
             [
               "Match data",
               "Stats/v03/snapshot.json"
@@ -386,8 +382,8 @@
       "url": "README.md",
       "kind": "Notes",
       "location": "Repository",
-      "date": "2026-10-28",
-      "version": "02302be",
+      "date": "2026-11-01",
+      "version": "485d41f",
       "image": "",
       "title": "README"
     },
@@ -409,7 +405,7 @@
       "kind": "Notes",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "d480a51",
+      "version": "32b9332",
       "image": "",
       "title": "README"
     },
@@ -419,7 +415,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "d480a51",
+      "version": "32b9332",
       "image": "",
       "title": "SOURCE"
     },
@@ -2169,7 +2165,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "d480a51",
+      "version": "32b9332",
       "image": "",
       "title": "app"
     },
@@ -2189,7 +2185,7 @@
       "kind": "Pages",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "d480a51",
+      "version": "32b9332",
       "image": "assets/library-previews/stats-v04.png",
       "title": "index",
       "status": "in-review",
@@ -2206,12 +2202,32 @@
       "title": "motion"
     },
     {
+      "path": "Stats/v04/pdf-fonts.mjs",
+      "url": "Stats/v04/pdf-fonts.mjs",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-11-01",
+      "version": "32b9332",
+      "image": "",
+      "title": "pdf fonts"
+    },
+    {
+      "path": "Stats/v04/pdf.mjs",
+      "url": "Stats/v04/pdf.mjs",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-11-01",
+      "version": "32b9332",
+      "image": "",
+      "title": "pdf"
+    },
+    {
       "path": "Stats/v04/styles.css",
       "url": "Stats/v04/styles.css",
       "kind": "Source",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "d480a51",
+      "version": "32b9332",
       "image": "",
       "title": "styles"
     },
@@ -2340,8 +2356,8 @@
       "url": "assets/library-previews/stats-v04.png",
       "kind": "Images",
       "location": "Repository",
-      "date": "",
-      "version": "",
+      "date": "2026-11-01",
+      "version": "32b9332",
       "image": "assets/library-previews/stats-v04.png",
       "title": "stats v04"
     },
@@ -2350,8 +2366,8 @@
       "url": "assets/library.css",
       "kind": "Source",
       "location": "Repository",
-      "date": "2026-10-28",
-      "version": "a341ecf",
+      "date": "2026-11-01",
+      "version": "485d41f",
       "image": "",
       "title": "library"
     },
@@ -2420,8 +2436,8 @@
       "url": "data/library.json",
       "kind": "Source",
       "location": "Repository",
-      "date": "2026-10-28",
-      "version": "803df37",
+      "date": "2026-11-01",
+      "version": "485d41f",
       "image": "",
       "title": "library"
     },
@@ -2482,8 +2498,8 @@
       "url": "index.html",
       "kind": "Pages",
       "location": "Repository",
-      "date": "2026-10-28",
-      "version": "803df37",
+      "date": "2026-11-01",
+      "version": "485d41f",
       "image": "",
       "title": "index"
     },
@@ -6276,8 +6292,8 @@
       "url": "tools/build-library.py",
       "kind": "Source",
       "location": "Repository",
-      "date": "2026-10-28",
-      "version": "02302be",
+      "date": "2026-11-01",
+      "version": "485d41f",
       "image": "",
       "title": "build library"
     },
@@ -6307,7 +6323,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-11-01",
-      "version": "d480a51",
+      "version": "32b9332",
       "image": "",
       "title": "test stats v04"
     },
@@ -6316,8 +6332,8 @@
       "url": "tools/verify-library.py",
       "kind": "Source",
       "location": "Repository",
-      "date": "2026-10-28",
-      "version": "a341ecf",
+      "date": "2026-11-01",
+      "version": "485d41f",
       "image": "",
       "title": "verify library"
     },

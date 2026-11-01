@@ -88,7 +88,7 @@ card('Big / Small','presentation-directions/#3-1','assets/library-previews/big-s
 card('MOMI presentation notes','explorations/momi-notes.html','presentation-assets/C12_PLANE_DIAGRAM.png','Slide notes · HTML','explorations/momi-notes.html'),
 ]),
 ('stats', 'Stats', [
-card('V04 / MoMI event report','Stats/v04/?review=1','assets/library-previews/stats-v04.png','15–18 Oct 2026 · Match starts, player entries and play time by date','Stats/v04/index.html',[('Venue report','Stats/v04/'),('Match data','Stats/v03/snapshot.json')],version='V04'),
+card('V04 / MoMI event report','Stats/v04/','assets/library-previews/stats-v04.png','15–18 Oct 2026 · Match starts, player entries and play time by date','Stats/v04/index.html',[('Match data','Stats/v03/snapshot.json')],version='V04'),
 card('V01 / Match telemetry','Stats/','assets/library-previews/stats-v01.png','Claude · Embedded JSON · Comparison grid','Stats/index.html',[('Review notes','Stats/README.md'),('Original','Stats/v01-original.html')],version='V01'),
 card('V02 / Stage report','Stats/v02.html','assets/library-previews/stats-v02.png','Claude · Embedded JSON · Native stage animation','Stats/v02.html',[('Review notes','Stats/README.md'),('Original','Stats/v02-original.html')],version='V02'),
 card('V03 / Match statistics','Stats/v03/index.html','assets/library-previews/stats-v03.png','Codex · JSON file · Animated stage report','Stats/v03/index.html',[('Review notes','Stats/README.md'),('Snapshot JSON','Stats/v03/snapshot.json')],version='V03'),

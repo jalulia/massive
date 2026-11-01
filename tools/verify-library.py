@@ -83,8 +83,8 @@ def normalized_page(url):
 studies={normalized_page(c['url']) for c in stats if c.get('status')=='design-option' and c.get('approval')=='unapproved'}
 assert studies=={'Stats/index.html','Stats/v02.html','Stats/v03/index.html'}, 'Stats must retain the original three design options'
 review=[c for c in stats if c.get('status')=='in-review' and c.get('approval')=='pending']
-assert len(review)==1 and review[0]['url']=='Stats/v04/?review=1', 'Stats must link V04 in review mode'
-assert any(u=='Stats/v04/' for _,u in review[0]['links']), 'V04 must also link to the venue report'
+assert len(review)==1 and review[0]['url']=='Stats/v04/', 'Stats must link to the V04 event report'
+assert all(normalized_page(url)!='Stats/v04/index.html' for _,url in review[0]['links']), 'V04 must have one report link'
 
 archived_paths={
     'momi.html','presentation-directions/index.html','explorations/momi-notes.html','Speaker-notes.md',
