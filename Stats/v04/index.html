@@ -9,8 +9,10 @@
   <link rel="icon" href="../v03/assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="../v03/assets/InputMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="../assets-r3/fonts/NeuzeitSHeavy.woff" as="font" type="font/woff" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=2">
-  <script type="module" src="app.mjs?v=2"></script>
+  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="period.css">
+  <link rel="stylesheet" href="daily.css">
+  <script type="module" src="app.mjs?v=3"></script>
 </head>
 <body>
   <a class="skip-link" href="#overview">Skip to event statistics</a>
@@ -29,25 +31,23 @@
         <section class="intro" aria-labelledby="event-title">
           <p class="eyebrow"><span class="signal" aria-hidden="true"></span> Event report</p>
           <h1 id="event-title">MASSIVE <span class="title-line"><span class="title-at">at</span> MoMI</span></h1>
-          <p id="report-window" class="report-window">15–18 October 2026 · EDT</p>
-          <div class="date-controls" role="group" aria-label="Reporting dates">
-            <div id="date-presets">
-              <button type="button" data-date="all" aria-pressed="true">Full event</button>
-              <button type="button" data-date="2026-10-15" aria-pressed="false" aria-label="Thursday, October 15">Thu 15</button>
-              <button type="button" data-date="2026-10-16" aria-pressed="false" aria-label="Friday, October 16">Fri 16</button>
-              <button type="button" data-date="2026-10-17" aria-pressed="false" aria-label="Saturday, October 17">Sat 17</button>
-              <button type="button" data-date="2026-10-18" aria-pressed="false" aria-label="Sunday, October 18">Sun 18</button>
-            </div>
-            <details id="range-picker" class="popover">
-              <summary id="range-toggle">Range</summary>
-              <form id="range-form" class="popover-body">
-                <label for="range-from">From <input type="date" id="range-from" required></label>
-                <label for="range-to">Through <input type="date" id="range-to" required></label>
-                <span id="range-error" role="alert"></span>
-                <button class="apply" type="submit">Apply range</button>
+          <details id="period-picker" class="period-picker">
+            <summary id="period-toggle" class="period-toggle">
+              <span class="period-caption">Report dates</span>
+              <span class="period-line"><span id="report-window">15–18 October 2026 · EDT</span><i class="period-caret" aria-hidden="true"></i></span>
+            </summary>
+            <div class="period-panel">
+              <button type="button" class="period-all" data-period="all" aria-pressed="true">Full event<span class="period-check" aria-hidden="true"></span></button>
+              <div id="period-days" class="period-days" role="group" aria-label="Individual days"></div>
+              <button id="period-custom" class="period-custom" type="button" aria-expanded="false" aria-controls="period-range">Custom range<i class="period-caret" aria-hidden="true"></i></button>
+              <form id="period-range" class="period-range" hidden>
+                <label>From<select id="period-from"></select></label>
+                <label>Through<select id="period-to"></select></label>
+                <button id="period-apply" type="submit">Apply range</button>
               </form>
-            </details>
-          </div>
+              <p id="period-error" class="period-error" role="alert"></p>
+            </div>
+          </details>
         </section>
 
         <section class="headline-metrics" aria-label="Participation">
@@ -93,7 +93,7 @@
             <span class="mark-key">1 mark = 1 match</span>
           </div>
         </header>
-        <div id="day-chart" class="day-chart" aria-label="Daily match counts"></div>
+        <div id="day-chart"></div>
       </section>
 
       <section id="levels" class="report-section" aria-labelledby="levels-title" hidden>
@@ -132,7 +132,7 @@
       </section>
     </main>
     <footer class="footer">
-      <span>MASSIVE <span class="footer-venue">/ MoMI</span></span>
+      <span id="print-period">15–18 October 2026 · EDT</span>
       <button type="button" id="print-report" disabled>Print PDF <span aria-hidden="true">↓</span></button>
       <span id="export-error" role="alert" hidden></span>
     </footer>

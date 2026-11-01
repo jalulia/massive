@@ -58,7 +58,7 @@
       "entry": "v04/index.html",
       "public_path": "v04/",
       "pdf": "Selected dates, sections and level, generated from the report data.",
-      "previous_publication": "485d41f01bdac190f64307e38444d87900da4557",
+      "previous_publication": "7103bbb62d52809f969788b35a948dd21de44e68",
       "baseline_commit": "803df3747c884f93255738f36d8124f71a47e8cf",
       "dataset": "momi-2026-10",
       "media_source": "v03/assets/game/"
@@ -84,7 +84,7 @@
       }
     }
   },
-  "release_revision": "2026-11-01 / V04 visual and UX revision with direct PDF export, in review",
+  "release_revision": "2026-11-01 / V04 report period and in-place day inspection, in review",
   "original_packaging_changes": [
     "Replace V01/V02 two-option navigation and add V03 navigation with the same three links",
     "Add shared version-nav.css, README.md and SOURCE.json",

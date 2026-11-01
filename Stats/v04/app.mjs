@@ -1,4 +1,6 @@
 import { buildReport, eventDates, formatHoursMinutes, formatMinutesSeconds } from "./data.mjs";
+import { setupPeriod } from "./period.mjs";
+import { setupDaily } from "./daily.mjs";
 import { animateHero, stageAnimation } from "./motion.mjs";
 import { downloadReportPDF } from "./pdf.mjs";
 
@@ -6,9 +8,6 @@ const $ = id => document.getElementById(id);
 const sections = ["daily", "levels", "combat"];
 const datesInWords = new Intl.DateTimeFormat("en-GB", {
   day: "numeric", month: "long", year: "numeric", timeZone: "UTC",
-});
-const shortDate = new Intl.DateTimeFormat("en-GB", {
-  weekday: "short", day: "numeric", month: "short", timeZone: "UTC",
 });
 const dateObject = iso => new Date(iso + "T12:00:00Z");
 const number = new Intl.NumberFormat("en-US");
@@ -29,25 +28,6 @@ function rangeLabel(from, to) {
   return (from === to ? datesInWords.format(a) : datesInWords.formatRange(a, b).replace(/\s*–\s*/g, "–")) + " · EDT";
 }
 
-function dayColumn(day, drillDown) {
-  const label = shortDate.format(dateObject(day.date));
-  const column = document.createElement(drillDown ? "button" : "div");
-  if (drillDown) column.type = "button";
-  column.className = "day-column";
-  column.dataset.date = day.date;
-  if (drillDown) column.setAttribute("aria-label", `${label}, ${day.starts} starts, ${day.entries} entries, ${formatHoursMinutes(day.activeMinutes)} active, ${day.completed} completed, ${day.exits} inactivity exits. View this day.`);
-  column.innerHTML = `<span class="day-label">${label}</span>
-    <span class="day-starts">${day.starts} <small>starts</small></span>
-    <span class="day-marks" aria-hidden="true">${"<i></i>".repeat(day.completed)}${'<i class="exit">×</i>'.repeat(day.exits)}</span>
-    <span class="day-data">
-      <span><small>Player entries</small><b>${day.entries}</b></span>
-      <span><small>Active time</small><b>${formatHoursMinutes(day.activeMinutes)}</b></span>
-      <span><small>Completed</small><b>${day.completed}</b></span>
-      <span><small>Inactivity exits</small><b>${day.exits}</b></span>
-    </span>`;
-  return column;
-}
-
 async function start() {
   const response = await fetch("../v03/snapshot.json");
   if (!response.ok) throw new Error("Match data unavailable");
@@ -56,6 +36,8 @@ async function start() {
   const startDate = dates[0], endDate = dates.at(-1);
   const selectClip = stageAnimation($("stage-video"), $("stage-poster"));
   let report, selected, stage;
+  const period = setupPeriod(dates, updateRange);
+  const renderDays = setupDaily($("day-chart"));
 
   function visibleSections() {
     return sections.filter(name => selected.has(name) && (name === "daily" || report.fullEvent));
@@ -102,19 +84,11 @@ async function start() {
 
   function render() {
     const windowLabel = rangeLabel(report.from, report.to);
-    set("report-window", windowLabel);
     document.title = "MASSIVE at MoMI · " + windowLabel;
-    $("range-from").value = report.from;
-    $("range-to").value = report.to;
-    set("range-error", "");
+    period.render(report, windowLabel);
+    set("print-period", windowLabel);
+    $("print-report").setAttribute("aria-label", "Print PDF for " + windowLabel);
     $("export-error").hidden = true;
-    for (const btn of $("date-presets").querySelectorAll("[data-date]")) {
-      const active = btn.dataset.date === "all" ? report.fullEvent : report.from === report.to && btn.dataset.date === report.from;
-      btn.setAttribute("aria-pressed", String(active));
-    }
-    const custom = !report.fullEvent && report.from !== report.to;
-    $("range-picker").dataset.active = String(custom);
-    $("range-toggle").setAttribute("aria-label", custom ? "Change date range, " + windowLabel : "Custom date range");
     set("starts", report.starts);
     set("entries", report.entries);
     set("mode-1v1", report.oneVsOne);
@@ -137,7 +111,7 @@ async function start() {
     }
     $("daily").querySelector(".chart-legend").hidden = !visible.includes("daily");
     $("levels").querySelector(".select-label").hidden = !visible.includes("levels");
-    $("day-chart").replaceChildren(...(visible.includes("daily") ? report.days.map(day => dayColumn(day, report.days.length > 1)) : []));
+    renderDays(report.days);
     renderStage();
     set("kill-total", visible.includes("combat") ? number.format(report.enemiesKilled) : "");
     set("kills-per-match", visible.includes("combat") ? report.killsPerStart.toFixed(1) : "");
@@ -159,18 +133,16 @@ async function start() {
     stage = Object.hasOwn(snapshot.levels, level) ? level : fallback;
     render();
     if (invalid) {
-      $("range-picker").open = true;
-      set("range-error", "Invalid date range. Showing the full event.");
+      history.replaceState(null, "", reportURL());
+      period.invalid();
     }
   }
 
   function updateRange(from, to) {
-    try { report = buildReport(snapshot, from, to); }
-    catch { set("range-error", "Choose an end date on or after the start date, within the event."); return false; }
-    $("range-picker").open = false;
+    if (report.from === from && report.to === to) return;
+    report = buildReport(snapshot, from, to);
     render();
     writeHistory();
-    return true;
   }
 
   function chooseStage(name) {
@@ -182,32 +154,6 @@ async function start() {
 
   readLocation();
   animateHero($("hero-art"));
-  for (const input of [$("range-from"), $("range-to")]) {
-    input.min = startDate;
-    input.max = endDate;
-  }
-  $("date-presets").addEventListener("click", event => {
-    const date = event.target.closest("button[data-date]")?.dataset.date;
-    if (date) updateRange(date === "all" ? startDate : date, date === "all" ? endDate : date);
-  });
-  $("day-chart").addEventListener("click", event => {
-    const date = event.target.closest("button[data-date]")?.dataset.date;
-    if (date && updateRange(date, date)) $("date-presets").querySelector('[aria-pressed="true"]').focus();
-  });
-  $("range-form").addEventListener("submit", event => {
-    event.preventDefault();
-    if (updateRange($("range-from").value, $("range-to").value)) $("range-picker").querySelector("summary").focus();
-  });
-  const picker = $("range-picker");
-  document.addEventListener("click", event => {
-    if (!picker.contains(event.target)) picker.open = false;
-  });
-  document.addEventListener("keydown", event => {
-    if (event.key === "Escape" && picker.open) {
-      picker.open = false;
-      $("range-toggle").focus();
-    }
-  });
   sections.forEach(name => {
     $(name).querySelector(".section-toggle").addEventListener("click", () => {
       if (selected.has(name)) selected.delete(name); else selected.add(name);

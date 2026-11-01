@@ -17,7 +17,9 @@ Serve `Stats` with a static HTTP server. V03 and V04 read their data over HTTP. 
 
 The event report opens on all four dates. Daily starts, mode counts, player entries, completions, inactivity exits and active match time respond to whole-day selection. Full-event player time, average play time per entry, level totals and kills require the complete window. The report excludes those measures from partial ranges and their printouts. [Event data and metric definitions](SOURCE.json)
 
-Matches by day opens by default. Expand By level or Combat to include either in the full-event report. The URL preserves the dates, open sections and selected level. **Print PDF** at the foot of the report downloads the summary and open sections.
+**Report dates** selects the full event, a single day or an inclusive range for both the page and PDF. In **Matches by day**, each plotted date selects its own detail panel. Keyboard users can move between days with the arrow keys. The period and its chart stay in place during inspection.
+
+Expand By level or Combat to include either in the full-event report. The URL preserves the dates, open sections and selected level. **Print PDF** downloads the summary and open sections for the dates shown beside the button.
 
 The revised layout pairs Neuzeit S Heavy with Input Mono. The PDF embeds local subsets of both faces.
 
