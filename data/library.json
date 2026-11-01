@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "sourceCommit": "02302be098c8faff556c082a5052bca2784af9a0",
+  "sourceCommit": "d480a51e14895be3b02fbc76ff4069267def134c",
   "sections": [
     [
       "presentations",
@@ -110,6 +110,26 @@
       "stats",
       "Stats",
       [
+        {
+          "title": "V04 / MoMI event report",
+          "url": "Stats/v04/?review=1",
+          "image": "assets/library-previews/stats-v04.png",
+          "detail": "15–18 Oct 2026 · Match starts, player entries and play time by date",
+          "date": "2026-11-01",
+          "version": "V04",
+          "links": [
+            [
+              "Venue report",
+              "Stats/v04/"
+            ],
+            [
+              "Match data",
+              "Stats/v03/snapshot.json"
+            ]
+          ],
+          "status": "in-review",
+          "approval": "pending"
+        },
         {
           "title": "V01 / Match telemetry",
           "url": "Stats/",
@@ -388,8 +408,8 @@
       "url": "Stats/README.md",
       "kind": "Notes",
       "location": "Repository",
-      "date": "2026-10-28",
-      "version": "02302be",
+      "date": "2026-11-01",
+      "version": "d480a51",
       "image": "",
       "title": "README"
     },
@@ -398,8 +418,8 @@
       "url": "Stats/SOURCE.json",
       "kind": "Source",
       "location": "Repository",
-      "date": "2026-10-28",
-      "version": "02302be",
+      "date": "2026-11-01",
+      "version": "d480a51",
       "image": "",
       "title": "SOURCE"
     },
@@ -1809,7 +1829,7 @@
       "kind": "Pages",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "02302be",
+      "version": "803df37",
       "image": "assets/library-previews/stats-v01.png",
       "title": "index",
       "status": "design-option",
@@ -1831,7 +1851,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "02302be",
+      "version": "803df37",
       "image": "",
       "title": "refinement"
     },
@@ -2144,6 +2164,58 @@
       "title": "styles"
     },
     {
+      "path": "Stats/v04/app.mjs",
+      "url": "Stats/v04/app.mjs",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-11-01",
+      "version": "d480a51",
+      "image": "",
+      "title": "app"
+    },
+    {
+      "path": "Stats/v04/data.mjs",
+      "url": "Stats/v04/data.mjs",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-11-01",
+      "version": "d480a51",
+      "image": "",
+      "title": "data"
+    },
+    {
+      "path": "Stats/v04/index.html",
+      "url": "Stats/v04/index.html",
+      "kind": "Pages",
+      "location": "Repository",
+      "date": "2026-11-01",
+      "version": "d480a51",
+      "image": "assets/library-previews/stats-v04.png",
+      "title": "index",
+      "status": "in-review",
+      "approval": "pending"
+    },
+    {
+      "path": "Stats/v04/motion.mjs",
+      "url": "Stats/v04/motion.mjs",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-11-01",
+      "version": "d480a51",
+      "image": "",
+      "title": "motion"
+    },
+    {
+      "path": "Stats/v04/styles.css",
+      "url": "Stats/v04/styles.css",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-11-01",
+      "version": "d480a51",
+      "image": "",
+      "title": "styles"
+    },
+    {
       "path": "Stats/version-nav.css",
       "url": "Stats/version-nav.css",
       "kind": "Source",
@@ -2264,6 +2336,16 @@
       "title": "stats v03"
     },
     {
+      "path": "assets/library-previews/stats-v04.png",
+      "url": "assets/library-previews/stats-v04.png",
+      "kind": "Images",
+      "location": "Repository",
+      "date": "",
+      "version": "",
+      "image": "assets/library-previews/stats-v04.png",
+      "title": "stats v04"
+    },
+    {
       "path": "assets/library.css",
       "url": "assets/library.css",
       "kind": "Source",
@@ -2339,7 +2421,7 @@
       "kind": "Source",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "02302be",
+      "version": "803df37",
       "image": "",
       "title": "library"
     },
@@ -2401,7 +2483,7 @@
       "kind": "Pages",
       "location": "Repository",
       "date": "2026-10-28",
-      "version": "02302be",
+      "version": "803df37",
       "image": "",
       "title": "index"
     },
@@ -6218,6 +6300,16 @@
       "version": "16dce3f",
       "image": "",
       "title": "publish"
+    },
+    {
+      "path": "tools/test-stats-v04.mjs",
+      "url": "tools/test-stats-v04.mjs",
+      "kind": "Source",
+      "location": "Repository",
+      "date": "2026-11-01",
+      "version": "d480a51",
+      "image": "",
+      "title": "test stats v04"
     },
     {
       "path": "tools/verify-library.py",

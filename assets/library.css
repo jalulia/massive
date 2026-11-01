@@ -15,5 +15,6 @@
 .archive-versions>summary{font-size:11px;padding:4px 0 0;justify-content:flex-start;color:var(--text);width:fit-content}
 .archive-versions[open]>summary{padding-bottom:22px}
 .archive-versions>summary:after{margin-left:3px}
-#stats .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+#stats .grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(min-width:721px) and (max-width:1050px){#stats .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:720px){#stats .grid{grid-template-columns:1fr}#stats .detail,#stats .links{font-size:11px}#stats .meta{font-size:10px}.collection-note{font-size:11px}.review-status{font-size:10px}}

@@ -76,11 +76,15 @@ presentations=sections.get('presentations',[])
 assert len(presentations)==6, 'Expected all six archived presentation cards'
 assert all(c.get('status')=='archived' and c.get('approval')=='not-approved' for c in presentations), 'Every presentation card must be archived and not approved'
 stats=sections.get('stats',[])
-assert len(stats)==3, 'Expected three Stats options'
+assert len(stats)==4, 'Expected three Stats design options and the V04 review'
 def normalized_page(url):
     path=urlparse(url).path
     return path+'index.html' if path.endswith('/') else path
-assert {normalized_page(c['url']) for c in stats}=={'Stats/index.html','Stats/v02.html','Stats/v03/index.html'}, 'Stats must link to V01, V02 and V03'
+studies={normalized_page(c['url']) for c in stats if c.get('status')=='design-option' and c.get('approval')=='unapproved'}
+assert studies=={'Stats/index.html','Stats/v02.html','Stats/v03/index.html'}, 'Stats must retain the original three design options'
+review=[c for c in stats if c.get('status')=='in-review' and c.get('approval')=='pending']
+assert len(review)==1 and review[0]['url']=='Stats/v04/?review=1', 'Stats must link V04 in review mode'
+assert any(u=='Stats/v04/' for _,u in review[0]['links']), 'V04 must also link to the venue report'
 
 archived_paths={
     'momi.html','presentation-directions/index.html','explorations/momi-notes.html','Speaker-notes.md',
@@ -91,6 +95,7 @@ archived_paths={
     'presentation-directions/MASSIVE-03-Big-Small.pptx',
 }
 repository_files={f['path']:f for f in data['files'] if f['location']=='Repository'}
+assert repository_files['Stats/v04/index.html'].get('status')=='in-review', 'All files must identify V04 as in review'
 assert all(repository_files[p].get('status')=='archived' and repository_files[p].get('approval')=='not-approved' for p in archived_paths), 'Presentation files must retain archive status in All files'
 
 for section in data['sections']:
@@ -101,6 +106,6 @@ for section in data['sections']:
         parser.verify()
 for f in data['files']:
     if f.get('image'): assert exists(ROOT/f['image']),f['image']
-print(f'PASS: {len(actual)} repository files, {len(releases)} release assets, {sum(bool(m.get("master_url")) for m in masters)} masters; {len(checked_html)}/{len(html_paths)} HTML sources checked ({local_html} local, {len(checked_html)-local_html} from Git). Links and inventory previews resolve against disk or tracked files; six archived presentations and three Stats options verified.')
+print(f'PASS: {len(actual)} repository files, {len(releases)} release assets, {sum(bool(m.get("master_url")) for m in masters)} masters; {len(checked_html)}/{len(html_paths)} HTML sources checked ({local_html} local, {len(checked_html)-local_html} from Git). Links, previews, six archived presentations, three Stats design options and the V04 review verified.')
 if len(checked_html)<len(html_paths):
     print(f'Coverage: {len(html_paths)-len(checked_html)} omitted HTML sources were not parsed. Use --all-html to read them from Git.')

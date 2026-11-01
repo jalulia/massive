@@ -10,11 +10,13 @@ The standalone presentation is preserved at `momi.html`. It includes the 1920 ×
 
 ## Library index
 
-The root `index.html` is a compact visual directory of every standalone HTML page, presentation direction, stats option, media set, study and the linked GDD. Section 01 is a collapsed presentation archive; section 02 links the three stats design options. Archive and approval labels also appear in **All files** and are searchable. All repository files, all assets from all five GitHub releases, and the 35 linked Drive masters are searchable under **All files**. Dates come from Git history, release asset updates or the dated master manifest; filesystem modification times are not used. Live external documents have no invented version date.
+The root `index.html` is a compact visual directory of every standalone HTML page, presentation direction, stats report, media set, study and the linked GDD. Section 01 is a collapsed presentation archive. Section 02 links the V04 MoMI event report and three earlier stats design studies. Archive and approval labels also appear in **All files** and are searchable. All repository files, all assets from all five GitHub releases, and the 35 linked Drive masters are searchable under **All files**. Dates come from Git history, release asset updates or the dated master manifest.
 
 The original MOMI presentation is preserved at `momi.html`; old numeric slide bookmarks at the root redirect there. The withdrawn Cosmic Atlas PDF is omitted; its PowerPoint remains available. Archive labels are library metadata; the original presentation files and downloads are unchanged.
 
 ## Stats options
+
+**V04 / MoMI event report · In review.** The report uses Matt’s 15–18 October match data to show participation, cabinet match time and completion for a selected date range. [Review V04](https://jalulia.github.io/massive/Stats/v04/?review=1) · [Open the venue report](https://jalulia.github.io/massive/Stats/v04/)
 
 [V01 — Match telemetry](https://jalulia.github.io/massive/Stats/) and [V02 — Stage report](https://jalulia.github.io/massive/Stats/v02.html) use an embedded copy of Matt’s match snapshot, with a comparison grid and rotating native stage animations with stage comparisons respectively. [V03 — Match statistics](https://jalulia.github.io/massive/Stats/v03/index.html) loads the JSON file directly and pairs the report with native stage animations. All three are design options; [review notes and source details](Stats/README.md) record the known limitations.
 

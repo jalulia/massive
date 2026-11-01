@@ -51,6 +51,8 @@ ARCHIVED_PRESENTATIONS = {
 def review_status(path):
     if path in ARCHIVED_PRESENTATIONS:
         return dict(status='archived', approval='not-approved')
+    if path == 'Stats/v04/index.html':
+        return dict(status='in-review', approval='pending')
     if path in {'Stats/index.html', 'Stats/v02.html', 'Stats/v03/index.html',
                 'Stats/v01-original.html', 'Stats/v02-original.html'}:
         return dict(status='design-option', approval='unapproved')
@@ -58,6 +60,7 @@ def review_status(path):
 
 def status_label(item):
     if item.get('status') == 'archived': return 'Archived · Not approved'
+    if item.get('status') == 'in-review': return 'In review'
     if item.get('status') == 'design-option': return 'Design option'
     return ''
 
@@ -85,6 +88,7 @@ card('Big / Small','presentation-directions/#3-1','assets/library-previews/big-s
 card('MOMI presentation notes','explorations/momi-notes.html','presentation-assets/C12_PLANE_DIAGRAM.png','Slide notes · HTML','explorations/momi-notes.html'),
 ]),
 ('stats', 'Stats', [
+card('V04 / MoMI event report','Stats/v04/?review=1','assets/library-previews/stats-v04.png','15–18 Oct 2026 · Match starts, player entries and play time by date','Stats/v04/index.html',[('Venue report','Stats/v04/'),('Match data','Stats/v03/snapshot.json')],version='V04'),
 card('V01 / Match telemetry','Stats/','assets/library-previews/stats-v01.png','Claude · Embedded JSON · Comparison grid','Stats/index.html',[('Review notes','Stats/README.md'),('Original','Stats/v01-original.html')],version='V01'),
 card('V02 / Stage report','Stats/v02.html','assets/library-previews/stats-v02.png','Claude · Embedded JSON · Native stage animation','Stats/v02.html',[('Review notes','Stats/README.md'),('Original','Stats/v02-original.html')],version='V02'),
 card('V03 / Match statistics','Stats/v03/index.html','assets/library-previews/stats-v03.png','Codex · JSON file · Animated stage report','Stats/v03/index.html',[('Review notes','Stats/README.md'),('Snapshot JSON','Stats/v03/snapshot.json')],version='V03'),
@@ -128,7 +132,7 @@ def preview(path):
     for p in images:
         if Path(p).stem == stem: return p
     for c in [c for _,_,cards in sections for c in cards]:
-        target = c['url'].split('#')[0]
+        target = urlparse(c['url']).path
         if target.endswith('/'): target += 'index.html'
         if path == target: return c['image']
     return ''
@@ -181,8 +185,6 @@ def section_html(i, sid, title, cards):
     grid='<div class="grid">'+''.join(card_html(c) for c in cards)+'</div>'
     if sid == 'presentations':
         content='<p class="collection-note">Archived · Not approved. Previous versions are retained for reference.</p><details class="archive-versions"><summary>View archived versions</summary>'+grid+'</details>'
-    elif sid == 'stats':
-        content='<p class="collection-note">Three design options · 15–18 October 2026 match snapshot. Use V01 / V02 / V03 on each page to compare.</p>'+grid
     else:
         content=grid
     return f'<section class="collection" id="{sid}">'+heading+content+'</section>'
