@@ -4,7 +4,7 @@ V04 is the venue report for the Museum of the Moving Image, 15–18 October 2026
 
 | Option | Page | Data and design approach |
 | --- | --- | --- |
-| V04 · In review | [Review V04](v04/?review=1) · [Venue report](v04/) | Reads the event JSON and aggregates whole dates. Match starts, player entries and cabinet match time lead the report. |
+| V04 · In review | [Open event report](v04/) | Reads the event JSON and aggregates whole dates. Match starts, player entries and cabinet match time lead the report. |
 | V01 · Claude, Rev 3 | [Open V01](index.html) | Computes totals, outcomes and stage rates from an embedded copy of the JSON. A compact grid pairs the native field model with daily counts, selected-stage footage and a sortable comparison table. |
 | V02 · Claude, Rev 3 | [Open V02](v02.html) | Uses the same embedded data for outcome readouts, daily counts and inactivity records. Isolated native stage animations rotate through the hero; instrument panels and adjacent stage details organize the report. |
 | V03 · Codex | [Open V03](v03/index.html) | Loads the original JSON directly for daily counts, mode outcomes, sortable stages and inactivity records. A large animation hero, slow crossfades and selected-stage loops provide the visual focus. |
@@ -16,6 +16,10 @@ Serve `Stats` with a static HTTP server. V03 and V04 read their data over HTTP. 
 ## V04 · Museum report
 
 The event report opens on all four dates. Daily starts, mode counts, player entries, completions, inactivity exits and active match time respond to whole-day selection. Full-event player time, average play time per entry, level totals and kills require the complete window. The report excludes those measures from partial ranges and their printouts. [Event data and metric definitions](SOURCE.json)
+
+Matches by day opens by default. Expand By level or Combat to include either in the full-event report. The URL preserves the dates, open sections and selected level. **Print PDF** at the foot of the report downloads the summary and open sections.
+
+The revised layout pairs Neuzeit S Heavy with Input Mono. The PDF embeds local subsets of both faces.
 
 The full event recorded 228 match starts and 530 player entries across 191 one-on-one matches and 37 two-on-two matches. One entry is one player slot in one match, including repeat plays. Combined player time was 25h 39m across slots and active match time was 11h 03m on the cabinet. The four daily tables in the source use local EDT dates. [Source JSON](v03/snapshot.json)
 

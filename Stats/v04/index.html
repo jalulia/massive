@@ -8,10 +8,9 @@
   <title>MASSIVE at MoMI · Event report</title>
   <link rel="icon" href="../v03/assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="../v03/assets/InputMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="../v03/assets/InputMono-Bold.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="../version-nav.css">
-  <link rel="stylesheet" href="styles.css">
-  <script type="module" src="app.mjs"></script>
+  <link rel="preload" href="../assets-r3/fonts/NeuzeitSHeavy.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script type="module" src="app.mjs?v=2"></script>
 </head>
 <body>
   <a class="skip-link" href="#overview">Skip to event statistics</a>
@@ -21,22 +20,6 @@
         <img class="wordmark" src="../v03/assets/massive-wordmark.png" width="1792" height="313" alt="MASSIVE">
         <span class="museum">Museum of the Moving Image</span>
       </div>
-      <div class="report-actions" aria-label="Report tools">
-        <details id="report-options" class="popover sections-picker" hidden>
-          <summary>Sections</summary>
-          <fieldset class="popover-body">
-            <legend class="sr-only">Report sections</legend>
-            <label><input id="include-daily" type="checkbox" checked> Daily activity</label>
-            <label><input id="include-levels" type="checkbox"> Levels</label>
-            <label><input id="include-combat" type="checkbox"> Combat</label>
-            <span id="section-scope" hidden>Level and combat totals cover the full event.</span>
-          </fieldset>
-        </details>
-        <button type="button" id="share-report">Share<span class="action-icon" aria-hidden="true">↗</span></button>
-        <button type="button" id="print-report">Print</button>
-        <input id="share-url" type="url" aria-label="Report link" readonly hidden>
-        <span id="share-status" role="status"></span>
-      </div>
     </header>
 
     <main id="overview">
@@ -45,7 +28,7 @@
       <div class="event-layout">
         <section class="intro" aria-labelledby="event-title">
           <p class="eyebrow"><span class="signal" aria-hidden="true"></span> Event report</p>
-          <h1 id="event-title">MASSIVE <span class="title-at">at</span> MoMI</h1>
+          <h1 id="event-title">MASSIVE <span class="title-line"><span class="title-at">at</span> MoMI</span></h1>
           <p id="report-window" class="report-window">15–18 October 2026 · EDT</p>
           <div class="date-controls" role="group" aria-label="Reporting dates">
             <div id="date-presets">
@@ -103,7 +86,7 @@
 
       <section id="daily" class="report-section" aria-labelledby="daily-title">
         <header class="section-head">
-          <h2 id="daily-title">Matches by day</h2>
+          <h2 id="daily-title"><button class="section-toggle" type="button" aria-expanded="true" aria-controls="day-chart">Matches by day</button></h2>
           <div class="chart-legend">
             <span><i class="dot" aria-hidden="true"></i> Completed</span>
             <span><b aria-hidden="true">×</b> Inactivity exit</span>
@@ -115,41 +98,44 @@
 
       <section id="levels" class="report-section" aria-labelledby="levels-title" hidden>
         <header class="section-head">
-          <h2 id="levels-title">By level</h2>
+          <h2 id="levels-title"><button class="section-toggle" type="button" aria-expanded="false" aria-controls="level-content">By level</button></h2>
           <label class="select-label" for="stage-sort">Sort
             <select id="stage-sort"><option value="starts">Most starts</option><option value="name">Name A–Z</option></select>
           </label>
         </header>
-        <div id="stage-tabs" class="stage-tabs" role="group" aria-label="Select level"></div>
-        <label class="stage-picker select-label" for="stage-select">Level <select id="stage-select"></select></label>
-        <div class="level-layout">
-          <div class="stage-art">
-            <img id="stage-poster" alt="">
-            <video id="stage-video" aria-hidden="true" muted playsinline loop preload="none" disablepictureinpicture tabindex="-1"></video>
-          </div>
-          <div class="stage-reading">
-            <h3 id="stage-name">—</h3>
-            <dl class="level-stats">
-              <div><dt>Matches started</dt><dd id="stage-starts">—</dd></div>
-              <div><dt>Inactivity exits</dt><dd id="stage-exits">—</dd></div>
-              <div><dt>Share of starts</dt><dd id="stage-share">—</dd></div>
-            </dl>
+        <div id="level-content" hidden>
+          <div id="stage-tabs" class="stage-tabs" role="group" aria-label="Select level"></div>
+          <label class="stage-picker select-label" for="stage-select">Level <select id="stage-select"></select></label>
+          <div class="level-layout">
+            <div class="stage-art">
+              <img id="stage-poster" alt="">
+              <video id="stage-video" aria-hidden="true" muted playsinline loop preload="none" disablepictureinpicture tabindex="-1"></video>
+            </div>
+            <div class="stage-reading">
+              <h3 id="stage-name">—</h3>
+              <dl class="level-stats">
+                <div><dt>Matches started</dt><dd id="stage-starts">—</dd></div>
+                <div><dt>Inactivity exits</dt><dd id="stage-exits">—</dd></div>
+                <div><dt>Share of starts</dt><dd id="stage-share">—</dd></div>
+              </dl>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="combat" class="report-section" aria-labelledby="combat-title" hidden>
-        <header class="section-head"><h2 id="combat-title">Combat</h2></header>
-        <dl class="combat-stats">
+        <header class="section-head"><h2 id="combat-title"><button class="section-toggle" type="button" aria-expanded="false" aria-controls="combat-content">Combat</button></h2></header>
+        <dl class="combat-stats" id="combat-content" hidden>
           <div><dt>Enemies killed</dt><dd id="kill-total">—</dd></div>
           <div><dt>Enemies killed per match started</dt><dd id="kills-per-match">—</dd></div>
         </dl>
       </section>
     </main>
-    <footer class="footer"><span>MASSIVE</span><span>MoMI · October 2026</span></footer>
+    <footer class="footer">
+      <span>MASSIVE <span class="footer-venue">/ MoMI</span></span>
+      <button type="button" id="print-report" disabled>Print PDF <span aria-hidden="true">↓</span></button>
+      <span id="export-error" role="alert" hidden></span>
+    </footer>
   </div>
-  <nav id="version-nav" class="stats-version-nav" aria-label="Compare stats versions" hidden>
-    <a href="../">V01</a><a href="../v02.html">V02</a><a href="../v03/">V03</a><a href="?review=1" aria-current="page">V04</a>
-  </nav>
 </body>
 </html>

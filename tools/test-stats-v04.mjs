@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import { buildReport, eventDates, formatHoursMinutes, formatMinutesSeconds } from "../Stats/v04/data.mjs";
+import { createReportPDF } from "../Stats/v04/pdf.mjs";
 
 const source = readFileSync(new URL("../Stats/v03/snapshot.json", import.meta.url));
 const snapshot = JSON.parse(source);
@@ -80,4 +81,28 @@ test("unknown, timestamped and reversed date filters cannot return a misleading 
     ["2026-10-14", dates[1]], [dates[3], "2026-10-19"], [dates[2], dates[0]],
     [dates[0], "2026-10-18T00:00:00Z"], ["", dates[3]],
   ]) assert.throws(() => buildReport(snapshot, from, to), RangeError);
+});
+
+test("PDF export follows the selected dates, level and open sections", async () => {
+  const full = buildReport(snapshot);
+  const options = { sections: ["daily", "levels", "combat"], stage: "HIGGS" };
+  const file = createReportPDF(full, options);
+  assert.equal(file.type, "application/pdf");
+  const pdf = await file.text();
+  const xref = Number(pdf.match(/startxref\n(\d+)/)[1]);
+  assert.ok(pdf.startsWith("xref\n", xref));
+  assert.match(pdf, /\/Count 1\b/);
+  for (const value of ["530", "2m 54s", "211 of 228", "Matches by day", "HIGGS", "Combat", "16,782"]) {
+    assert.ok(pdf.includes(value), value);
+  }
+  const saturday = await createReportPDF(buildReport(snapshot, dates[2], dates[2]), options).text();
+  for (const value of ["17 OCTOBER 2026", "184", "3h 55m", "77 of 79"]) {
+    assert.ok(saturday.includes(value), value);
+  }
+  for (const excluded of ["HIGGS", "Combat", "25h 39m", "2m 54s", "16,782"]) {
+    assert.ok(!saturday.includes(excluded), excluded);
+  }
+  const summary = await createReportPDF(full, { sections: [] }).text();
+  assert.ok(!summary.includes("Matches by day"));
+  assert.ok(!summary.includes("Combat"));
 });
