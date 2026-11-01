@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="MASSIVE at the Museum of the Moving Image. Match activity and player participation, 15–18 October 2026.">
+  <title>MASSIVE at MoMI · Event report</title>
+  <link rel="icon" href="../v03/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../v03/assets/InputMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="../v03/assets/InputMono-Bold.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="../version-nav.css">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#overview">Skip to event statistics</a>
+  <div class="page">
+    <header class="masthead">
+      <div class="identity">
+        <img class="wordmark" src="../v03/assets/massive-wordmark.png" width="1792" height="313" alt="MASSIVE">
+        <span class="museum">Museum of the Moving Image</span>
+      </div>
+      <div class="report-actions" aria-label="Report tools">
+        <details id="report-options" class="popover sections-picker" hidden>
+          <summary>Sections</summary>
+          <fieldset class="popover-body">
+            <legend class="sr-only">Report sections</legend>
+            <label><input id="include-daily" type="checkbox" checked> Daily activity</label>
+            <label><input id="include-levels" type="checkbox"> Levels</label>
+            <label><input id="include-combat" type="checkbox"> Combat</label>
+            <span id="section-scope" hidden>Level and combat totals cover the full event.</span>
+          </fieldset>
+        </details>
+        <button type="button" id="share-report">Share<span class="action-icon" aria-hidden="true">↗</span></button>
+        <button type="button" id="print-report">Print</button>
+        <input id="share-url" type="url" aria-label="Report link" readonly hidden>
+        <span id="share-status" role="status"></span>
+      </div>
+    </header>
+
+    <main id="overview">
+      <noscript><p class="notice">Enable JavaScript to load the match statistics and date filters.</p></noscript>
+      <p id="load-error" class="notice" role="alert" hidden>Match data could not be loaded. <a href="">Reload report</a></p>
+      <div class="event-layout">
+        <section class="intro" aria-labelledby="event-title">
+          <p class="eyebrow"><span class="signal" aria-hidden="true"></span> Event report</p>
+          <h1 id="event-title">MASSIVE <span class="title-at">at</span> MoMI</h1>
+          <p id="report-window" class="report-window">15–18 October 2026 · EDT</p>
+          <div class="date-controls" role="group" aria-label="Reporting dates">
+            <div id="date-presets">
+              <button type="button" data-date="all" aria-pressed="true">Full event</button>
+              <button type="button" data-date="2026-10-15" aria-pressed="false" aria-label="Thursday, October 15">Thu 15</button>
+              <button type="button" data-date="2026-10-16" aria-pressed="false" aria-label="Friday, October 16">Fri 16</button>
+              <button type="button" data-date="2026-10-17" aria-pressed="false" aria-label="Saturday, October 17">Sat 17</button>
+              <button type="button" data-date="2026-10-18" aria-pressed="false" aria-label="Sunday, October 18">Sun 18</button>
+            </div>
+            <details id="range-picker" class="popover">
+              <summary id="range-toggle">Range</summary>
+              <form id="range-form" class="popover-body">
+                <label for="range-from">From <input type="date" id="range-from" required></label>
+                <label for="range-to">Through <input type="date" id="range-to" required></label>
+                <span id="range-error" role="alert"></span>
+                <button class="apply" type="submit">Apply range</button>
+              </form>
+            </details>
+          </div>
+        </section>
+
+        <section class="headline-metrics" aria-label="Participation">
+          <div class="metric" id="starts-metric">
+            <h2>Matches started</h2>
+            <p id="starts" class="big-number">—</p>
+          </div>
+          <div class="metric" id="entries-metric">
+            <h2>Player entries</h2>
+            <p id="entries" class="big-number">—</p>
+            <p class="mode-split">
+              <span><b id="mode-1v1">—</b> × 2 players<span class="sr-only"> in one-on-one matches</span></span>
+              <span><b id="mode-2v2">—</b> × 4 players<span class="sr-only"> in two-on-two matches</span></span>
+            </p>
+          </div>
+          <div class="metric" id="average-metric">
+            <h2>Avg. play time per entry</h2>
+            <p id="average-time" class="big-number duration">—</p>
+          </div>
+          <p class="entry-definition">One entry per player slot per match. Repeat plays count.</p>
+        </section>
+
+        <section class="support-metrics" aria-label="Play time and completion">
+          <div class="metric"><h2>Active match time</h2><p id="active-time">—</p></div>
+          <div class="metric"><h2>Matches completed</h2><p id="completed">—</p><span class="support-note" id="completion-rate">—</span></div>
+          <div class="metric" id="player-time-metric"><h2>Combined player time</h2><p id="player-time">—</p></div>
+        </section>
+
+        <div id="hero-art" class="hero-art" aria-hidden="true">
+          <img src="../v03/assets/game/stage-singularity-poster.jpg" alt="" fetchpriority="high">
+          <video class="is-active" muted playsinline loop preload="none" disablepictureinpicture tabindex="-1"></video>
+          <video muted playsinline loop preload="none" disablepictureinpicture tabindex="-1"></video>
+        </div>
+      </div>
+      <span id="report-status" class="sr-only" role="status"></span>
+
+      <section id="daily" class="report-section" aria-labelledby="daily-title">
+        <header class="section-head">
+          <h2 id="daily-title">Matches by day</h2>
+          <div class="chart-legend">
+            <span><i class="dot" aria-hidden="true"></i> Completed</span>
+            <span><b aria-hidden="true">×</b> Inactivity exit</span>
+            <span class="mark-key">1 mark = 1 match</span>
+          </div>
+        </header>
+        <div id="day-chart" class="day-chart" aria-label="Daily match counts"></div>
+      </section>
+
+      <section id="levels" class="report-section" aria-labelledby="levels-title" hidden>
+        <header class="section-head">
+          <h2 id="levels-title">By level</h2>
+          <label class="select-label" for="stage-sort">Sort
+            <select id="stage-sort"><option value="starts">Most starts</option><option value="name">Name A–Z</option></select>
+          </label>
+        </header>
+        <div id="stage-tabs" class="stage-tabs" role="group" aria-label="Select level"></div>
+        <label class="stage-picker select-label" for="stage-select">Level <select id="stage-select"></select></label>
+        <div class="level-layout">
+          <div class="stage-art">
+            <img id="stage-poster" alt="">
+            <video id="stage-video" aria-hidden="true" muted playsinline loop preload="none" disablepictureinpicture tabindex="-1"></video>
+          </div>
+          <div class="stage-reading">
+            <h3 id="stage-name">—</h3>
+            <dl class="level-stats">
+              <div><dt>Matches started</dt><dd id="stage-starts">—</dd></div>
+              <div><dt>Inactivity exits</dt><dd id="stage-exits">—</dd></div>
+              <div><dt>Share of starts</dt><dd id="stage-share">—</dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section id="combat" class="report-section" aria-labelledby="combat-title" hidden>
+        <header class="section-head"><h2 id="combat-title">Combat</h2></header>
+        <dl class="combat-stats">
+          <div><dt>Enemies killed</dt><dd id="kill-total">—</dd></div>
+          <div><dt>Enemies killed per match started</dt><dd id="kills-per-match">—</dd></div>
+        </dl>
+      </section>
+    </main>
+    <footer class="footer"><span>MASSIVE</span><span>MoMI · October 2026</span></footer>
+  </div>
+  <nav id="version-nav" class="stats-version-nav" aria-label="Compare stats versions" hidden>
+    <a href="../">V01</a><a href="../v02.html">V02</a><a href="../v03/">V03</a><a href="?review=1" aria-current="page">V04</a>
+  </nav>
+</body>
+</html>

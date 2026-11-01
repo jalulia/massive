@@ -1,16 +1,23 @@
-# MASSIVE — Stats options
+# MASSIVE — Stats
 
-Three design options using Matt’s 15–18 October 2026 match data. V01 and V02 combine Claude’s Rev 3 with Codex integration and the editorial and visual pass below. V03 remains the earlier Codex comparison. The small **V01 / V02 / V03** links at the bottom right switch between options.
+V04 is the venue report for the Museum of the Moving Image, 15–18 October 2026. The library lists it as **In review**. V01–V03 are the original design studies. V01 and V02 combine Claude’s Rev 3 with Codex integration. V03 is the Codex comparison.
 
 | Option | Page | Data and design approach |
 | --- | --- | --- |
+| V04 · In review | [Review V04](v04/?review=1) · [Venue report](v04/) | Reads the event JSON and aggregates whole dates. Match starts, player entries and cabinet match time lead the report. |
 | V01 · Claude, Rev 3 | [Open V01](index.html) | Computes totals, outcomes and stage rates from an embedded copy of the JSON. A compact grid pairs the native field model with daily counts, selected-stage footage and a sortable comparison table. |
 | V02 · Claude, Rev 3 | [Open V02](v02.html) | Uses the same embedded data for outcome readouts, daily counts and inactivity records. Isolated native stage animations rotate through the hero; instrument panels and adjacent stage details organize the report. |
 | V03 · Codex | [Open V03](v03/index.html) | Loads the original JSON directly for daily counts, mode outcomes, sortable stages and inactivity records. A large animation hero, slow crossfades and selected-stage loops provide the visual focus. |
 
 ## Run
 
-Serve `Stats` with a static HTTP server. No build step or package installation is needed. V03 fetches its JSON, so use HTTP rather than `file://`. Relative links support deployment under `/massive/Stats/` or another subdirectory; V01 is the default page.
+Serve `Stats` with a static HTTP server. V03 and V04 read their data over HTTP. V01 is the default page at `Stats/`.
+
+## V04 · Museum report
+
+The event report opens on all four dates. Daily starts, mode counts, player entries, completions, inactivity exits and active match time respond to whole-day selection. Full-event player time, average play time per entry, level totals and kills require the complete window. The report excludes those measures from partial ranges and their printouts. [Event data and metric definitions](SOURCE.json)
+
+The full event recorded 228 match starts and 530 player entries across 191 one-on-one matches and 37 two-on-two matches. One entry is one player slot in one match, including repeat plays. Combined player time was 25h 39m across slots and active match time was 11h 03m on the cabinet. The four daily tables in the source use local EDT dates. [Source JSON](v03/snapshot.json)
 
 ## Current V01 and V02
 
@@ -40,4 +47,4 @@ Verification covered widths of **360, 768, 1280 and 1512px**: no page overflow, 
 - Claude’s Rev 3 came from `Sites/massive-stats/`; the original comparison came from `MASSIVE-match-telemetry.zip`. V03 came from `Sites/massive-state/dist`.
 - [SOURCE.json](SOURCE.json) records source hashes and integration changes.
 
-All options remain design comparisons. Player slots are not unique people, and individual completed-match records are unavailable. Exposure rates do not control for skill, mode mix or stage mechanics. Game footage illustrates MASSIVE; it is not a replay of these records.
+The source counts player slots. It contains no individual completed-match records. Exposure rates do not control for skill, mode mix or stage mechanics. The footage shows native MASSIVE assets.

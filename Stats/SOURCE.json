@@ -1,5 +1,5 @@
 {
-  "purpose": "MASSIVE stats design options: revised Claude V01/V02 and preserved Codex V03, with original comparisons retained",
+  "purpose": "MASSIVE event reports and stats design studies",
   "source_zip": {
     "filename": "MASSIVE-match-telemetry.zip",
     "sha256": "1c024368f65976562c46ed3fc6f85570cebc61665b427eea8f83c34b6c3cfbe7"
@@ -49,9 +49,40 @@
       "source": "Sites/massive-state/dist/index.html",
       "source_html_sha256": "44327081d5180ac6c5d9d70fce42eebee4408714056b49bb87b8043e573191e8",
       "source_commit": "924bd60246027d1ff638900a7131814c5b6d82bc"
+    },
+    {
+      "version": "V04",
+      "title": "MoMI event report",
+      "status": "in-review",
+      "author": "Codex",
+      "entry": "v04/index.html",
+      "review_entry": "v04/?review=1",
+      "baseline_commit": "803df3747c884f93255738f36d8124f71a47e8cf",
+      "dataset": "momi-2026-10",
+      "media_source": "v03/assets/game/"
     }
   ],
-  "release_revision": "2026-10-28 / Editorial and visual refinement of Claude Rev 3",
+  "datasets": {
+    "momi-2026-10": {
+      "venue": "Museum of the Moving Image",
+      "start_date": "2026-10-15",
+      "end_date_inclusive": "2026-10-18",
+      "timezone": "America/New_York",
+      "source": "v03/snapshot.json",
+      "sha256": "2871bf192eae2e46895d8b306449fc14ac3ade3ca5b90ac2ab58bd0c724b5990",
+      "metrics": {
+        "matches_started": "Recorded starts, including inactivity exits.",
+        "player_entries": "Two slots per 1v1 start and four per 2v2 start. Repeat plays count.",
+        "active_match_time": "Sum of unrounded active match minutes over the selected dates, counted once per match.",
+        "matches_completed": "Matches that reached final scoring, including ties. The completion rate uses all starts in the selected period.",
+        "combined_player_time": "Player-minutes summed over slots. Available for the full event.",
+        "average_play_time_per_entry": "Full-event player-minutes divided by player entries.",
+        "inactivity_exits": "Matches that ended when all players were inactive.",
+        "enemies_killed_per_match": "Full-event enemy kills divided by all match starts."
+      }
+    }
+  },
+  "release_revision": "2026-11-01 / V04 MoMI event report, in review",
   "original_packaging_changes": [
     "Replace V01/V02 two-option navigation and add V03 navigation with the same three links",
     "Add shared version-nav.css, README.md and SOURCE.json",
