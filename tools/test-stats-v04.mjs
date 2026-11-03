@@ -106,3 +106,26 @@ test("PDF export follows the selected dates, level and open sections", async () 
   assert.ok(!summary.includes("Matches by day"));
   assert.ok(!summary.includes("Combat"));
 });
+
+test("cabinet scores use completed entries, exact meV, the report period and shared ranks", async () => {
+  const daily = Object.fromEntries(dates.map((date, i) => [date, {
+    teamMeV: String(12000 * (i + 1)), playerMeV: String(2000 * (i + 1)), entries: i + 2,
+    top: [{meV: "1001", level: "HIGGS", mode: "1v1"}, {meV:"1000", level:"NOVA", mode:"2v2"}],
+  }]));
+  daily[dates[2]].top[0].meV = "9007199254740993";
+  daily[dates[3]].top[0].meV = "9007199254740992";
+  const report = buildReport(snapshot, dates[1], dates[2], daily);
+  assert.equal(report.score.total, "60 eV");
+  assert.equal(report.score.average, "1.429 eV");
+  assert.equal(report.score.entries, 7);
+  assert.deepEqual(report.score.top.map(row => [row.rank, row.date, row.value]), [
+    [1, dates[2], "9.007199254740993 TeV"], [2, dates[1], "1.001 eV"], [3, dates[1], "1 eV"],
+  ]);
+  const all = buildReport(snapshot, undefined, undefined, daily);
+  assert.deepEqual(all.score.top.map(row => row.value), ["9.007199254740993 TeV","9.007199254740992 TeV","1.001 eV"]);
+  assert.deepEqual(buildReport(snapshot, dates[0], dates[1], daily).score.top.map(row => row.rank), [1,1,3]);
+  assert.equal(buildReport(snapshot).score, null);
+  assert.equal(buildReport(snapshot, dates[0], dates[1], {[dates[1]]: daily[dates[1]]}).score, null);
+  assert.match(await createReportPDF(report,{sections:["scores"]}).text(), /Top 3 individual scores/);
+  assert.doesNotMatch(await createReportPDF(report,{sections:["daily"]}).text(), /Top 3 individual scores/);
+});

@@ -1,3 +1,5 @@
+import { scoresForDays } from "./scores.mjs";
+
 // The export already groups match starts by the venue's local calendar dates.
 export function eventDates(snapshot) {
   return Object.keys(snapshot.days).sort();
@@ -11,7 +13,7 @@ function percent(part, total) {
   return per(part * 100, total);
 }
 
-export function buildReport(snapshot, from, to) {
+export function buildReport(snapshot, from, to, scoreDays = null) {
   const dates = eventDates(snapshot);
   from ??= dates[0];
   to ??= dates.at(-1);
@@ -52,6 +54,7 @@ export function buildReport(snapshot, from, to) {
 
   return {
     from, to, fullEvent, days, starts, entries, completed,
+    score: scoresForDays(days, scoreDays),
     exits: sum("exits"),
     oneVsOne: sum("oneVsOne"),
     twoVsTwo: sum("twoVsTwo"),

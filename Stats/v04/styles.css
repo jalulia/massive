@@ -79,7 +79,40 @@ h1, h2, h3, p, dl, dt, dd, fieldset { margin: 0; }
 }
 .identity { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .wordmark { display: block; width: clamp(110px, 11vw, 165px); height: auto; }
-.museum, .eyebrow, .metric h2, .chart-legend, .select-label, .level-stats dt, .combat-stats dt, .footer {
+.museum, .eyebrow, .metric h2, .chart-legend, .select-label, .level-stats dt, .combat-stats dt, #scores-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.4fr);
+  gap: clamp(25px, 4vw, 64px);
+  align-items: start;
+  font-variant-numeric: tabular-nums;
+}
+.score-summary { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.score-summary > div { border-top: 1px solid var(--line); padding-top: 10px; }
+.score-summary dt, .score-table th { font: 400 11px/1.45 var(--mono); color: var(--secondary); }
+.score-summary dd { margin-top: 8px; font: 300 clamp(21px, 2.1vw, 35px)/1.2 var(--mono); letter-spacing: -.065em; }
+.score-summary .score-scope { margin-top: 6px; color: var(--dim); font: 400 11px/1.4 var(--mono); letter-spacing: 0; }
+.score-table { border-collapse: collapse; width: 100%; font: 400 12px/1.45 var(--mono); }
+.score-table caption { text-align: left; font: 700 clamp(20px, 1.7vw, 28px)/1 var(--display); letter-spacing: -.035em; padding-bottom: 10px; }
+.score-table :is(th, td) { text-align: left; border-bottom: 1px solid var(--line); padding: 6px 7px 6px 0; }
+.score-table tr > :last-child { text-align: right; padding-right: 0; overflow-wrap: anywhere; }
+.score-table td:first-child { color: var(--dim); }
+@media (max-width: 900px) {
+  #scores-content { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 520px) {
+  .score-summary dt { min-height: 2.9em; }
+  .score-table { font-size: 11px; }
+  .score-table :is(th, td) { padding-inline-end: 5px; }
+  .score-table tr > :last-child { padding-inline-end: 0; }
+}
+@media print {
+  #scores-content { display: block; }
+  .score-summary { margin-bottom: 3mm; }
+  .score-summary dd { font-size: 14pt; }
+  .score-summary .score-scope, .score-summary dt, .score-table, .score-table th { font-size: 8pt; }
+  .score-table :is(td, th) { padding: 1mm; }
+}
+.footer {
   text-transform: uppercase;
   letter-spacing: .07em;
   font-size: 11px;

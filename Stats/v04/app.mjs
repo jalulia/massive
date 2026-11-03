@@ -1,11 +1,11 @@
-import { buildReport, eventDates, formatHoursMinutes, formatMinutesSeconds } from "./data.mjs";
+import { buildReport, eventDates, formatHoursMinutes, formatMinutesSeconds } from "./data.mjs?v=4";
 import { setupPeriod } from "./period.mjs";
 import { setupDaily } from "./daily.mjs";
 import { animateHero, stageAnimation } from "./motion.mjs";
-import { downloadReportPDF } from "./pdf.mjs";
+import { downloadReportPDF } from "./pdf.mjs?v=4";
 
 const $ = id => document.getElementById(id);
-const sections = ["daily", "levels", "combat"];
+const sections = ["daily", "scores", "levels", "combat"];
 const datesInWords = new Intl.DateTimeFormat("en-GB", {
   day: "numeric", month: "long", year: "numeric", timeZone: "UTC",
 });
@@ -31,7 +31,11 @@ function rangeLabel(from, to) {
 async function start() {
   const response = await fetch("../v03/snapshot.json");
   if (!response.ok) throw new Error("Match data unavailable");
-  const snapshot = await response.json();
+  const [snapshot, scoreDays] = await Promise.all([
+    response.json(),
+    fetch("./score-days.json").then(res => res.ok ? res.json() : null).catch(() => null),
+  ]);
+  const defaultSections = scoreDays ? "daily,scores" : "daily";
   const dates = eventDates(snapshot);
   const startDate = dates[0], endDate = dates.at(-1);
   const selectClip = stageAnimation($("stage-video"), $("stage-poster"));
@@ -39,8 +43,13 @@ async function start() {
   const period = setupPeriod(dates, updateRange);
   const renderDays = setupDaily($("day-chart"));
 
+  function available(name) {
+    if (name === "scores") return Boolean(report.score);
+    return name === "daily" || report.fullEvent;
+  }
+
   function visibleSections() {
-    return sections.filter(name => selected.has(name) && (name === "daily" || report.fullEvent));
+    return sections.filter(name => selected.has(name) && available(name));
   }
 
   function reportURL() {
@@ -50,7 +59,7 @@ async function start() {
       url.searchParams.set("to", report.to);
     }
     const visible = visibleSections();
-    if (visible.join(",") !== "daily") url.searchParams.set("sections", visible.join(",") || "summary");
+    if (visible.join(",") !== defaultSections) url.searchParams.set("sections", visible.join(",") || "summary");
     if (visible.includes("levels")) url.searchParams.set("level", stage);
     return url;
   }
@@ -104,13 +113,28 @@ async function start() {
       const section = $(name);
       const open = visible.includes(name);
       const toggle = section.querySelector(".section-toggle");
-      section.hidden = name !== "daily" && !report.fullEvent;
+      section.hidden = !available(name);
       section.dataset.open = String(open);
       toggle.setAttribute("aria-expanded", String(open));
       $(toggle.getAttribute("aria-controls")).hidden = !open;
     }
     $("daily").querySelector(".chart-legend").hidden = !visible.includes("daily");
     $("levels").querySelector(".select-label").hidden = !visible.includes("levels");
+    if (visible.includes("scores")) {
+      const score = report.score;
+      set("score-scope", number.format(report.completed) + " completed matches");
+      set("score-total", score.total);
+      set("score-average", score.average);
+      set("score-entries", number.format(score.entries) + " player entries");
+      $("score-rows").replaceChildren(...score.top.map(item => {
+        const tr = document.createElement("tr");
+        const day = dateObject(item.date).toLocaleDateString("en-GB", {day:"numeric", month:"short", timeZone:"UTC"});
+        for (const value of [String(item.rank).padStart(2, "0"), item.level, item.mode, day, item.value]) {
+          tr.insertCell().textContent = value;
+        }
+        return tr;
+      }));
+    }
     renderDays(report.days);
     renderStage();
     set("kill-total", visible.includes("combat") ? number.format(report.enemiesKilled) : "");
@@ -124,9 +148,9 @@ async function start() {
     const from = params.get("from") ?? params.get("to") ?? startDate;
     const to = params.get("to") ?? params.get("from") ?? endDate;
     let invalid = false;
-    try { report = buildReport(snapshot, from, to); }
-    catch { report = buildReport(snapshot); invalid = true; }
-    const requested = (params.get("sections") ?? "daily").split(",");
+    try { report = buildReport(snapshot, from, to, scoreDays); }
+    catch { report = buildReport(snapshot, startDate, endDate, scoreDays); invalid = true; }
+    const requested = (params.get("sections") ?? defaultSections).split(",");
     selected = new Set(sections.filter(name => requested.includes(name)));
     const fallback = Object.keys(snapshot.levels).sort((a, b) => snapshot.levels[b].starts - snapshot.levels[a].starts || a.localeCompare(b))[0];
     const level = params.get("level");
@@ -140,7 +164,7 @@ async function start() {
 
   function updateRange(from, to) {
     if (report.from === from && report.to === to) return;
-    report = buildReport(snapshot, from, to);
+    report = buildReport(snapshot, from, to, scoreDays);
     render();
     writeHistory();
   }

@@ -9,10 +9,10 @@
   <link rel="icon" href="../v03/assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="../v03/assets/InputMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="../assets-r3/fonts/NeuzeitSHeavy.woff" as="font" type="font/woff" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <link rel="stylesheet" href="period.css">
   <link rel="stylesheet" href="daily.css">
-  <script type="module" src="app.mjs?v=3"></script>
+  <script type="module" src="app.mjs?v=4"></script>
 </head>
 <body>
   <a class="skip-link" href="#overview">Skip to event statistics</a>
@@ -94,6 +94,23 @@
           </div>
         </header>
         <div id="day-chart"></div>
+      </section>
+
+      <section id="scores" class="report-section" aria-labelledby="scores-title" hidden>
+        <header class="section-head">
+          <h2 id="scores-title"><button class="section-toggle" type="button" aria-expanded="false" aria-controls="scores-content">Scores</button></h2>
+        </header>
+        <div id="scores-content" hidden>
+          <dl class="score-summary">
+            <div><dt>Total team score</dt><dd id="score-total"></dd><dd class="score-scope" id="score-scope"></dd></div>
+            <div><dt>Avg. score per player entry</dt><dd id="score-average"></dd><dd class="score-scope" id="score-entries"></dd></div>
+          </dl>
+          <table class="score-table">
+            <caption>Top 3 individual scores</caption>
+            <thead><tr><th scope="col">Rank</th><th scope="col">Level</th><th scope="col">Mode</th><th scope="col">Date</th><th scope="col">Score</th></tr></thead>
+            <tbody id="score-rows"></tbody>
+          </table>
+        </div>
       </section>
 
       <section id="levels" class="report-section" aria-labelledby="levels-title" hidden>

@@ -100,6 +100,7 @@ export function createReportPDF(report, { sections = ["daily"], stage } = {}) {
   const level = sections.includes("levels") && report.levels?.find(item => item.name === stage);
   const combat = sections.includes("combat") && report.enemiesKilled !== null;
   const detail = level || combat;
+  const scores = sections.includes("scores") && report.score;
   const col = (R - L) / (full ? 3 : 2);
   const first = asDate(report.from), last = asDate(report.to);
   const period = report.from === report.to ? dateFormat.format(first)
@@ -129,9 +130,10 @@ export function createReportPDF(report, { sections = ["daily"], stage } = {}) {
   text(report.completionRate.toFixed(1) + "%", L + col, supportY + 46, 9);
   if (full) supportMetric(L + 2 * col, supportY, "COMBINED PLAYER TIME", formatHoursMinutes(report.playerMinutes));
 
-  const annexTop = 619;
-  const dailyTop = detail ? 381 : 419;
-  const dailyBottom = detail ? annexTop - 18 : 739;
+  const annexTop = scores ? 638 : 619;
+  const scoreTop = detail ? 533 : 622;
+  const dailyTop = detail || scores ? 381 : 419;
+  const dailyBottom = scores ? scoreTop - 9 : detail ? annexTop - 18 : 739;
   if (days.length > 1) {
     rule(dailyTop, 1);
     text("Matches by day", L - 1, dailyTop + 28, 25, "Display", -0.55);
@@ -147,7 +149,7 @@ export function createReportPDF(report, { sections = ["daily"], stage } = {}) {
       line(L, top, R, top, isTotal ? 1 : 0.35);
       const y = top + rowStep * 0.64;
       if (isTotal) {
-        text("Total", L - 0.5, y, 14, "Display");
+        text("Total", L - 0.5, y, Math.min(14, rowStep * .74), "Display");
       } else {
         text(row.date.slice(8), L - 0.6, y, Math.min(22, rowStep * 0.7), "Display", -0.5);
         text(weekday.format(asDate(row.date)).toUpperCase(), L + 32, y - 1, 8);
@@ -181,6 +183,30 @@ export function createReportPDF(report, { sections = ["daily"], stage } = {}) {
       });
     rule(dailyBottom - 23);
     text("1 mark = 1 match", L, dailyBottom - 5, 8.5);
+  }
+
+  if (scores) {
+    const boardX = L + 205;
+    rule(scoreTop, 1);
+    text("Scores", L - 1, scoreTop + 23, 22, "Display", -0.45);
+    text("COMPLETED MATCHES", L + 75, scoreTop + 21, 7.7);
+    text("TOTAL TEAM SCORE", L, scoreTop + 42, 7.8);
+    text(scores.total, L - 0.5, scoreTop + 60, 18, "Display", -0.35);
+    text("AVG. SCORE PER PLAYER ENTRY", L, scoreTop + 77, 7.8);
+    text(scores.average, L - 0.5, scoreTop + 95, 18, "Display", -0.35);
+
+    text("Top 3 individual scores", boardX - 0.5, scoreTop + 22, 17, "Display", -0.3);
+    scores.top.forEach((entry, index) => {
+      const y = scoreTop + 45 + index * 23;
+      line(boardX, y - 14, R, y - 14, 0.35);
+      text(String(entry.rank).padStart(2, "0"), boardX, y, 9);
+      text(shortDay.format(asDate(entry.date)).toUpperCase(), boardX + 23, y, 8);
+      text(entry.level, boardX + 91, y, 8.5);
+      text(entry.mode, boardX + 159, y, 8);
+      const scoreWidth = R - boardX - 184;
+      const size = Math.min(12, scoreWidth / measure(entry.value, "Mono", 1, 0));
+      aligned(entry.value, R, y, Number(size.toFixed(2)));
+    });
   }
 
   if (detail) {

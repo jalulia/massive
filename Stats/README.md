@@ -25,6 +25,16 @@ The revised layout pairs Neuzeit S Heavy with Input Mono. The PDF embeds local s
 
 The full event recorded 228 match starts and 530 player entries across 191 one-on-one matches and 37 two-on-two matches. One entry is one player slot in one match, including repeat plays. Combined player time was 25h 39m across slots and active match time was 11h 03m on the cabinet. The four daily tables in the source use local EDT dates. [Source JSON](v03/snapshot.json)
 
+### Cabinet scores
+
+Export **Production** history from Unity via **MASSIVE → Statistics → Match History → Export CSVs**. Generate the public daily aggregates locally:
+
+```sh
+python3 tools/import-momi-scores.py /path/to/matches.csv /path/to/players.csv --output Stats/v04/score-days.json
+```
+
+The importer reconciles the cabinet export to the MoMI snapshot. Total team score sums final Light and Dark scores, including bonus play. The average uses each completed player entry’s credited score, including zeroes. The three highest eligible individual performances are ranked by integer meV across the report dates and identified by day, level and mode. Equal scores share rank. A null supplement leaves the score section out of the page and PDF.
+
 ## Current V01 and V02
 
 Both pages retain all nine stages and 17 inactivity records. Outcome shares consistently use completed matches, including ties. Combat totals and rates per player-minute remain available. Inactivity is presented as the recorded end reason without assigning a cause.
